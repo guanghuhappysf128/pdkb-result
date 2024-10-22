@@ -1,0 +1,3 @@
+[submodule "pdkb-planning"]
+	path = pdkb-planning
+	url = https://github.com/QuMuLab/pdkb-planning.git
