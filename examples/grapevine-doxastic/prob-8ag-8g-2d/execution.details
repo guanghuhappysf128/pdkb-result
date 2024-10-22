@@ -1,0 +1,19 @@
+Plan found with cost: 15
+1. (INITIALIZE )
+2. (MOVE_B_L1_L2 )
+3. (SHARE_A_A_L1 )
+4. (MOVE_H_L1_L2 )
+5. (SHARE_H_A_L2 )
+6. (MOVE_C_L1_L2 )
+7. (FIB_H_A_L2 )
+8. (MOVE_E_L1_L2 )
+9. (FIB_H_A_L2 )
+10. (MOVE_D_L1_L2 )
+11. (FIB_H_A_L2 )
+12. (MOVE_F_L1_L2 )
+13. (SHARE_H_A_L2 )
+14. (MOVE_G_L1_L2 )
+15. (SHARE_H_A_L2 )
+Time: 10.4722
+Generated: 726
+Expanded: 69

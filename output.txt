@@ -1,0 +1,5015 @@
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 220 (87)
+
+
+# Agents: 5
+# Props: 62
+# Acts: 41
+# Effs: 220
+Depth: 1
+
+Plan Time: 0.02680
+
+Plan Length: 8
+
+done!
+
+Time: 0.083264 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (left_l1_l2)
+4. (fib-1)
+5. (right_l1_l2)
+6. (right_l2_l3)
+7. (right_l3_l4)
+8. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 260 (97)
+
+
+# Agents: 7
+# Props: 70
+# Acts: 41
+# Effs: 260
+Depth: 1
+
+Plan Time: 0.02679
+
+Plan Length: 8
+
+done!
+
+Time: 0.094711 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (left_l1_l2)
+4. (fib-1)
+5. (right_l1_l2)
+6. (right_l2_l3)
+7. (right_l3_l4)
+8. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 180 (77)
+
+
+# Agents: 3
+# Props: 54
+# Acts: 41
+# Effs: 180
+Depth: 1
+
+Plan Time: 0.02653
+
+Plan Length: 8
+
+done!
+
+Time: 0.069652 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (left_l1_l2)
+4. (fib-1)
+5. (right_l1_l2)
+6. (right_l2_l3)
+7. (right_l3_l4)
+8. (shout-4)
+
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 197, in parse_pdkbddl
+    prob = GroundProblem(lines[:prob_index], lines[prob_index:])
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/grounder.py", line 46, in __init__
+    super(GroundProblem, self).__init__(domain_file, problem_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 62, in __init__
+    self._parse_domain(domain_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 248, in _parse_domain
+    parse_tree = PDDL_Tree.create(f_domain)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 102, in create
+    pddl_list = PDDL_Tree._get_pddl_list (get_contents(fname))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 190, in _get_pddl_list
+    return eval(contents)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+
+Parsing problem... 
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 197, in parse_pdkbddl
+    prob = GroundProblem(lines[:prob_index], lines[prob_index:])
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/grounder.py", line 46, in __init__
+    super(GroundProblem, self).__init__(domain_file, problem_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 62, in __init__
+    self._parse_domain(domain_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 248, in _parse_domain
+    parse_tree = PDDL_Tree.create(f_domain)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 102, in create
+    pddl_list = PDDL_Tree._get_pddl_list (get_contents(fname))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 190, in _get_pddl_list
+    return eval(contents)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 17860 (77)
+
+
+# Agents: 3
+# Props: 18702
+# Acts: 41
+# Effs: 17860
+Depth: 5
+
+Plan Time: 2.78187
+
+Plan Length: 8
+
+done!
+
+Time: 49.033665 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (left_l1_l2)
+4. (fib-1)
+5. (right_l1_l2)
+6. (right_l2_l3)
+7. (right_l3_l4)
+8. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 1220 (77)
+
+
+# Agents: 3
+# Props: 558
+# Acts: 41
+# Effs: 1220
+Depth: 3
+
+Plan Time: 0.03165
+
+Plan Length: 8
+
+done!
+
+Time: 0.643075 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (left_l1_l2)
+4. (fib-1)
+5. (right_l1_l2)
+6. (right_l2_l3)
+7. (right_l3_l4)
+8. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 6844 (87)
+
+
+# Agents: 5
+# Props: 2262
+# Acts: 41
+# Effs: 6844
+Depth: 3
+
+Plan Time: 0.10237
+
+Plan Length: 8
+
+done!
+
+Time: 3.913240 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (left_l1_l2)
+4. (fib-1)
+5. (right_l1_l2)
+6. (right_l2_l3)
+7. (right_l3_l4)
+8. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 20852 (97)
+
+
+# Agents: 7
+# Props: 5950
+# Acts: 41
+# Effs: 20852
+Depth: 3
+
+Plan Time: 0.50059
+
+Plan Length: 8
+
+done!
+
+Time: 13.028966 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (left_l1_l2)
+4. (fib-1)
+5. (right_l1_l2)
+6. (right_l2_l3)
+7. (right_l3_l4)
+8. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... 
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 197, in parse_pdkbddl
+    prob = GroundProblem(lines[:prob_index], lines[prob_index:])
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/grounder.py", line 46, in __init__
+    super(GroundProblem, self).__init__(domain_file, problem_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 62, in __init__
+    self._parse_domain(domain_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 248, in _parse_domain
+    parse_tree = PDDL_Tree.create(f_domain)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 102, in create
+    pddl_list = PDDL_Tree._get_pddl_list (get_contents(fname))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 190, in _get_pddl_list
+    return eval(contents)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 204 (83)
+
+
+# Agents: 7
+# Props: 70
+# Acts: 37
+# Effs: 204
+Depth: 1
+
+Plan Time: 0.02492
+
+Plan Length: 5
+
+done!
+
+Time: 0.081064 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (right_l2_l3)
+4. (right_l3_l4)
+5. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 156 (71)
+
+
+# Agents: 3
+# Props: 54
+# Acts: 37
+# Effs: 156
+Depth: 1
+
+Plan Time: 0.02457
+
+Plan Length: 5
+
+done!
+
+Time: 0.061018 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (right_l2_l3)
+4. (right_l3_l4)
+5. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 268 (71)
+
+
+# Agents: 3
+# Props: 126
+# Acts: 37
+# Effs: 268
+Depth: 2
+
+Plan Time: 0.02511
+
+Plan Length: 5
+
+done!
+
+Time: 0.096778 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (right_l2_l3)
+4. (right_l3_l4)
+5. (shout-4)
+
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 197, in parse_pdkbddl
+    prob = GroundProblem(lines[:prob_index], lines[prob_index:])
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/grounder.py", line 46, in __init__
+    super(GroundProblem, self).__init__(domain_file, problem_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 62, in __init__
+    self._parse_domain(domain_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 248, in _parse_domain
+    parse_tree = PDDL_Tree.create(f_domain)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 102, in create
+    pddl_list = PDDL_Tree._get_pddl_list (get_contents(fname))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 190, in _get_pddl_list
+    return eval(contents)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 197, in parse_pdkbddl
+    prob = GroundProblem(lines[:prob_index], lines[prob_index:])
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/grounder.py", line 46, in __init__
+    super(GroundProblem, self).__init__(domain_file, problem_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 62, in __init__
+    self._parse_domain(domain_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 248, in _parse_domain
+    parse_tree = PDDL_Tree.create(f_domain)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 102, in create
+    pddl_list = PDDL_Tree._get_pddl_list (get_contents(fname))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 190, in _get_pddl_list
+    return eval(contents)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 716 (71)
+
+
+# Agents: 3
+# Props: 558
+# Acts: 37
+# Effs: 716
+Depth: 3
+
+Plan Time: 0.02969
+
+Plan Length: 5
+
+done!
+
+Time: 0.403230 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (right_l2_l3)
+4. (right_l3_l4)
+5. (shout-4)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 12060 (83)
+
+
+# Agents: 7
+# Props: 5950
+# Acts: 37
+# Effs: 12060
+Depth: 3
+
+Plan Time: 0.40010
+
+Plan Length: 5
+
+done!
+
+Time: 7.577165 s
+
+  --{ Plan }--
+
+1. (right_l1_l2)
+2. (sense)
+3. (right_l2_l3)
+4. (right_l3_l4)
+5. (shout-4)
+
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 197, in parse_pdkbddl
+    prob = GroundProblem(lines[:prob_index], lines[prob_index:])
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/grounder.py", line 46, in __init__
+    super(GroundProblem, self).__init__(domain_file, problem_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 62, in __init__
+    self._parse_domain(domain_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/parser.py", line 248, in _parse_domain
+    parse_tree = PDDL_Tree.create(f_domain)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 102, in create
+    pddl_list = PDDL_Tree._get_pddl_list (get_contents(fname))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/pddl/pddl_tree.py", line 190, in _get_pddl_list
+    return eval(contents)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... done!
+Preprocessing problem... 
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 2466 (461)
+
+
+# Agents: 4
+# Props: 116
+# Acts: 133
+# Effs: 2466
+Depth: 1
+
+Plan Time: 0.05756
+
+Plan Length: 7
+
+done!
+
+Time: 0.590811 s
+
+  --{ Plan }--
+
+1. (move_b_l1_l2)
+2. (fib_a_a_l1)
+3. (share_d_d_l1)
+4. (move_d_l1_l2)
+5. (fib_d_d_l2)
+6. (move_b_l2_l1)
+7. (share_a_a_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 20898 (461)
+
+
+# Agents: 4
+# Props: 628
+# Acts: 133
+# Effs: 20898
+Depth: 2
+
+Plan Time: 2.47016
+
+Plan Length: 7
+
+done!
+
+Time: 12.829957 s
+
+  --{ Plan }--
+
+1. (initialize)
+2. (move_c_l1_l2)
+3. (share_a_a_l1)
+4. (move_d_l1_l2)
+5. (share_d_a_l2)
+6. (move_b_l1_l2)
+7. (fib_d_a_l2)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 2466 (461)
+
+
+# Agents: 4
+# Props: 116
+# Acts: 133
+# Effs: 2466
+Depth: 1
+
+Plan Time: 0.05576
+
+Plan Length: 4
+
+done!
+
+Time: 0.640749 s
+
+  --{ Plan }--
+
+1. (move_b_l1_l2)
+2. (fib_a_a_l1)
+3. (move_b_l2_l1)
+4. (share_a_a_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 18754 (3225)
+
+
+# Agents: 8
+# Props: 340
+# Acts: 457
+# Effs: 18754
+Depth: 1
+
+Plan Time: 0.97629
+
+Plan Length: 4
+
+done!
+
+Time: 5.223151 s
+
+  --{ Plan }--
+
+1. (move_b_l1_l2)
+2. (fib_a_a_l1)
+3. (move_b_l2_l1)
+4. (share_a_a_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... 
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 20898 (461)
+
+
+# Agents: 4
+# Props: 628
+# Acts: 133
+# Effs: 20898
+Depth: 2
+
+Plan Time: 2.37805
+
+Plan Length: 5
+
+done!
+
+Time: 13.049814 s
+
+  --{ Plan }--
+
+1. (initialize)
+2. (move_b_l1_l2)
+3. (share_a_a_l1)
+4. (move_b_l2_l1)
+5. (fib_a_a_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 18754 (3225)
+
+
+# Agents: 8
+# Props: 340
+# Acts: 457
+# Effs: 18754
+Depth: 1
+
+Plan Time: 2.67013
+
+Plan Length: 9
+
+done!
+
+Time: 6.832851 s
+
+  --{ Plan }--
+
+1. (move_f_l1_l2)
+2. (move_a_l1_l2)
+3. (share_a_a_l2)
+4. (move_d_l1_l2)
+5. (fib_f_a_l2)
+6. (move_e_l1_l2)
+7. (fib_f_a_l2)
+8. (move_f_l2_l1)
+9. (share_f_a_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... 
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 2466 (461)
+
+
+# Agents: 4
+# Props: 116
+# Acts: 133
+# Effs: 2466
+Depth: 1
+
+Plan Time: 0.05627
+
+Plan Length: 12
+
+done!
+
+Time: 0.592270 s
+
+  --{ Plan }--
+
+1. (move_a_l1_l2)
+2. (share_b_b_l1)
+3. (fib_d_d_l1)
+4. (move_a_l2_l1)
+5. (fib_b_b_l1)
+6. (share_d_d_l1)
+7. (move_d_l1_l2)
+8. (share_a_a_l1)
+9. (fib_c_c_l1)
+10. (move_d_l2_l1)
+11. (fib_a_a_l1)
+12. (share_c_c_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 18754 (3225)
+
+
+# Agents: 8
+# Props: 340
+# Acts: 457
+# Effs: 18754
+Depth: 1
+
+Plan Time: 1.43857
+
+Plan Length: 16
+
+done!
+
+Time: 5.609111 s
+
+  --{ Plan }--
+
+1. (move_f_l1_l2)
+2. (fib_b_b_l1)
+3. (move_a_l1_l2)
+4. (share_a_a_l2)
+5. (move_c_l1_l2)
+6. (fib_f_a_l2)
+7. (move_e_l1_l2)
+8. (fib_f_a_l2)
+9. (move_h_l1_l2)
+10. (share_f_a_l2)
+11. (move_d_l1_l2)
+12. (share_h_a_l2)
+13. (move_b_l1_l2)
+14. (share_h_a_l2)
+15. (move_d_l2_l1)
+16. (fib_d_a_l1)
+
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 20898 (461)
+
+
+# Agents: 4
+# Props: 628
+# Acts: 133
+# Effs: 20898
+Depth: 2
+
+Plan Time: 3.15181
+
+Plan Length: 23
+
+done!
+
+Time: 13.488855 s
+
+  --{ Plan }--
+
+1. (initialize)
+2. (move_b_l1_l2)
+3. (share_d_d_l1)
+4. (move_c_l1_l2)
+5. (fib_c_d_l2)
+6. (move_a_l1_l2)
+7. (share_b_b_l2)
+8. (move_d_l1_l2)
+9. (move_c_l2_l3)
+10. (fib_b_b_l2)
+11. (move_b_l2_l1)
+12. (move_a_l2_l3)
+13. (share_a_a_l3)
+14. (share_c_c_l3)
+15. (move_c_l3_l2)
+16. (share_c_a_l2)
+17. (move_d_l2_l3)
+18. (fib_d_a_l3)
+19. (move_b_l1_l2)
+20. (move_b_l2_l3)
+21. (share_a_c_l3)
+22. (move_c_l2_l3)
+23. (fib_d_c_l3)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 2322 (729)
+
+
+# Agents: 3
+# Props: 600
+# Acts: 432
+# Effs: 2322
+Depth: 1
+
+Plan Time: 0.09132
+
+Plan Length: 19
+
+done!
+
+Time: 0.701203 s
+
+  --{ Plan }--
+
+1. (observe_b_p4_s)
+2. (badcomm_p4_b_a_s)
+3. (observe_c_p9_s)
+4. (move_b_p4_p1)
+5. (observe_b_p1_s)
+6. (move_c_p9_p8)
+7. (observe_c_p8_s)
+8. (badcomm_p8_c_a_s)
+9. (move_b_p1_p2)
+10. (observe_b_p2_s)
+11. (move_c_p8_p7)
+12. (observe_c_p7_s)
+13. (move_b_p2_p5)
+14. (observe_b_p5_s)
+15. (comm_p5_b_a_s)
+16. (move_b_p5_p6)
+17. (observe_b_p6_s)
+18. (move_b_p6_p3)
+19. (observe_b_p3_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 9990 (729)
+
+
+# Agents: 3
+# Props: 2544
+# Acts: 432
+# Effs: 9990
+Depth: 2
+
+Plan Time: 0.22121
+
+Plan Length: 19
+
+done!
+
+Time: 4.002329 s
+
+  --{ Plan }--
+
+1. (observe_b_p4_s)
+2. (comm_p4_b_a_s)
+3. (observe_c_p9_s)
+4. (move_b_p4_p1)
+5. (observe_b_p1_s)
+6. (move_c_p9_p8)
+7. (observe_c_p8_s)
+8. (badcomm_p8_c_a_s)
+9. (move_b_p1_p2)
+10. (observe_b_p2_s)
+11. (move_c_p8_p7)
+12. (observe_c_p7_s)
+13. (move_b_p2_p5)
+14. (observe_b_p5_s)
+15. (badcomm_p5_b_a_s)
+16. (move_b_p5_p6)
+17. (observe_b_p6_s)
+18. (move_b_p6_p3)
+19. (observe_b_p3_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 5280 (1680)
+
+
+# Agents: 4
+# Props: 1040
+# Acts: 1008
+# Effs: 5280
+Depth: 1
+
+Plan Time: 0.06634
+
+Plan Length: 25
+
+done!
+
+Time: 1.428783 s
+
+  --{ Plan }--
+
+1. (observe_b_p4_s)
+2. (badcomm_p4_b_a_s)
+3. (observe_c_p9_s)
+4. (observe_d_p2_s)
+5. (move_b_p4_p7)
+6. (observe_b_p7_s)
+7. (move_c_p9_p8)
+8. (observe_c_p8_s)
+9. (badcomm_p8_c_a_s)
+10. (move_c_p8_p5)
+11. (observe_c_p5_s)
+12. (badcomm_p5_c_a_s)
+13. (move_c_p5_p6)
+14. (observe_c_p6_s)
+15. (move_d_p2_p3)
+16. (observe_d_p3_s)
+17. (move_b_p7_p10)
+18. (observe_b_p10_s)
+19. (move_b_p10_p11)
+20. (observe_b_p11_s)
+21. (move_b_p11_p12)
+22. (observe_b_p12_s)
+23. (move_d_p3_p2)
+24. (move_d_p2_p1)
+25. (observe_d_p1_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3528 (1188)
+
+
+# Agents: 3
+# Props: 870
+# Acts: 684
+# Effs: 3528
+Depth: 1
+
+Plan Time: 0.05242
+
+Plan Length: 25
+
+done!
+
+Time: 0.944380 s
+
+  --{ Plan }--
+
+1. (observe_b_p4_s)
+2. (badcomm_p4_b_a_s)
+3. (observe_c_p9_s)
+4. (move_b_p4_p7)
+5. (observe_b_p7_s)
+6. (move_c_p9_p8)
+7. (observe_c_p8_s)
+8. (comm_p8_c_a_s)
+9. (move_c_p8_p5)
+10. (observe_c_p5_s)
+11. (badcomm_p5_c_a_s)
+12. (move_b_p7_p10)
+13. (observe_b_p10_s)
+14. (move_c_p5_p6)
+15. (observe_c_p6_s)
+16. (move_c_p6_p3)
+17. (observe_c_p3_s)
+18. (move_c_p3_p2)
+19. (observe_c_p2_s)
+20. (move_b_p10_p11)
+21. (observe_b_p11_s)
+22. (move_c_p2_p1)
+23. (observe_c_p1_s)
+24. (move_b_p11_p12)
+25. (observe_b_p12_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 27918 (3483)
+
+
+# Agents: 3
+# Props: 732
+# Acts: 1728
+# Effs: 27918
+Depth: 1
+
+Plan Time: 0.16014
+
+Plan Length: 23
+
+done!
+
+Time: 4.890586 s
+
+  --{ Plan }--
+
+1. (observe_b_p4_s)
+2. (comm_p9_p4_b_a_s)
+3. (observe_c_p9_s)
+4. (move_b_p4_p7)
+5. (observe_b_p7_s)
+6. (move_c_p9_p8)
+7. (observe_c_p8_s)
+8. (move_c_p8_p5)
+9. (observe_c_p5_s)
+10. (move_c_p5_p6)
+11. (observe_c_p6_s)
+12. (move_c_p6_p3)
+13. (observe_c_p3_s)
+14. (move_c_p3_p2)
+15. (observe_c_p2_s)
+16. (move_c_p2_p1)
+17. (observe_c_p1_s)
+18. (move_b_p7_p8)
+19. (observe_b_p8_s)
+20. (badcomm_p9_p8_b_a_s)
+21. (move_b_p8_p5)
+22. (observe_b_p5_s)
+23. (comm_p9_p5_b_a_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 27918 (3483)
+
+
+# Agents: 3
+# Props: 732
+# Acts: 1728
+# Effs: 27918
+Depth: 1
+
+Plan Time: 0.15876
+
+Plan Length: 23
+
+done!
+
+Time: 5.396588 s
+
+  --{ Plan }--
+
+1. (observe_b_p4_s)
+2. (comm_p9_p4_b_a_s)
+3. (observe_c_p9_s)
+4. (move_b_p4_p7)
+5. (observe_b_p7_s)
+6. (move_c_p9_p8)
+7. (observe_c_p8_s)
+8. (move_c_p8_p5)
+9. (observe_c_p5_s)
+10. (move_c_p5_p6)
+11. (observe_c_p6_s)
+12. (move_c_p6_p3)
+13. (observe_c_p3_s)
+14. (move_c_p3_p2)
+15. (observe_c_p2_s)
+16. (move_c_p2_p1)
+17. (observe_c_p1_s)
+18. (move_b_p7_p8)
+19. (observe_b_p8_s)
+20. (badcomm_p9_p8_b_a_s)
+21. (move_b_p8_p5)
+22. (observe_b_p5_s)
+23. (comm_p9_p5_b_a_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 105120 (10512)
+
+
+# Agents: 4
+# Props: 1264
+# Acts: 5232
+# Effs: 105120
+Depth: 1
+
+Plan Time: 0.51167
+
+Plan Length: 30
+
+done!
+
+Time: 20.983876 s
+
+  --{ Plan }--
+
+1. (observe_c_p9_s)
+2. (observe_d_p2_s)
+3. (move_c_p9_p8)
+4. (observe_c_p8_s)
+5. (comm_p9_p8_c_a_s)
+6. (badcomm_p9_p8_c_b_s)
+7. (move_d_p2_p3)
+8. (observe_d_p3_s)
+9. (move_c_p8_p7)
+10. (observe_c_p7_s)
+11. (move_c_p7_p4)
+12. (observe_c_p4_s)
+13. (comm_p9_p4_c_a_s)
+14. (badcomm_p9_p4_c_b_s)
+15. (move_c_p4_p5)
+16. (observe_c_p5_s)
+17. (comm_p9_p5_c_a_s)
+18. (badcomm_p9_p5_c_b_s)
+19. (move_c_p5_p6)
+20. (observe_c_p6_s)
+21. (move_d_p3_p2)
+22. (move_d_p2_p1)
+23. (observe_d_p1_s)
+24. (move_c_p6_p9)
+25. (move_c_p9_p12)
+26. (observe_c_p12_s)
+27. (move_c_p12_p11)
+28. (observe_c_p11_s)
+29. (move_c_p11_p10)
+30. (observe_c_p10_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 105120 (10512)
+
+
+# Agents: 4
+# Props: 1264
+# Acts: 5232
+# Effs: 105120
+Depth: 1
+
+Plan Time: 0.51998
+
+Plan Length: 30
+
+done!
+
+Time: 20.967973 s
+
+  --{ Plan }--
+
+1. (observe_c_p9_s)
+2. (observe_d_p2_s)
+3. (move_c_p9_p8)
+4. (observe_c_p8_s)
+5. (comm_p9_p8_c_a_s)
+6. (badcomm_p9_p8_c_b_s)
+7. (move_d_p2_p3)
+8. (observe_d_p3_s)
+9. (move_c_p8_p7)
+10. (observe_c_p7_s)
+11. (move_c_p7_p4)
+12. (observe_c_p4_s)
+13. (comm_p9_p4_c_a_s)
+14. (badcomm_p9_p4_c_b_s)
+15. (move_c_p4_p5)
+16. (observe_c_p5_s)
+17. (comm_p9_p5_c_a_s)
+18. (badcomm_p9_p5_c_b_s)
+19. (move_c_p5_p6)
+20. (observe_c_p6_s)
+21. (move_d_p3_p2)
+22. (move_d_p2_p1)
+23. (observe_d_p1_s)
+24. (move_c_p6_p9)
+25. (move_c_p9_p12)
+26. (observe_c_p12_s)
+27. (move_c_p12_p11)
+28. (observe_c_p11_s)
+29. (move_c_p11_p10)
+30. (observe_c_p10_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3744 (1188)
+
+
+# Agents: 3
+# Props: 864
+# Acts: 540
+# Effs: 3744
+Depth: 1
+
+Plan Time: 0.08503
+
+Plan Length: 21
+
+done!
+
+Time: 1.239141 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (observ_c_p9_s)
+3. (observ_a_p1_s)
+4. (move_b_p4_p7)
+5. (observ_b_p7_s)
+6. (move_c_p9_p8)
+7. (observ_c_p8_s)
+8. (move_a_p1_p2)
+9. (observ_a_p2_s)
+10. (move_b_p7_p10)
+11. (observ_b_p10_s)
+12. (move_c_p8_p5)
+13. (observ_c_p5_s)
+14. (move_c_p5_p6)
+15. (observ_c_p6_s)
+16. (move_c_p6_p3)
+17. (observ_c_p3_s)
+18. (move_b_p10_p11)
+19. (observ_b_p11_s)
+20. (move_b_p11_p12)
+21. (observ_b_p12_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 2484 (729)
+
+
+# Agents: 3
+# Props: 594
+# Acts: 324
+# Effs: 2484
+Depth: 1
+
+Plan Time: 0.04394
+
+Plan Length: 15
+
+done!
+
+Time: 0.573761 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (observ_a_p1_s)
+3. (observ_c_p9_s)
+4. (move_b_p4_p7)
+5. (observ_b_p7_s)
+6. (move_a_p1_p2)
+7. (observ_a_p2_s)
+8. (move_a_p2_p5)
+9. (observ_a_p5_s)
+10. (move_a_p5_p8)
+11. (observ_a_p8_s)
+12. (move_c_p9_p6)
+13. (observ_c_p6_s)
+14. (move_c_p6_p3)
+15. (observ_c_p3_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 5664 (1680)
+
+
+# Agents: 4
+# Props: 1032
+# Acts: 720
+# Effs: 5664
+Depth: 1
+
+Plan Time: 0.07436
+
+Plan Length: 20
+
+done!
+
+Time: 1.438504 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (observ_c_p9_s)
+3. (observ_d_p2_s)
+4. (observ_a_p1_s)
+5. (move_b_p4_p7)
+6. (observ_b_p7_s)
+7. (move_c_p9_p8)
+8. (observ_c_p8_s)
+9. (move_c_p8_p5)
+10. (observ_c_p5_s)
+11. (move_c_p5_p6)
+12. (observ_c_p6_s)
+13. (move_d_p2_p3)
+14. (observ_d_p3_s)
+15. (move_b_p7_p10)
+16. (observ_b_p10_s)
+17. (move_b_p10_p11)
+18. (observ_b_p11_s)
+19. (move_b_p11_p12)
+20. (observ_b_p12_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3816 (1044)
+
+
+# Agents: 4
+# Props: 720
+# Acts: 432
+# Effs: 3816
+Depth: 1
+
+Plan Time: 0.05641
+
+Plan Length: 14
+
+done!
+
+Time: 0.871429 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (observ_d_p2_s)
+3. (observ_c_p9_s)
+4. (observ_a_p1_s)
+5. (move_b_p4_p7)
+6. (observ_b_p7_s)
+7. (move_d_p2_p5)
+8. (observ_d_p5_s)
+9. (move_d_p5_p8)
+10. (observ_d_p8_s)
+11. (move_c_p9_p6)
+12. (observ_c_p6_s)
+13. (move_c_p6_p3)
+14. (observ_c_p3_s)
+
+pdkb-planning/examples/planning/README
+Skipping pdkb-planning/examples/planning/README
+pdkb-planning/examples/planning/corridor-doxastic/prob_1_5.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob_1_7.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob_1_3.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/dom-agents7.pdkbddl
+Skipping pdkb-planning/examples/planning/corridor-doxastic/dom-agents7.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob-depth1.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/corridor-doxastic/prob-depth1.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob_5_7.pdkbddl
+Command timed out for pdkb-planning/examples/planning/corridor-doxastic/prob_5_7.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/dom-agents3.pdkbddl
+Skipping pdkb-planning/examples/planning/corridor-doxastic/dom-agents3.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob-depth3.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/corridor-doxastic/prob-depth3.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob_5_3.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob_3_3.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob_3_5.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob_3_7.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob_5_5.pdkbddl
+Command timed out for pdkb-planning/examples/planning/corridor-doxastic/prob_5_5.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/dom-agents5.pdkbddl
+Skipping pdkb-planning/examples/planning/corridor-doxastic/dom-agents5.pdkbddl
+pdkb-planning/examples/planning/corridor-doxastic/prob-depth5.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/corridor-doxastic/prob-depth5.pdkbddl
+pdkb-planning/examples/planning/corridor/prob_1_7.pdkbddl
+pdkb-planning/examples/planning/corridor/prob_1_3.pdkbddl
+pdkb-planning/examples/planning/corridor/dom-agents7.pdkbddl
+Skipping pdkb-planning/examples/planning/corridor/dom-agents7.pdkbddl
+pdkb-planning/examples/planning/corridor/prob_2_3.pdkbddl
+pdkb-planning/examples/planning/corridor/prob-depth1.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/corridor/prob-depth1.pdkbddl
+pdkb-planning/examples/planning/corridor/dom-agents3.pdkbddl
+Skipping pdkb-planning/examples/planning/corridor/dom-agents3.pdkbddl
+pdkb-planning/examples/planning/corridor/prob-depth3.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/corridor/prob-depth3.pdkbddl
+pdkb-planning/examples/planning/corridor/prob_3_3.pdkbddl
+pdkb-planning/examples/planning/corridor/prob_3_7.pdkbddl
+pdkb-planning/examples/planning/corridor/prob-depth2.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/corridor/prob-depth2.pdkbddl
+pdkb-planning/examples/planning/corridor/old_syntax/dom1.pdkbddl
+Skipping pdkb-planning/examples/planning/corridor/old_syntax/dom1.pdkbddl
+pdkb-planning/examples/planning/corridor/old_syntax/prob.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/corridor/old_syntax/prob.pdkbddl
+pdkb-planning/examples/planning/corridor/old_syntax/dom2.pdkbddl
+Skipping pdkb-planning/examples/planning/corridor/old_syntax/dom2.pdkbddl
+pdkb-planning/examples/planning/corridor/old_syntax/dom3.pdkbddl
+Skipping pdkb-planning/examples/planning/corridor/old_syntax/dom3.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-4g-2d.pdkbddl
+Command timed out for pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-4g-2d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/problem-setup-1d.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine-doxastic/problem-setup-1d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-4ag-4g-1d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-4ag-4g-2d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/domain-8ag.pdkbddl
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/domain-8ag.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-4ag-2g-1d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-2g-1d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-2g-2d.pdkbddl
+Command timed out for pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-2g-2d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-4ag-2g-2d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/domain.pdkbddl
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/domain.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/domain-4ag.pdkbddl
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/domain-4ag.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-4g-1d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-8g-2d.pdkbddl
+Command timed out for pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-8g-2d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-4ag-8g-1d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-8ag-8g-1d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/problem-setup-2d.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine-doxastic/problem-setup-2d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/prob-4ag-8g-2d.pdkbddl
+pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-4g-2d.txt
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-4g-2d.txt
+pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/generate.py
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/generate.py
+pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-2g-2d.txt
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-2g-2d.txt
+pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-8g-1d.txt
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-8g-1d.txt
+pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-2g-1d.txt
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-2g-1d.txt
+pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-4g-1d.txt
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-4g-1d.txt
+pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-8g-2d.txt
+Skipping pdkb-planning/examples/planning/grapevine-doxastic/EFP2.0/prob-4ag-8g-2d.txt
+pdkb-planning/examples/planning/grid-doxastic/broadcastCommunication/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid-doxastic/broadcastCommunication/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/broadcastCommunication/prob2.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/broadcastCommunication/prob1.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/broadcastCommunication/prob4.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/broadcastCommunication/prob3.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/NonbroadcastCommunication/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid-doxastic/NonbroadcastCommunication/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/NonbroadcastCommunication/prob2.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/NonbroadcastCommunication/prob1.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/NonbroadcastCommunication/prob4.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/NonbroadcastCommunication/prob3.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/nonEpGoal/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid-doxastic/nonEpGoal/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/nonEpGoal/prob2.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/nonEpGoal/prob1.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/nonEpGoal/prob4.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/nonEpGoal/prob3.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/EpGoal/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid-doxastic/EpGoal/domain-grid.pdkbddl
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3744 (1188)
+
+
+# Agents: 3
+# Props: 864
+# Acts: 540
+# Effs: 3744
+Depth: 1
+
+Plan Time: 0.10945
+
+Plan Length: 53
+
+done!
+
+Time: 1.005415 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (observ_c_p9_s)
+3. (observ_a_p1_s)
+4. (move_b_p4_p7)
+5. (observ_b_p7_s)
+6. (move_c_p9_p6)
+7. (observ_c_p6_s)
+8. (move_c_p6_p5)
+9. (observ_c_p5_s)
+10. (move_a_p1_p2)
+11. (observ_a_p2_s)
+12. (move_b_p7_p8)
+13. (observ_b_p8_s)
+14. (move_a_p2_p3)
+15. (observ_a_p3_s)
+16. (move_b_p8_p11)
+17. (observ_b_p11_s)
+18. (move_b_p11_p12)
+19. (observ_b_p12_s)
+20. (move_b_p12_p11)
+21. (move_b_p11_p10)
+22. (observ_b_p10_s)
+23. (move_a_p3_p6)
+24. (move_a_p6_p5)
+25. (badcomm_p5_c_s)
+26. (move_b_p10_p7)
+27. (move_b_p7_p8)
+28. (move_b_p8_p5)
+29. (move_b_p5_p2)
+30. (badcomm_p5_c_s)
+31. (move_b_p2_p5)
+32. (move_b_p5_p8)
+33. (comm_p8_b_s)
+34. (move_c_p5_p8)
+35. (move_a_p5_p8)
+36. (move_c_p8_p9)
+37. (badcomm_p8_b_s)
+38. (move_b_p8_p7)
+39. (move_c_p9_p8)
+40. (move_b_p7_p4)
+41. (move_c_p8_p7)
+42. (move_c_p7_p4)
+43. (badcomm_p4_b_s)
+44. (move_a_p8_p7)
+45. (comm_p4_b_s)
+46. (move_a_p7_p4)
+47. (move_a_p4_p7)
+48. (badcomm_p4_b_s)
+49. (move_c_p4_p5)
+50. (move_a_p7_p8)
+51. (move_a_p8_p5)
+52. (comm_p5_c_s)
+53. (badcomm_p5_c_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 2484 (729)
+
+
+# Agents: 3
+# Props: 594
+# Acts: 324
+# Effs: 2484
+Depth: 1
+
+Plan Time: 0.06775
+
+Plan Length: 42
+
+done!
+
+Time: 0.595434 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (observ_a_p1_s)
+3. (observ_c_p9_s)
+4. (move_b_p4_p7)
+5. (observ_b_p7_s)
+6. (move_a_p1_p2)
+7. (observ_a_p2_s)
+8. (move_a_p2_p5)
+9. (observ_a_p5_s)
+10. (move_a_p5_p6)
+11. (observ_a_p6_s)
+12. (move_a_p6_p3)
+13. (observ_a_p3_s)
+14. (move_c_p9_p8)
+15. (observ_c_p8_s)
+16. (move_b_p7_p8)
+17. (badcomm_p8_c_s)
+18. (move_a_p3_p6)
+19. (move_a_p6_p9)
+20. (move_a_p9_p8)
+21. (comm_p8_c_s)
+22. (move_a_p8_p7)
+23. (badcomm_p8_c_s)
+24. (move_c_p8_p7)
+25. (move_b_p8_p7)
+26. (move_c_p7_p4)
+27. (move_b_p7_p4)
+28. (move_c_p4_p1)
+29. (move_a_p7_p4)
+30. (badcomm_p4_b_s)
+31. (move_a_p4_p5)
+32. (comm_p5_a_s)
+33. (move_c_p1_p2)
+34. (move_b_p4_p5)
+35. (move_c_p2_p5)
+36. (move_b_p5_p6)
+37. (badcomm_p5_c_s)
+38. (move_b_p6_p5)
+39. (move_a_p5_p4)
+40. (move_b_p5_p4)
+41. (comm_p4_b_s)
+42. (badcomm_p4_b_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 5664 (1680)
+
+
+# Agents: 4
+# Props: 1032
+# Acts: 720
+# Effs: 5664
+Depth: 1
+
+Plan Time: 12.55115
+
+Plan Length: 42
+
+done!
+
+Time: 13.968539 s
+
+  --{ Plan }--
+
+1. (observ_c_p9_s)
+2. (observ_d_p2_s)
+3. (observ_a_p1_s)
+4. (move_b_p4_p7)
+5. (observ_b_p7_s)
+6. (move_c_p9_p8)
+7. (observ_c_p8_s)
+8. (comm_p8_c_s)
+9. (move_d_p2_p3)
+10. (observ_d_p3_s)
+11. (move_b_p7_p10)
+12. (observ_b_p10_s)
+13. (move_c_p8_p11)
+14. (observ_c_p11_s)
+15. (move_c_p11_p12)
+16. (observ_c_p12_s)
+17. (move_a_p1_p4)
+18. (observ_a_p4_s)
+19. (move_a_p4_p5)
+20. (observ_a_p5_s)
+21. (comm_p5_a_s)
+22. (move_a_p5_p6)
+23. (observ_a_p6_s)
+24. (move_a_p6_p5)
+25. (move_c_p12_p9)
+26. (move_d_p3_p6)
+27. (move_c_p9_p8)
+28. (move_d_p6_p5)
+29. (move_c_p8_p5)
+30. (move_c_p5_p4)
+31. (badcomm_p5_d_s)
+32. (move_d_p5_p4)
+33. (move_a_p5_p4)
+34. (move_d_p4_p5)
+35. (comm_p4_a_s)
+36. (badcomm_p4_c_s)
+37. (move_b_p10_p7)
+38. (move_a_p4_p5)
+39. (comm_p5_a_s)
+40. (move_b_p7_p8)
+41. (move_b_p8_p5)
+42. (badcomm_p5_d_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3816 (1044)
+
+
+# Agents: 4
+# Props: 720
+# Acts: 432
+# Effs: 3816
+Depth: 1
+
+Plan Time: 7.98397
+
+Plan Length: 43
+
+done!
+
+Time: 8.766869 s
+
+  --{ Plan }--
+
+1. (observ_d_p2_s)
+2. (observ_c_p9_s)
+3. (observ_a_p1_s)
+4. (move_b_p4_p7)
+5. (observ_b_p7_s)
+6. (move_d_p2_p5)
+7. (observ_d_p5_s)
+8. (comm_p5_d_s)
+9. (move_d_p5_p6)
+10. (observ_d_p6_s)
+11. (move_d_p6_p3)
+12. (observ_d_p3_s)
+13. (move_a_p1_p4)
+14. (observ_a_p4_s)
+15. (comm_p4_a_s)
+16. (move_c_p9_p8)
+17. (move_c_p8_p5)
+18. (move_c_p5_p4)
+19. (badcomm_p4_c_s)
+20. (move_a_p4_p7)
+21. (move_d_p3_p6)
+22. (move_b_p7_p8)
+23. (move_d_p6_p9)
+24. (move_d_p9_p8)
+25. (move_a_p7_p8)
+26. (move_a_p8_p5)
+27. (observ_d_p8_s)
+28. (move_d_p8_p5)
+29. (move_b_p8_p5)
+30. (badcomm_p5_d_s)
+31. (move_d_p5_p8)
+32. (comm_p8_d_s)
+33. (move_a_p5_p4)
+34. (move_d_p8_p7)
+35. (comm_p4_a_s)
+36. (move_d_p7_p4)
+37. (badcomm_p4_c_s)
+38. (move_c_p4_p7)
+39. (move_c_p7_p8)
+40. (move_a_p4_p7)
+41. (move_a_p7_p8)
+42. (move_b_p5_p8)
+43. (badcomm_p8_c_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 20664 (4284)
+
+
+# Agents: 3
+# Props: 1416
+# Acts: 1404
+# Effs: 20664
+Depth: 1
+
+Plan Time: 0.23615
+
+Plan Length: 55
+
+done!
+
+Time: 4.236483 s
+
+  --{ Plan }--
+
+1. (sensecells_b_p4_p7)
+2. (communcells_p4_p7_b)
+3. (sensecells_b_p4_p5)
+4. (sensecells_b_p4_p1)
+5. (communcells_p4_p1_b)
+6. (sensecells_c_p9_p8)
+7. (communcells_p9_p8_c)
+8. (sensecells_c_p9_p6)
+9. (sensecells_c_p9_p012)
+10. (communcells_p9_p012_c)
+11. (sensesurvivors_c_p9_s)
+12. (sensecells_a_p1_p4)
+13. (communcells_p1_p4_a)
+14. (sensecells_a_p1_p2)
+15. (communcells_p1_p2_a)
+16. (sensesurvivors_a_p1_s)
+17. (move_c_p9_p8)
+18. (sensecells_c_p8_p9)
+19. (communcells_p8_p9_c)
+20. (sensecells_c_p8_p0011)
+21. (communcells_p8_p0011_c)
+22. (sensesurvivors_c_p8_s)
+23. (move_c_p8_p0011)
+24. (sensecells_c_p0011_p10)
+25. (communcells_p0011_p10_c)
+26. (sensesurvivors_c_p0011_s)
+27. (move_b_p4_p7)
+28. (sensesurvivors_b_p7_s)
+29. (move_b_p7_p10)
+30. (sensesurvivors_b_p10_s)
+31. (move_c_p0011_p012)
+32. (sensesurvivors_c_p012_s)
+33. (move_a_p1_p4)
+34. (sensesurvivors_a_p4_s)
+35. (badcommsurvivor_p4_a_s)
+36. (move_a_p4_p1)
+37. (move_a_p1_p2)
+38. (sensecells_a_p2_p3)
+39. (move_a_p2_p3)
+40. (sensesurvivors_a_p3_s)
+41. (move_b_p10_p7)
+42. (move_b_p7_p4)
+43. (move_b_p4_p1)
+44. (move_b_p1_p2)
+45. (sensesurvivors_b_p2_s)
+46. (sensecells_b_p2_p3)
+47. (communcells_p2_p3_b)
+48. (move_b_p2_p3)
+49. (move_c_p012_p9)
+50. (move_c_p9_p8)
+51. (move_c_p8_p7)
+52. (move_c_p7_p4)
+53. (move_c_p4_p1)
+54. (move_c_p1_p2)
+55. (move_c_p2_p3)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 12096 (2484)
+
+
+# Agents: 3
+# Props: 1008
+# Acts: 810
+# Effs: 12096
+Depth: 1
+
+Plan Time: 0.10845
+
+Plan Length: 51
+
+done!
+
+Time: 2.684237 s
+
+  --{ Plan }--
+
+1. (sensesurvivors_b_p4_s)
+2. (sensecells_b_p4_p7)
+3. (communcells_p4_p7_b)
+4. (sensecells_b_p4_p5)
+5. (sensecells_b_p4_p1)
+6. (communcells_p4_p1_b)
+7. (badcommsurvivor_p4_b_s)
+8. (sensecells_a_p1_p4)
+9. (communcells_p1_p4_a)
+10. (sensecells_a_p1_p2)
+11. (communcells_p1_p2_a)
+12. (sensesurvivors_a_p1_s)
+13. (sensecells_c_p9_p8)
+14. (communcells_p9_p8_c)
+15. (sensecells_c_p9_p6)
+16. (sensesurvivors_c_p9_s)
+17. (move_c_p9_p8)
+18. (sensecells_c_p8_p9)
+19. (communcells_p8_p9_c)
+20. (sensesurvivors_c_p8_s)
+21. (move_b_p4_p7)
+22. (sensesurvivors_b_p7_s)
+23. (move_a_p1_p2)
+24. (sensecells_a_p2_p3)
+25. (move_a_p2_p3)
+26. (sensesurvivors_a_p3_s)
+27. (move_b_p7_p4)
+28. (move_b_p4_p1)
+29. (move_b_p1_p2)
+30. (sensesurvivors_b_p2_s)
+31. (sensecells_b_p2_p3)
+32. (communcells_p2_p3_b)
+33. (move_b_p2_p3)
+34. (move_c_p8_p7)
+35. (move_c_p7_p4)
+36. (move_c_p4_p1)
+37. (move_c_p1_p2)
+38. (move_c_p2_p3)
+39. (move_a_p3_p2)
+40. (move_a_p2_p1)
+41. (move_a_p1_p4)
+42. (move_a_p4_p1)
+43. (move_a_p1_p2)
+44. (move_a_p2_p3)
+45. (move_b_p3_p2)
+46. (move_b_p2_p1)
+47. (move_b_p1_p4)
+48. (badcommsurvivor_p4_b_s)
+49. (move_b_p4_p1)
+50. (move_b_p1_p2)
+51. (move_b_p2_p3)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 33024 (6384)
+
+
+# Agents: 4
+# Props: 1728
+# Acts: 1872
+# Effs: 33024
+Depth: 1
+
+Plan Time: 0.56195
+
+Plan Length: 73
+
+done!
+
+Time: 6.919165 s
+
+  --{ Plan }--
+
+1. (sensecells_b_p4_p7)
+2. (communcells_p4_p7_b)
+3. (sensecells_b_p4_p5)
+4. (sensecells_b_p4_p1)
+5. (communcells_p4_p1_b)
+6. (sensecells_c_p9_p8)
+7. (communcells_p9_p8_c)
+8. (sensecells_c_p9_p6)
+9. (sensecells_c_p9_p012)
+10. (communcells_p9_p012_c)
+11. (sensesurvivors_c_p9_s)
+12. (sensecells_d_p2_p3)
+13. (move_d_p2_p3)
+14. (sensesurvivors_a_p1_s)
+15. (sensesurvivors_d_p3_s)
+16. (sensecells_a_p1_p4)
+17. (communcells_p1_p4_a)
+18. (sensecells_a_p1_p2)
+19. (communcells_p1_p2_a)
+20. (move_c_p9_p8)
+21. (sensecells_c_p8_p9)
+22. (communcells_p8_p9_c)
+23. (sensecells_c_p8_p0011)
+24. (communcells_p8_p0011_c)
+25. (sensesurvivors_c_p8_s)
+26. (move_c_p8_p0011)
+27. (sensesurvivors_c_p0011_s)
+28. (sensecells_c_p0011_p10)
+29. (communcells_p0011_p10_c)
+30. (move_b_p4_p7)
+31. (sensesurvivors_b_p7_s)
+32. (move_b_p7_p10)
+33. (sensesurvivors_b_p10_s)
+34. (move_c_p0011_p012)
+35. (sensesurvivors_c_p012_s)
+36. (move_a_p1_p2)
+37. (sensesurvivors_a_p2_s)
+38. (sensecells_a_p2_p3)
+39. (communcells_p2_p3_a)
+40. (move_a_p2_p3)
+41. (move_b_p10_p7)
+42. (move_b_p7_p4)
+43. (move_b_p4_p1)
+44. (move_b_p1_p2)
+45. (move_b_p2_p3)
+46. (move_c_p012_p0011)
+47. (move_c_p0011_p10)
+48. (move_c_p10_p7)
+49. (move_c_p7_p4)
+50. (move_c_p4_p1)
+51. (move_c_p1_p2)
+52. (move_d_p3_p2)
+53. (move_d_p2_p1)
+54. (move_d_p1_p4)
+55. (sensesurvivors_d_p4_s)
+56. (badcommsurvivor_p4_d_s)
+57. (move_c_p2_p3)
+58. (move_d_p4_p1)
+59. (move_d_p1_p2)
+60. (move_d_p2_p3)
+61. (move_a_p3_p2)
+62. (move_a_p2_p1)
+63. (move_a_p1_p4)
+64. (move_a_p4_p1)
+65. (move_a_p1_p2)
+66. (move_a_p2_p3)
+67. (move_d_p3_p2)
+68. (move_d_p2_p1)
+69. (move_d_p1_p4)
+70. (badcommsurvivor_p4_d_s)
+71. (move_d_p4_p1)
+72. (move_d_p1_p2)
+73. (move_d_p2_p3)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 19368 (3708)
+
+
+# Agents: 4
+# Props: 1242
+# Acts: 1080
+# Effs: 19368
+Depth: 1
+
+Plan Time: 0.16605
+
+Plan Length: 53
+
+done!
+
+Time: 4.063597 s
+
+  --{ Plan }--
+
+1. (sensecells_b_p4_p7)
+2. (communcells_p4_p7_b)
+3. (sensecells_b_p4_p5)
+4. (sensecells_b_p4_p1)
+5. (communcells_p4_p1_b)
+6. (sensecells_d_p2_p3)
+7. (move_d_p2_p3)
+8. (sensesurvivors_c_p9_s)
+9. (sensesurvivors_a_p1_s)
+10. (sensesurvivors_d_p3_s)
+11. (sensecells_a_p1_p4)
+12. (communcells_p1_p4_a)
+13. (sensecells_a_p1_p2)
+14. (communcells_p1_p2_a)
+15. (sensecells_c_p9_p8)
+16. (communcells_p9_p8_c)
+17. (sensecells_c_p9_p6)
+18. (move_c_p9_p8)
+19. (sensesurvivors_c_p8_s)
+20. (sensecells_c_p8_p9)
+21. (communcells_p8_p9_c)
+22. (move_b_p4_p7)
+23. (sensesurvivors_b_p7_s)
+24. (move_a_p1_p2)
+25. (sensesurvivors_a_p2_s)
+26. (sensecells_a_p2_p3)
+27. (communcells_p2_p3_a)
+28. (move_a_p2_p3)
+29. (move_b_p7_p4)
+30. (sensesurvivors_b_p4_s)
+31. (commsurvivor_p4_b_s)
+32. (move_b_p4_p1)
+33. (move_b_p1_p2)
+34. (move_b_p2_p3)
+35. (move_c_p8_p7)
+36. (move_c_p7_p4)
+37. (badcommsurvivor_p4_c_s)
+38. (move_c_p4_p1)
+39. (move_c_p1_p2)
+40. (move_c_p2_p3)
+41. (move_a_p3_p2)
+42. (move_a_p2_p1)
+43. (move_a_p1_p4)
+44. (move_a_p4_p1)
+45. (move_a_p1_p2)
+46. (move_a_p2_p3)
+47. (move_c_p3_p2)
+48. (move_c_p2_p1)
+49. (move_c_p1_p4)
+50. (badcommsurvivor_p4_c_s)
+51. (move_c_p4_p1)
+52. (move_c_p1_p2)
+53. (move_c_p2_p3)
+
+
+Parsing problem... done!
+Preprocessing problem... 
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 22032 (7740)
+
+
+# Agents: 3
+# Props: 2260
+# Acts: 3198
+# Effs: 22032
+Depth: 1
+
+Plan Time: 0.25367
+
+Plan Length: 45
+
+done!
+
+Time: 8.297769 s
+
+  --{ Plan }--
+
+1. (goto_b_frontroomc3_righthallc)
+2. (goto_b_roomc3_frontroomc3)
+3. (observe_b_roomc3_blue_1)
+4. (msgall_roomc3_b_a_blue_1)
+5. (goto_c_righthallb_righthallc)
+6. (goto_c_frontroomb3_righthallb)
+7. (goto_c_roomb3_frontroomb3)
+8. (observe_c_roomb3_red_2)
+9. (goto_c_frontroomb3_roomb3)
+10. (goto_c_frontroomb2_frontroomb3)
+11. (goto_c_roomb2_frontroomb2)
+12. (observe_c_roomb2_red_2)
+13. (goto_c_frontroomb2_roomb2)
+14. (goto_c_frontroomb1_frontroomb2)
+15. (goto_c_roomb1_frontroomb1)
+16. (observe_c_roomb1_red_2)
+17. (goto_b_frontroomc3_roomc3)
+18. (goto_b_frontroomc2_frontroomc3)
+19. (goto_b_roomc2_frontroomc2)
+20. (observe_b_roomc2_blue_2)
+21. (msgall_roomc2_b_a_blue_2)
+22. (gotoblock_b_blue_roomc2_2)
+23. (pickup_b_blue_2_roomc2)
+24. (gotodrop_b_frontroomc2_roomc2)
+25. (gotodrop_b_frontroomc1_frontroomc2)
+26. (gotodrop_b_lefthallc_frontroomc1)
+27. (gotodrop_b_lefthalld_lefthallc)
+28. (gotodrop_b_frontdropzone_lefthalld)
+29. (gotodrop_b_dropzone_frontdropzone)
+30. (putdown_b_blue_2_roomc2_dropzone)
+31. (msgall_dropzone_b_a_blue_2)
+32. (goto_b_frontdropzone_dropzone)
+33. (goto_b_righthalld_frontdropzone)
+34. (goto_b_righthallc_righthalld)
+35. (goto_b_frontroomc3_righthallc)
+36. (goto_b_roomc3_frontroomc3)
+37. (gotoblock_b_blue_roomc3_1)
+38. (pickup_b_blue_1_roomc3)
+39. (gotodrop_b_frontroomc3_roomc3)
+40. (gotodrop_b_righthallc_frontroomc3)
+41. (gotodrop_b_righthalld_righthallc)
+42. (gotodrop_b_frontdropzone_righthalld)
+43. (gotodrop_b_dropzone_frontdropzone)
+44. (putdown_b_blue_1_roomc3_dropzone)
+45. (msgall_dropzone_b_a_blue_1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 9120 (2976)
+
+
+# Agents: 3
+# Props: 1154
+# Acts: 1248
+# Effs: 9120
+Depth: 1
+
+Plan Time: 0.09581
+
+Plan Length: 38
+
+done!
+
+Time: 2.387219 s
+
+  --{ Plan }--
+
+1. (goto_b_frontroomc3_righthallc)
+2. (goto_b_roomc3_frontroomc3)
+3. (observe_b_roomc3_blue_1)
+4. (msgall_roomc3_b_a_blue_1)
+5. (goto_b_frontroomc3_roomc3)
+6. (goto_b_frontroomc2_frontroomc3)
+7. (goto_b_roomc2_frontroomc2)
+8. (observe_b_roomc2_blue_2)
+9. (msgall_roomc2_b_a_blue_2)
+10. (goto_b_frontroomc2_roomc2)
+11. (goto_b_frontroomc1_frontroomc2)
+12. (goto_b_roomc1_frontroomc1)
+13. (observe_b_roomc1_red_2)
+14. (goto_c_frontroomc3_righthallc)
+15. (goto_c_roomc3_frontroomc3)
+16. (observe_c_roomc3_blue_1)
+17. (gotoblock_c_blue_roomc3_1)
+18. (goto_b_frontroomc1_roomc1)
+19. (goto_b_frontroomc2_frontroomc1)
+20. (pickup_c_blue_1_roomc3)
+21. (gotodrop_c_frontroomc3_roomc3)
+22. (gotodrop_c_righthallc_frontroomc3)
+23. (gotodrop_b_roomc2_frontroomc2)
+24. (gotodrop_c_righthalld_righthallc)
+25. (gotodrop_c_frontdropzone_righthalld)
+26. (gotodrop_c_dropzone_frontdropzone)
+27. (putdown_c_blue_1_roomc3_dropzone)
+28. (msgall_dropzone_c_a_blue_1)
+29. (gotoblock_b_blue_roomc2_2)
+30. (pickup_b_blue_2_roomc2)
+31. (gotodrop_b_frontroomc2_roomc2)
+32. (gotodrop_b_frontroomc3_frontroomc2)
+33. (gotodrop_b_righthallc_frontroomc3)
+34. (gotodrop_b_righthalld_righthallc)
+35. (gotodrop_b_frontdropzone_righthalld)
+36. (gotodrop_b_dropzone_frontdropzone)
+37. (putdown_b_blue_2_roomc2_dropzone)
+38. (msgall_dropzone_b_a_blue_2)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 22032 (7740)
+
+
+# Agents: 3
+# Props: 2260
+# Acts: 3198
+# Effs: 22032
+Depth: 1
+
+Plan Time: 0.15848
+
+Plan Length: 0
+
+done!
+
+Time: 8.530602 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 9120 (2976)
+
+
+# Agents: 3
+# Props: 1154
+# Acts: 1248
+# Effs: 9120
+Depth: 1
+
+Plan Time: 0.07606
+
+Plan Length: 0
+
+done!
+
+Time: 2.381533 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 41248 (10992)
+
+
+# Agents: 4
+# Props: 3190
+# Acts: 4040
+# Effs: 41248
+Depth: 1
+
+Plan Time: 0.55751
+
+Plan Length: 43
+
+done!
+
+Time: 16.905545 s
+
+  --{ Plan }--
+
+1. (goto_c_frontroomc3_righthallc)
+2. (goto_c_roomc3_frontroomc3)
+3. (observe_c_roomc3_blue_1)
+4. (commall_roomc3_c_blue_1)
+5. (goto_b_righthallb_righthallc)
+6. (goto_b_frontroomb3_righthallb)
+7. (goto_b_roomb3_frontroomb3)
+8. (observe_b_roomb3_red_2)
+9. (goto_a_lefthallb_lefthallc)
+10. (goto_a_frontroomb1_lefthallb)
+11. (goto_a_roomb1_frontroomb1)
+12. (observe_a_roomb1_red_2)
+13. (goto_b_frontroomb3_roomb3)
+14. (goto_b_frontroomb2_frontroomb3)
+15. (goto_b_roomb2_frontroomb2)
+16. (observe_b_roomb2_red_2)
+17. (goto_c_frontroomc3_roomc3)
+18. (goto_c_frontroomc2_frontroomc3)
+19. (goto_c_roomc2_frontroomc2)
+20. (observe_c_roomc2_blue_2)
+21. (commall_roomc2_c_blue_2)
+22. (gotoblock_c_blue_roomc2_2)
+23. (pickup_c_blue_2_roomc2)
+24. (gotodrop_c_frontroomc2_roomc2)
+25. (gotodrop_c_frontroomc1_frontroomc2)
+26. (gotodrop_c_lefthallc_frontroomc1)
+27. (gotodrop_c_lefthalld_lefthallc)
+28. (gotodrop_c_frontdropzone_lefthalld)
+29. (gotodrop_c_dropzone_frontdropzone)
+30. (putdown_c_blue_2_roomc2_dropzone)
+31. (goto_c_frontdropzone_dropzone)
+32. (goto_c_righthalld_frontdropzone)
+33. (goto_c_righthallc_righthalld)
+34. (goto_c_frontroomc3_righthallc)
+35. (goto_c_roomc3_frontroomc3)
+36. (gotoblock_c_blue_roomc3_1)
+37. (pickup_c_blue_1_roomc3)
+38. (gotodrop_c_frontroomc3_roomc3)
+39. (gotodrop_c_righthallc_frontroomc3)
+40. (gotodrop_c_righthalld_righthallc)
+41. (gotodrop_c_frontdropzone_righthalld)
+42. (gotodrop_c_dropzone_frontdropzone)
+43. (putdown_c_blue_1_roomc3_dropzone)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 15488 (4160)
+
+
+# Agents: 4
+# Props: 1684
+# Acts: 1536
+# Effs: 15488
+Depth: 1
+
+Plan Time: 0.16105
+
+Plan Length: 35
+
+done!
+
+Time: 4.735493 s
+
+  --{ Plan }--
+
+1. (goto_b_frontroomc3_righthallc)
+2. (goto_b_roomc3_frontroomc3)
+3. (observe_b_roomc3_blue_1)
+4. (commall_roomc3_b_blue_1)
+5. (goto_a_frontroomc1_lefthallc)
+6. (goto_a_roomc1_frontroomc1)
+7. (observe_a_roomc1_red_2)
+8. (goto_c_frontroomc3_righthallc)
+9. (goto_c_frontroomc2_frontroomc3)
+10. (goto_c_roomc2_frontroomc2)
+11. (observe_c_roomc2_blue_2)
+12. (commall_roomc2_c_blue_2)
+13. (gotoblock_b_blue_roomc3_1)
+14. (goto_c_frontroomc2_roomc2)
+15. (pickup_b_blue_1_roomc3)
+16. (gotodrop_b_frontroomc3_roomc3)
+17. (gotodrop_b_righthallc_frontroomc3)
+18. (gotodrop_b_righthalld_righthallc)
+19. (gotodrop_c_frontroomc3_frontroomc2)
+20. (gotodrop_b_frontdropzone_righthalld)
+21. (gotodrop_b_dropzone_frontdropzone)
+22. (putdown_b_blue_1_roomc3_dropzone)
+23. (goto_c_frontroomc2_frontroomc3)
+24. (goto_c_roomc2_frontroomc2)
+25. (goto_b_frontdropzone_dropzone)
+26. (gotoblock_c_blue_roomc2_2)
+27. (goto_b_righthalld_frontdropzone)
+28. (pickup_c_blue_2_roomc2)
+29. (gotodrop_c_frontroomc2_roomc2)
+30. (gotodrop_c_frontroomc1_frontroomc2)
+31. (gotodrop_c_lefthallc_frontroomc1)
+32. (gotodrop_c_lefthalld_lefthallc)
+33. (gotodrop_c_frontdropzone_lefthalld)
+34. (gotodrop_c_dropzone_frontdropzone)
+35. (putdown_c_blue_2_roomc2_dropzone)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 41248 (10992)
+
+
+# Agents: 4
+# Props: 3190
+# Acts: 4040
+# Effs: 41248
+Depth: 1
+
+Plan Time: 0.62855
+
+Plan Length: 49
+
+done!
+
+Time: 17.354098 s
+
+  --{ Plan }--
+
+1. (observe_d_roomc3_blue_1)
+2. (commall_roomc3_d_blue_1)
+3. (goto_a_lefthallb_lefthallc)
+4. (goto_a_frontroomb1_lefthallb)
+5. (goto_a_roomb1_frontroomb1)
+6. (observe_a_roomb1_red_2)
+7. (goto_a_frontroomb1_roomb1)
+8. (goto_a_frontroomb2_frontroomb1)
+9. (goto_a_roomb2_frontroomb2)
+10. (observe_a_roomb2_red_2)
+11. (goto_c_righthallb_righthallc)
+12. (goto_c_frontroomb3_righthallb)
+13. (goto_c_roomb3_frontroomb3)
+14. (observe_c_roomb3_red_2)
+15. (goto_b_frontroomc3_righthallc)
+16. (goto_b_frontroomc2_frontroomc3)
+17. (goto_b_roomc2_frontroomc2)
+18. (observe_b_roomc2_blue_2)
+19. (commall_roomc2_b_blue_2)
+20. (goto_b_frontroomc2_roomc2)
+21. (goto_b_frontroomc1_frontroomc2)
+22. (goto_b_roomc1_frontroomc1)
+23. (observe_b_roomc1_red_1)
+24. (gotoblock_d_blue_roomc3_1)
+25. (pickup_d_blue_1_roomc3)
+26. (gotodrop_d_frontroomc3_roomc3)
+27. (gotodrop_d_righthallc_frontroomc3)
+28. (gotodrop_d_righthalld_righthallc)
+29. (gotodrop_d_frontdropzone_righthalld)
+30. (gotodrop_d_dropzone_frontdropzone)
+31. (putdown_d_blue_1_roomc3_dropzone)
+32. (goto_d_frontdropzone_dropzone)
+33. (goto_d_righthalld_frontdropzone)
+34. (goto_d_righthallc_righthalld)
+35. (goto_d_frontroomc3_righthallc)
+36. (goto_d_frontroomc2_frontroomc3)
+37. (goto_d_roomc2_frontroomc2)
+38. (gotoblock_d_blue_roomc2_2)
+39. (pickup_d_blue_2_roomc2)
+40. (gotodrop_b_frontroomc1_roomc1)
+41. (gotodrop_b_frontroomc2_frontroomc1)
+42. (gotodrop_d_frontroomc2_roomc2)
+43. (gotodrop_b_frontroomc3_frontroomc2)
+44. (gotodrop_d_frontroomc1_frontroomc2)
+45. (gotodrop_d_lefthallc_frontroomc1)
+46. (gotodrop_d_lefthalld_lefthallc)
+47. (gotodrop_d_frontdropzone_lefthalld)
+48. (gotodrop_d_dropzone_frontdropzone)
+49. (putdown_d_blue_2_roomc2_dropzone)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 15488 (4160)
+
+
+# Agents: 4
+# Props: 1684
+# Acts: 1536
+# Effs: 15488
+Depth: 1
+
+Plan Time: 0.17662
+
+Plan Length: 33
+
+done!
+
+Time: 4.649562 s
+
+  --{ Plan }--
+
+1. (observe_d_roomc3_blue_1)
+2. (commall_roomc3_d_blue_1)
+3. (goto_a_frontroomc1_lefthallc)
+4. (goto_a_roomc1_frontroomc1)
+5. (observe_a_roomc1_red_2)
+6. (goto_b_frontroomc3_righthallc)
+7. (goto_b_frontroomc2_frontroomc3)
+8. (goto_b_roomc2_frontroomc2)
+9. (observe_b_roomc2_blue_2)
+10. (commall_roomc2_b_blue_2)
+11. (goto_d_frontroomc3_roomc3)
+12. (goto_d_frontroomc2_frontroomc3)
+13. (gotoblock_b_blue_roomc2_2)
+14. (pickup_b_blue_2_roomc2)
+15. (gotodrop_b_frontroomc2_roomc2)
+16. (gotodrop_b_frontroomc3_frontroomc2)
+17. (gotodrop_b_righthallc_frontroomc3)
+18. (gotodrop_b_righthalld_righthallc)
+19. (gotodrop_b_frontdropzone_righthalld)
+20. (gotodrop_b_dropzone_frontdropzone)
+21. (putdown_b_blue_2_roomc2_dropzone)
+22. (goto_d_frontroomc3_frontroomc2)
+23. (goto_d_roomc3_frontroomc3)
+24. (goto_b_frontdropzone_dropzone)
+25. (gotoblock_d_blue_roomc3_1)
+26. (pickup_d_blue_1_roomc3)
+27. (gotodrop_b_righthalld_frontdropzone)
+28. (gotodrop_d_frontroomc3_roomc3)
+29. (gotodrop_d_righthallc_frontroomc3)
+30. (gotodrop_d_righthalld_righthallc)
+31. (gotodrop_d_frontdropzone_righthalld)
+32. (gotodrop_d_dropzone_frontdropzone)
+33. (putdown_d_blue_1_roomc3_dropzone)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 27136 (10208)
+
+
+# Agents: 4
+# Props: 2686
+# Acts: 4040
+# Effs: 27136
+Depth: 1
+
+Plan Time: 0.35170
+
+Plan Length: 44
+
+done!
+
+Time: 13.084349 s
+
+  --{ Plan }--
+
+1. (goto_b_frontroomc3_righthallc)
+2. (goto_b_roomc3_frontroomc3)
+3. (observe_b_roomc3_blue_1)
+4. (commall_roomc3_b_blue_1)
+5. (goto_c_righthallb_righthallc)
+6. (goto_c_frontroomb3_righthallb)
+7. (goto_c_roomb3_frontroomb3)
+8. (observe_c_roomb3_red_2)
+9. (goto_c_frontroomb3_roomb3)
+10. (goto_c_frontroomb2_frontroomb3)
+11. (goto_c_roomb2_frontroomb2)
+12. (observe_c_roomb2_red_2)
+13. (goto_c_frontroomb2_roomb2)
+14. (goto_c_frontroomb1_frontroomb2)
+15. (goto_c_roomb1_frontroomb1)
+16. (observe_c_roomb1_red_2)
+17. (goto_b_frontroomc3_roomc3)
+18. (goto_b_frontroomc2_frontroomc3)
+19. (goto_b_roomc2_frontroomc2)
+20. (observe_b_roomc2_blue_2)
+21. (commall_roomc2_b_blue_2)
+22. (gotoblock_b_blue_roomc2_2)
+23. (pickup_b_blue_2_roomc2)
+24. (gotodrop_b_frontroomc2_roomc2)
+25. (gotodrop_b_frontroomc3_frontroomc2)
+26. (gotodrop_b_righthallc_frontroomc3)
+27. (gotodrop_b_righthalld_righthallc)
+28. (gotodrop_b_frontdropzone_righthalld)
+29. (gotodrop_b_dropzone_frontdropzone)
+30. (putdown_b_blue_2_roomc2_dropzone)
+31. (commall_dropzone_b_blue_2)
+32. (goto_a_frontroomc1_lefthallc)
+33. (goto_a_frontroomc2_frontroomc1)
+34. (goto_a_frontroomc3_frontroomc2)
+35. (goto_a_roomc3_frontroomc3)
+36. (gotoblock_a_blue_roomc3_1)
+37. (pickup_a_blue_1_roomc3)
+38. (gotodrop_a_frontroomc3_roomc3)
+39. (gotodrop_a_righthallc_frontroomc3)
+40. (gotodrop_a_righthalld_righthallc)
+41. (gotodrop_a_frontdropzone_righthalld)
+42. (gotodrop_a_dropzone_frontdropzone)
+43. (putdown_a_blue_1_roomc3_dropzone)
+44. (commall_dropzone_a_blue_1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 10880 (3904)
+
+
+# Agents: 4
+# Props: 1396
+# Acts: 1536
+# Effs: 10880
+Depth: 1
+
+Plan Time: 0.12762
+
+Plan Length: 35
+
+done!
+
+Time: 3.292240 s
+
+  --{ Plan }--
+
+1. (goto_c_frontroomc3_righthallc)
+2. (goto_c_roomc3_frontroomc3)
+3. (observe_c_roomc3_blue_1)
+4. (commall_roomc3_c_blue_1)
+5. (goto_a_frontroomc1_lefthallc)
+6. (goto_a_roomc1_frontroomc1)
+7. (observe_a_roomc1_red_2)
+8. (goto_c_frontroomc3_roomc3)
+9. (goto_c_frontroomc2_frontroomc3)
+10. (goto_c_roomc2_frontroomc2)
+11. (observe_c_roomc2_blue_2)
+12. (commall_roomc2_c_blue_2)
+13. (gotoblock_c_blue_roomc2_2)
+14. (pickup_c_blue_2_roomc2)
+15. (gotodrop_c_frontroomc2_roomc2)
+16. (gotodrop_c_frontroomc3_frontroomc2)
+17. (gotodrop_c_righthallc_frontroomc3)
+18. (gotodrop_c_righthalld_righthallc)
+19. (gotodrop_c_frontdropzone_righthalld)
+20. (gotodrop_c_dropzone_frontdropzone)
+21. (putdown_c_blue_2_roomc2_dropzone)
+22. (commall_dropzone_c_blue_2)
+23. (goto_b_frontroomc3_righthallc)
+24. (goto_b_roomc3_frontroomc3)
+25. (goto_c_frontdropzone_dropzone)
+26. (gotoblock_b_blue_roomc3_1)
+27. (pickup_b_blue_1_roomc3)
+28. (gotodrop_b_frontroomc3_roomc3)
+29. (gotodrop_c_lefthalld_frontdropzone)
+30. (gotodrop_b_righthallc_frontroomc3)
+31. (gotodrop_b_righthalld_righthallc)
+32. (gotodrop_b_frontdropzone_righthalld)
+33. (gotodrop_b_dropzone_frontdropzone)
+34. (putdown_b_blue_1_roomc3_dropzone)
+35. (commall_dropzone_b_blue_1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 27136 (10208)
+
+
+# Agents: 4
+# Props: 2686
+# Acts: 4040
+# Effs: 27136
+Depth: 1
+
+Plan Time: 0.41727
+
+Plan Length: 50
+
+done!
+
+Time: 12.055936 s
+
+  --{ Plan }--
+
+1. (observe_d_roomc3_blue_1)
+2. (commall_roomc3_d_blue_1)
+3. (goto_c_righthallb_righthallc)
+4. (goto_c_frontroomb3_righthallb)
+5. (goto_c_roomb3_frontroomb3)
+6. (observe_c_roomb3_red_2)
+7. (goto_c_frontroomb3_roomb3)
+8. (goto_c_frontroomb2_frontroomb3)
+9. (goto_c_roomb2_frontroomb2)
+10. (observe_c_roomb2_red_2)
+11. (goto_c_frontroomb2_roomb2)
+12. (goto_c_frontroomb1_frontroomb2)
+13. (goto_c_roomb1_frontroomb1)
+14. (observe_c_roomb1_red_2)
+15. (goto_a_frontroomc1_lefthallc)
+16. (goto_a_frontroomc2_frontroomc1)
+17. (goto_a_roomc2_frontroomc2)
+18. (observe_a_roomc2_blue_2)
+19. (commall_roomc2_a_blue_2)
+20. (gotoblock_a_blue_roomc2_2)
+21. (pickup_a_blue_2_roomc2)
+22. (gotodrop_a_frontroomc2_roomc2)
+23. (gotodrop_d_frontroomc3_roomc3)
+24. (gotodrop_a_frontroomc1_frontroomc2)
+25. (gotodrop_b_righthalld_righthallc)
+26. (gotodrop_a_lefthallc_frontroomc1)
+27. (gotodrop_a_lefthalld_lefthallc)
+28. (gotodrop_a_frontdropzone_lefthalld)
+29. (gotodrop_a_dropzone_frontdropzone)
+30. (putdown_a_blue_2_roomc2_dropzone)
+31. (commall_dropzone_a_blue_2)
+32. (goto_b_righthallc_righthalld)
+33. (goto_b_frontroomc3_righthallc)
+34. (goto_b_roomc3_frontroomc3)
+35. (gotoblock_b_blue_roomc3_1)
+36. (pickup_b_blue_1_roomc3)
+37. (gotodrop_d_righthallc_frontroomc3)
+38. (gotodrop_d_righthalld_righthallc)
+39. (gotodrop_d_frontdropzone_righthalld)
+40. (gotodrop_b_frontroomc3_roomc3)
+41. (gotodrop_d_dropzone_frontdropzone)
+42. (gotodrop_a_frontdropzone_dropzone)
+43. (gotodrop_a_righthalld_frontdropzone)
+44. (gotodrop_b_righthallc_frontroomc3)
+45. (gotodrop_a_righthallc_righthalld)
+46. (gotodrop_b_righthalld_righthallc)
+47. (gotodrop_b_frontdropzone_righthalld)
+48. (gotodrop_b_dropzone_frontdropzone)
+49. (putdown_b_blue_1_roomc3_dropzone)
+50. (commall_dropzone_b_blue_1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 10880 (3904)
+
+
+# Agents: 4
+# Props: 1396
+# Acts: 1536
+# Effs: 10880
+Depth: 1
+
+Plan Time: 0.13832
+
+Plan Length: 30
+
+done!
+
+Time: 3.343444 s
+
+  --{ Plan }--
+
+1. (observe_d_roomc3_blue_1)
+2. (commall_roomc3_d_blue_1)
+3. (goto_a_frontroomc1_lefthallc)
+4. (goto_a_roomc1_frontroomc1)
+5. (observe_a_roomc1_red_2)
+6. (goto_c_frontroomc3_righthallc)
+7. (goto_c_frontroomc2_frontroomc3)
+8. (goto_c_roomc2_frontroomc2)
+9. (observe_c_roomc2_blue_2)
+10. (commall_roomc2_c_blue_2)
+11. (gotoblock_d_blue_roomc3_1)
+12. (pickup_d_blue_1_roomc3)
+13. (gotodrop_d_frontroomc3_roomc3)
+14. (gotodrop_d_righthallc_frontroomc3)
+15. (gotodrop_b_frontroomc3_righthallc)
+16. (gotodrop_d_righthalld_righthallc)
+17. (gotodrop_d_frontdropzone_righthalld)
+18. (gotodrop_d_dropzone_frontdropzone)
+19. (putdown_d_blue_1_roomc3_dropzone)
+20. (commall_dropzone_d_blue_1)
+21. (gotoblock_c_blue_roomc2_2)
+22. (pickup_c_blue_2_roomc2)
+23. (gotodrop_c_frontroomc2_roomc2)
+24. (gotodrop_c_frontroomc3_frontroomc2)
+25. (gotodrop_c_righthallc_frontroomc3)
+26. (gotodrop_c_righthalld_righthallc)
+27. (gotodrop_c_frontdropzone_righthalld)
+28. (gotodrop_c_dropzone_frontdropzone)
+29. (putdown_c_blue_2_roomc2_dropzone)
+30. (commall_dropzone_c_blue_2)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 18504 (7488)
+
+
+# Agents: 3
+# Props: 1874
+# Acts: 3198
+# Effs: 18504
+Depth: 1
+
+Plan Time: 0.26950
+
+Plan Length: 42
+
+done!
+
+Time: 8.020774 s
+
+  --{ Plan }--
+
+1. (goto_b_frontroomc3_righthallc)
+2. (goto_b_roomc3_frontroomc3)
+3. (observe_b_roomc3_red_2)
+4. (goto_c_righthallb_righthallc)
+5. (goto_c_frontroomb3_righthallb)
+6. (goto_c_roomb3_frontroomb3)
+7. (observe_c_roomb3_red_2)
+8. (goto_c_frontroomb3_roomb3)
+9. (goto_c_frontroomb2_frontroomb3)
+10. (goto_c_roomb2_frontroomb2)
+11. (observe_c_roomb2_red_2)
+12. (goto_c_frontroomb2_roomb2)
+13. (goto_c_frontroomb1_frontroomb2)
+14. (goto_c_roomb1_frontroomb1)
+15. (observe_c_roomb1_red_2)
+16. (observe_b_roomc3_blue_1)
+17. (gotoblock_b_blue_roomc3_1)
+18. (pickup_b_blue_1_roomc3)
+19. (gotodrop_b_frontroomc3_roomc3)
+20. (gotodrop_b_righthallc_frontroomc3)
+21. (gotodrop_b_righthalld_righthallc)
+22. (gotodrop_b_frontdropzone_righthalld)
+23. (gotodrop_b_dropzone_frontdropzone)
+24. (putdown_b_blue_1_roomc3_dropzone)
+25. (msgall_dropzone_b_a_blue_1)
+26. (goto_b_frontdropzone_dropzone)
+27. (goto_b_righthalld_frontdropzone)
+28. (goto_b_righthallc_righthalld)
+29. (goto_b_frontroomc3_righthallc)
+30. (goto_b_frontroomc2_frontroomc3)
+31. (goto_b_roomc2_frontroomc2)
+32. (observe_b_roomc2_blue_2)
+33. (gotoblock_b_blue_roomc2_2)
+34. (pickup_b_blue_2_roomc2)
+35. (gotodrop_b_frontroomc2_roomc2)
+36. (gotodrop_b_frontroomc3_frontroomc2)
+37. (gotodrop_b_righthallc_frontroomc3)
+38. (gotodrop_b_righthalld_righthallc)
+39. (gotodrop_b_frontdropzone_righthalld)
+40. (gotodrop_b_dropzone_frontdropzone)
+41. (putdown_b_blue_2_roomc2_dropzone)
+42. (msgall_dropzone_b_a_blue_2)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 7104 (2832)
+
+
+# Agents: 3
+# Props: 936
+# Acts: 1248
+# Effs: 7104
+Depth: 1
+
+Plan Time: 0.09189
+
+Plan Length: 43
+
+done!
+
+Time: 2.431265 s
+
+  --{ Plan }--
+
+1. (goto_b_frontroomc3_righthallc)
+2. (goto_b_roomc3_frontroomc3)
+3. (observe_b_roomc3_red_1)
+4. (goto_b_frontroomc3_roomc3)
+5. (goto_b_frontroomc2_frontroomc3)
+6. (goto_b_roomc2_frontroomc2)
+7. (observe_b_roomc2_red_1)
+8. (goto_b_frontroomc2_roomc2)
+9. (goto_b_frontroomc1_frontroomc2)
+10. (goto_b_roomc1_frontroomc1)
+11. (observe_b_roomc1_red_2)
+12. (goto_b_frontroomc1_roomc1)
+13. (goto_b_frontroomc2_frontroomc1)
+14. (goto_b_roomc2_frontroomc2)
+15. (goto_c_frontroomc3_righthallc)
+16. (goto_c_roomc3_frontroomc3)
+17. (observe_b_roomc2_blue_2)
+18. (observe_c_roomc3_blue_1)
+19. (gotoblock_b_blue_roomc2_2)
+20. (pickup_b_blue_2_roomc2)
+21. (gotodrop_b_frontroomc2_roomc2)
+22. (gotodrop_b_frontroomc1_frontroomc2)
+23. (gotodrop_b_lefthallc_frontroomc1)
+24. (gotodrop_b_lefthalld_lefthallc)
+25. (gotodrop_b_frontdropzone_lefthalld)
+26. (gotodrop_b_dropzone_frontdropzone)
+27. (putdown_b_blue_2_roomc2_dropzone)
+28. (msgall_dropzone_b_a_blue_2)
+29. (goto_b_frontdropzone_dropzone)
+30. (goto_b_righthalld_frontdropzone)
+31. (goto_b_righthallc_righthalld)
+32. (goto_b_frontroomc3_righthallc)
+33. (goto_b_roomc3_frontroomc3)
+34. (gotoblock_c_blue_roomc3_1)
+35. (observe_b_roomc3_blue_1)
+36. (pickup_b_blue_1_roomc3)
+37. (gotodrop_b_frontroomc3_roomc3)
+38. (gotodrop_b_righthallc_frontroomc3)
+39. (gotodrop_b_righthalld_righthallc)
+40. (gotodrop_b_frontdropzone_righthalld)
+41. (gotodrop_b_dropzone_frontdropzone)
+42. (putdown_b_blue_1_roomc3_dropzone)
+43. (msgall_dropzone_b_a_blue_1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 18504 (7488)
+
+
+# Agents: 3
+# Props: 1874
+# Acts: 3198
+# Effs: 18504
+Depth: 1
+
+Plan Time: 0.13490
+
+Plan Length: 0
+
+done!
+
+Time: 7.131422 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 7104 (2832)
+
+
+# Agents: 3
+# Props: 936
+# Acts: 1248
+# Effs: 7104
+Depth: 1
+
+Plan Time: 0.06684
+
+Plan Length: 0
+
+done!
+
+Time: 2.338970 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 57992 (13904)
+
+
+# Agents: 4
+# Props: 3582
+# Acts: 4768
+# Effs: 57992
+Depth: 1
+
+Plan Time: 0.72772
+
+Plan Length: 49
+
+done!
+
+Time: 21.046827 s
+
+  --{ Plan }--
+
+1. (goto_a_frontroomc1_lefthallc)
+2. (sensecells_a_roomc1_frontroomc1)
+3. (goto_a_frontroomc2_frontroomc1)
+4. (sensecells_a_roomc2_frontroomc2)
+5. (commcells_a_roomc2_frontroomc2)
+6. (goto_b_frontroomc3_righthallc)
+7. (sensecells_b_roomc3_frontroomc3)
+8. (commcells_b_roomc3_frontroomc3)
+9. (goto_b_roomc3_frontroomc3)
+10. (observe_b_roomc3_blue_1)
+11. (commsurvivors_roomc3_b_blue_1)
+12. (goto_a_roomc2_frontroomc2)
+13. (observe_a_roomc2_blue_2)
+14. (commsurvivors_roomc2_a_blue_2)
+15. (goto_c_righthallb_righthallc)
+16. (goto_c_frontroomb3_righthallb)
+17. (sensecells_c_roomb3_frontroomb3)
+18. (commcells_c_roomb3_frontroomb3)
+19. (goto_c_roomb3_frontroomb3)
+20. (observe_c_roomb3_red_2)
+21. (goto_c_frontroomb3_roomb3)
+22. (goto_c_frontroomb2_frontroomb3)
+23. (sensecells_c_roomb2_frontroomb2)
+24. (commcells_c_roomb2_frontroomb2)
+25. (goto_c_roomb2_frontroomb2)
+26. (observe_c_roomb2_red_2)
+27. (goto_c_frontroomb2_roomb2)
+28. (goto_c_frontroomb1_frontroomb2)
+29. (sensecells_c_roomb1_frontroomb1)
+30. (commcells_c_roomb1_frontroomb1)
+31. (goto_c_roomb1_frontroomb1)
+32. (observe_c_roomb1_red_2)
+33. (gotoblock_b_blue_roomc3_1)
+34. (pickup_b_blue_1_roomc3)
+35. (gotodrop_b_frontroomc3_roomc3)
+36. (gotodrop_b_righthallc_frontroomc3)
+37. (gotodrop_b_righthalld_righthallc)
+38. (gotodrop_b_frontdropzone_righthalld)
+39. (gotodrop_b_dropzone_frontdropzone)
+40. (putdown_b_blue_1_roomc3_dropzone)
+41. (gotoblock_a_blue_roomc2_2)
+42. (pickup_a_blue_2_roomc2)
+43. (gotodrop_a_frontroomc2_roomc2)
+44. (gotodrop_a_frontroomc1_frontroomc2)
+45. (gotodrop_a_lefthallc_frontroomc1)
+46. (gotodrop_a_lefthalld_lefthallc)
+47. (gotodrop_a_frontdropzone_lefthalld)
+48. (gotodrop_a_dropzone_frontdropzone)
+49. (putdown_a_blue_2_roomc2_dropzone)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 21376 (5184)
+
+
+# Agents: 4
+# Props: 1908
+# Acts: 1792
+# Effs: 21376
+Depth: 1
+
+Plan Time: 0.26348
+
+Plan Length: 43
+
+done!
+
+Time: 5.631150 s
+
+  --{ Plan }--
+
+1. (goto_c_frontroomc3_righthallc)
+2. (sensecells_c_roomc3_frontroomc3)
+3. (commcells_c_roomc3_frontroomc3)
+4. (goto_c_roomc3_frontroomc3)
+5. (observe_c_roomc3_blue_1)
+6. (commsurvivors_roomc3_c_blue_1)
+7. (goto_a_frontroomc1_lefthallc)
+8. (sensecells_a_roomc1_frontroomc1)
+9. (goto_a_frontroomc2_frontroomc1)
+10. (sensecells_a_roomc2_frontroomc2)
+11. (commcells_a_roomc2_frontroomc2)
+12. (goto_a_roomc2_frontroomc2)
+13. (observe_a_roomc2_blue_2)
+14. (commsurvivors_roomc2_a_blue_2)
+15. (gotoblock_c_blue_roomc3_1)
+16. (pickup_c_blue_1_roomc3)
+17. (gotodrop_a_frontroomc2_roomc2)
+18. (gotodrop_a_frontroomc3_frontroomc2)
+19. (gotodrop_a_roomc3_frontroomc3)
+20. (gotodrop_c_frontroomc3_roomc3)
+21. (gotodrop_c_righthallc_frontroomc3)
+22. (gotodrop_c_righthalld_righthallc)
+23. (gotodrop_c_frontdropzone_righthalld)
+24. (gotodrop_c_dropzone_frontdropzone)
+25. (putdown_c_blue_1_roomc3_dropzone)
+26. (goto_c_frontdropzone_dropzone)
+27. (goto_c_righthalld_frontdropzone)
+28. (goto_c_righthallc_righthalld)
+29. (goto_c_frontroomc3_righthallc)
+30. (goto_c_frontroomc2_frontroomc3)
+31. (goto_c_roomc2_frontroomc2)
+32. (gotoblock_c_blue_roomc2_2)
+33. (goto_b_frontroomc3_righthallc)
+34. (goto_b_frontroomc2_frontroomc3)
+35. (goto_b_roomc2_frontroomc2)
+36. (pickup_c_blue_2_roomc2)
+37. (gotodrop_c_frontroomc2_roomc2)
+38. (gotodrop_c_frontroomc1_frontroomc2)
+39. (gotodrop_c_lefthallc_frontroomc1)
+40. (gotodrop_c_lefthalld_lefthallc)
+41. (gotodrop_c_frontdropzone_lefthalld)
+42. (gotodrop_c_dropzone_frontdropzone)
+43. (putdown_c_blue_2_roomc2_dropzone)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 57992 (13904)
+
+
+# Agents: 4
+# Props: 3582
+# Acts: 4768
+# Effs: 57992
+Depth: 1
+
+Plan Time: 0.82395
+
+Plan Length: 56
+
+done!
+
+Time: 21.091184 s
+
+  --{ Plan }--
+
+1. (observe_d_roomc3_blue_1)
+2. (commsurvivors_roomc3_d_blue_1)
+3. (goto_b_frontroomc3_righthallc)
+4. (sensecells_b_roomc3_frontroomc3)
+5. (commcells_b_roomc3_frontroomc3)
+6. (goto_a_frontroomc1_lefthallc)
+7. (sensecells_a_roomc1_frontroomc1)
+8. (goto_a_frontroomc2_frontroomc1)
+9. (sensecells_a_roomc2_frontroomc2)
+10. (commcells_a_roomc2_frontroomc2)
+11. (goto_a_roomc2_frontroomc2)
+12. (observe_a_roomc2_blue_2)
+13. (commsurvivors_roomc2_a_blue_2)
+14. (goto_c_righthallb_righthallc)
+15. (goto_c_frontroomb3_righthallb)
+16. (sensecells_c_roomb3_frontroomb3)
+17. (commcells_c_roomb3_frontroomb3)
+18. (goto_c_roomb3_frontroomb3)
+19. (observe_c_roomb3_red_2)
+20. (goto_c_frontroomb3_roomb3)
+21. (goto_c_frontroomb2_frontroomb3)
+22. (sensecells_c_roomb2_frontroomb2)
+23. (commcells_c_roomb2_frontroomb2)
+24. (goto_c_roomb2_frontroomb2)
+25. (observe_c_roomb2_red_2)
+26. (goto_c_frontroomb2_roomb2)
+27. (goto_c_frontroomb1_frontroomb2)
+28. (sensecells_c_roomb1_frontroomb1)
+29. (commcells_c_roomb1_frontroomb1)
+30. (goto_c_roomb1_frontroomb1)
+31. (observe_c_roomb1_red_1)
+32. (gotoblock_d_blue_roomc3_1)
+33. (pickup_d_blue_1_roomc3)
+34. (gotodrop_d_frontroomc3_roomc3)
+35. (gotodrop_b_frontroomc2_frontroomc3)
+36. (gotodrop_b_roomc2_frontroomc2)
+37. (gotodrop_d_righthallc_frontroomc3)
+38. (gotodrop_d_righthalld_righthallc)
+39. (gotodrop_d_frontdropzone_righthalld)
+40. (gotodrop_d_dropzone_frontdropzone)
+41. (putdown_d_blue_1_roomc3_dropzone)
+42. (goto_d_frontdropzone_dropzone)
+43. (goto_d_righthalld_frontdropzone)
+44. (goto_d_righthallc_righthalld)
+45. (goto_d_frontroomc3_righthallc)
+46. (goto_d_frontroomc2_frontroomc3)
+47. (goto_d_roomc2_frontroomc2)
+48. (gotoblock_a_blue_roomc2_2)
+49. (pickup_d_blue_2_roomc2)
+50. (gotodrop_d_frontroomc2_roomc2)
+51. (gotodrop_d_frontroomc1_frontroomc2)
+52. (gotodrop_d_lefthallc_frontroomc1)
+53. (gotodrop_d_lefthalld_lefthallc)
+54. (gotodrop_d_frontdropzone_lefthalld)
+55. (gotodrop_d_dropzone_frontdropzone)
+56. (putdown_d_blue_2_roomc2_dropzone)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 21376 (5184)
+
+
+# Agents: 4
+# Props: 1908
+# Acts: 1792
+# Effs: 21376
+Depth: 1
+
+Plan Time: 0.28991
+
+Plan Length: 34
+
+done!
+
+Time: 5.906766 s
+
+  --{ Plan }--
+
+1. (observe_d_roomc3_blue_1)
+2. (commsurvivors_roomc3_d_blue_1)
+3. (goto_d_frontroomc3_roomc3)
+4. (sensecells_d_roomc3_frontroomc3)
+5. (commcells_d_roomc3_frontroomc3)
+6. (goto_d_frontroomc2_frontroomc3)
+7. (sensecells_d_roomc2_frontroomc2)
+8. (commcells_d_roomc2_frontroomc2)
+9. (goto_d_roomc2_frontroomc2)
+10. (observe_d_roomc2_blue_2)
+11. (commsurvivors_roomc2_d_blue_2)
+12. (goto_a_frontroomc1_lefthallc)
+13. (sensecells_a_roomc1_frontroomc1)
+14. (gotoblock_d_blue_roomc2_2)
+15. (pickup_d_blue_2_roomc2)
+16. (gotodrop_d_frontroomc2_roomc2)
+17. (gotodrop_d_frontroomc1_frontroomc2)
+18. (gotodrop_d_lefthallc_frontroomc1)
+19. (gotodrop_d_lefthalld_lefthallc)
+20. (gotodrop_d_frontdropzone_lefthalld)
+21. (gotodrop_d_dropzone_frontdropzone)
+22. (putdown_d_blue_2_roomc2_dropzone)
+23. (goto_c_frontroomc3_righthallc)
+24. (goto_c_roomc3_frontroomc3)
+25. (gotoblock_c_blue_roomc3_1)
+26. (goto_d_frontdropzone_dropzone)
+27. (pickup_c_blue_1_roomc3)
+28. (gotodrop_d_righthalld_frontdropzone)
+29. (gotodrop_c_frontroomc3_roomc3)
+30. (gotodrop_c_righthallc_frontroomc3)
+31. (gotodrop_c_righthalld_righthallc)
+32. (gotodrop_c_frontdropzone_righthalld)
+33. (gotodrop_c_dropzone_frontdropzone)
+34. (putdown_c_blue_1_roomc3_dropzone)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 1668 (78)
+
+
+# Agents: 3
+# Props: 278
+# Acts: 30
+# Effs: 1668
+Depth: 2
+
+Plan Time: 0.14056
+
+Plan Length: 5
+
+done!
+
+Time: 0.830586 s
+
+  --{ Plan }--
+
+1. (move_a_l1_l2)
+2. (share_b_b_l1)
+3. (move_b_l1_l2)
+4. (move_a_l2_l1)
+5. (share_c_b_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 832 (160)
+
+
+# Agents: 4
+# Props: 96
+# Acts: 48
+# Effs: 832
+Depth: 1
+
+Plan Time: 0.03431
+
+Plan Length: 11
+
+done!
+
+Time: 0.251579 s
+
+  --{ Plan }--
+
+1. (move_a_l1_l2)
+2. (share_d_d_l1)
+3. (move_d_l1_l2)
+4. (share_c_c_l1)
+5. (move_b_l1_l2)
+6. (move_b_l2_l1)
+7. (share_a_a_l2)
+8. (move_b_l1_l2)
+9. (move_c_l1_l2)
+10. (move_c_l2_l1)
+11. (share_b_b_l2)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 832 (160)
+
+
+# Agents: 4
+# Props: 96
+# Acts: 48
+# Effs: 832
+Depth: 1
+
+Plan Time: 0.04081
+
+Plan Length: 3
+
+done!
+
+Time: 0.222410 s
+
+  --{ Plan }--
+
+1. (move_c_l1_l2)
+2. (move_d_l1_l2)
+3. (share_a_a_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 5440 (160)
+
+
+# Agents: 4
+# Props: 608
+# Acts: 48
+# Effs: 5440
+Depth: 2
+
+Plan Time: 0.18211
+
+Plan Length: 5
+
+done!
+
+Time: 2.321074 s
+
+  --{ Plan }--
+
+1. (move_a_l1_l2)
+2. (share_b_b_l1)
+3. (move_b_l1_l2)
+4. (move_a_l2_l1)
+5. (share_c_b_l1)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+# Agents: 4
+# Props: 96
+# Acts: 48
+# Effs: 832
+Depth: 1
+done!
+
+Time: 0.172471 s
+
+Assessed the following plan:
+move_a_l1_l2
+move_b_l1_l2
+share_b_b_l2
+move_a_l2_l1
+move_c_l1_l2
+share_c_c_l2
+move_b_l2_l1
+move_d_l1_l2
+share_d_d_l2
+move_c_l2_l1
+move_a_l1_l2
+share_a_a_l2
+
+Executable: True
+Goal holds: False
+
+Final state:
+  !at_a_l1
+  !at_b_l2
+  !at_c_l2
+  !at_d_l1
+  Ba secret_a
+  Ba secret_b
+  Bb secret_b
+  Bb secret_c
+  Bc secret_c
+  Bc secret_d
+  Bd secret_a
+  Bd secret_d
+  Pc secret_b
+  Pd secret_b
+  Pd secret_c
+  at_a_l2
+  at_b_l1
+  at_c_l1
+  at_d_l2
+  connected_l1_l2
+  connected_l2_l1
+
+Missing RMLs from goal:
+{Pc !secret_b, Pd !secret_c}
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 832 (160)
+
+
+# Agents: 4
+# Props: 96
+# Acts: 48
+# Effs: 832
+Depth: 1
+
+Plan Time: 0.03355
+
+Plan Length: 11
+
+done!
+
+Time: 0.234081 s
+
+  --{ Plan }--
+
+1. (move_c_l1_l2)
+2. (share_b_b_l1)
+3. (move_b_l1_l2)
+4. (share_a_a_l1)
+5. (move_d_l1_l2)
+6. (move_d_l2_l1)
+7. (share_c_c_l2)
+8. (move_d_l1_l2)
+9. (move_a_l1_l2)
+10. (move_a_l2_l1)
+11. (share_d_d_l2)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+# Agents: 4
+# Props: 608
+# Acts: 48
+# Effs: 5440
+Depth: 2
+done!
+
+Time: 2.215511 s
+
+Assessed the following plan:
+move_a_l1_l2
+share_b_b_l1
+move_c_l1_l2
+share_c_b_l2
+
+Executable: True
+Goal holds: False
+
+Final state:
+  !at_a_l1
+  !at_c_l1
+  Ba Bc secret_b
+  Ba Pc secret_b
+  Ba secret_a
+  Ba secret_b
+  Bb Bc secret_b
+  Bb Bd secret_b
+  Bb Pc secret_b
+  Bb Pd secret_b
+  Bb secret_b
+  Bc Ba secret_b
+  Bc Bb secret_b
+  Bc Bd secret_b
+  Bc Pa secret_b
+  Bc Pb secret_b
+  Bc Pd secret_b
+  Bc secret_b
+  Bc secret_c
+  Bd Bb secret_b
+  Bd Bc secret_b
+  Bd Pb secret_b
+  Bd Pc secret_b
+  Bd secret_b
+  Bd secret_d
+  Pa Bb secret_b
+  Pa Bd secret_b
+  Pa Pb secret_b
+  Pa Pd secret_b
+  Pb Ba secret_b
+  Pb Pa secret_b
+  Pd Ba secret_b
+  Pd Pa secret_b
+  at_a_l2
+  at_b_l1
+  at_c_l2
+  at_d_l1
+  connected_l1_l2
+  connected_l2_l1
+
+Missing RMLs from goal:
+{Pb Pa !secret_b}
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 1668 (78)
+
+
+# Agents: 3
+# Props: 278
+# Acts: 30
+# Effs: 1668
+Depth: 2
+
+Plan Time: 0.06282
+
+Plan Length: 5
+
+done!
+
+Time: 0.589801 s
+
+  --{ Plan }--
+
+1. (move_a_l1_l2)
+2. (share_b_b_l1)
+3. (move_b_l1_l2)
+4. (move_a_l2_l1)
+5. (share_c_b_l1)
+
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+# Agents: 2
+# Props: 86
+# Acts: 8
+# Effs: 29
+Depth: 2
+done!
+
+Time: 0.064195 s
+
+Assessed the following plan:
+thief-sees-guard
+trick
+
+Executable: False
+Goal holds: False
+First failed action: thief-sees-guard
+
+Failed state:
+  guard
+
+
+
+pdkb-planning/examples/planning/grid-doxastic/EpGoal/prob2.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/EpGoal/prob1.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/EpGoal/plan.ipc
+Skipping pdkb-planning/examples/planning/grid-doxastic/EpGoal/plan.ipc
+pdkb-planning/examples/planning/grid-doxastic/EpGoal/prob4.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/EpGoal/prob3.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/blockedCells/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid-doxastic/blockedCells/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/blockedCells/prob2.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/blockedCells/prob1.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/blockedCells/prob4.pdkbddl
+pdkb-planning/examples/planning/grid-doxastic/blockedCells/prob3.pdkbddl
+pdkb-planning/examples/planning/pdkbddl-to-epddl/example.pdkbddl
+Skipping pdkb-planning/examples/planning/pdkbddl-to-epddl/example.pdkbddl
+pdkb-planning/examples/planning/pdkbddl-to-epddl/README.md
+Skipping pdkb-planning/examples/planning/pdkbddl-to-epddl/README.md
+pdkb-planning/examples/planning/pdkbddl-to-epddl/convert.py
+Skipping pdkb-planning/examples/planning/pdkbddl-to-epddl/convert.py
+pdkb-planning/examples/planning/pdkbddl-to-epddl/output.epddl
+Skipping pdkb-planning/examples/planning/pdkbddl-to-epddl/output.epddl
+pdkb-planning/examples/planning/hanabi/README.md
+Skipping pdkb-planning/examples/planning/hanabi/README.md
+pdkb-planning/examples/planning/hanabi/problem.pdkbddl
+Command timed out for pdkb-planning/examples/planning/hanabi/problem.pdkbddl
+pdkb-planning/examples/planning/hanabi/LICENSE.md
+Skipping pdkb-planning/examples/planning/hanabi/LICENSE.md
+pdkb-planning/examples/planning/bw4t/broadcastCommunication/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/bw4t/broadcastCommunication/domain-grid.pdkbddl
+pdkb-planning/examples/planning/bw4t/broadcastCommunication/prob2.pdkbddl
+pdkb-planning/examples/planning/bw4t/broadcastCommunication/prob1.pdkbddl
+pdkb-planning/examples/planning/bw4t/broadcastCommunication/prob4.pdkbddl
+Error moving files from pdkb-planning/examples/planning/bw4t/broadcastCommunication to examples/bw4t/broadcastCommunication/prob4
+pdkb-planning/examples/planning/bw4t/broadcastCommunication/prob3.pdkbddl
+Error moving files from pdkb-planning/examples/planning/bw4t/broadcastCommunication to examples/bw4t/broadcastCommunication/prob3
+pdkb-planning/examples/planning/bw4t/nonEpGoal/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/bw4t/nonEpGoal/domain-grid.pdkbddl
+pdkb-planning/examples/planning/bw4t/nonEpGoal/prob2.pdkbddl
+pdkb-planning/examples/planning/bw4t/nonEpGoal/prob1.pdkbddl
+pdkb-planning/examples/planning/bw4t/nonEpGoal/prob4.pdkbddl
+pdkb-planning/examples/planning/bw4t/nonEpGoal/prob3.pdkbddl
+pdkb-planning/examples/planning/bw4t/EpGoal/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/bw4t/EpGoal/domain-grid.pdkbddl
+pdkb-planning/examples/planning/bw4t/EpGoal/prob2.pdkbddl
+pdkb-planning/examples/planning/bw4t/EpGoal/prob1.pdkbddl
+pdkb-planning/examples/planning/bw4t/EpGoal/prob4.pdkbddl
+pdkb-planning/examples/planning/bw4t/EpGoal/prob3.pdkbddl
+pdkb-planning/examples/planning/bw4t/NonbroadcasrCommunication/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/bw4t/NonbroadcasrCommunication/domain-grid.pdkbddl
+pdkb-planning/examples/planning/bw4t/NonbroadcasrCommunication/prob2.pdkbddl
+pdkb-planning/examples/planning/bw4t/NonbroadcasrCommunication/prob1.pdkbddl
+pdkb-planning/examples/planning/bw4t/NonbroadcasrCommunication/prob4.pdkbddl
+Error moving files from pdkb-planning/examples/planning/bw4t/NonbroadcasrCommunication to examples/bw4t/NonbroadcasrCommunication/prob4
+pdkb-planning/examples/planning/bw4t/NonbroadcasrCommunication/prob3.pdkbddl
+Error moving files from pdkb-planning/examples/planning/bw4t/NonbroadcasrCommunication to examples/bw4t/NonbroadcasrCommunication/prob3
+pdkb-planning/examples/planning/bw4t/blockedCells/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/bw4t/blockedCells/domain-grid.pdkbddl
+pdkb-planning/examples/planning/bw4t/blockedCells/prob2.pdkbddl
+pdkb-planning/examples/planning/bw4t/blockedCells/prob1.pdkbddl
+pdkb-planning/examples/planning/bw4t/blockedCells/prob4.pdkbddl
+pdkb-planning/examples/planning/bw4t/blockedCells/prob3.pdkbddl
+pdkb-planning/examples/planning/grapevine/prob-paper2.pdkbddl
+pdkb-planning/examples/planning/grapevine/prob2.pdkbddl
+pdkb-planning/examples/planning/grapevine/prob1.pdkbddl
+pdkb-planning/examples/planning/grapevine/prob-paper3.pdkbddl
+pdkb-planning/examples/planning/grapevine/test-prob.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grapevine to examples/grapevine/test-prob
+Error moving files from pdkb-planning/examples/planning/grapevine to examples/grapevine/test-prob
+Error moving files from pdkb-planning/examples/planning/grapevine to examples/grapevine/test-prob
+Error moving files from pdkb-planning/examples/planning/grapevine to examples/grapevine/test-prob
+pdkb-planning/examples/planning/grapevine/domain.pdkbddl
+Skipping pdkb-planning/examples/planning/grapevine/domain.pdkbddl
+pdkb-planning/examples/planning/grapevine/prob-paper1.pdkbddl
+pdkb-planning/examples/planning/grapevine/domain-small.pdkbddl
+Skipping pdkb-planning/examples/planning/grapevine/domain-small.pdkbddl
+pdkb-planning/examples/planning/grapevine/prob4.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grapevine to examples/grapevine/prob4
+Error moving files from pdkb-planning/examples/planning/grapevine to examples/grapevine/prob4
+Error moving files from pdkb-planning/examples/planning/grapevine to examples/grapevine/prob4
+Error moving files from pdkb-planning/examples/planning/grapevine to examples/grapevine/prob4
+pdkb-planning/examples/planning/grapevine/prob3.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/prob-paper2.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine/old_syntax/prob-paper2.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/prob2.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine/old_syntax/prob2.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/domain-big.pdkbddl
+Skipping pdkb-planning/examples/planning/grapevine/old_syntax/domain-big.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/prob1.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine/old_syntax/prob1.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/prob-paper3.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine/old_syntax/prob-paper3.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/test-prob.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine/old_syntax/test-prob.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/domain.pdkbddl
+Skipping pdkb-planning/examples/planning/grapevine/old_syntax/domain.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/prob-paper1.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine/old_syntax/prob-paper1.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/domain-small.pdkbddl
+Skipping pdkb-planning/examples/planning/grapevine/old_syntax/domain-small.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/prob4.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine/old_syntax/prob4.pdkbddl
+pdkb-planning/examples/planning/grapevine/old_syntax/prob3.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/grapevine/old_syntax/prob3.pdkbddl
+pdkb-planning/examples/planning/thief/prob-paper2.pdkbddl
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper2
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper2
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper2
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper2
+pdkb-planning/examples/planning/thief/prob2.pdkbddl
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+# Agents: 2
+# Props: 86
+# Acts: 8
+# Effs: 29
+Depth: 2
+done!
+
+Time: 0.066634 s
+
+Assessed the following plan:
+make-noise-guard
+trick
+
+Executable: True
+Goal holds: True
+
+Final state:
+  Pg !thief
+  goal
+  guard
+  thief
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 142 (9)
+
+
+# Agents: 2
+# Props: 86
+# Acts: 8
+# Effs: 142
+Depth: 2
+
+Plan Time: 0.02570
+
+Plan Length: 1
+
+done!
+
+Time: 0.089473 s
+
+  --{ Plan }--
+
+1. (rush)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+# Agents: 2
+# Props: 342
+# Acts: 8
+# Effs: 77
+Depth: 3
+done!
+
+Time: 0.323033 s
+
+Assessed the following plan:
+guard-sees-thief
+thief-sees-guard
+trick
+
+Executable: False
+Goal holds: False
+First failed action: guard-sees-thief
+
+Failed state:
+  Bt Pg !thief
+  Bt Pg thief
+  guard
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+# Agents: 2
+# Props: 86
+# Acts: 8
+# Effs: 142
+Depth: 2
+done!
+
+Time: 0.087020 s
+
+Assessed the following plan:
+thief-sees-guard
+trick
+
+Executable: True
+Goal holds: True
+
+Final state:
+  Bg Bt guard
+  Bg Pt guard
+  Bg guard
+  Bt Pg !thief
+  Bt Pg thief
+  Bt guard
+  Bt thief
+  goal
+  guard
+  thief
+
+
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 42, in <module>
+    solve(sys.argv[1], old_planner=('--old-planner' in sys.argv))
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planner.py", line 23, in solve
+    problem = parse_and_preprocess(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/translator.py", line 20, in parse_and_preprocess
+    problem = parse_pdkbddl(pdkbddl_file)
+  File "/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/problems.py", line 195, in parse_pdkbddl
+    assert prob_index != -1, "Error: No problem type defined"
+AssertionError: Error: No problem type defined
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 1998 (648)
+
+
+# Agents: 3
+# Props: 600
+# Acts: 351
+# Effs: 1998
+Depth: 1
+
+Plan Time: 0.04349
+
+Plan Length: 0
+
+done!
+
+Time: 0.873090 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 8370 (648)
+
+
+# Agents: 3
+# Props: 2544
+# Acts: 351
+# Effs: 8370
+Depth: 2
+
+Plan Time: 0.20263
+
+Plan Length: 19
+
+done!
+
+Time: 3.289880 s
+
+  --{ Plan }--
+
+1. (observe_b_p4_s)
+2. (comm_p4_b_a_s)
+3. (observe_c_p9_s)
+4. (move_c_p9_p8)
+5. (observe_c_p8_s)
+6. (comm_p8_c_a_s)
+7. (move_b_p4_p7)
+8. (observe_b_p7_s)
+9. (move_c_p8_p5)
+10. (observe_c_p5_s)
+11. (comm_p5_c_a_s)
+12. (move_c_p5_p6)
+13. (observe_c_p6_s)
+14. (move_c_p6_p3)
+15. (observe_c_p3_s)
+16. (move_c_p3_p2)
+17. (observe_c_p2_s)
+18. (move_c_p2_p1)
+19. (observe_c_p1_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3096 (1080)
+
+
+# Agents: 3
+# Props: 870
+# Acts: 576
+# Effs: 3096
+Depth: 1
+
+Plan Time: 0.04907
+
+Plan Length: 0
+
+done!
+
+Time: 0.870849 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3096 (1080)
+
+
+# Agents: 3
+# Props: 870
+# Acts: 576
+# Effs: 3096
+Depth: 1
+
+Plan Time: 0.05025
+
+Plan Length: 25
+
+done!
+
+Time: 0.836631 s
+
+  --{ Plan }--
+
+1. (observe_b_p4_s)
+2. (comm_p4_b_a_s)
+3. (observe_c_p9_s)
+4. (move_b_p4_p7)
+5. (observe_b_p7_s)
+6. (move_c_p9_p8)
+7. (observe_c_p8_s)
+8. (comm_p8_c_a_s)
+9. (move_c_p8_p5)
+10. (observe_c_p5_s)
+11. (comm_p5_c_a_s)
+12. (move_c_p5_p6)
+13. (observe_c_p6_s)
+14. (move_c_p6_p3)
+15. (observe_c_p3_s)
+16. (move_b_p7_p10)
+17. (observe_b_p10_s)
+18. (move_c_p3_p2)
+19. (observe_c_p2_s)
+20. (move_c_p2_p1)
+21. (observe_c_p1_s)
+22. (move_b_p10_p11)
+23. (observe_b_p11_s)
+24. (move_b_p11_p12)
+25. (observe_b_p12_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 14796 (2025)
+
+
+# Agents: 3
+# Props: 928
+# Acts: 999
+# Effs: 14796
+Depth: 1
+
+Plan Time: 0.02786
+
+Plan Length: 0
+
+done!
+
+Time: 2.550135 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 14796 (2025)
+
+
+# Agents: 3
+# Props: 928
+# Acts: 999
+# Effs: 14796
+Depth: 1
+
+Plan Time: 0.03658
+
+Plan Length: 0
+
+done!
+
+Time: 2.500241 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 25992 (3564)
+
+
+# Agents: 3
+# Props: 1240
+# Acts: 1764
+# Effs: 25992
+Depth: 1
+
+Plan Time: 0.03036
+
+Plan Length: 0
+
+done!
+
+Time: 4.930020 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 25992 (3564)
+
+
+# Agents: 3
+# Props: 1240
+# Acts: 1764
+# Effs: 25992
+Depth: 1
+
+Plan Time: 0.03042
+
+Plan Length: 0
+
+done!
+
+Time: 5.348286 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3096 (1080)
+
+
+# Agents: 3
+# Props: 864
+# Acts: 504
+# Effs: 3096
+Depth: 1
+
+Plan Time: 0.05067
+
+Plan Length: 21
+
+done!
+
+Time: 0.830046 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (observ_c_p9_s)
+3. (observ_a_p1_s)
+4. (move_b_p4_p7)
+5. (observ_b_p7_s)
+6. (move_c_p9_p8)
+7. (observ_c_p8_s)
+8. (move_a_p1_p2)
+9. (observ_a_p2_s)
+10. (move_b_p7_p10)
+11. (observ_b_p10_s)
+12. (move_c_p8_p5)
+13. (observ_c_p5_s)
+14. (move_c_p5_p6)
+15. (observ_c_p6_s)
+16. (move_c_p6_p3)
+17. (observ_c_p3_s)
+18. (move_b_p10_p11)
+19. (observ_b_p11_s)
+20. (move_b_p11_p12)
+21. (observ_b_p12_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 1998 (648)
+
+
+# Agents: 3
+# Props: 594
+# Acts: 297
+# Effs: 1998
+Depth: 1
+
+Plan Time: 0.03938
+
+Plan Length: 15
+
+done!
+
+Time: 0.480691 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (observ_a_p1_s)
+3. (observ_c_p9_s)
+4. (move_b_p4_p7)
+5. (observ_b_p7_s)
+6. (move_a_p1_p2)
+7. (observ_a_p2_s)
+8. (move_a_p2_p5)
+9. (observ_a_p5_s)
+10. (move_a_p5_p8)
+11. (observ_a_p8_s)
+12. (move_c_p9_p6)
+13. (observ_c_p6_s)
+14. (move_c_p6_p3)
+15. (observ_c_p3_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3096 (1080)
+
+
+# Agents: 3
+# Props: 864
+# Acts: 504
+# Effs: 3096
+Depth: 1
+
+Plan Time: 0.04774
+
+Plan Length: 0
+
+done!
+
+Time: 0.816669 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 1998 (648)
+
+
+# Agents: 3
+# Props: 594
+# Acts: 297
+# Effs: 1998
+Depth: 1
+
+Plan Time: 0.03918
+
+Plan Length: 0
+
+done!
+
+Time: 0.470539 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3096 (1080)
+
+
+# Agents: 3
+# Props: 864
+# Acts: 504
+# Effs: 3096
+Depth: 1
+
+Plan Time: 0.05001
+
+Plan Length: 24
+
+done!
+
+Time: 0.800970 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (comm_p4_b_s)
+3. (observ_c_p9_s)
+4. (observ_a_p1_s)
+5. (move_b_p4_p7)
+6. (observ_b_p7_s)
+7. (move_c_p9_p8)
+8. (observ_c_p8_s)
+9. (comm_p8_c_s)
+10. (move_c_p8_p5)
+11. (observ_c_p5_s)
+12. (comm_p5_c_s)
+13. (move_c_p5_p6)
+14. (observ_c_p6_s)
+15. (move_c_p6_p3)
+16. (observ_c_p3_s)
+17. (move_b_p7_p10)
+18. (observ_b_p10_s)
+19. (move_b_p10_p11)
+20. (observ_b_p11_s)
+21. (move_b_p11_p12)
+22. (observ_b_p12_s)
+23. (move_a_p1_p2)
+24. (observ_a_p2_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 1998 (648)
+
+
+# Agents: 3
+# Props: 594
+# Acts: 297
+# Effs: 1998
+Depth: 1
+
+Plan Time: 0.04106
+
+Plan Length: 18
+
+done!
+
+Time: 0.459105 s
+
+  --{ Plan }--
+
+1. (observ_b_p4_s)
+2. (comm_p4_b_s)
+3. (observ_a_p1_s)
+4. (observ_c_p9_s)
+5. (move_b_p4_p7)
+6. (observ_b_p7_s)
+7. (move_a_p1_p2)
+8. (observ_a_p2_s)
+9. (move_a_p2_p5)
+10. (observ_a_p5_s)
+11. (comm_p5_a_s)
+12. (move_a_p5_p8)
+13. (observ_a_p8_s)
+14. (comm_p8_a_s)
+15. (move_c_p9_p6)
+16. (observ_c_p6_s)
+17. (move_c_p6_p3)
+18. (observ_c_p3_s)
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 3096 (1080)
+
+
+# Agents: 3
+# Props: 864
+# Acts: 504
+# Effs: 3096
+Depth: 1
+
+Plan Time: 0.07885
+
+Plan Length: 0
+
+done!
+
+Time: 1.172729 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 1998 (648)
+
+
+# Agents: 3
+# Props: 594
+# Acts: 297
+# Effs: 1998
+Depth: 1
+
+Plan Time: 0.03900
+
+Plan Length: 0
+
+done!
+
+Time: 0.492295 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 31008 (6144)
+
+
+# Agents: 4
+# Props: 2106
+# Acts: 1824
+# Effs: 31008
+Depth: 1
+
+Plan Time: 0.02926
+
+Plan Length: 0
+
+done!
+
+Time: 6.189397 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 17856 (3528)
+
+
+# Agents: 4
+# Props: 1620
+# Acts: 1044
+# Effs: 17856
+Depth: 1
+
+Plan Time: 0.02822
+
+Plan Length: 0
+
+done!
+
+Time: 3.236170 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 31008 (6144)
+
+
+# Agents: 4
+# Props: 2106
+# Acts: 1824
+# Effs: 31008
+Depth: 1
+
+Plan Time: 0.02916
+
+Plan Length: 0
+
+done!
+
+Time: 6.287157 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+Cond effs (orig): 17856 (3528)
+
+
+# Agents: 4
+# Props: 1620
+# Acts: 1044
+# Effs: 17856
+Depth: 1
+
+Plan Time: 0.02767
+
+Plan Length: 0
+
+done!
+
+Time: 3.262235 s
+
+  --{ Plan }--
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+# Agents: 4
+# Props: 1192
+# Acts: 129
+# Effs: 6752
+Depth: 1
+done!
+
+Time: 1.686732 s
+
+Assessed the following plan:
+check_a_c1
+check_b_c2
+check_c_c3
+check_d_c4
+rotate
+check_a_c4
+check_b_c1
+check_c_c2
+check_d_c3
+peek_a_spot1_c5
+peek_a_spot2_c6
+
+Executable: True
+Goal holds: True
+
+Final state:
+  !holding_a_c1
+  Bb holding_b_c1
+  Pa holding_a_c4
+  Pa suspect_spot1_c5
+  Pa suspect_spot2_c6
+  Pc holding_c_c2
+  Pd holding_d_c3
+  holding_a_c4
+  holding_b_c1
+  me_a
+  neighbour_a_b
+  neighbour_b_c
+  neighbour_c_d
+  neighbour_d_a
+  suspect_spot1_c5
+  suspect_spot2_c6
+
+
+
+Parsing problem... done!
+Preprocessing problem... done!
+Solving problem... 
+
+# Agents: 4
+# Props: 9376
+# Acts: 38
+# Effs: 99296
+Depth: 2
+done!
+
+Time: 56.562717 s
+
+Assessed the following plan:
+check
+rotate
+check
+peek_a_spot1_spot2
+
+Executable: True
+Goal holds: True
+
+Final state:
+  !holding_a_c2
+  !holding_b_c3
+  !holding_c_c4
+  !holding_d_c5
+  Ba !holding_a_c2
+  Ba Bb holding_b_c2
+  Ba Pb holding_b_c2
+  Ba holding_a_c5
+  Ba holding_b_c2
+  Ba suspect_spot1_c6
+  Ba suspect_spot2_c7
+  Bb !holding_b_c3
+  Bb Bc holding_c_c3
+  Bb Pc holding_c_c3
+  Bb holding_b_c2
+  Bb holding_c_c3
+  Bc !holding_c_c4
+  Bc Bd holding_d_c4
+  Bc Pd holding_d_c4
+  Bc holding_c_c3
+  Bc holding_d_c4
+  Bd !holding_d_c5
+  Bd Ba holding_a_c5
+  Bd Pa holding_a_c5
+  Bd holding_a_c5
+  Bd holding_d_c4
+  Pa holding_a_c1
+  Pa holding_a_c3
+  Pa holding_a_c4
+  Pa holding_a_c6
+  Pa holding_a_c7
+  Pa holding_a_c8
+  Pa suspect_spot1_c1
+  Pa suspect_spot1_c2
+  Pa suspect_spot1_c3
+  Pa suspect_spot1_c4
+  Pa suspect_spot1_c5
+  Pa suspect_spot1_c7
+  Pa suspect_spot1_c8
+  Pa suspect_spot2_c1
+  Pa suspect_spot2_c2
+  Pa suspect_spot2_c3
+  Pa suspect_spot2_c4
+  Pa suspect_spot2_c5
+  Pa suspect_spot2_c6
+  Pa suspect_spot2_c8
+  Pb holding_b_c1
+  Pb holding_b_c4
+  Pb holding_b_c5
+  Pb holding_b_c6
+  Pb holding_b_c7
+  Pb holding_b_c8
+  Pc holding_c_c1
+  Pc holding_c_c2
+  Pc holding_c_c5
+  Pc holding_c_c6
+  Pc holding_c_c7
+  Pc holding_c_c8
+  Pd holding_d_c1
+  Pd holding_d_c2
+  Pd holding_d_c3
+  Pd holding_d_c6
+  Pd holding_d_c7
+  Pd holding_d_c8
+  holding_a_c5
+  holding_b_c2
+  holding_c_c3
+  holding_d_c4
+  neighbour_a_b
+  neighbour_b_c
+  neighbour_c_d
+  neighbour_d_a
+  suspect_spot1_c6
+  suspect_spot2_c7
+  suspect_spot3_c8
+  victim_c1
+
+
+
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob2
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob2
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob2
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob2
+pdkb-planning/examples/planning/thief/prob1.pdkbddl
+pdkb-planning/examples/planning/thief/prob-paper3.pdkbddl
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper3
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper3
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper3
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper3
+pdkb-planning/examples/planning/thief/domain.pdkbddl
+Skipping pdkb-planning/examples/planning/thief/domain.pdkbddl
+pdkb-planning/examples/planning/thief/prob-paper1.pdkbddl
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper1
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper1
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper1
+Error moving files from pdkb-planning/examples/planning/thief to examples/thief/prob-paper1
+pdkb-planning/examples/planning/thief/old_syntax/prob-paper2.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/thief/old_syntax/prob-paper2.pdkbddl
+pdkb-planning/examples/planning/thief/old_syntax/prob2.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/thief/old_syntax/prob2.pdkbddl
+pdkb-planning/examples/planning/thief/old_syntax/prob1.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/thief/old_syntax/prob1.pdkbddl
+pdkb-planning/examples/planning/thief/old_syntax/prob-paper3.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/thief/old_syntax/prob-paper3.pdkbddl
+pdkb-planning/examples/planning/thief/old_syntax/domain.pdkbddl
+Skipping pdkb-planning/examples/planning/thief/old_syntax/domain.pdkbddl
+pdkb-planning/examples/planning/thief/old_syntax/prob-paper1.pdkbddl
+Command failed with return code 1 for pdkb-planning/examples/planning/thief/old_syntax/prob-paper1.pdkbddl
+pdkb-planning/examples/planning/grid/broadcastCommunication/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid/broadcastCommunication/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid/broadcastCommunication/prob2.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/broadcastCommunication to examples/grid/broadcastCommunication/prob2
+pdkb-planning/examples/planning/grid/broadcastCommunication/prob1.pdkbddl
+pdkb-planning/examples/planning/grid/broadcastCommunication/prob4.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/broadcastCommunication to examples/grid/broadcastCommunication/prob4
+pdkb-planning/examples/planning/grid/broadcastCommunication/prob3.pdkbddl
+pdkb-planning/examples/planning/grid/NonbroadcastCommunication/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid/NonbroadcastCommunication/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid/NonbroadcastCommunication/prob2.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/NonbroadcastCommunication to examples/grid/NonbroadcastCommunication/prob2
+pdkb-planning/examples/planning/grid/NonbroadcastCommunication/prob1.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/NonbroadcastCommunication to examples/grid/NonbroadcastCommunication/prob1
+pdkb-planning/examples/planning/grid/NonbroadcastCommunication/prob4.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/NonbroadcastCommunication to examples/grid/NonbroadcastCommunication/prob4
+pdkb-planning/examples/planning/grid/NonbroadcastCommunication/prob3.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/NonbroadcastCommunication to examples/grid/NonbroadcastCommunication/prob3
+pdkb-planning/examples/planning/grid/nonEpGoal/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid/nonEpGoal/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid/nonEpGoal/prob2.pdkbddl
+pdkb-planning/examples/planning/grid/nonEpGoal/prob1.pdkbddl
+pdkb-planning/examples/planning/grid/nonEpGoal/prob4.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/nonEpGoal to examples/grid/nonEpGoal/prob4
+pdkb-planning/examples/planning/grid/nonEpGoal/prob3.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/nonEpGoal to examples/grid/nonEpGoal/prob3
+pdkb-planning/examples/planning/grid/EpGoal/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid/EpGoal/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid/EpGoal/prob2.pdkbddl
+pdkb-planning/examples/planning/grid/EpGoal/prob1.pdkbddl
+pdkb-planning/examples/planning/grid/EpGoal/prob4.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/EpGoal to examples/grid/EpGoal/prob4
+pdkb-planning/examples/planning/grid/EpGoal/prob3.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/EpGoal to examples/grid/EpGoal/prob3
+pdkb-planning/examples/planning/grid/blockedCells/domain-grid.pdkbddl
+Skipping pdkb-planning/examples/planning/grid/blockedCells/domain-grid.pdkbddl
+pdkb-planning/examples/planning/grid/blockedCells/prob2.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/blockedCells to examples/grid/blockedCells/prob2
+pdkb-planning/examples/planning/grid/blockedCells/prob1.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/blockedCells to examples/grid/blockedCells/prob1
+pdkb-planning/examples/planning/grid/blockedCells/prob4.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/blockedCells to examples/grid/blockedCells/prob4
+pdkb-planning/examples/planning/grid/blockedCells/prob3.pdkbddl
+Error moving files from pdkb-planning/examples/planning/grid/blockedCells to examples/grid/blockedCells/prob3
+pdkb-planning/examples/planning/ancillary-tests/inverted-closure.pdkbddl
+Skipping pdkb-planning/examples/planning/ancillary-tests/inverted-closure.pdkbddl
+pdkb-planning/examples/planning/ancillary-tests/uncertain-firing.pdkbddl
+Skipping pdkb-planning/examples/planning/ancillary-tests/uncertain-firing.pdkbddl
+pdkb-planning/examples/planning/ancillary-tests/negation-removal.pdkbddl
+Skipping pdkb-planning/examples/planning/ancillary-tests/negation-removal.pdkbddl
+pdkb-planning/examples/planning/ancillary-tests/closure.pdkbddl
+Skipping pdkb-planning/examples/planning/ancillary-tests/closure.pdkbddl
+pdkb-planning/examples/planning/ancillary-tests/epddl/uncertain-firing.epddl
+Skipping pdkb-planning/examples/planning/ancillary-tests/epddl/uncertain-firing.epddl
+pdkb-planning/examples/planning/ancillary-tests/epddl/closure.epddl
+Skipping pdkb-planning/examples/planning/ancillary-tests/epddl/closure.epddl
+pdkb-planning/examples/planning/ancillary-tests/epddl/inverted-closure.epddl
+Skipping pdkb-planning/examples/planning/ancillary-tests/epddl/inverted-closure.epddl
+pdkb-planning/examples/planning/ancillary-tests/epddl/negation-removal.epddl
+Skipping pdkb-planning/examples/planning/ancillary-tests/epddl/negation-removal.epddl
+pdkb-planning/examples/planning/hattari/domain-single.pdkbddl
+Skipping pdkb-planning/examples/planning/hattari/domain-single.pdkbddl
+pdkb-planning/examples/planning/hattari/problem-single.pdkbddl
+Error moving files from pdkb-planning/examples/planning/hattari to examples/hattari/problem-single
+Error moving files from pdkb-planning/examples/planning/hattari to examples/hattari/problem-single
+Error moving files from pdkb-planning/examples/planning/hattari to examples/hattari/problem-single
+Error moving files from pdkb-planning/examples/planning/hattari to examples/hattari/problem-single
+pdkb-planning/examples/planning/hattari/problem.pdkbddl
+Error moving files from pdkb-planning/examples/planning/hattari to examples/hattari/problem
+Error moving files from pdkb-planning/examples/planning/hattari to examples/hattari/problem
+Error moving files from pdkb-planning/examples/planning/hattari to examples/hattari/problem
+Error moving files from pdkb-planning/examples/planning/hattari to examples/hattari/problem
+pdkb-planning/examples/planning/hattari/domain.pdkbddl
+Skipping pdkb-planning/examples/planning/hattari/domain.pdkbddl
+pdkb-planning/examples/planning/envelope/future.pdkbddl
+Skipping pdkb-planning/examples/planning/envelope/future.pdkbddl
+pdkb-planning/examples/planning/envelope/past.pdkbddl
+Skipping pdkb-planning/examples/planning/envelope/past.pdkbddl
+pdkb-planning/examples/planning/envelope/domain.pdkbddl
+Skipping pdkb-planning/examples/planning/envelope/domain.pdkbddl
+pdkb-planning/examples/planning/envelope/epddl/envelope.epddl
+Skipping pdkb-planning/examples/planning/envelope/epddl/envelope.epddl
