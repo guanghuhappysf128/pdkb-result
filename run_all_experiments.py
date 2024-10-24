@@ -33,12 +33,12 @@ for root, dirs, files in os.walk(directory):
                     print(f"An unexpected error occurred while processing {file_path}: {e}")
                     traceback.print_exc()
                     continue  # Skip to the next file
-                result_file_names = ["pdkb-problem.pddl","pdkb-plan.txt","pdkb-plan.out","pdkb-domain.pddl", "execution.details"]
+                result_file_names = ["pdkb-problem.pddl","pdkb-plan.txt","pdkb-plan.out","pdkb-domain.pddl", "execution.details","output.json"]
                 for result_file_name in result_file_names:
                     try:
                         os.rename(result_file_name, f"{result_path}/{result_file_name}")
                     except FileNotFoundError:
-                        print(f"Error moving files from {file_directory} to {result_path}")
+                        print(f"Error moving files from {file_directory}/{result_file_name} to {result_path}/{result_file_name}")
                     except KeyboardInterrupt:
                         print(f"KeyboardInterrupt")
                         sys.exit(1)
