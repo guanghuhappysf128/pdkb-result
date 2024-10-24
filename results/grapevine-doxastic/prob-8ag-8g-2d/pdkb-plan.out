@@ -1,0 +1,47 @@
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+
+task contains conditional effects. turning off state domination.
+
+ --- OK.
+ Match tree built with 417 nodes.
+
+PDDL problem description loaded: 
+	Domain: GRAPEVINE
+	Problem: GRAPEVINE-PROB
+	#Actions: 417
+	#Fluents: 7753
+Goals found: 28
+Goals_Edges found: 224
+Starting search with 1-BFWS...
+--[210 / 0]--
+--[210 / 33]--
+--[210 / 393]--
+--[141 / 0]--
+--[141 / 390]--
+--[141 / 393]--
+--[109 / 0]--
+--[109 / 390]--
+--[109 / 393]--
+--[90 / 0]--
+--[90 / 363]--
+--[60 / 0]--
+--[60 / 362]--
+--[60 / 363]--
+--[32 / 0]--
+--[32 / 358]--
+--[32 / 360]--
+--[30 / 0]--
+--[30 / 363]--
+--[0 / 0]--
+--[0 / 362]--
+Total time: 10.0101
+Nodes generated during search: 561
+Nodes expanded during search: 51
+Plan found with cost: 15
+Fast-BFS search completed in 10.0101 secs
+Solving...
+/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planners/bfws --domain pdkb-domain.pddl  --problem pdkb-problem.pddl --output pdkb-plan.txt --1-BFWS 1
+Done!

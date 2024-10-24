@@ -1,0 +1,30 @@
+ --- OK.
+ Match tree built with 15 nodes.
+
+PDDL problem description loaded: 
+	Domain: CORRIDOR
+	Problem: CORRIDOR-PROB
+	#Actions: 15
+	#Fluents: 218
+Goals found: 4
+Goals_Edges found: 4
+Starting search with 1-BFWS...
+--[2 / 0]--
+--[2 / 2]--
+--[2 / 23]--
+--[2 / 65]--
+--[2 / 107]--
+--[2 / 149]--
+--[1 / 0]--
+--[1 / 65]--
+--[1 / 86]--
+--[0 / 0]--
+--[0 / 44]--
+Total time: 0.000297
+Nodes generated during search: 35
+Nodes expanded during search: 16
+Plan found with cost: 8
+Fast-BFS search completed in 0.000297 secs
+Solving...
+/usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planners/bfws --domain pdkb-domain.pddl  --problem pdkb-problem.pddl --output pdkb-plan.txt --1-BFWS 1
+Done!
