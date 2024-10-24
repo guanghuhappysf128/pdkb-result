@@ -2,8 +2,9 @@ import os
 import traceback
 import subprocess
 import sys
+import json
 
-directory = 'pdkb-planning/examples/planning/'  # Replace with your directory path
+directory = 'pdkbs/'  # Replace with your directory path
 
 for root, dirs, files in os.walk(directory):
     for file in files:
@@ -12,12 +13,14 @@ for root, dirs, files in os.walk(directory):
         file_directory = os.path.dirname(file_path)
         file_name = os.path.basename(file_path)
         if ".pdkbddl" in file_name and "prob" in file_name:
-            result_path = file_directory.replace(directory,"examples/")
+            result_path = file_directory.replace(directory,"results/")
             result_path = os.path.join(result_path, file_name.replace(".pdkbddl",""))
             # print(result_path)
             if not os.path.exists(result_path):
                 os.makedirs(result_path)
                 try:
+                    with open("output.json", 'w') as json_file:
+                        json.dump({}, json_file)
                     subprocess.run(
                         ['python3', '-m', 'pdkb.planner', file_path, '--keep-files'],
                         timeout=600,  # Timeout in seconds
