@@ -1,1 +1,7 @@
 examples/grapevine-doxastic/prob-8ag-*g-2d/pdkb-domain.pddl filter=lfs diff=lfs merge=lfs -text
+results/grapevine-doxastic/prob-8ag-2g-2d/pdkb-domain.pddl filter=lfs diff=lfs merge=lfs -text
+results/grapevine-doxastic/prob-8ag-4g-2d/pdkb-domain.pddl filter=lfs diff=lfs merge=lfs -text
+results/grapevine-doxastic/prob-8ag-8g-2d/pdkb-domain.pddl filter=lfs diff=lfs merge=lfs -text
+results/grid-doxastic/NonbroadcastCommunication/prob3/pdkb-domain.pddl filter=lfs diff=lfs merge=lfs -text
+results/grid-doxastic/NonbroadcastCommunication/prob4/pdkb-domain.pddl filter=lfs diff=lfs merge=lfs -text
+results/hanabi/problem/pdkb-domain.pddl filter=lfs diff=lfs merge=lfs -text
