@@ -45,7 +45,7 @@
              [a](survivorat s p4)
              [a](survivorat s p5)
              [a](survivorat s p8)
-             [b](!survivorat s p4)
+             [b](survivorat s p4)
              [b](!survivorat s p5)
              [b](!survivorat s p8)
 

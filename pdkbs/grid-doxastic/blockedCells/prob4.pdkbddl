@@ -43,9 +43,9 @@
     (:goal  
  
         [a](!survivorat s p4)
-        [b](!survivorat s p4)
+        [b](survivorat s p4)
         [c](!survivorat s p4)
-        [d](survivorat s p4)
+        [d](!survivorat s p4)
 
          (forall ?p - pos
              (checked ?p)) 
