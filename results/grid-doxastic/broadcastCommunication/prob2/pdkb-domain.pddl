@@ -607,506 +607,506 @@
 
     (:action badcomm_p1_a_a_s
         :precondition (and (leader_a)
-                           (at_a_p1)
-                           (Ba_survivorat_s_p1)
-                           (Pa_survivorat_s_p1))
-        :effect (and
-                    ; #37863: <==closure== 78593 (pos)
-                    (Pa_not_survivorat_s_p1)
-
-                    ; #78593: origin
-                    (Ba_not_survivorat_s_p1)
-
-                    ; #15069: <==negation-removal== 78593 (pos)
-                    (not (Pa_survivorat_s_p1))
-
-                    ; #58728: <==negation-removal== 37863 (pos)
-                    (not (Ba_survivorat_s_p1))))
-
-    (:action badcomm_p1_a_b_s
-        :precondition (and (at_a_p1)
                            (Ba_survivorat_s_p1)
                            (Pa_survivorat_s_p1)
-                           (leader_b))
+                           (at_a_p1))
         :effect (and
-                    ; #11148: <==closure== 13120 (pos)
-                    (Pb_not_survivorat_s_p1)
+                    ; #32683: origin
+                    (Ba_not_survivorat_s_p1)
 
-                    ; #13120: origin
+                    ; #36249: <==closure== 32683 (pos)
+                    (Pa_not_survivorat_s_p1)
+
+                    ; #24835: <==negation-removal== 36249 (pos)
+                    (not (Ba_survivorat_s_p1))
+
+                    ; #39649: <==negation-removal== 32683 (pos)
+                    (not (Pa_survivorat_s_p1))))
+
+    (:action badcomm_p1_a_b_s
+        :precondition (and (Ba_survivorat_s_p1)
+                           (leader_b)
+                           (Pa_survivorat_s_p1)
+                           (at_a_p1))
+        :effect (and
+                    ; #43903: origin
                     (Bb_not_survivorat_s_p1)
 
-                    ; #14684: <==negation-removal== 11148 (pos)
-                    (not (Bb_survivorat_s_p1))
+                    ; #53978: <==closure== 43903 (pos)
+                    (Pb_not_survivorat_s_p1)
 
-                    ; #60621: <==negation-removal== 13120 (pos)
-                    (not (Pb_survivorat_s_p1))))
+                    ; #32961: <==negation-removal== 43903 (pos)
+                    (not (Pb_survivorat_s_p1))
+
+                    ; #55489: <==negation-removal== 53978 (pos)
+                    (not (Bb_survivorat_s_p1))))
 
     (:action badcomm_p1_a_c_s
         :precondition (and (leader_c)
-                           (at_a_p1)
                            (Ba_survivorat_s_p1)
-                           (Pa_survivorat_s_p1))
+                           (Pa_survivorat_s_p1)
+                           (at_a_p1))
         :effect (and
-                    ; #56109: origin
-                    (Bc_not_survivorat_s_p1)
-
-                    ; #81463: <==closure== 56109 (pos)
+                    ; #10330: <==closure== 71128 (pos)
                     (Pc_not_survivorat_s_p1)
 
-                    ; #19130: <==negation-removal== 81463 (pos)
+                    ; #71128: origin
+                    (Bc_not_survivorat_s_p1)
+
+                    ; #46343: <==negation-removal== 10330 (pos)
                     (not (Bc_survivorat_s_p1))
 
-                    ; #63714: <==negation-removal== 56109 (pos)
+                    ; #91922: <==negation-removal== 71128 (pos)
                     (not (Pc_survivorat_s_p1))))
 
     (:action badcomm_p1_b_a_s
-        :precondition (and (Pb_survivorat_s_p1)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (Pb_survivorat_s_p1)
                            (Bb_survivorat_s_p1)
                            (leader_a))
         :effect (and
-                    ; #37863: <==closure== 78593 (pos)
-                    (Pa_not_survivorat_s_p1)
-
-                    ; #78593: origin
+                    ; #32683: origin
                     (Ba_not_survivorat_s_p1)
 
-                    ; #15069: <==negation-removal== 78593 (pos)
-                    (not (Pa_survivorat_s_p1))
+                    ; #36249: <==closure== 32683 (pos)
+                    (Pa_not_survivorat_s_p1)
 
-                    ; #58728: <==negation-removal== 37863 (pos)
-                    (not (Ba_survivorat_s_p1))))
+                    ; #24835: <==negation-removal== 36249 (pos)
+                    (not (Ba_survivorat_s_p1))
+
+                    ; #39649: <==negation-removal== 32683 (pos)
+                    (not (Pa_survivorat_s_p1))))
 
     (:action badcomm_p1_b_b_s
-        :precondition (and (Pb_survivorat_s_p1)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (Pb_survivorat_s_p1)
                            (Bb_survivorat_s_p1)
                            (leader_b))
         :effect (and
-                    ; #11148: <==closure== 13120 (pos)
-                    (Pb_not_survivorat_s_p1)
-
-                    ; #13120: origin
+                    ; #43903: origin
                     (Bb_not_survivorat_s_p1)
 
-                    ; #14684: <==negation-removal== 11148 (pos)
-                    (not (Bb_survivorat_s_p1))
+                    ; #53978: <==closure== 43903 (pos)
+                    (Pb_not_survivorat_s_p1)
 
-                    ; #60621: <==negation-removal== 13120 (pos)
-                    (not (Pb_survivorat_s_p1))))
+                    ; #32961: <==negation-removal== 43903 (pos)
+                    (not (Pb_survivorat_s_p1))
+
+                    ; #55489: <==negation-removal== 53978 (pos)
+                    (not (Bb_survivorat_s_p1))))
 
     (:action badcomm_p1_b_c_s
-        :precondition (and (leader_c)
+        :precondition (and (at_b_p1)
                            (Pb_survivorat_s_p1)
-                           (at_b_p1)
-                           (Bb_survivorat_s_p1))
+                           (Bb_survivorat_s_p1)
+                           (leader_c))
         :effect (and
-                    ; #56109: origin
-                    (Bc_not_survivorat_s_p1)
-
-                    ; #81463: <==closure== 56109 (pos)
+                    ; #10330: <==closure== 71128 (pos)
                     (Pc_not_survivorat_s_p1)
 
-                    ; #19130: <==negation-removal== 81463 (pos)
+                    ; #71128: origin
+                    (Bc_not_survivorat_s_p1)
+
+                    ; #46343: <==negation-removal== 10330 (pos)
                     (not (Bc_survivorat_s_p1))
 
-                    ; #63714: <==negation-removal== 56109 (pos)
+                    ; #91922: <==negation-removal== 71128 (pos)
                     (not (Pc_survivorat_s_p1))))
 
     (:action badcomm_p1_c_a_s
-        :precondition (and (Bc_survivorat_s_p1)
-                           (Pc_survivorat_s_p1)
-                           (leader_a)
-                           (at_c_p1))
+        :precondition (and (Pc_survivorat_s_p1)
+                           (Bc_survivorat_s_p1)
+                           (at_c_p1)
+                           (leader_a))
         :effect (and
-                    ; #37863: <==closure== 78593 (pos)
-                    (Pa_not_survivorat_s_p1)
-
-                    ; #78593: origin
+                    ; #32683: origin
                     (Ba_not_survivorat_s_p1)
 
-                    ; #15069: <==negation-removal== 78593 (pos)
-                    (not (Pa_survivorat_s_p1))
+                    ; #36249: <==closure== 32683 (pos)
+                    (Pa_not_survivorat_s_p1)
 
-                    ; #58728: <==negation-removal== 37863 (pos)
-                    (not (Ba_survivorat_s_p1))))
+                    ; #24835: <==negation-removal== 36249 (pos)
+                    (not (Ba_survivorat_s_p1))
+
+                    ; #39649: <==negation-removal== 32683 (pos)
+                    (not (Pa_survivorat_s_p1))))
 
     (:action badcomm_p1_c_b_s
-        :precondition (and (Bc_survivorat_s_p1)
-                           (Pc_survivorat_s_p1)
+        :precondition (and (Pc_survivorat_s_p1)
+                           (Bc_survivorat_s_p1)
                            (at_c_p1)
                            (leader_b))
         :effect (and
-                    ; #11148: <==closure== 13120 (pos)
-                    (Pb_not_survivorat_s_p1)
-
-                    ; #13120: origin
+                    ; #43903: origin
                     (Bb_not_survivorat_s_p1)
 
-                    ; #14684: <==negation-removal== 11148 (pos)
-                    (not (Bb_survivorat_s_p1))
+                    ; #53978: <==closure== 43903 (pos)
+                    (Pb_not_survivorat_s_p1)
 
-                    ; #60621: <==negation-removal== 13120 (pos)
-                    (not (Pb_survivorat_s_p1))))
+                    ; #32961: <==negation-removal== 43903 (pos)
+                    (not (Pb_survivorat_s_p1))
+
+                    ; #55489: <==negation-removal== 53978 (pos)
+                    (not (Bb_survivorat_s_p1))))
 
     (:action badcomm_p1_c_c_s
-        :precondition (and (Bc_survivorat_s_p1)
-                           (Pc_survivorat_s_p1)
-                           (leader_c)
-                           (at_c_p1))
+        :precondition (and (Pc_survivorat_s_p1)
+                           (Bc_survivorat_s_p1)
+                           (at_c_p1)
+                           (leader_c))
         :effect (and
-                    ; #56109: origin
-                    (Bc_not_survivorat_s_p1)
-
-                    ; #81463: <==closure== 56109 (pos)
+                    ; #10330: <==closure== 71128 (pos)
                     (Pc_not_survivorat_s_p1)
 
-                    ; #19130: <==negation-removal== 81463 (pos)
+                    ; #71128: origin
+                    (Bc_not_survivorat_s_p1)
+
+                    ; #46343: <==negation-removal== 10330 (pos)
                     (not (Bc_survivorat_s_p1))
 
-                    ; #63714: <==negation-removal== 56109 (pos)
+                    ; #91922: <==negation-removal== 71128 (pos)
                     (not (Pc_survivorat_s_p1))))
 
     (:action badcomm_p2_a_a_s
-        :precondition (and (at_a_p2)
+        :precondition (and (Ba_survivorat_s_p2)
+                           (Pa_survivorat_s_p2)
                            (leader_a)
-                           (Ba_survivorat_s_p2)
-                           (Pa_survivorat_s_p2))
+                           (at_a_p2))
         :effect (and
-                    ; #59082: <==closure== 86297 (pos)
-                    (Pa_not_survivorat_s_p2)
-
-                    ; #86297: origin
+                    ; #49469: origin
                     (Ba_not_survivorat_s_p2)
 
-                    ; #56366: <==negation-removal== 59082 (pos)
-                    (not (Ba_survivorat_s_p2))
+                    ; #62700: <==closure== 49469 (pos)
+                    (Pa_not_survivorat_s_p2)
 
-                    ; #89322: <==negation-removal== 86297 (pos)
-                    (not (Pa_survivorat_s_p2))))
+                    ; #60665: <==negation-removal== 49469 (pos)
+                    (not (Pa_survivorat_s_p2))
+
+                    ; #89537: <==negation-removal== 62700 (pos)
+                    (not (Ba_survivorat_s_p2))))
 
     (:action badcomm_p2_a_b_s
-        :precondition (and (at_a_p2)
-                           (Ba_survivorat_s_p2)
+        :precondition (and (Ba_survivorat_s_p2)
                            (Pa_survivorat_s_p2)
-                           (leader_b))
+                           (leader_b)
+                           (at_a_p2))
         :effect (and
-                    ; #24331: <==closure== 44109 (pos)
-                    (Pb_not_survivorat_s_p2)
-
-                    ; #44109: origin
+                    ; #12719: origin
                     (Bb_not_survivorat_s_p2)
 
-                    ; #19372: <==negation-removal== 44109 (pos)
-                    (not (Pb_survivorat_s_p2))
+                    ; #79181: <==closure== 12719 (pos)
+                    (Pb_not_survivorat_s_p2)
 
-                    ; #86845: <==negation-removal== 24331 (pos)
-                    (not (Bb_survivorat_s_p2))))
+                    ; #79480: <==negation-removal== 79181 (pos)
+                    (not (Bb_survivorat_s_p2))
+
+                    ; #91079: <==negation-removal== 12719 (pos)
+                    (not (Pb_survivorat_s_p2))))
 
     (:action badcomm_p2_a_c_s
-        :precondition (and (at_a_p2)
-                           (leader_c)
+        :precondition (and (leader_c)
                            (Ba_survivorat_s_p2)
-                           (Pa_survivorat_s_p2))
+                           (Pa_survivorat_s_p2)
+                           (at_a_p2))
         :effect (and
-                    ; #10585: origin
-                    (Bc_not_survivorat_s_p2)
-
-                    ; #85140: <==closure== 10585 (pos)
+                    ; #12144: <==closure== 15403 (pos)
                     (Pc_not_survivorat_s_p2)
 
-                    ; #22868: <==negation-removal== 10585 (pos)
-                    (not (Pc_survivorat_s_p2))
+                    ; #15403: origin
+                    (Bc_not_survivorat_s_p2)
 
-                    ; #24426: <==negation-removal== 85140 (pos)
-                    (not (Bc_survivorat_s_p2))))
+                    ; #40161: <==negation-removal== 12144 (pos)
+                    (not (Bc_survivorat_s_p2))
+
+                    ; #67294: <==negation-removal== 15403 (pos)
+                    (not (Pc_survivorat_s_p2))))
 
     (:action badcomm_p2_b_a_s
-        :precondition (and (leader_a)
+        :precondition (and (at_b_p2)
                            (Bb_survivorat_s_p2)
-                           (at_b_p2)
+                           (leader_a)
                            (Pb_survivorat_s_p2))
         :effect (and
-                    ; #59082: <==closure== 86297 (pos)
-                    (Pa_not_survivorat_s_p2)
-
-                    ; #86297: origin
+                    ; #49469: origin
                     (Ba_not_survivorat_s_p2)
 
-                    ; #56366: <==negation-removal== 59082 (pos)
-                    (not (Ba_survivorat_s_p2))
+                    ; #62700: <==closure== 49469 (pos)
+                    (Pa_not_survivorat_s_p2)
 
-                    ; #89322: <==negation-removal== 86297 (pos)
-                    (not (Pa_survivorat_s_p2))))
+                    ; #60665: <==negation-removal== 49469 (pos)
+                    (not (Pa_survivorat_s_p2))
+
+                    ; #89537: <==negation-removal== 62700 (pos)
+                    (not (Ba_survivorat_s_p2))))
 
     (:action badcomm_p2_b_b_s
-        :precondition (and (Bb_survivorat_s_p2)
-                           (at_b_p2)
+        :precondition (and (at_b_p2)
+                           (Bb_survivorat_s_p2)
                            (leader_b)
                            (Pb_survivorat_s_p2))
         :effect (and
-                    ; #24331: <==closure== 44109 (pos)
-                    (Pb_not_survivorat_s_p2)
-
-                    ; #44109: origin
+                    ; #12719: origin
                     (Bb_not_survivorat_s_p2)
 
-                    ; #19372: <==negation-removal== 44109 (pos)
-                    (not (Pb_survivorat_s_p2))
+                    ; #79181: <==closure== 12719 (pos)
+                    (Pb_not_survivorat_s_p2)
 
-                    ; #86845: <==negation-removal== 24331 (pos)
-                    (not (Bb_survivorat_s_p2))))
+                    ; #79480: <==negation-removal== 79181 (pos)
+                    (not (Bb_survivorat_s_p2))
+
+                    ; #91079: <==negation-removal== 12719 (pos)
+                    (not (Pb_survivorat_s_p2))))
 
     (:action badcomm_p2_b_c_s
-        :precondition (and (leader_c)
+        :precondition (and (at_b_p2)
+                           (leader_c)
                            (Bb_survivorat_s_p2)
-                           (at_b_p2)
                            (Pb_survivorat_s_p2))
         :effect (and
-                    ; #10585: origin
-                    (Bc_not_survivorat_s_p2)
-
-                    ; #85140: <==closure== 10585 (pos)
+                    ; #12144: <==closure== 15403 (pos)
                     (Pc_not_survivorat_s_p2)
 
-                    ; #22868: <==negation-removal== 10585 (pos)
-                    (not (Pc_survivorat_s_p2))
+                    ; #15403: origin
+                    (Bc_not_survivorat_s_p2)
 
-                    ; #24426: <==negation-removal== 85140 (pos)
-                    (not (Bc_survivorat_s_p2))))
+                    ; #40161: <==negation-removal== 12144 (pos)
+                    (not (Bc_survivorat_s_p2))
+
+                    ; #67294: <==negation-removal== 15403 (pos)
+                    (not (Pc_survivorat_s_p2))))
 
     (:action badcomm_p2_c_a_s
-        :precondition (and (Bc_survivorat_s_p2)
+        :precondition (and (at_c_p2)
+                           (Bc_survivorat_s_p2)
                            (Pc_survivorat_s_p2)
-                           (leader_a)
-                           (at_c_p2))
+                           (leader_a))
         :effect (and
-                    ; #59082: <==closure== 86297 (pos)
-                    (Pa_not_survivorat_s_p2)
-
-                    ; #86297: origin
+                    ; #49469: origin
                     (Ba_not_survivorat_s_p2)
 
-                    ; #56366: <==negation-removal== 59082 (pos)
-                    (not (Ba_survivorat_s_p2))
+                    ; #62700: <==closure== 49469 (pos)
+                    (Pa_not_survivorat_s_p2)
 
-                    ; #89322: <==negation-removal== 86297 (pos)
-                    (not (Pa_survivorat_s_p2))))
+                    ; #60665: <==negation-removal== 49469 (pos)
+                    (not (Pa_survivorat_s_p2))
+
+                    ; #89537: <==negation-removal== 62700 (pos)
+                    (not (Ba_survivorat_s_p2))))
 
     (:action badcomm_p2_c_b_s
-        :precondition (and (Bc_survivorat_s_p2)
+        :precondition (and (at_c_p2)
+                           (Bc_survivorat_s_p2)
                            (Pc_survivorat_s_p2)
-                           (leader_b)
-                           (at_c_p2))
+                           (leader_b))
         :effect (and
-                    ; #24331: <==closure== 44109 (pos)
-                    (Pb_not_survivorat_s_p2)
-
-                    ; #44109: origin
+                    ; #12719: origin
                     (Bb_not_survivorat_s_p2)
 
-                    ; #19372: <==negation-removal== 44109 (pos)
-                    (not (Pb_survivorat_s_p2))
+                    ; #79181: <==closure== 12719 (pos)
+                    (Pb_not_survivorat_s_p2)
 
-                    ; #86845: <==negation-removal== 24331 (pos)
-                    (not (Bb_survivorat_s_p2))))
+                    ; #79480: <==negation-removal== 79181 (pos)
+                    (not (Bb_survivorat_s_p2))
+
+                    ; #91079: <==negation-removal== 12719 (pos)
+                    (not (Pb_survivorat_s_p2))))
 
     (:action badcomm_p2_c_c_s
         :precondition (and (leader_c)
+                           (at_c_p2)
                            (Bc_survivorat_s_p2)
-                           (Pc_survivorat_s_p2)
-                           (at_c_p2))
+                           (Pc_survivorat_s_p2))
         :effect (and
-                    ; #10585: origin
-                    (Bc_not_survivorat_s_p2)
-
-                    ; #85140: <==closure== 10585 (pos)
+                    ; #12144: <==closure== 15403 (pos)
                     (Pc_not_survivorat_s_p2)
 
-                    ; #22868: <==negation-removal== 10585 (pos)
-                    (not (Pc_survivorat_s_p2))
+                    ; #15403: origin
+                    (Bc_not_survivorat_s_p2)
 
-                    ; #24426: <==negation-removal== 85140 (pos)
-                    (not (Bc_survivorat_s_p2))))
+                    ; #40161: <==negation-removal== 12144 (pos)
+                    (not (Bc_survivorat_s_p2))
+
+                    ; #67294: <==negation-removal== 15403 (pos)
+                    (not (Pc_survivorat_s_p2))))
 
     (:action badcomm_p3_a_a_s
-        :precondition (and (leader_a)
-                           (Ba_survivorat_s_p3)
-                           (at_a_p3)
-                           (Pa_survivorat_s_p3))
+        :precondition (and (Ba_survivorat_s_p3)
+                           (leader_a)
+                           (Pa_survivorat_s_p3)
+                           (at_a_p3))
         :effect (and
-                    ; #22443: <==closure== 71148 (pos)
-                    (Pa_not_survivorat_s_p3)
-
-                    ; #71148: origin
+                    ; #47234: origin
                     (Ba_not_survivorat_s_p3)
 
-                    ; #10689: <==negation-removal== 71148 (pos)
+                    ; #76649: <==closure== 47234 (pos)
+                    (Pa_not_survivorat_s_p3)
+
+                    ; #66355: <==negation-removal== 47234 (pos)
                     (not (Pa_survivorat_s_p3))
 
-                    ; #16707: <==negation-removal== 22443 (pos)
+                    ; #79712: <==negation-removal== 76649 (pos)
                     (not (Ba_survivorat_s_p3))))
 
     (:action badcomm_p3_a_b_s
         :precondition (and (Ba_survivorat_s_p3)
-                           (at_a_p3)
+                           (leader_b)
                            (Pa_survivorat_s_p3)
-                           (leader_b))
+                           (at_a_p3))
         :effect (and
-                    ; #77928: <==closure== 99761 (pos)
+                    ; #65372: <==closure== 72287 (pos)
                     (Pb_not_survivorat_s_p3)
 
-                    ; #99761: origin
+                    ; #72287: origin
                     (Bb_not_survivorat_s_p3)
 
-                    ; #15936: <==negation-removal== 99761 (pos)
-                    (not (Pb_survivorat_s_p3))
+                    ; #11262: <==negation-removal== 65372 (pos)
+                    (not (Bb_survivorat_s_p3))
 
-                    ; #53444: <==negation-removal== 77928 (pos)
-                    (not (Bb_survivorat_s_p3))))
+                    ; #52340: <==negation-removal== 72287 (pos)
+                    (not (Pb_survivorat_s_p3))))
 
     (:action badcomm_p3_a_c_s
-        :precondition (and (leader_c)
-                           (Ba_survivorat_s_p3)
+        :precondition (and (Ba_survivorat_s_p3)
+                           (Pa_survivorat_s_p3)
                            (at_a_p3)
-                           (Pa_survivorat_s_p3))
+                           (leader_c))
         :effect (and
-                    ; #13401: <==closure== 55320 (pos)
-                    (Pc_not_survivorat_s_p3)
-
-                    ; #55320: origin
+                    ; #71785: origin
                     (Bc_not_survivorat_s_p3)
 
-                    ; #20243: <==negation-removal== 13401 (pos)
-                    (not (Bc_survivorat_s_p3))
+                    ; #72758: <==closure== 71785 (pos)
+                    (Pc_not_survivorat_s_p3)
 
-                    ; #80838: <==negation-removal== 55320 (pos)
-                    (not (Pc_survivorat_s_p3))))
+                    ; #69511: <==negation-removal== 71785 (pos)
+                    (not (Pc_survivorat_s_p3))
+
+                    ; #70426: <==negation-removal== 72758 (pos)
+                    (not (Bc_survivorat_s_p3))))
 
     (:action badcomm_p3_b_a_s
         :precondition (and (at_b_p3)
-                           (leader_a)
                            (Pb_survivorat_s_p3)
-                           (Bb_survivorat_s_p3))
+                           (Bb_survivorat_s_p3)
+                           (leader_a))
         :effect (and
-                    ; #22443: <==closure== 71148 (pos)
-                    (Pa_not_survivorat_s_p3)
-
-                    ; #71148: origin
+                    ; #47234: origin
                     (Ba_not_survivorat_s_p3)
 
-                    ; #10689: <==negation-removal== 71148 (pos)
+                    ; #76649: <==closure== 47234 (pos)
+                    (Pa_not_survivorat_s_p3)
+
+                    ; #66355: <==negation-removal== 47234 (pos)
                     (not (Pa_survivorat_s_p3))
 
-                    ; #16707: <==negation-removal== 22443 (pos)
+                    ; #79712: <==negation-removal== 76649 (pos)
                     (not (Ba_survivorat_s_p3))))
 
     (:action badcomm_p3_b_b_s
         :precondition (and (at_b_p3)
                            (Pb_survivorat_s_p3)
-                           (Bb_survivorat_s_p3)
-                           (leader_b))
+                           (leader_b)
+                           (Bb_survivorat_s_p3))
         :effect (and
-                    ; #77928: <==closure== 99761 (pos)
+                    ; #65372: <==closure== 72287 (pos)
                     (Pb_not_survivorat_s_p3)
 
-                    ; #99761: origin
+                    ; #72287: origin
                     (Bb_not_survivorat_s_p3)
 
-                    ; #15936: <==negation-removal== 99761 (pos)
-                    (not (Pb_survivorat_s_p3))
+                    ; #11262: <==negation-removal== 65372 (pos)
+                    (not (Bb_survivorat_s_p3))
 
-                    ; #53444: <==negation-removal== 77928 (pos)
-                    (not (Bb_survivorat_s_p3))))
+                    ; #52340: <==negation-removal== 72287 (pos)
+                    (not (Pb_survivorat_s_p3))))
 
     (:action badcomm_p3_b_c_s
         :precondition (and (at_b_p3)
-                           (leader_c)
                            (Pb_survivorat_s_p3)
-                           (Bb_survivorat_s_p3))
+                           (Bb_survivorat_s_p3)
+                           (leader_c))
         :effect (and
-                    ; #13401: <==closure== 55320 (pos)
-                    (Pc_not_survivorat_s_p3)
-
-                    ; #55320: origin
+                    ; #71785: origin
                     (Bc_not_survivorat_s_p3)
 
-                    ; #20243: <==negation-removal== 13401 (pos)
-                    (not (Bc_survivorat_s_p3))
+                    ; #72758: <==closure== 71785 (pos)
+                    (Pc_not_survivorat_s_p3)
 
-                    ; #80838: <==negation-removal== 55320 (pos)
-                    (not (Pc_survivorat_s_p3))))
+                    ; #69511: <==negation-removal== 71785 (pos)
+                    (not (Pc_survivorat_s_p3))
+
+                    ; #70426: <==negation-removal== 72758 (pos)
+                    (not (Bc_survivorat_s_p3))))
 
     (:action badcomm_p3_c_a_s
         :precondition (and (at_c_p3)
-                           (Pc_survivorat_s_p3)
+                           (Bc_survivorat_s_p3)
                            (leader_a)
-                           (Bc_survivorat_s_p3))
+                           (Pc_survivorat_s_p3))
         :effect (and
-                    ; #22443: <==closure== 71148 (pos)
-                    (Pa_not_survivorat_s_p3)
-
-                    ; #71148: origin
+                    ; #47234: origin
                     (Ba_not_survivorat_s_p3)
 
-                    ; #10689: <==negation-removal== 71148 (pos)
+                    ; #76649: <==closure== 47234 (pos)
+                    (Pa_not_survivorat_s_p3)
+
+                    ; #66355: <==negation-removal== 47234 (pos)
                     (not (Pa_survivorat_s_p3))
 
-                    ; #16707: <==negation-removal== 22443 (pos)
+                    ; #79712: <==negation-removal== 76649 (pos)
                     (not (Ba_survivorat_s_p3))))
 
     (:action badcomm_p3_c_b_s
         :precondition (and (at_c_p3)
-                           (Pc_survivorat_s_p3)
+                           (Bc_survivorat_s_p3)
                            (leader_b)
-                           (Bc_survivorat_s_p3))
+                           (Pc_survivorat_s_p3))
         :effect (and
-                    ; #77928: <==closure== 99761 (pos)
+                    ; #65372: <==closure== 72287 (pos)
                     (Pb_not_survivorat_s_p3)
 
-                    ; #99761: origin
+                    ; #72287: origin
                     (Bb_not_survivorat_s_p3)
 
-                    ; #15936: <==negation-removal== 99761 (pos)
-                    (not (Pb_survivorat_s_p3))
+                    ; #11262: <==negation-removal== 65372 (pos)
+                    (not (Bb_survivorat_s_p3))
 
-                    ; #53444: <==negation-removal== 77928 (pos)
-                    (not (Bb_survivorat_s_p3))))
+                    ; #52340: <==negation-removal== 72287 (pos)
+                    (not (Pb_survivorat_s_p3))))
 
     (:action badcomm_p3_c_c_s
         :precondition (and (at_c_p3)
-                           (Pc_survivorat_s_p3)
+                           (Bc_survivorat_s_p3)
                            (leader_c)
-                           (Bc_survivorat_s_p3))
+                           (Pc_survivorat_s_p3))
         :effect (and
-                    ; #13401: <==closure== 55320 (pos)
-                    (Pc_not_survivorat_s_p3)
-
-                    ; #55320: origin
+                    ; #71785: origin
                     (Bc_not_survivorat_s_p3)
 
-                    ; #20243: <==negation-removal== 13401 (pos)
-                    (not (Bc_survivorat_s_p3))
+                    ; #72758: <==closure== 71785 (pos)
+                    (Pc_not_survivorat_s_p3)
 
-                    ; #80838: <==negation-removal== 55320 (pos)
-                    (not (Pc_survivorat_s_p3))))
+                    ; #69511: <==negation-removal== 71785 (pos)
+                    (not (Pc_survivorat_s_p3))
+
+                    ; #70426: <==negation-removal== 72758 (pos)
+                    (not (Bc_survivorat_s_p3))))
 
     (:action badcomm_p4_a_a_s
         :precondition (and (at_a_p4)
-                           (leader_a)
                            (Pa_survivorat_s_p4)
-                           (Ba_survivorat_s_p4))
+                           (Ba_survivorat_s_p4)
+                           (leader_a))
         :effect (and
-                    ; #64512: <==closure== 64539 (pos)
+                    ; #17634: <==closure== 33509 (pos)
                     (Pa_not_survivorat_s_p4)
 
-                    ; #64539: origin
+                    ; #33509: origin
                     (Ba_not_survivorat_s_p4)
 
-                    ; #43200: <==negation-removal== 64539 (pos)
+                    ; #44443: <==negation-removal== 33509 (pos)
                     (not (Pa_survivorat_s_p4))
 
-                    ; #53714: <==negation-removal== 64512 (pos)
+                    ; #62767: <==negation-removal== 17634 (pos)
                     (not (Ba_survivorat_s_p4))))
 
     (:action badcomm_p4_a_b_s
@@ -1115,1456 +1115,1456 @@
                            (Ba_survivorat_s_p4)
                            (leader_b))
         :effect (and
-                    ; #18972: <==closure== 38083 (pos)
+                    ; #62404: <==closure== 69182 (pos)
                     (Pb_not_survivorat_s_p4)
 
-                    ; #38083: origin
+                    ; #69182: origin
                     (Bb_not_survivorat_s_p4)
 
-                    ; #13525: <==negation-removal== 38083 (pos)
-                    (not (Pb_survivorat_s_p4))
+                    ; #45897: <==negation-removal== 62404 (pos)
+                    (not (Bb_survivorat_s_p4))
 
-                    ; #65877: <==negation-removal== 18972 (pos)
-                    (not (Bb_survivorat_s_p4))))
+                    ; #60186: <==negation-removal== 69182 (pos)
+                    (not (Pb_survivorat_s_p4))))
 
     (:action badcomm_p4_a_c_s
         :precondition (and (at_a_p4)
-                           (leader_c)
                            (Pa_survivorat_s_p4)
-                           (Ba_survivorat_s_p4))
+                           (Ba_survivorat_s_p4)
+                           (leader_c))
         :effect (and
-                    ; #55412: origin
-                    (Bc_not_survivorat_s_p4)
-
-                    ; #60176: <==closure== 55412 (pos)
+                    ; #15391: <==closure== 63036 (pos)
                     (Pc_not_survivorat_s_p4)
 
-                    ; #55665: <==negation-removal== 60176 (pos)
+                    ; #63036: origin
+                    (Bc_not_survivorat_s_p4)
+
+                    ; #40210: <==negation-removal== 15391 (pos)
                     (not (Bc_survivorat_s_p4))
 
-                    ; #55885: <==negation-removal== 55412 (pos)
+                    ; #42759: <==negation-removal== 63036 (pos)
                     (not (Pc_survivorat_s_p4))))
 
     (:action badcomm_p4_b_a_s
         :precondition (and (leader_a)
-                           (Pb_survivorat_s_p4)
                            (Bb_survivorat_s_p4)
-                           (at_b_p4))
+                           (at_b_p4)
+                           (Pb_survivorat_s_p4))
         :effect (and
-                    ; #64512: <==closure== 64539 (pos)
+                    ; #17634: <==closure== 33509 (pos)
                     (Pa_not_survivorat_s_p4)
 
-                    ; #64539: origin
+                    ; #33509: origin
                     (Ba_not_survivorat_s_p4)
 
-                    ; #43200: <==negation-removal== 64539 (pos)
+                    ; #44443: <==negation-removal== 33509 (pos)
                     (not (Pa_survivorat_s_p4))
 
-                    ; #53714: <==negation-removal== 64512 (pos)
+                    ; #62767: <==negation-removal== 17634 (pos)
                     (not (Ba_survivorat_s_p4))))
 
     (:action badcomm_p4_b_b_s
-        :precondition (and (Pb_survivorat_s_p4)
+        :precondition (and (leader_b)
                            (Bb_survivorat_s_p4)
                            (at_b_p4)
-                           (leader_b))
+                           (Pb_survivorat_s_p4))
         :effect (and
-                    ; #18972: <==closure== 38083 (pos)
+                    ; #62404: <==closure== 69182 (pos)
                     (Pb_not_survivorat_s_p4)
 
-                    ; #38083: origin
+                    ; #69182: origin
                     (Bb_not_survivorat_s_p4)
 
-                    ; #13525: <==negation-removal== 38083 (pos)
-                    (not (Pb_survivorat_s_p4))
+                    ; #45897: <==negation-removal== 62404 (pos)
+                    (not (Bb_survivorat_s_p4))
 
-                    ; #65877: <==negation-removal== 18972 (pos)
-                    (not (Bb_survivorat_s_p4))))
+                    ; #60186: <==negation-removal== 69182 (pos)
+                    (not (Pb_survivorat_s_p4))))
 
     (:action badcomm_p4_b_c_s
         :precondition (and (leader_c)
-                           (Pb_survivorat_s_p4)
                            (Bb_survivorat_s_p4)
-                           (at_b_p4))
+                           (at_b_p4)
+                           (Pb_survivorat_s_p4))
         :effect (and
-                    ; #55412: origin
-                    (Bc_not_survivorat_s_p4)
-
-                    ; #60176: <==closure== 55412 (pos)
+                    ; #15391: <==closure== 63036 (pos)
                     (Pc_not_survivorat_s_p4)
 
-                    ; #55665: <==negation-removal== 60176 (pos)
+                    ; #63036: origin
+                    (Bc_not_survivorat_s_p4)
+
+                    ; #40210: <==negation-removal== 15391 (pos)
                     (not (Bc_survivorat_s_p4))
 
-                    ; #55885: <==negation-removal== 55412 (pos)
+                    ; #42759: <==negation-removal== 63036 (pos)
                     (not (Pc_survivorat_s_p4))))
 
     (:action badcomm_p4_c_a_s
-        :precondition (and (leader_a)
-                           (at_c_p4)
-                           (Pc_survivorat_s_p4)
-                           (Bc_survivorat_s_p4))
+        :precondition (and (Pc_survivorat_s_p4)
+                           (Bc_survivorat_s_p4)
+                           (leader_a)
+                           (at_c_p4))
         :effect (and
-                    ; #64512: <==closure== 64539 (pos)
+                    ; #17634: <==closure== 33509 (pos)
                     (Pa_not_survivorat_s_p4)
 
-                    ; #64539: origin
+                    ; #33509: origin
                     (Ba_not_survivorat_s_p4)
 
-                    ; #43200: <==negation-removal== 64539 (pos)
+                    ; #44443: <==negation-removal== 33509 (pos)
                     (not (Pa_survivorat_s_p4))
 
-                    ; #53714: <==negation-removal== 64512 (pos)
+                    ; #62767: <==negation-removal== 17634 (pos)
                     (not (Ba_survivorat_s_p4))))
 
     (:action badcomm_p4_c_b_s
-        :precondition (and (at_c_p4)
-                           (Pc_survivorat_s_p4)
+        :precondition (and (Pc_survivorat_s_p4)
+                           (Bc_survivorat_s_p4)
                            (leader_b)
-                           (Bc_survivorat_s_p4))
+                           (at_c_p4))
         :effect (and
-                    ; #18972: <==closure== 38083 (pos)
+                    ; #62404: <==closure== 69182 (pos)
                     (Pb_not_survivorat_s_p4)
 
-                    ; #38083: origin
+                    ; #69182: origin
                     (Bb_not_survivorat_s_p4)
 
-                    ; #13525: <==negation-removal== 38083 (pos)
-                    (not (Pb_survivorat_s_p4))
+                    ; #45897: <==negation-removal== 62404 (pos)
+                    (not (Bb_survivorat_s_p4))
 
-                    ; #65877: <==negation-removal== 18972 (pos)
-                    (not (Bb_survivorat_s_p4))))
+                    ; #60186: <==negation-removal== 69182 (pos)
+                    (not (Pb_survivorat_s_p4))))
 
     (:action badcomm_p4_c_c_s
         :precondition (and (leader_c)
-                           (at_c_p4)
                            (Pc_survivorat_s_p4)
-                           (Bc_survivorat_s_p4))
+                           (Bc_survivorat_s_p4)
+                           (at_c_p4))
         :effect (and
-                    ; #55412: origin
-                    (Bc_not_survivorat_s_p4)
-
-                    ; #60176: <==closure== 55412 (pos)
+                    ; #15391: <==closure== 63036 (pos)
                     (Pc_not_survivorat_s_p4)
 
-                    ; #55665: <==negation-removal== 60176 (pos)
+                    ; #63036: origin
+                    (Bc_not_survivorat_s_p4)
+
+                    ; #40210: <==negation-removal== 15391 (pos)
                     (not (Bc_survivorat_s_p4))
 
-                    ; #55885: <==negation-removal== 55412 (pos)
+                    ; #42759: <==negation-removal== 63036 (pos)
                     (not (Pc_survivorat_s_p4))))
 
     (:action badcomm_p5_a_a_s
-        :precondition (and (at_a_p5)
+        :precondition (and (Ba_survivorat_s_p5)
                            (Pa_survivorat_s_p5)
-                           (Ba_survivorat_s_p5)
-                           (leader_a))
+                           (leader_a)
+                           (at_a_p5))
         :effect (and
-                    ; #72418: <==closure== 76635 (pos)
-                    (Pa_not_survivorat_s_p5)
-
-                    ; #76635: origin
+                    ; #11930: origin
                     (Ba_not_survivorat_s_p5)
 
-                    ; #50253: <==negation-removal== 72418 (pos)
-                    (not (Ba_survivorat_s_p5))
+                    ; #59375: <==closure== 11930 (pos)
+                    (Pa_not_survivorat_s_p5)
 
-                    ; #76159: <==negation-removal== 76635 (pos)
-                    (not (Pa_survivorat_s_p5))))
+                    ; #52124: <==negation-removal== 11930 (pos)
+                    (not (Pa_survivorat_s_p5))
+
+                    ; #81977: <==negation-removal== 59375 (pos)
+                    (not (Ba_survivorat_s_p5))))
 
     (:action badcomm_p5_a_b_s
-        :precondition (and (at_a_p5)
+        :precondition (and (Ba_survivorat_s_p5)
+                           (leader_b)
                            (Pa_survivorat_s_p5)
-                           (Ba_survivorat_s_p5)
-                           (leader_b))
+                           (at_a_p5))
         :effect (and
-                    ; #35201: origin
+                    ; #35014: origin
                     (Bb_not_survivorat_s_p5)
 
-                    ; #79267: <==closure== 35201 (pos)
+                    ; #67374: <==closure== 35014 (pos)
                     (Pb_not_survivorat_s_p5)
 
-                    ; #26494: <==negation-removal== 79267 (pos)
-                    (not (Bb_survivorat_s_p5))
+                    ; #16507: <==negation-removal== 35014 (pos)
+                    (not (Pb_survivorat_s_p5))
 
-                    ; #86115: <==negation-removal== 35201 (pos)
-                    (not (Pb_survivorat_s_p5))))
+                    ; #54600: <==negation-removal== 67374 (pos)
+                    (not (Bb_survivorat_s_p5))))
 
     (:action badcomm_p5_a_c_s
-        :precondition (and (at_a_p5)
-                           (Pa_survivorat_s_p5)
+        :precondition (and (leader_c)
                            (Ba_survivorat_s_p5)
-                           (leader_c))
+                           (Pa_survivorat_s_p5)
+                           (at_a_p5))
         :effect (and
-                    ; #18439: origin
-                    (Bc_not_survivorat_s_p5)
-
-                    ; #37894: <==closure== 18439 (pos)
+                    ; #16445: <==closure== 80157 (pos)
                     (Pc_not_survivorat_s_p5)
 
-                    ; #80460: <==negation-removal== 18439 (pos)
-                    (not (Pc_survivorat_s_p5))
+                    ; #80157: origin
+                    (Bc_not_survivorat_s_p5)
 
-                    ; #86886: <==negation-removal== 37894 (pos)
-                    (not (Bc_survivorat_s_p5))))
+                    ; #89262: <==negation-removal== 16445 (pos)
+                    (not (Bc_survivorat_s_p5))
+
+                    ; #90961: <==negation-removal== 80157 (pos)
+                    (not (Pc_survivorat_s_p5))))
 
     (:action badcomm_p5_b_a_s
         :precondition (and (at_b_p5)
+                           (Pb_survivorat_s_p5)
                            (leader_a)
-                           (Bb_survivorat_s_p5)
-                           (Pb_survivorat_s_p5))
+                           (Bb_survivorat_s_p5))
         :effect (and
-                    ; #72418: <==closure== 76635 (pos)
-                    (Pa_not_survivorat_s_p5)
-
-                    ; #76635: origin
+                    ; #11930: origin
                     (Ba_not_survivorat_s_p5)
 
-                    ; #50253: <==negation-removal== 72418 (pos)
-                    (not (Ba_survivorat_s_p5))
+                    ; #59375: <==closure== 11930 (pos)
+                    (Pa_not_survivorat_s_p5)
 
-                    ; #76159: <==negation-removal== 76635 (pos)
-                    (not (Pa_survivorat_s_p5))))
+                    ; #52124: <==negation-removal== 11930 (pos)
+                    (not (Pa_survivorat_s_p5))
+
+                    ; #81977: <==negation-removal== 59375 (pos)
+                    (not (Ba_survivorat_s_p5))))
 
     (:action badcomm_p5_b_b_s
         :precondition (and (at_b_p5)
-                           (Bb_survivorat_s_p5)
+                           (leader_b)
                            (Pb_survivorat_s_p5)
-                           (leader_b))
+                           (Bb_survivorat_s_p5))
         :effect (and
-                    ; #35201: origin
+                    ; #35014: origin
                     (Bb_not_survivorat_s_p5)
 
-                    ; #79267: <==closure== 35201 (pos)
+                    ; #67374: <==closure== 35014 (pos)
                     (Pb_not_survivorat_s_p5)
 
-                    ; #26494: <==negation-removal== 79267 (pos)
-                    (not (Bb_survivorat_s_p5))
+                    ; #16507: <==negation-removal== 35014 (pos)
+                    (not (Pb_survivorat_s_p5))
 
-                    ; #86115: <==negation-removal== 35201 (pos)
-                    (not (Pb_survivorat_s_p5))))
+                    ; #54600: <==negation-removal== 67374 (pos)
+                    (not (Bb_survivorat_s_p5))))
 
     (:action badcomm_p5_b_c_s
-        :precondition (and (at_b_p5)
-                           (leader_c)
-                           (Bb_survivorat_s_p5)
-                           (Pb_survivorat_s_p5))
+        :precondition (and (leader_c)
+                           (at_b_p5)
+                           (Pb_survivorat_s_p5)
+                           (Bb_survivorat_s_p5))
         :effect (and
-                    ; #18439: origin
-                    (Bc_not_survivorat_s_p5)
-
-                    ; #37894: <==closure== 18439 (pos)
+                    ; #16445: <==closure== 80157 (pos)
                     (Pc_not_survivorat_s_p5)
 
-                    ; #80460: <==negation-removal== 18439 (pos)
-                    (not (Pc_survivorat_s_p5))
+                    ; #80157: origin
+                    (Bc_not_survivorat_s_p5)
 
-                    ; #86886: <==negation-removal== 37894 (pos)
-                    (not (Bc_survivorat_s_p5))))
+                    ; #89262: <==negation-removal== 16445 (pos)
+                    (not (Bc_survivorat_s_p5))
+
+                    ; #90961: <==negation-removal== 80157 (pos)
+                    (not (Pc_survivorat_s_p5))))
 
     (:action badcomm_p5_c_a_s
-        :precondition (and (Pc_survivorat_s_p5)
-                           (at_c_p5)
+        :precondition (and (at_c_p5)
+                           (Bc_survivorat_s_p5)
                            (leader_a)
-                           (Bc_survivorat_s_p5))
+                           (Pc_survivorat_s_p5))
         :effect (and
-                    ; #72418: <==closure== 76635 (pos)
-                    (Pa_not_survivorat_s_p5)
-
-                    ; #76635: origin
+                    ; #11930: origin
                     (Ba_not_survivorat_s_p5)
 
-                    ; #50253: <==negation-removal== 72418 (pos)
-                    (not (Ba_survivorat_s_p5))
+                    ; #59375: <==closure== 11930 (pos)
+                    (Pa_not_survivorat_s_p5)
 
-                    ; #76159: <==negation-removal== 76635 (pos)
-                    (not (Pa_survivorat_s_p5))))
+                    ; #52124: <==negation-removal== 11930 (pos)
+                    (not (Pa_survivorat_s_p5))
+
+                    ; #81977: <==negation-removal== 59375 (pos)
+                    (not (Ba_survivorat_s_p5))))
 
     (:action badcomm_p5_c_b_s
-        :precondition (and (Pc_survivorat_s_p5)
-                           (at_c_p5)
+        :precondition (and (at_c_p5)
+                           (leader_b)
                            (Bc_survivorat_s_p5)
-                           (leader_b))
+                           (Pc_survivorat_s_p5))
         :effect (and
-                    ; #35201: origin
+                    ; #35014: origin
                     (Bb_not_survivorat_s_p5)
 
-                    ; #79267: <==closure== 35201 (pos)
+                    ; #67374: <==closure== 35014 (pos)
                     (Pb_not_survivorat_s_p5)
 
-                    ; #26494: <==negation-removal== 79267 (pos)
-                    (not (Bb_survivorat_s_p5))
+                    ; #16507: <==negation-removal== 35014 (pos)
+                    (not (Pb_survivorat_s_p5))
 
-                    ; #86115: <==negation-removal== 35201 (pos)
-                    (not (Pb_survivorat_s_p5))))
+                    ; #54600: <==negation-removal== 67374 (pos)
+                    (not (Bb_survivorat_s_p5))))
 
     (:action badcomm_p5_c_c_s
-        :precondition (and (Pc_survivorat_s_p5)
-                           (at_c_p5)
+        :precondition (and (at_c_p5)
                            (leader_c)
-                           (Bc_survivorat_s_p5))
+                           (Bc_survivorat_s_p5)
+                           (Pc_survivorat_s_p5))
         :effect (and
-                    ; #18439: origin
-                    (Bc_not_survivorat_s_p5)
-
-                    ; #37894: <==closure== 18439 (pos)
+                    ; #16445: <==closure== 80157 (pos)
                     (Pc_not_survivorat_s_p5)
 
-                    ; #80460: <==negation-removal== 18439 (pos)
-                    (not (Pc_survivorat_s_p5))
+                    ; #80157: origin
+                    (Bc_not_survivorat_s_p5)
 
-                    ; #86886: <==negation-removal== 37894 (pos)
-                    (not (Bc_survivorat_s_p5))))
+                    ; #89262: <==negation-removal== 16445 (pos)
+                    (not (Bc_survivorat_s_p5))
+
+                    ; #90961: <==negation-removal== 80157 (pos)
+                    (not (Pc_survivorat_s_p5))))
 
     (:action badcomm_p6_a_a_s
-        :precondition (and (Ba_survivorat_s_p6)
+        :precondition (and (Pa_survivorat_s_p6)
+                           (Ba_survivorat_s_p6)
                            (leader_a)
-                           (Pa_survivorat_s_p6)
                            (at_a_p6))
         :effect (and
-                    ; #24904: <==closure== 80487 (pos)
-                    (Pa_not_survivorat_s_p6)
-
-                    ; #80487: origin
+                    ; #62807: origin
                     (Ba_not_survivorat_s_p6)
 
-                    ; #17814: <==negation-removal== 80487 (pos)
-                    (not (Pa_survivorat_s_p6))
+                    ; #77749: <==closure== 62807 (pos)
+                    (Pa_not_survivorat_s_p6)
 
-                    ; #87386: <==negation-removal== 24904 (pos)
-                    (not (Ba_survivorat_s_p6))))
+                    ; #20111: <==negation-removal== 77749 (pos)
+                    (not (Ba_survivorat_s_p6))
+
+                    ; #87439: <==negation-removal== 62807 (pos)
+                    (not (Pa_survivorat_s_p6))))
 
     (:action badcomm_p6_a_b_s
-        :precondition (and (Ba_survivorat_s_p6)
-                           (Pa_survivorat_s_p6)
+        :precondition (and (Pa_survivorat_s_p6)
                            (leader_b)
+                           (Ba_survivorat_s_p6)
                            (at_a_p6))
         :effect (and
-                    ; #62687: <==closure== 82230 (pos)
+                    ; #32206: <==closure== 86165 (pos)
                     (Pb_not_survivorat_s_p6)
 
-                    ; #82230: origin
+                    ; #86165: origin
                     (Bb_not_survivorat_s_p6)
 
-                    ; #68969: <==negation-removal== 62687 (pos)
-                    (not (Bb_survivorat_s_p6))
+                    ; #22790: <==negation-removal== 86165 (pos)
+                    (not (Pb_survivorat_s_p6))
 
-                    ; #84494: <==negation-removal== 82230 (pos)
-                    (not (Pb_survivorat_s_p6))))
+                    ; #72644: <==negation-removal== 32206 (pos)
+                    (not (Bb_survivorat_s_p6))))
 
     (:action badcomm_p6_a_c_s
-        :precondition (and (Ba_survivorat_s_p6)
+        :precondition (and (Pa_survivorat_s_p6)
                            (leader_c)
-                           (Pa_survivorat_s_p6)
+                           (Ba_survivorat_s_p6)
                            (at_a_p6))
         :effect (and
-                    ; #46023: origin
-                    (Bc_not_survivorat_s_p6)
-
-                    ; #74188: <==closure== 46023 (pos)
+                    ; #62179: <==closure== 77451 (pos)
                     (Pc_not_survivorat_s_p6)
 
-                    ; #53689: <==negation-removal== 46023 (pos)
-                    (not (Pc_survivorat_s_p6))
+                    ; #77451: origin
+                    (Bc_not_survivorat_s_p6)
 
-                    ; #57802: <==negation-removal== 74188 (pos)
-                    (not (Bc_survivorat_s_p6))))
+                    ; #46775: <==negation-removal== 62179 (pos)
+                    (not (Bc_survivorat_s_p6))
+
+                    ; #72016: <==negation-removal== 77451 (pos)
+                    (not (Pc_survivorat_s_p6))))
 
     (:action badcomm_p6_b_a_s
-        :precondition (and (at_b_p6)
-                           (leader_a)
-                           (Pb_survivorat_s_p6)
-                           (Bb_survivorat_s_p6))
+        :precondition (and (leader_a)
+                           (Bb_survivorat_s_p6)
+                           (at_b_p6)
+                           (Pb_survivorat_s_p6))
         :effect (and
-                    ; #24904: <==closure== 80487 (pos)
-                    (Pa_not_survivorat_s_p6)
-
-                    ; #80487: origin
+                    ; #62807: origin
                     (Ba_not_survivorat_s_p6)
 
-                    ; #17814: <==negation-removal== 80487 (pos)
-                    (not (Pa_survivorat_s_p6))
+                    ; #77749: <==closure== 62807 (pos)
+                    (Pa_not_survivorat_s_p6)
 
-                    ; #87386: <==negation-removal== 24904 (pos)
-                    (not (Ba_survivorat_s_p6))))
+                    ; #20111: <==negation-removal== 77749 (pos)
+                    (not (Ba_survivorat_s_p6))
+
+                    ; #87439: <==negation-removal== 62807 (pos)
+                    (not (Pa_survivorat_s_p6))))
 
     (:action badcomm_p6_b_b_s
-        :precondition (and (at_b_p6)
-                           (Pb_survivorat_s_p6)
+        :precondition (and (leader_b)
                            (Bb_survivorat_s_p6)
-                           (leader_b))
+                           (at_b_p6)
+                           (Pb_survivorat_s_p6))
         :effect (and
-                    ; #62687: <==closure== 82230 (pos)
+                    ; #32206: <==closure== 86165 (pos)
                     (Pb_not_survivorat_s_p6)
 
-                    ; #82230: origin
+                    ; #86165: origin
                     (Bb_not_survivorat_s_p6)
 
-                    ; #68969: <==negation-removal== 62687 (pos)
-                    (not (Bb_survivorat_s_p6))
+                    ; #22790: <==negation-removal== 86165 (pos)
+                    (not (Pb_survivorat_s_p6))
 
-                    ; #84494: <==negation-removal== 82230 (pos)
-                    (not (Pb_survivorat_s_p6))))
+                    ; #72644: <==negation-removal== 32206 (pos)
+                    (not (Bb_survivorat_s_p6))))
 
     (:action badcomm_p6_b_c_s
-        :precondition (and (at_b_p6)
-                           (Pb_survivorat_s_p6)
-                           (leader_c)
-                           (Bb_survivorat_s_p6))
+        :precondition (and (leader_c)
+                           (Bb_survivorat_s_p6)
+                           (at_b_p6)
+                           (Pb_survivorat_s_p6))
         :effect (and
-                    ; #46023: origin
-                    (Bc_not_survivorat_s_p6)
-
-                    ; #74188: <==closure== 46023 (pos)
+                    ; #62179: <==closure== 77451 (pos)
                     (Pc_not_survivorat_s_p6)
 
-                    ; #53689: <==negation-removal== 46023 (pos)
-                    (not (Pc_survivorat_s_p6))
+                    ; #77451: origin
+                    (Bc_not_survivorat_s_p6)
 
-                    ; #57802: <==negation-removal== 74188 (pos)
-                    (not (Bc_survivorat_s_p6))))
+                    ; #46775: <==negation-removal== 62179 (pos)
+                    (not (Bc_survivorat_s_p6))
+
+                    ; #72016: <==negation-removal== 77451 (pos)
+                    (not (Pc_survivorat_s_p6))))
 
     (:action badcomm_p6_c_a_s
-        :precondition (and (Bc_survivorat_s_p6)
-                           (leader_a)
+        :precondition (and (at_c_p6)
                            (Pc_survivorat_s_p6)
-                           (at_c_p6))
+                           (Bc_survivorat_s_p6)
+                           (leader_a))
         :effect (and
-                    ; #24904: <==closure== 80487 (pos)
-                    (Pa_not_survivorat_s_p6)
-
-                    ; #80487: origin
+                    ; #62807: origin
                     (Ba_not_survivorat_s_p6)
 
-                    ; #17814: <==negation-removal== 80487 (pos)
-                    (not (Pa_survivorat_s_p6))
+                    ; #77749: <==closure== 62807 (pos)
+                    (Pa_not_survivorat_s_p6)
 
-                    ; #87386: <==negation-removal== 24904 (pos)
-                    (not (Ba_survivorat_s_p6))))
+                    ; #20111: <==negation-removal== 77749 (pos)
+                    (not (Ba_survivorat_s_p6))
+
+                    ; #87439: <==negation-removal== 62807 (pos)
+                    (not (Pa_survivorat_s_p6))))
 
     (:action badcomm_p6_c_b_s
-        :precondition (and (Bc_survivorat_s_p6)
+        :precondition (and (at_c_p6)
                            (Pc_survivorat_s_p6)
-                           (leader_b)
-                           (at_c_p6))
-        :effect (and
-                    ; #62687: <==closure== 82230 (pos)
-                    (Pb_not_survivorat_s_p6)
-
-                    ; #82230: origin
-                    (Bb_not_survivorat_s_p6)
-
-                    ; #68969: <==negation-removal== 62687 (pos)
-                    (not (Bb_survivorat_s_p6))
-
-                    ; #84494: <==negation-removal== 82230 (pos)
-                    (not (Pb_survivorat_s_p6))))
-
-    (:action badcomm_p6_c_c_s
-        :precondition (and (Bc_survivorat_s_p6)
-                           (Pc_survivorat_s_p6)
-                           (leader_c)
-                           (at_c_p6))
-        :effect (and
-                    ; #46023: origin
-                    (Bc_not_survivorat_s_p6)
-
-                    ; #74188: <==closure== 46023 (pos)
-                    (Pc_not_survivorat_s_p6)
-
-                    ; #53689: <==negation-removal== 46023 (pos)
-                    (not (Pc_survivorat_s_p6))
-
-                    ; #57802: <==negation-removal== 74188 (pos)
-                    (not (Bc_survivorat_s_p6))))
-
-    (:action badcomm_p7_a_a_s
-        :precondition (and (at_a_p7)
-                           (Pa_survivorat_s_p7)
-                           (leader_a)
-                           (Ba_survivorat_s_p7))
-        :effect (and
-                    ; #16046: origin
-                    (Ba_not_survivorat_s_p7)
-
-                    ; #89541: <==closure== 16046 (pos)
-                    (Pa_not_survivorat_s_p7)
-
-                    ; #21229: <==negation-removal== 16046 (pos)
-                    (not (Pa_survivorat_s_p7))
-
-                    ; #27586: <==negation-removal== 89541 (pos)
-                    (not (Ba_survivorat_s_p7))))
-
-    (:action badcomm_p7_a_b_s
-        :precondition (and (at_a_p7)
-                           (Pa_survivorat_s_p7)
-                           (Ba_survivorat_s_p7)
+                           (Bc_survivorat_s_p6)
                            (leader_b))
         :effect (and
-                    ; #24842: <==closure== 65645 (pos)
-                    (Pb_not_survivorat_s_p7)
+                    ; #32206: <==closure== 86165 (pos)
+                    (Pb_not_survivorat_s_p6)
 
-                    ; #65645: origin
-                    (Bb_not_survivorat_s_p7)
+                    ; #86165: origin
+                    (Bb_not_survivorat_s_p6)
 
-                    ; #37127: <==negation-removal== 24842 (pos)
-                    (not (Bb_survivorat_s_p7))
+                    ; #22790: <==negation-removal== 86165 (pos)
+                    (not (Pb_survivorat_s_p6))
 
-                    ; #77179: <==negation-removal== 65645 (pos)
-                    (not (Pb_survivorat_s_p7))))
+                    ; #72644: <==negation-removal== 32206 (pos)
+                    (not (Bb_survivorat_s_p6))))
 
-    (:action badcomm_p7_a_c_s
-        :precondition (and (at_a_p7)
-                           (Pa_survivorat_s_p7)
-                           (Ba_survivorat_s_p7)
+    (:action badcomm_p6_c_c_s
+        :precondition (and (at_c_p6)
+                           (Pc_survivorat_s_p6)
+                           (Bc_survivorat_s_p6)
                            (leader_c))
         :effect (and
-                    ; #43682: <==closure== 73606 (pos)
+                    ; #62179: <==closure== 77451 (pos)
+                    (Pc_not_survivorat_s_p6)
+
+                    ; #77451: origin
+                    (Bc_not_survivorat_s_p6)
+
+                    ; #46775: <==negation-removal== 62179 (pos)
+                    (not (Bc_survivorat_s_p6))
+
+                    ; #72016: <==negation-removal== 77451 (pos)
+                    (not (Pc_survivorat_s_p6))))
+
+    (:action badcomm_p7_a_a_s
+        :precondition (and (Ba_survivorat_s_p7)
+                           (at_a_p7)
+                           (Pa_survivorat_s_p7)
+                           (leader_a))
+        :effect (and
+                    ; #12194: origin
+                    (Ba_not_survivorat_s_p7)
+
+                    ; #38796: <==closure== 12194 (pos)
+                    (Pa_not_survivorat_s_p7)
+
+                    ; #29363: <==negation-removal== 38796 (pos)
+                    (not (Ba_survivorat_s_p7))
+
+                    ; #80595: <==negation-removal== 12194 (pos)
+                    (not (Pa_survivorat_s_p7))))
+
+    (:action badcomm_p7_a_b_s
+        :precondition (and (leader_b)
+                           (Ba_survivorat_s_p7)
+                           (at_a_p7)
+                           (Pa_survivorat_s_p7))
+        :effect (and
+                    ; #55402: <==closure== 66321 (pos)
+                    (Pb_not_survivorat_s_p7)
+
+                    ; #66321: origin
+                    (Bb_not_survivorat_s_p7)
+
+                    ; #14280: <==negation-removal== 66321 (pos)
+                    (not (Pb_survivorat_s_p7))
+
+                    ; #34866: <==negation-removal== 55402 (pos)
+                    (not (Bb_survivorat_s_p7))))
+
+    (:action badcomm_p7_a_c_s
+        :precondition (and (leader_c)
+                           (Ba_survivorat_s_p7)
+                           (at_a_p7)
+                           (Pa_survivorat_s_p7))
+        :effect (and
+                    ; #34699: <==closure== 72068 (pos)
                     (Pc_not_survivorat_s_p7)
 
-                    ; #73606: origin
+                    ; #72068: origin
                     (Bc_not_survivorat_s_p7)
 
-                    ; #10883: <==negation-removal== 73606 (pos)
-                    (not (Pc_survivorat_s_p7))
+                    ; #63695: <==negation-removal== 34699 (pos)
+                    (not (Bc_survivorat_s_p7))
 
-                    ; #54027: <==negation-removal== 43682 (pos)
-                    (not (Bc_survivorat_s_p7))))
+                    ; #72047: <==negation-removal== 72068 (pos)
+                    (not (Pc_survivorat_s_p7))))
 
     (:action badcomm_p7_b_a_s
-        :precondition (and (at_b_p7)
+        :precondition (and (Bb_survivorat_s_p7)
+                           (at_b_p7)
                            (leader_a)
-                           (Bb_survivorat_s_p7)
                            (Pb_survivorat_s_p7))
         :effect (and
-                    ; #16046: origin
+                    ; #12194: origin
                     (Ba_not_survivorat_s_p7)
 
-                    ; #89541: <==closure== 16046 (pos)
+                    ; #38796: <==closure== 12194 (pos)
                     (Pa_not_survivorat_s_p7)
 
-                    ; #21229: <==negation-removal== 16046 (pos)
-                    (not (Pa_survivorat_s_p7))
+                    ; #29363: <==negation-removal== 38796 (pos)
+                    (not (Ba_survivorat_s_p7))
 
-                    ; #27586: <==negation-removal== 89541 (pos)
-                    (not (Ba_survivorat_s_p7))))
+                    ; #80595: <==negation-removal== 12194 (pos)
+                    (not (Pa_survivorat_s_p7))))
 
     (:action badcomm_p7_b_b_s
-        :precondition (and (at_b_p7)
-                           (Bb_survivorat_s_p7)
+        :precondition (and (Bb_survivorat_s_p7)
+                           (at_b_p7)
                            (leader_b)
                            (Pb_survivorat_s_p7))
         :effect (and
-                    ; #24842: <==closure== 65645 (pos)
+                    ; #55402: <==closure== 66321 (pos)
                     (Pb_not_survivorat_s_p7)
 
-                    ; #65645: origin
+                    ; #66321: origin
                     (Bb_not_survivorat_s_p7)
 
-                    ; #37127: <==negation-removal== 24842 (pos)
-                    (not (Bb_survivorat_s_p7))
+                    ; #14280: <==negation-removal== 66321 (pos)
+                    (not (Pb_survivorat_s_p7))
 
-                    ; #77179: <==negation-removal== 65645 (pos)
-                    (not (Pb_survivorat_s_p7))))
+                    ; #34866: <==negation-removal== 55402 (pos)
+                    (not (Bb_survivorat_s_p7))))
 
     (:action badcomm_p7_b_c_s
-        :precondition (and (at_b_p7)
-                           (leader_c)
+        :precondition (and (leader_c)
                            (Bb_survivorat_s_p7)
+                           (at_b_p7)
                            (Pb_survivorat_s_p7))
         :effect (and
-                    ; #43682: <==closure== 73606 (pos)
+                    ; #34699: <==closure== 72068 (pos)
                     (Pc_not_survivorat_s_p7)
 
-                    ; #73606: origin
+                    ; #72068: origin
                     (Bc_not_survivorat_s_p7)
 
-                    ; #10883: <==negation-removal== 73606 (pos)
-                    (not (Pc_survivorat_s_p7))
+                    ; #63695: <==negation-removal== 34699 (pos)
+                    (not (Bc_survivorat_s_p7))
 
-                    ; #54027: <==negation-removal== 43682 (pos)
-                    (not (Bc_survivorat_s_p7))))
+                    ; #72047: <==negation-removal== 72068 (pos)
+                    (not (Pc_survivorat_s_p7))))
 
     (:action badcomm_p7_c_a_s
-        :precondition (and (Bc_survivorat_s_p7)
-                           (leader_a)
+        :precondition (and (leader_a)
                            (at_c_p7)
+                           (Bc_survivorat_s_p7)
                            (Pc_survivorat_s_p7))
         :effect (and
-                    ; #16046: origin
+                    ; #12194: origin
                     (Ba_not_survivorat_s_p7)
 
-                    ; #89541: <==closure== 16046 (pos)
+                    ; #38796: <==closure== 12194 (pos)
                     (Pa_not_survivorat_s_p7)
 
-                    ; #21229: <==negation-removal== 16046 (pos)
-                    (not (Pa_survivorat_s_p7))
+                    ; #29363: <==negation-removal== 38796 (pos)
+                    (not (Ba_survivorat_s_p7))
 
-                    ; #27586: <==negation-removal== 89541 (pos)
-                    (not (Ba_survivorat_s_p7))))
+                    ; #80595: <==negation-removal== 12194 (pos)
+                    (not (Pa_survivorat_s_p7))))
 
     (:action badcomm_p7_c_b_s
-        :precondition (and (Bc_survivorat_s_p7)
-                           (at_c_p7)
+        :precondition (and (at_c_p7)
                            (leader_b)
+                           (Bc_survivorat_s_p7)
                            (Pc_survivorat_s_p7))
         :effect (and
-                    ; #24842: <==closure== 65645 (pos)
+                    ; #55402: <==closure== 66321 (pos)
                     (Pb_not_survivorat_s_p7)
 
-                    ; #65645: origin
+                    ; #66321: origin
                     (Bb_not_survivorat_s_p7)
 
-                    ; #37127: <==negation-removal== 24842 (pos)
-                    (not (Bb_survivorat_s_p7))
+                    ; #14280: <==negation-removal== 66321 (pos)
+                    (not (Pb_survivorat_s_p7))
 
-                    ; #77179: <==negation-removal== 65645 (pos)
-                    (not (Pb_survivorat_s_p7))))
+                    ; #34866: <==negation-removal== 55402 (pos)
+                    (not (Bb_survivorat_s_p7))))
 
     (:action badcomm_p7_c_c_s
-        :precondition (and (Bc_survivorat_s_p7)
-                           (leader_c)
+        :precondition (and (leader_c)
                            (at_c_p7)
+                           (Bc_survivorat_s_p7)
                            (Pc_survivorat_s_p7))
         :effect (and
-                    ; #43682: <==closure== 73606 (pos)
+                    ; #34699: <==closure== 72068 (pos)
                     (Pc_not_survivorat_s_p7)
 
-                    ; #73606: origin
+                    ; #72068: origin
                     (Bc_not_survivorat_s_p7)
 
-                    ; #10883: <==negation-removal== 73606 (pos)
-                    (not (Pc_survivorat_s_p7))
+                    ; #63695: <==negation-removal== 34699 (pos)
+                    (not (Bc_survivorat_s_p7))
 
-                    ; #54027: <==negation-removal== 43682 (pos)
-                    (not (Bc_survivorat_s_p7))))
+                    ; #72047: <==negation-removal== 72068 (pos)
+                    (not (Pc_survivorat_s_p7))))
 
     (:action badcomm_p8_a_a_s
-        :precondition (and (Ba_survivorat_s_p8)
-                           (Pa_survivorat_s_p8)
+        :precondition (and (Pa_survivorat_s_p8)
                            (leader_a)
+                           (Ba_survivorat_s_p8)
                            (at_a_p8))
         :effect (and
-                    ; #26908: origin
+                    ; #58374: origin
                     (Ba_not_survivorat_s_p8)
 
-                    ; #83319: <==closure== 26908 (pos)
+                    ; #64183: <==closure== 58374 (pos)
                     (Pa_not_survivorat_s_p8)
 
-                    ; #42703: <==negation-removal== 83319 (pos)
-                    (not (Ba_survivorat_s_p8))
+                    ; #10892: <==negation-removal== 58374 (pos)
+                    (not (Pa_survivorat_s_p8))
 
-                    ; #91792: <==negation-removal== 26908 (pos)
-                    (not (Pa_survivorat_s_p8))))
+                    ; #15981: <==negation-removal== 64183 (pos)
+                    (not (Ba_survivorat_s_p8))))
 
     (:action badcomm_p8_a_b_s
-        :precondition (and (Ba_survivorat_s_p8)
-                           (Pa_survivorat_s_p8)
+        :precondition (and (Pa_survivorat_s_p8)
                            (leader_b)
+                           (Ba_survivorat_s_p8)
                            (at_a_p8))
         :effect (and
-                    ; #33734: origin
-                    (Bb_not_survivorat_s_p8)
-
-                    ; #75983: <==closure== 33734 (pos)
+                    ; #18953: <==closure== 66720 (pos)
                     (Pb_not_survivorat_s_p8)
 
-                    ; #33667: <==negation-removal== 75983 (pos)
+                    ; #66720: origin
+                    (Bb_not_survivorat_s_p8)
+
+                    ; #32989: <==negation-removal== 18953 (pos)
                     (not (Bb_survivorat_s_p8))
 
-                    ; #84698: <==negation-removal== 33734 (pos)
+                    ; #63094: <==negation-removal== 66720 (pos)
                     (not (Pb_survivorat_s_p8))))
 
     (:action badcomm_p8_a_c_s
         :precondition (and (leader_c)
-                           (Ba_survivorat_s_p8)
                            (Pa_survivorat_s_p8)
+                           (Ba_survivorat_s_p8)
                            (at_a_p8))
         :effect (and
-                    ; #26791: origin
-                    (Bc_not_survivorat_s_p8)
-
-                    ; #75380: <==closure== 26791 (pos)
+                    ; #28850: <==closure== 64702 (pos)
                     (Pc_not_survivorat_s_p8)
 
-                    ; #52362: <==negation-removal== 75380 (pos)
+                    ; #64702: origin
+                    (Bc_not_survivorat_s_p8)
+
+                    ; #41002: <==negation-removal== 28850 (pos)
                     (not (Bc_survivorat_s_p8))
 
-                    ; #56913: <==negation-removal== 26791 (pos)
+                    ; #58561: <==negation-removal== 64702 (pos)
                     (not (Pc_survivorat_s_p8))))
 
     (:action badcomm_p8_b_a_s
-        :precondition (and (leader_a)
-                           (Pb_survivorat_s_p8)
+        :precondition (and (Pb_survivorat_s_p8)
+                           (at_b_p8)
                            (Bb_survivorat_s_p8)
-                           (at_b_p8))
+                           (leader_a))
         :effect (and
-                    ; #26908: origin
+                    ; #58374: origin
                     (Ba_not_survivorat_s_p8)
 
-                    ; #83319: <==closure== 26908 (pos)
+                    ; #64183: <==closure== 58374 (pos)
                     (Pa_not_survivorat_s_p8)
 
-                    ; #42703: <==negation-removal== 83319 (pos)
-                    (not (Ba_survivorat_s_p8))
+                    ; #10892: <==negation-removal== 58374 (pos)
+                    (not (Pa_survivorat_s_p8))
 
-                    ; #91792: <==negation-removal== 26908 (pos)
-                    (not (Pa_survivorat_s_p8))))
+                    ; #15981: <==negation-removal== 64183 (pos)
+                    (not (Ba_survivorat_s_p8))))
 
     (:action badcomm_p8_b_b_s
-        :precondition (and (leader_b)
-                           (Pb_survivorat_s_p8)
+        :precondition (and (Pb_survivorat_s_p8)
+                           (at_b_p8)
                            (Bb_survivorat_s_p8)
-                           (at_b_p8))
+                           (leader_b))
         :effect (and
-                    ; #33734: origin
-                    (Bb_not_survivorat_s_p8)
-
-                    ; #75983: <==closure== 33734 (pos)
+                    ; #18953: <==closure== 66720 (pos)
                     (Pb_not_survivorat_s_p8)
 
-                    ; #33667: <==negation-removal== 75983 (pos)
+                    ; #66720: origin
+                    (Bb_not_survivorat_s_p8)
+
+                    ; #32989: <==negation-removal== 18953 (pos)
                     (not (Bb_survivorat_s_p8))
 
-                    ; #84698: <==negation-removal== 33734 (pos)
+                    ; #63094: <==negation-removal== 66720 (pos)
                     (not (Pb_survivorat_s_p8))))
 
     (:action badcomm_p8_b_c_s
-        :precondition (and (leader_c)
-                           (Pb_survivorat_s_p8)
+        :precondition (and (Pb_survivorat_s_p8)
+                           (at_b_p8)
                            (Bb_survivorat_s_p8)
-                           (at_b_p8))
+                           (leader_c))
         :effect (and
-                    ; #26791: origin
-                    (Bc_not_survivorat_s_p8)
-
-                    ; #75380: <==closure== 26791 (pos)
+                    ; #28850: <==closure== 64702 (pos)
                     (Pc_not_survivorat_s_p8)
 
-                    ; #52362: <==negation-removal== 75380 (pos)
+                    ; #64702: origin
+                    (Bc_not_survivorat_s_p8)
+
+                    ; #41002: <==negation-removal== 28850 (pos)
                     (not (Bc_survivorat_s_p8))
 
-                    ; #56913: <==negation-removal== 26791 (pos)
+                    ; #58561: <==negation-removal== 64702 (pos)
                     (not (Pc_survivorat_s_p8))))
 
     (:action badcomm_p8_c_a_s
-        :precondition (and (Pc_survivorat_s_p8)
-                           (Bc_survivorat_s_p8)
+        :precondition (and (Bc_survivorat_s_p8)
+                           (Pc_survivorat_s_p8)
                            (leader_a)
                            (at_c_p8))
         :effect (and
-                    ; #26908: origin
+                    ; #58374: origin
                     (Ba_not_survivorat_s_p8)
 
-                    ; #83319: <==closure== 26908 (pos)
+                    ; #64183: <==closure== 58374 (pos)
                     (Pa_not_survivorat_s_p8)
 
-                    ; #42703: <==negation-removal== 83319 (pos)
-                    (not (Ba_survivorat_s_p8))
+                    ; #10892: <==negation-removal== 58374 (pos)
+                    (not (Pa_survivorat_s_p8))
 
-                    ; #91792: <==negation-removal== 26908 (pos)
-                    (not (Pa_survivorat_s_p8))))
+                    ; #15981: <==negation-removal== 64183 (pos)
+                    (not (Ba_survivorat_s_p8))))
 
     (:action badcomm_p8_c_b_s
-        :precondition (and (Pc_survivorat_s_p8)
+        :precondition (and (leader_b)
                            (Bc_survivorat_s_p8)
-                           (leader_b)
+                           (Pc_survivorat_s_p8)
                            (at_c_p8))
         :effect (and
-                    ; #33734: origin
-                    (Bb_not_survivorat_s_p8)
-
-                    ; #75983: <==closure== 33734 (pos)
+                    ; #18953: <==closure== 66720 (pos)
                     (Pb_not_survivorat_s_p8)
 
-                    ; #33667: <==negation-removal== 75983 (pos)
+                    ; #66720: origin
+                    (Bb_not_survivorat_s_p8)
+
+                    ; #32989: <==negation-removal== 18953 (pos)
                     (not (Bb_survivorat_s_p8))
 
-                    ; #84698: <==negation-removal== 33734 (pos)
+                    ; #63094: <==negation-removal== 66720 (pos)
                     (not (Pb_survivorat_s_p8))))
 
     (:action badcomm_p8_c_c_s
-        :precondition (and (Pc_survivorat_s_p8)
-                           (leader_c)
+        :precondition (and (leader_c)
                            (Bc_survivorat_s_p8)
+                           (Pc_survivorat_s_p8)
                            (at_c_p8))
         :effect (and
-                    ; #26791: origin
-                    (Bc_not_survivorat_s_p8)
-
-                    ; #75380: <==closure== 26791 (pos)
+                    ; #28850: <==closure== 64702 (pos)
                     (Pc_not_survivorat_s_p8)
 
-                    ; #52362: <==negation-removal== 75380 (pos)
+                    ; #64702: origin
+                    (Bc_not_survivorat_s_p8)
+
+                    ; #41002: <==negation-removal== 28850 (pos)
                     (not (Bc_survivorat_s_p8))
 
-                    ; #56913: <==negation-removal== 26791 (pos)
+                    ; #58561: <==negation-removal== 64702 (pos)
                     (not (Pc_survivorat_s_p8))))
 
     (:action badcomm_p9_a_a_s
         :precondition (and (Pa_survivorat_s_p9)
-                           (leader_a)
                            (Ba_survivorat_s_p9)
+                           (leader_a)
                            (at_a_p9))
         :effect (and
-                    ; #33795: origin
-                    (Ba_not_survivorat_s_p9)
-
-                    ; #50584: <==closure== 33795 (pos)
+                    ; #14281: <==closure== 80610 (pos)
                     (Pa_not_survivorat_s_p9)
 
-                    ; #23943: <==negation-removal== 50584 (pos)
+                    ; #80610: origin
+                    (Ba_not_survivorat_s_p9)
+
+                    ; #41402: <==negation-removal== 14281 (pos)
                     (not (Ba_survivorat_s_p9))
 
-                    ; #89143: <==negation-removal== 33795 (pos)
+                    ; #88191: <==negation-removal== 80610 (pos)
                     (not (Pa_survivorat_s_p9))))
 
     (:action badcomm_p9_a_b_s
-        :precondition (and (leader_b)
-                           (Pa_survivorat_s_p9)
+        :precondition (and (Pa_survivorat_s_p9)
                            (Ba_survivorat_s_p9)
+                           (leader_b)
                            (at_a_p9))
         :effect (and
-                    ; #58538: <==closure== 78895 (pos)
-                    (Pb_not_survivorat_s_p9)
-
-                    ; #78895: origin
+                    ; #38012: origin
                     (Bb_not_survivorat_s_p9)
 
-                    ; #51239: <==negation-removal== 78895 (pos)
-                    (not (Pb_survivorat_s_p9))
+                    ; #63023: <==closure== 38012 (pos)
+                    (Pb_not_survivorat_s_p9)
 
-                    ; #88856: <==negation-removal== 58538 (pos)
-                    (not (Bb_survivorat_s_p9))))
+                    ; #70016: <==negation-removal== 63023 (pos)
+                    (not (Bb_survivorat_s_p9))
+
+                    ; #83785: <==negation-removal== 38012 (pos)
+                    (not (Pb_survivorat_s_p9))))
 
     (:action badcomm_p9_a_c_s
-        :precondition (and (leader_c)
-                           (Pa_survivorat_s_p9)
+        :precondition (and (Pa_survivorat_s_p9)
                            (Ba_survivorat_s_p9)
+                           (leader_c)
                            (at_a_p9))
         :effect (and
-                    ; #53017: <==closure== 80730 (pos)
-                    (Pc_not_survivorat_s_p9)
-
-                    ; #80730: origin
+                    ; #43141: origin
                     (Bc_not_survivorat_s_p9)
 
-                    ; #59653: <==negation-removal== 80730 (pos)
+                    ; #80560: <==closure== 43141 (pos)
+                    (Pc_not_survivorat_s_p9)
+
+                    ; #34569: <==negation-removal== 43141 (pos)
                     (not (Pc_survivorat_s_p9))
 
-                    ; #80511: <==negation-removal== 53017 (pos)
+                    ; #61389: <==negation-removal== 80560 (pos)
                     (not (Bc_survivorat_s_p9))))
 
     (:action badcomm_p9_b_a_s
         :precondition (and (at_b_p9)
-                           (Pb_survivorat_s_p9)
+                           (leader_a)
                            (Bb_survivorat_s_p9)
-                           (leader_a))
+                           (Pb_survivorat_s_p9))
         :effect (and
-                    ; #33795: origin
-                    (Ba_not_survivorat_s_p9)
-
-                    ; #50584: <==closure== 33795 (pos)
+                    ; #14281: <==closure== 80610 (pos)
                     (Pa_not_survivorat_s_p9)
 
-                    ; #23943: <==negation-removal== 50584 (pos)
+                    ; #80610: origin
+                    (Ba_not_survivorat_s_p9)
+
+                    ; #41402: <==negation-removal== 14281 (pos)
                     (not (Ba_survivorat_s_p9))
 
-                    ; #89143: <==negation-removal== 33795 (pos)
+                    ; #88191: <==negation-removal== 80610 (pos)
                     (not (Pa_survivorat_s_p9))))
 
     (:action badcomm_p9_b_b_s
         :precondition (and (at_b_p9)
-                           (Pb_survivorat_s_p9)
+                           (leader_b)
                            (Bb_survivorat_s_p9)
-                           (leader_b))
+                           (Pb_survivorat_s_p9))
         :effect (and
-                    ; #58538: <==closure== 78895 (pos)
-                    (Pb_not_survivorat_s_p9)
-
-                    ; #78895: origin
+                    ; #38012: origin
                     (Bb_not_survivorat_s_p9)
 
-                    ; #51239: <==negation-removal== 78895 (pos)
-                    (not (Pb_survivorat_s_p9))
+                    ; #63023: <==closure== 38012 (pos)
+                    (Pb_not_survivorat_s_p9)
 
-                    ; #88856: <==negation-removal== 58538 (pos)
-                    (not (Bb_survivorat_s_p9))))
+                    ; #70016: <==negation-removal== 63023 (pos)
+                    (not (Bb_survivorat_s_p9))
+
+                    ; #83785: <==negation-removal== 38012 (pos)
+                    (not (Pb_survivorat_s_p9))))
 
     (:action badcomm_p9_b_c_s
-        :precondition (and (at_b_p9)
-                           (leader_c)
-                           (Pb_survivorat_s_p9)
-                           (Bb_survivorat_s_p9))
+        :precondition (and (leader_c)
+                           (at_b_p9)
+                           (Bb_survivorat_s_p9)
+                           (Pb_survivorat_s_p9))
         :effect (and
-                    ; #53017: <==closure== 80730 (pos)
-                    (Pc_not_survivorat_s_p9)
-
-                    ; #80730: origin
+                    ; #43141: origin
                     (Bc_not_survivorat_s_p9)
 
-                    ; #59653: <==negation-removal== 80730 (pos)
+                    ; #80560: <==closure== 43141 (pos)
+                    (Pc_not_survivorat_s_p9)
+
+                    ; #34569: <==negation-removal== 43141 (pos)
                     (not (Pc_survivorat_s_p9))
 
-                    ; #80511: <==negation-removal== 53017 (pos)
+                    ; #61389: <==negation-removal== 80560 (pos)
                     (not (Bc_survivorat_s_p9))))
 
     (:action badcomm_p9_c_a_s
-        :precondition (and (Bc_survivorat_s_p9)
-                           (leader_a)
+        :precondition (and (Pc_survivorat_s_p9)
                            (at_c_p9)
-                           (Pc_survivorat_s_p9))
+                           (leader_a)
+                           (Bc_survivorat_s_p9))
         :effect (and
-                    ; #33795: origin
-                    (Ba_not_survivorat_s_p9)
-
-                    ; #50584: <==closure== 33795 (pos)
+                    ; #14281: <==closure== 80610 (pos)
                     (Pa_not_survivorat_s_p9)
 
-                    ; #23943: <==negation-removal== 50584 (pos)
+                    ; #80610: origin
+                    (Ba_not_survivorat_s_p9)
+
+                    ; #41402: <==negation-removal== 14281 (pos)
                     (not (Ba_survivorat_s_p9))
 
-                    ; #89143: <==negation-removal== 33795 (pos)
+                    ; #88191: <==negation-removal== 80610 (pos)
                     (not (Pa_survivorat_s_p9))))
 
     (:action badcomm_p9_c_b_s
-        :precondition (and (Bc_survivorat_s_p9)
+        :precondition (and (Pc_survivorat_s_p9)
                            (leader_b)
                            (at_c_p9)
-                           (Pc_survivorat_s_p9))
+                           (Bc_survivorat_s_p9))
         :effect (and
-                    ; #58538: <==closure== 78895 (pos)
-                    (Pb_not_survivorat_s_p9)
-
-                    ; #78895: origin
+                    ; #38012: origin
                     (Bb_not_survivorat_s_p9)
 
-                    ; #51239: <==negation-removal== 78895 (pos)
-                    (not (Pb_survivorat_s_p9))
+                    ; #63023: <==closure== 38012 (pos)
+                    (Pb_not_survivorat_s_p9)
 
-                    ; #88856: <==negation-removal== 58538 (pos)
-                    (not (Bb_survivorat_s_p9))))
+                    ; #70016: <==negation-removal== 63023 (pos)
+                    (not (Bb_survivorat_s_p9))
+
+                    ; #83785: <==negation-removal== 38012 (pos)
+                    (not (Pb_survivorat_s_p9))))
 
     (:action badcomm_p9_c_c_s
-        :precondition (and (Bc_survivorat_s_p9)
-                           (leader_c)
+        :precondition (and (leader_c)
+                           (Pc_survivorat_s_p9)
                            (at_c_p9)
-                           (Pc_survivorat_s_p9))
+                           (Bc_survivorat_s_p9))
         :effect (and
-                    ; #53017: <==closure== 80730 (pos)
-                    (Pc_not_survivorat_s_p9)
-
-                    ; #80730: origin
+                    ; #43141: origin
                     (Bc_not_survivorat_s_p9)
 
-                    ; #59653: <==negation-removal== 80730 (pos)
+                    ; #80560: <==closure== 43141 (pos)
+                    (Pc_not_survivorat_s_p9)
+
+                    ; #34569: <==negation-removal== 43141 (pos)
                     (not (Pc_survivorat_s_p9))
 
-                    ; #80511: <==negation-removal== 53017 (pos)
+                    ; #61389: <==negation-removal== 80560 (pos)
                     (not (Bc_survivorat_s_p9))))
 
     (:action comm_p1_a_a_s
         :precondition (and (leader_a)
-                           (at_a_p1)
-                           (Ba_survivorat_s_p1)
-                           (Pa_survivorat_s_p1))
-        :effect (and
-                    ; #15069: <==closure== 58728 (pos)
-                    (Pa_survivorat_s_p1)
-
-                    ; #58728: origin
-                    (Ba_survivorat_s_p1)
-
-                    ; #37863: <==negation-removal== 58728 (pos)
-                    (not (Pa_not_survivorat_s_p1))
-
-                    ; #78593: <==negation-removal== 15069 (pos)
-                    (not (Ba_not_survivorat_s_p1))))
-
-    (:action comm_p1_a_b_s
-        :precondition (and (at_a_p1)
                            (Ba_survivorat_s_p1)
                            (Pa_survivorat_s_p1)
-                           (leader_b))
+                           (at_a_p1))
         :effect (and
-                    ; #14684: origin
-                    (Bb_survivorat_s_p1)
+                    ; #24835: origin
+                    (Ba_survivorat_s_p1)
 
-                    ; #60621: <==closure== 14684 (pos)
+                    ; #39649: <==closure== 24835 (pos)
+                    (Pa_survivorat_s_p1)
+
+                    ; #32683: <==negation-removal== 39649 (pos)
+                    (not (Ba_not_survivorat_s_p1))
+
+                    ; #36249: <==negation-removal== 24835 (pos)
+                    (not (Pa_not_survivorat_s_p1))))
+
+    (:action comm_p1_a_b_s
+        :precondition (and (Ba_survivorat_s_p1)
+                           (leader_b)
+                           (Pa_survivorat_s_p1)
+                           (at_a_p1))
+        :effect (and
+                    ; #32961: <==closure== 55489 (pos)
                     (Pb_survivorat_s_p1)
 
-                    ; #11148: <==negation-removal== 14684 (pos)
-                    (not (Pb_not_survivorat_s_p1))
+                    ; #55489: origin
+                    (Bb_survivorat_s_p1)
 
-                    ; #13120: <==negation-removal== 60621 (pos)
-                    (not (Bb_not_survivorat_s_p1))))
+                    ; #43903: <==negation-removal== 32961 (pos)
+                    (not (Bb_not_survivorat_s_p1))
+
+                    ; #53978: <==negation-removal== 55489 (pos)
+                    (not (Pb_not_survivorat_s_p1))))
 
     (:action comm_p1_a_c_s
         :precondition (and (leader_c)
-                           (at_a_p1)
                            (Ba_survivorat_s_p1)
-                           (Pa_survivorat_s_p1))
+                           (Pa_survivorat_s_p1)
+                           (at_a_p1))
         :effect (and
-                    ; #19130: origin
+                    ; #46343: origin
                     (Bc_survivorat_s_p1)
 
-                    ; #63714: <==closure== 19130 (pos)
+                    ; #91922: <==closure== 46343 (pos)
                     (Pc_survivorat_s_p1)
 
-                    ; #56109: <==negation-removal== 63714 (pos)
-                    (not (Bc_not_survivorat_s_p1))
+                    ; #10330: <==negation-removal== 46343 (pos)
+                    (not (Pc_not_survivorat_s_p1))
 
-                    ; #81463: <==negation-removal== 19130 (pos)
-                    (not (Pc_not_survivorat_s_p1))))
+                    ; #71128: <==negation-removal== 91922 (pos)
+                    (not (Bc_not_survivorat_s_p1))))
 
     (:action comm_p1_b_a_s
-        :precondition (and (Pb_survivorat_s_p1)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (Pb_survivorat_s_p1)
                            (Bb_survivorat_s_p1)
                            (leader_a))
         :effect (and
-                    ; #15069: <==closure== 58728 (pos)
-                    (Pa_survivorat_s_p1)
-
-                    ; #58728: origin
+                    ; #24835: origin
                     (Ba_survivorat_s_p1)
 
-                    ; #37863: <==negation-removal== 58728 (pos)
-                    (not (Pa_not_survivorat_s_p1))
+                    ; #39649: <==closure== 24835 (pos)
+                    (Pa_survivorat_s_p1)
 
-                    ; #78593: <==negation-removal== 15069 (pos)
-                    (not (Ba_not_survivorat_s_p1))))
+                    ; #32683: <==negation-removal== 39649 (pos)
+                    (not (Ba_not_survivorat_s_p1))
+
+                    ; #36249: <==negation-removal== 24835 (pos)
+                    (not (Pa_not_survivorat_s_p1))))
 
     (:action comm_p1_b_b_s
-        :precondition (and (Pb_survivorat_s_p1)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (Pb_survivorat_s_p1)
                            (Bb_survivorat_s_p1)
                            (leader_b))
         :effect (and
-                    ; #14684: origin
-                    (Bb_survivorat_s_p1)
-
-                    ; #60621: <==closure== 14684 (pos)
+                    ; #32961: <==closure== 55489 (pos)
                     (Pb_survivorat_s_p1)
 
-                    ; #11148: <==negation-removal== 14684 (pos)
-                    (not (Pb_not_survivorat_s_p1))
+                    ; #55489: origin
+                    (Bb_survivorat_s_p1)
 
-                    ; #13120: <==negation-removal== 60621 (pos)
-                    (not (Bb_not_survivorat_s_p1))))
+                    ; #43903: <==negation-removal== 32961 (pos)
+                    (not (Bb_not_survivorat_s_p1))
+
+                    ; #53978: <==negation-removal== 55489 (pos)
+                    (not (Pb_not_survivorat_s_p1))))
 
     (:action comm_p1_b_c_s
-        :precondition (and (leader_c)
+        :precondition (and (at_b_p1)
                            (Pb_survivorat_s_p1)
-                           (at_b_p1)
-                           (Bb_survivorat_s_p1))
+                           (Bb_survivorat_s_p1)
+                           (leader_c))
         :effect (and
-                    ; #19130: origin
+                    ; #46343: origin
                     (Bc_survivorat_s_p1)
 
-                    ; #63714: <==closure== 19130 (pos)
+                    ; #91922: <==closure== 46343 (pos)
                     (Pc_survivorat_s_p1)
 
-                    ; #56109: <==negation-removal== 63714 (pos)
-                    (not (Bc_not_survivorat_s_p1))
+                    ; #10330: <==negation-removal== 46343 (pos)
+                    (not (Pc_not_survivorat_s_p1))
 
-                    ; #81463: <==negation-removal== 19130 (pos)
-                    (not (Pc_not_survivorat_s_p1))))
+                    ; #71128: <==negation-removal== 91922 (pos)
+                    (not (Bc_not_survivorat_s_p1))))
 
     (:action comm_p1_c_a_s
-        :precondition (and (Bc_survivorat_s_p1)
-                           (Pc_survivorat_s_p1)
-                           (leader_a)
-                           (at_c_p1))
+        :precondition (and (Pc_survivorat_s_p1)
+                           (Bc_survivorat_s_p1)
+                           (at_c_p1)
+                           (leader_a))
         :effect (and
-                    ; #15069: <==closure== 58728 (pos)
-                    (Pa_survivorat_s_p1)
-
-                    ; #58728: origin
+                    ; #24835: origin
                     (Ba_survivorat_s_p1)
 
-                    ; #37863: <==negation-removal== 58728 (pos)
-                    (not (Pa_not_survivorat_s_p1))
+                    ; #39649: <==closure== 24835 (pos)
+                    (Pa_survivorat_s_p1)
 
-                    ; #78593: <==negation-removal== 15069 (pos)
-                    (not (Ba_not_survivorat_s_p1))))
+                    ; #32683: <==negation-removal== 39649 (pos)
+                    (not (Ba_not_survivorat_s_p1))
+
+                    ; #36249: <==negation-removal== 24835 (pos)
+                    (not (Pa_not_survivorat_s_p1))))
 
     (:action comm_p1_c_b_s
-        :precondition (and (Bc_survivorat_s_p1)
-                           (Pc_survivorat_s_p1)
+        :precondition (and (Pc_survivorat_s_p1)
+                           (Bc_survivorat_s_p1)
                            (at_c_p1)
                            (leader_b))
         :effect (and
-                    ; #14684: origin
-                    (Bb_survivorat_s_p1)
-
-                    ; #60621: <==closure== 14684 (pos)
+                    ; #32961: <==closure== 55489 (pos)
                     (Pb_survivorat_s_p1)
 
-                    ; #11148: <==negation-removal== 14684 (pos)
-                    (not (Pb_not_survivorat_s_p1))
+                    ; #55489: origin
+                    (Bb_survivorat_s_p1)
 
-                    ; #13120: <==negation-removal== 60621 (pos)
-                    (not (Bb_not_survivorat_s_p1))))
+                    ; #43903: <==negation-removal== 32961 (pos)
+                    (not (Bb_not_survivorat_s_p1))
+
+                    ; #53978: <==negation-removal== 55489 (pos)
+                    (not (Pb_not_survivorat_s_p1))))
 
     (:action comm_p1_c_c_s
-        :precondition (and (Bc_survivorat_s_p1)
-                           (Pc_survivorat_s_p1)
-                           (leader_c)
-                           (at_c_p1))
+        :precondition (and (Pc_survivorat_s_p1)
+                           (Bc_survivorat_s_p1)
+                           (at_c_p1)
+                           (leader_c))
         :effect (and
-                    ; #19130: origin
+                    ; #46343: origin
                     (Bc_survivorat_s_p1)
 
-                    ; #63714: <==closure== 19130 (pos)
+                    ; #91922: <==closure== 46343 (pos)
                     (Pc_survivorat_s_p1)
 
-                    ; #56109: <==negation-removal== 63714 (pos)
-                    (not (Bc_not_survivorat_s_p1))
+                    ; #10330: <==negation-removal== 46343 (pos)
+                    (not (Pc_not_survivorat_s_p1))
 
-                    ; #81463: <==negation-removal== 19130 (pos)
-                    (not (Pc_not_survivorat_s_p1))))
+                    ; #71128: <==negation-removal== 91922 (pos)
+                    (not (Bc_not_survivorat_s_p1))))
 
     (:action comm_p2_a_a_s
-        :precondition (and (at_a_p2)
+        :precondition (and (Ba_survivorat_s_p2)
+                           (Pa_survivorat_s_p2)
                            (leader_a)
-                           (Ba_survivorat_s_p2)
-                           (Pa_survivorat_s_p2))
+                           (at_a_p2))
         :effect (and
-                    ; #56366: origin
-                    (Ba_survivorat_s_p2)
-
-                    ; #89322: <==closure== 56366 (pos)
+                    ; #60665: <==closure== 89537 (pos)
                     (Pa_survivorat_s_p2)
 
-                    ; #59082: <==negation-removal== 56366 (pos)
-                    (not (Pa_not_survivorat_s_p2))
+                    ; #89537: origin
+                    (Ba_survivorat_s_p2)
 
-                    ; #86297: <==negation-removal== 89322 (pos)
-                    (not (Ba_not_survivorat_s_p2))))
+                    ; #49469: <==negation-removal== 60665 (pos)
+                    (not (Ba_not_survivorat_s_p2))
+
+                    ; #62700: <==negation-removal== 89537 (pos)
+                    (not (Pa_not_survivorat_s_p2))))
 
     (:action comm_p2_a_b_s
-        :precondition (and (at_a_p2)
-                           (Ba_survivorat_s_p2)
+        :precondition (and (Ba_survivorat_s_p2)
                            (Pa_survivorat_s_p2)
-                           (leader_b))
+                           (leader_b)
+                           (at_a_p2))
         :effect (and
-                    ; #19372: <==closure== 86845 (pos)
-                    (Pb_survivorat_s_p2)
-
-                    ; #86845: origin
+                    ; #79480: origin
                     (Bb_survivorat_s_p2)
 
-                    ; #24331: <==negation-removal== 86845 (pos)
-                    (not (Pb_not_survivorat_s_p2))
+                    ; #91079: <==closure== 79480 (pos)
+                    (Pb_survivorat_s_p2)
 
-                    ; #44109: <==negation-removal== 19372 (pos)
-                    (not (Bb_not_survivorat_s_p2))))
+                    ; #12719: <==negation-removal== 91079 (pos)
+                    (not (Bb_not_survivorat_s_p2))
+
+                    ; #79181: <==negation-removal== 79480 (pos)
+                    (not (Pb_not_survivorat_s_p2))))
 
     (:action comm_p2_a_c_s
-        :precondition (and (at_a_p2)
-                           (leader_c)
+        :precondition (and (leader_c)
                            (Ba_survivorat_s_p2)
-                           (Pa_survivorat_s_p2))
+                           (Pa_survivorat_s_p2)
+                           (at_a_p2))
         :effect (and
-                    ; #22868: <==closure== 24426 (pos)
-                    (Pc_survivorat_s_p2)
-
-                    ; #24426: origin
+                    ; #40161: origin
                     (Bc_survivorat_s_p2)
 
-                    ; #10585: <==negation-removal== 22868 (pos)
-                    (not (Bc_not_survivorat_s_p2))
+                    ; #67294: <==closure== 40161 (pos)
+                    (Pc_survivorat_s_p2)
 
-                    ; #85140: <==negation-removal== 24426 (pos)
-                    (not (Pc_not_survivorat_s_p2))))
+                    ; #12144: <==negation-removal== 40161 (pos)
+                    (not (Pc_not_survivorat_s_p2))
+
+                    ; #15403: <==negation-removal== 67294 (pos)
+                    (not (Bc_not_survivorat_s_p2))))
 
     (:action comm_p2_b_a_s
-        :precondition (and (leader_a)
+        :precondition (and (at_b_p2)
                            (Bb_survivorat_s_p2)
-                           (at_b_p2)
+                           (leader_a)
                            (Pb_survivorat_s_p2))
         :effect (and
-                    ; #56366: origin
-                    (Ba_survivorat_s_p2)
-
-                    ; #89322: <==closure== 56366 (pos)
+                    ; #60665: <==closure== 89537 (pos)
                     (Pa_survivorat_s_p2)
 
-                    ; #59082: <==negation-removal== 56366 (pos)
-                    (not (Pa_not_survivorat_s_p2))
+                    ; #89537: origin
+                    (Ba_survivorat_s_p2)
 
-                    ; #86297: <==negation-removal== 89322 (pos)
-                    (not (Ba_not_survivorat_s_p2))))
+                    ; #49469: <==negation-removal== 60665 (pos)
+                    (not (Ba_not_survivorat_s_p2))
+
+                    ; #62700: <==negation-removal== 89537 (pos)
+                    (not (Pa_not_survivorat_s_p2))))
 
     (:action comm_p2_b_b_s
-        :precondition (and (Bb_survivorat_s_p2)
-                           (at_b_p2)
+        :precondition (and (at_b_p2)
+                           (Bb_survivorat_s_p2)
                            (leader_b)
                            (Pb_survivorat_s_p2))
         :effect (and
-                    ; #19372: <==closure== 86845 (pos)
-                    (Pb_survivorat_s_p2)
-
-                    ; #86845: origin
+                    ; #79480: origin
                     (Bb_survivorat_s_p2)
 
-                    ; #24331: <==negation-removal== 86845 (pos)
-                    (not (Pb_not_survivorat_s_p2))
+                    ; #91079: <==closure== 79480 (pos)
+                    (Pb_survivorat_s_p2)
 
-                    ; #44109: <==negation-removal== 19372 (pos)
-                    (not (Bb_not_survivorat_s_p2))))
+                    ; #12719: <==negation-removal== 91079 (pos)
+                    (not (Bb_not_survivorat_s_p2))
+
+                    ; #79181: <==negation-removal== 79480 (pos)
+                    (not (Pb_not_survivorat_s_p2))))
 
     (:action comm_p2_b_c_s
-        :precondition (and (leader_c)
+        :precondition (and (at_b_p2)
+                           (leader_c)
                            (Bb_survivorat_s_p2)
-                           (at_b_p2)
                            (Pb_survivorat_s_p2))
         :effect (and
-                    ; #22868: <==closure== 24426 (pos)
-                    (Pc_survivorat_s_p2)
-
-                    ; #24426: origin
+                    ; #40161: origin
                     (Bc_survivorat_s_p2)
 
-                    ; #10585: <==negation-removal== 22868 (pos)
-                    (not (Bc_not_survivorat_s_p2))
+                    ; #67294: <==closure== 40161 (pos)
+                    (Pc_survivorat_s_p2)
 
-                    ; #85140: <==negation-removal== 24426 (pos)
-                    (not (Pc_not_survivorat_s_p2))))
+                    ; #12144: <==negation-removal== 40161 (pos)
+                    (not (Pc_not_survivorat_s_p2))
+
+                    ; #15403: <==negation-removal== 67294 (pos)
+                    (not (Bc_not_survivorat_s_p2))))
 
     (:action comm_p2_c_a_s
-        :precondition (and (Bc_survivorat_s_p2)
+        :precondition (and (at_c_p2)
+                           (Bc_survivorat_s_p2)
                            (Pc_survivorat_s_p2)
-                           (leader_a)
-                           (at_c_p2))
+                           (leader_a))
         :effect (and
-                    ; #56366: origin
-                    (Ba_survivorat_s_p2)
-
-                    ; #89322: <==closure== 56366 (pos)
+                    ; #60665: <==closure== 89537 (pos)
                     (Pa_survivorat_s_p2)
 
-                    ; #59082: <==negation-removal== 56366 (pos)
-                    (not (Pa_not_survivorat_s_p2))
+                    ; #89537: origin
+                    (Ba_survivorat_s_p2)
 
-                    ; #86297: <==negation-removal== 89322 (pos)
-                    (not (Ba_not_survivorat_s_p2))))
+                    ; #49469: <==negation-removal== 60665 (pos)
+                    (not (Ba_not_survivorat_s_p2))
+
+                    ; #62700: <==negation-removal== 89537 (pos)
+                    (not (Pa_not_survivorat_s_p2))))
 
     (:action comm_p2_c_b_s
-        :precondition (and (Bc_survivorat_s_p2)
+        :precondition (and (at_c_p2)
+                           (Bc_survivorat_s_p2)
                            (Pc_survivorat_s_p2)
-                           (leader_b)
-                           (at_c_p2))
+                           (leader_b))
         :effect (and
-                    ; #19372: <==closure== 86845 (pos)
-                    (Pb_survivorat_s_p2)
-
-                    ; #86845: origin
+                    ; #79480: origin
                     (Bb_survivorat_s_p2)
 
-                    ; #24331: <==negation-removal== 86845 (pos)
-                    (not (Pb_not_survivorat_s_p2))
+                    ; #91079: <==closure== 79480 (pos)
+                    (Pb_survivorat_s_p2)
 
-                    ; #44109: <==negation-removal== 19372 (pos)
-                    (not (Bb_not_survivorat_s_p2))))
+                    ; #12719: <==negation-removal== 91079 (pos)
+                    (not (Bb_not_survivorat_s_p2))
+
+                    ; #79181: <==negation-removal== 79480 (pos)
+                    (not (Pb_not_survivorat_s_p2))))
 
     (:action comm_p2_c_c_s
         :precondition (and (leader_c)
+                           (at_c_p2)
                            (Bc_survivorat_s_p2)
-                           (Pc_survivorat_s_p2)
-                           (at_c_p2))
+                           (Pc_survivorat_s_p2))
         :effect (and
-                    ; #22868: <==closure== 24426 (pos)
-                    (Pc_survivorat_s_p2)
-
-                    ; #24426: origin
+                    ; #40161: origin
                     (Bc_survivorat_s_p2)
 
-                    ; #10585: <==negation-removal== 22868 (pos)
-                    (not (Bc_not_survivorat_s_p2))
+                    ; #67294: <==closure== 40161 (pos)
+                    (Pc_survivorat_s_p2)
 
-                    ; #85140: <==negation-removal== 24426 (pos)
-                    (not (Pc_not_survivorat_s_p2))))
+                    ; #12144: <==negation-removal== 40161 (pos)
+                    (not (Pc_not_survivorat_s_p2))
+
+                    ; #15403: <==negation-removal== 67294 (pos)
+                    (not (Bc_not_survivorat_s_p2))))
 
     (:action comm_p3_a_a_s
-        :precondition (and (leader_a)
-                           (Ba_survivorat_s_p3)
-                           (at_a_p3)
-                           (Pa_survivorat_s_p3))
+        :precondition (and (Ba_survivorat_s_p3)
+                           (leader_a)
+                           (Pa_survivorat_s_p3)
+                           (at_a_p3))
         :effect (and
-                    ; #10689: <==closure== 16707 (pos)
+                    ; #66355: <==closure== 79712 (pos)
                     (Pa_survivorat_s_p3)
 
-                    ; #16707: origin
+                    ; #79712: origin
                     (Ba_survivorat_s_p3)
 
-                    ; #22443: <==negation-removal== 16707 (pos)
-                    (not (Pa_not_survivorat_s_p3))
+                    ; #47234: <==negation-removal== 66355 (pos)
+                    (not (Ba_not_survivorat_s_p3))
 
-                    ; #71148: <==negation-removal== 10689 (pos)
-                    (not (Ba_not_survivorat_s_p3))))
+                    ; #76649: <==negation-removal== 79712 (pos)
+                    (not (Pa_not_survivorat_s_p3))))
 
     (:action comm_p3_a_b_s
         :precondition (and (Ba_survivorat_s_p3)
-                           (at_a_p3)
+                           (leader_b)
                            (Pa_survivorat_s_p3)
-                           (leader_b))
+                           (at_a_p3))
         :effect (and
-                    ; #15936: <==closure== 53444 (pos)
-                    (Pb_survivorat_s_p3)
-
-                    ; #53444: origin
+                    ; #11262: origin
                     (Bb_survivorat_s_p3)
 
-                    ; #77928: <==negation-removal== 53444 (pos)
+                    ; #52340: <==closure== 11262 (pos)
+                    (Pb_survivorat_s_p3)
+
+                    ; #65372: <==negation-removal== 11262 (pos)
                     (not (Pb_not_survivorat_s_p3))
 
-                    ; #99761: <==negation-removal== 15936 (pos)
+                    ; #72287: <==negation-removal== 52340 (pos)
                     (not (Bb_not_survivorat_s_p3))))
 
     (:action comm_p3_a_c_s
-        :precondition (and (leader_c)
-                           (Ba_survivorat_s_p3)
+        :precondition (and (Ba_survivorat_s_p3)
+                           (Pa_survivorat_s_p3)
                            (at_a_p3)
-                           (Pa_survivorat_s_p3))
+                           (leader_c))
         :effect (and
-                    ; #20243: origin
-                    (Bc_survivorat_s_p3)
-
-                    ; #80838: <==closure== 20243 (pos)
+                    ; #69511: <==closure== 70426 (pos)
                     (Pc_survivorat_s_p3)
 
-                    ; #13401: <==negation-removal== 20243 (pos)
-                    (not (Pc_not_survivorat_s_p3))
+                    ; #70426: origin
+                    (Bc_survivorat_s_p3)
 
-                    ; #55320: <==negation-removal== 80838 (pos)
-                    (not (Bc_not_survivorat_s_p3))))
+                    ; #71785: <==negation-removal== 69511 (pos)
+                    (not (Bc_not_survivorat_s_p3))
+
+                    ; #72758: <==negation-removal== 70426 (pos)
+                    (not (Pc_not_survivorat_s_p3))))
 
     (:action comm_p3_b_a_s
         :precondition (and (at_b_p3)
-                           (leader_a)
                            (Pb_survivorat_s_p3)
-                           (Bb_survivorat_s_p3))
+                           (Bb_survivorat_s_p3)
+                           (leader_a))
         :effect (and
-                    ; #10689: <==closure== 16707 (pos)
+                    ; #66355: <==closure== 79712 (pos)
                     (Pa_survivorat_s_p3)
 
-                    ; #16707: origin
+                    ; #79712: origin
                     (Ba_survivorat_s_p3)
 
-                    ; #22443: <==negation-removal== 16707 (pos)
-                    (not (Pa_not_survivorat_s_p3))
+                    ; #47234: <==negation-removal== 66355 (pos)
+                    (not (Ba_not_survivorat_s_p3))
 
-                    ; #71148: <==negation-removal== 10689 (pos)
-                    (not (Ba_not_survivorat_s_p3))))
+                    ; #76649: <==negation-removal== 79712 (pos)
+                    (not (Pa_not_survivorat_s_p3))))
 
     (:action comm_p3_b_b_s
         :precondition (and (at_b_p3)
                            (Pb_survivorat_s_p3)
-                           (Bb_survivorat_s_p3)
-                           (leader_b))
+                           (leader_b)
+                           (Bb_survivorat_s_p3))
         :effect (and
-                    ; #15936: <==closure== 53444 (pos)
-                    (Pb_survivorat_s_p3)
-
-                    ; #53444: origin
+                    ; #11262: origin
                     (Bb_survivorat_s_p3)
 
-                    ; #77928: <==negation-removal== 53444 (pos)
+                    ; #52340: <==closure== 11262 (pos)
+                    (Pb_survivorat_s_p3)
+
+                    ; #65372: <==negation-removal== 11262 (pos)
                     (not (Pb_not_survivorat_s_p3))
 
-                    ; #99761: <==negation-removal== 15936 (pos)
+                    ; #72287: <==negation-removal== 52340 (pos)
                     (not (Bb_not_survivorat_s_p3))))
 
     (:action comm_p3_b_c_s
         :precondition (and (at_b_p3)
-                           (leader_c)
                            (Pb_survivorat_s_p3)
-                           (Bb_survivorat_s_p3))
+                           (Bb_survivorat_s_p3)
+                           (leader_c))
         :effect (and
-                    ; #20243: origin
-                    (Bc_survivorat_s_p3)
-
-                    ; #80838: <==closure== 20243 (pos)
+                    ; #69511: <==closure== 70426 (pos)
                     (Pc_survivorat_s_p3)
 
-                    ; #13401: <==negation-removal== 20243 (pos)
-                    (not (Pc_not_survivorat_s_p3))
+                    ; #70426: origin
+                    (Bc_survivorat_s_p3)
 
-                    ; #55320: <==negation-removal== 80838 (pos)
-                    (not (Bc_not_survivorat_s_p3))))
+                    ; #71785: <==negation-removal== 69511 (pos)
+                    (not (Bc_not_survivorat_s_p3))
+
+                    ; #72758: <==negation-removal== 70426 (pos)
+                    (not (Pc_not_survivorat_s_p3))))
 
     (:action comm_p3_c_a_s
         :precondition (and (at_c_p3)
-                           (Pc_survivorat_s_p3)
+                           (Bc_survivorat_s_p3)
                            (leader_a)
-                           (Bc_survivorat_s_p3))
+                           (Pc_survivorat_s_p3))
         :effect (and
-                    ; #10689: <==closure== 16707 (pos)
+                    ; #66355: <==closure== 79712 (pos)
                     (Pa_survivorat_s_p3)
 
-                    ; #16707: origin
+                    ; #79712: origin
                     (Ba_survivorat_s_p3)
 
-                    ; #22443: <==negation-removal== 16707 (pos)
-                    (not (Pa_not_survivorat_s_p3))
+                    ; #47234: <==negation-removal== 66355 (pos)
+                    (not (Ba_not_survivorat_s_p3))
 
-                    ; #71148: <==negation-removal== 10689 (pos)
-                    (not (Ba_not_survivorat_s_p3))))
+                    ; #76649: <==negation-removal== 79712 (pos)
+                    (not (Pa_not_survivorat_s_p3))))
 
     (:action comm_p3_c_b_s
         :precondition (and (at_c_p3)
-                           (Pc_survivorat_s_p3)
+                           (Bc_survivorat_s_p3)
                            (leader_b)
-                           (Bc_survivorat_s_p3))
+                           (Pc_survivorat_s_p3))
         :effect (and
-                    ; #15936: <==closure== 53444 (pos)
-                    (Pb_survivorat_s_p3)
-
-                    ; #53444: origin
+                    ; #11262: origin
                     (Bb_survivorat_s_p3)
 
-                    ; #77928: <==negation-removal== 53444 (pos)
+                    ; #52340: <==closure== 11262 (pos)
+                    (Pb_survivorat_s_p3)
+
+                    ; #65372: <==negation-removal== 11262 (pos)
                     (not (Pb_not_survivorat_s_p3))
 
-                    ; #99761: <==negation-removal== 15936 (pos)
+                    ; #72287: <==negation-removal== 52340 (pos)
                     (not (Bb_not_survivorat_s_p3))))
 
     (:action comm_p3_c_c_s
         :precondition (and (at_c_p3)
-                           (Pc_survivorat_s_p3)
+                           (Bc_survivorat_s_p3)
                            (leader_c)
-                           (Bc_survivorat_s_p3))
+                           (Pc_survivorat_s_p3))
         :effect (and
-                    ; #20243: origin
-                    (Bc_survivorat_s_p3)
-
-                    ; #80838: <==closure== 20243 (pos)
+                    ; #69511: <==closure== 70426 (pos)
                     (Pc_survivorat_s_p3)
 
-                    ; #13401: <==negation-removal== 20243 (pos)
-                    (not (Pc_not_survivorat_s_p3))
+                    ; #70426: origin
+                    (Bc_survivorat_s_p3)
 
-                    ; #55320: <==negation-removal== 80838 (pos)
-                    (not (Bc_not_survivorat_s_p3))))
+                    ; #71785: <==negation-removal== 69511 (pos)
+                    (not (Bc_not_survivorat_s_p3))
+
+                    ; #72758: <==negation-removal== 70426 (pos)
+                    (not (Pc_not_survivorat_s_p3))))
 
     (:action comm_p4_a_a_s
         :precondition (and (at_a_p4)
-                           (leader_a)
                            (Pa_survivorat_s_p4)
-                           (Ba_survivorat_s_p4))
+                           (Ba_survivorat_s_p4)
+                           (leader_a))
         :effect (and
-                    ; #43200: <==closure== 53714 (pos)
+                    ; #44443: <==closure== 62767 (pos)
                     (Pa_survivorat_s_p4)
 
-                    ; #53714: origin
+                    ; #62767: origin
                     (Ba_survivorat_s_p4)
 
-                    ; #64512: <==negation-removal== 53714 (pos)
+                    ; #17634: <==negation-removal== 62767 (pos)
                     (not (Pa_not_survivorat_s_p4))
 
-                    ; #64539: <==negation-removal== 43200 (pos)
+                    ; #33509: <==negation-removal== 44443 (pos)
                     (not (Ba_not_survivorat_s_p4))))
 
     (:action comm_p4_a_b_s
@@ -2573,986 +2573,986 @@
                            (Ba_survivorat_s_p4)
                            (leader_b))
         :effect (and
-                    ; #13525: <==closure== 65877 (pos)
-                    (Pb_survivorat_s_p4)
-
-                    ; #65877: origin
+                    ; #45897: origin
                     (Bb_survivorat_s_p4)
 
-                    ; #18972: <==negation-removal== 65877 (pos)
+                    ; #60186: <==closure== 45897 (pos)
+                    (Pb_survivorat_s_p4)
+
+                    ; #62404: <==negation-removal== 45897 (pos)
                     (not (Pb_not_survivorat_s_p4))
 
-                    ; #38083: <==negation-removal== 13525 (pos)
+                    ; #69182: <==negation-removal== 60186 (pos)
                     (not (Bb_not_survivorat_s_p4))))
 
     (:action comm_p4_a_c_s
         :precondition (and (at_a_p4)
-                           (leader_c)
                            (Pa_survivorat_s_p4)
-                           (Ba_survivorat_s_p4))
+                           (Ba_survivorat_s_p4)
+                           (leader_c))
         :effect (and
-                    ; #55665: origin
+                    ; #40210: origin
                     (Bc_survivorat_s_p4)
 
-                    ; #55885: <==closure== 55665 (pos)
+                    ; #42759: <==closure== 40210 (pos)
                     (Pc_survivorat_s_p4)
 
-                    ; #55412: <==negation-removal== 55885 (pos)
-                    (not (Bc_not_survivorat_s_p4))
+                    ; #15391: <==negation-removal== 40210 (pos)
+                    (not (Pc_not_survivorat_s_p4))
 
-                    ; #60176: <==negation-removal== 55665 (pos)
-                    (not (Pc_not_survivorat_s_p4))))
+                    ; #63036: <==negation-removal== 42759 (pos)
+                    (not (Bc_not_survivorat_s_p4))))
 
     (:action comm_p4_b_a_s
         :precondition (and (leader_a)
-                           (Pb_survivorat_s_p4)
                            (Bb_survivorat_s_p4)
-                           (at_b_p4))
+                           (at_b_p4)
+                           (Pb_survivorat_s_p4))
         :effect (and
-                    ; #43200: <==closure== 53714 (pos)
+                    ; #44443: <==closure== 62767 (pos)
                     (Pa_survivorat_s_p4)
 
-                    ; #53714: origin
+                    ; #62767: origin
                     (Ba_survivorat_s_p4)
 
-                    ; #64512: <==negation-removal== 53714 (pos)
+                    ; #17634: <==negation-removal== 62767 (pos)
                     (not (Pa_not_survivorat_s_p4))
 
-                    ; #64539: <==negation-removal== 43200 (pos)
+                    ; #33509: <==negation-removal== 44443 (pos)
                     (not (Ba_not_survivorat_s_p4))))
 
     (:action comm_p4_b_b_s
-        :precondition (and (Pb_survivorat_s_p4)
+        :precondition (and (leader_b)
                            (Bb_survivorat_s_p4)
                            (at_b_p4)
-                           (leader_b))
+                           (Pb_survivorat_s_p4))
         :effect (and
-                    ; #13525: <==closure== 65877 (pos)
-                    (Pb_survivorat_s_p4)
-
-                    ; #65877: origin
+                    ; #45897: origin
                     (Bb_survivorat_s_p4)
 
-                    ; #18972: <==negation-removal== 65877 (pos)
+                    ; #60186: <==closure== 45897 (pos)
+                    (Pb_survivorat_s_p4)
+
+                    ; #62404: <==negation-removal== 45897 (pos)
                     (not (Pb_not_survivorat_s_p4))
 
-                    ; #38083: <==negation-removal== 13525 (pos)
+                    ; #69182: <==negation-removal== 60186 (pos)
                     (not (Bb_not_survivorat_s_p4))))
 
     (:action comm_p4_b_c_s
         :precondition (and (leader_c)
-                           (Pb_survivorat_s_p4)
                            (Bb_survivorat_s_p4)
-                           (at_b_p4))
+                           (at_b_p4)
+                           (Pb_survivorat_s_p4))
         :effect (and
-                    ; #55665: origin
+                    ; #40210: origin
                     (Bc_survivorat_s_p4)
 
-                    ; #55885: <==closure== 55665 (pos)
+                    ; #42759: <==closure== 40210 (pos)
                     (Pc_survivorat_s_p4)
 
-                    ; #55412: <==negation-removal== 55885 (pos)
-                    (not (Bc_not_survivorat_s_p4))
+                    ; #15391: <==negation-removal== 40210 (pos)
+                    (not (Pc_not_survivorat_s_p4))
 
-                    ; #60176: <==negation-removal== 55665 (pos)
-                    (not (Pc_not_survivorat_s_p4))))
+                    ; #63036: <==negation-removal== 42759 (pos)
+                    (not (Bc_not_survivorat_s_p4))))
 
     (:action comm_p4_c_a_s
-        :precondition (and (leader_a)
-                           (at_c_p4)
-                           (Pc_survivorat_s_p4)
-                           (Bc_survivorat_s_p4))
+        :precondition (and (Pc_survivorat_s_p4)
+                           (Bc_survivorat_s_p4)
+                           (leader_a)
+                           (at_c_p4))
         :effect (and
-                    ; #43200: <==closure== 53714 (pos)
+                    ; #44443: <==closure== 62767 (pos)
                     (Pa_survivorat_s_p4)
 
-                    ; #53714: origin
+                    ; #62767: origin
                     (Ba_survivorat_s_p4)
 
-                    ; #64512: <==negation-removal== 53714 (pos)
+                    ; #17634: <==negation-removal== 62767 (pos)
                     (not (Pa_not_survivorat_s_p4))
 
-                    ; #64539: <==negation-removal== 43200 (pos)
+                    ; #33509: <==negation-removal== 44443 (pos)
                     (not (Ba_not_survivorat_s_p4))))
 
     (:action comm_p4_c_b_s
-        :precondition (and (at_c_p4)
-                           (Pc_survivorat_s_p4)
+        :precondition (and (Pc_survivorat_s_p4)
+                           (Bc_survivorat_s_p4)
                            (leader_b)
-                           (Bc_survivorat_s_p4))
+                           (at_c_p4))
         :effect (and
-                    ; #13525: <==closure== 65877 (pos)
-                    (Pb_survivorat_s_p4)
-
-                    ; #65877: origin
+                    ; #45897: origin
                     (Bb_survivorat_s_p4)
 
-                    ; #18972: <==negation-removal== 65877 (pos)
+                    ; #60186: <==closure== 45897 (pos)
+                    (Pb_survivorat_s_p4)
+
+                    ; #62404: <==negation-removal== 45897 (pos)
                     (not (Pb_not_survivorat_s_p4))
 
-                    ; #38083: <==negation-removal== 13525 (pos)
+                    ; #69182: <==negation-removal== 60186 (pos)
                     (not (Bb_not_survivorat_s_p4))))
 
     (:action comm_p4_c_c_s
         :precondition (and (leader_c)
-                           (at_c_p4)
                            (Pc_survivorat_s_p4)
-                           (Bc_survivorat_s_p4))
+                           (Bc_survivorat_s_p4)
+                           (at_c_p4))
         :effect (and
-                    ; #55665: origin
+                    ; #40210: origin
                     (Bc_survivorat_s_p4)
 
-                    ; #55885: <==closure== 55665 (pos)
+                    ; #42759: <==closure== 40210 (pos)
                     (Pc_survivorat_s_p4)
 
-                    ; #55412: <==negation-removal== 55885 (pos)
-                    (not (Bc_not_survivorat_s_p4))
+                    ; #15391: <==negation-removal== 40210 (pos)
+                    (not (Pc_not_survivorat_s_p4))
 
-                    ; #60176: <==negation-removal== 55665 (pos)
-                    (not (Pc_not_survivorat_s_p4))))
+                    ; #63036: <==negation-removal== 42759 (pos)
+                    (not (Bc_not_survivorat_s_p4))))
 
     (:action comm_p5_a_a_s
-        :precondition (and (at_a_p5)
+        :precondition (and (Ba_survivorat_s_p5)
                            (Pa_survivorat_s_p5)
-                           (Ba_survivorat_s_p5)
-                           (leader_a))
+                           (leader_a)
+                           (at_a_p5))
         :effect (and
-                    ; #50253: origin
-                    (Ba_survivorat_s_p5)
-
-                    ; #76159: <==closure== 50253 (pos)
+                    ; #52124: <==closure== 81977 (pos)
                     (Pa_survivorat_s_p5)
 
-                    ; #72418: <==negation-removal== 50253 (pos)
-                    (not (Pa_not_survivorat_s_p5))
+                    ; #81977: origin
+                    (Ba_survivorat_s_p5)
 
-                    ; #76635: <==negation-removal== 76159 (pos)
-                    (not (Ba_not_survivorat_s_p5))))
+                    ; #11930: <==negation-removal== 52124 (pos)
+                    (not (Ba_not_survivorat_s_p5))
+
+                    ; #59375: <==negation-removal== 81977 (pos)
+                    (not (Pa_not_survivorat_s_p5))))
 
     (:action comm_p5_a_b_s
-        :precondition (and (at_a_p5)
+        :precondition (and (Ba_survivorat_s_p5)
+                           (leader_b)
                            (Pa_survivorat_s_p5)
-                           (Ba_survivorat_s_p5)
-                           (leader_b))
+                           (at_a_p5))
         :effect (and
-                    ; #26494: origin
-                    (Bb_survivorat_s_p5)
-
-                    ; #86115: <==closure== 26494 (pos)
+                    ; #16507: <==closure== 54600 (pos)
                     (Pb_survivorat_s_p5)
 
-                    ; #35201: <==negation-removal== 86115 (pos)
+                    ; #54600: origin
+                    (Bb_survivorat_s_p5)
+
+                    ; #35014: <==negation-removal== 16507 (pos)
                     (not (Bb_not_survivorat_s_p5))
 
-                    ; #79267: <==negation-removal== 26494 (pos)
+                    ; #67374: <==negation-removal== 54600 (pos)
                     (not (Pb_not_survivorat_s_p5))))
 
     (:action comm_p5_a_c_s
-        :precondition (and (at_a_p5)
-                           (Pa_survivorat_s_p5)
+        :precondition (and (leader_c)
                            (Ba_survivorat_s_p5)
-                           (leader_c))
+                           (Pa_survivorat_s_p5)
+                           (at_a_p5))
         :effect (and
-                    ; #80460: <==closure== 86886 (pos)
-                    (Pc_survivorat_s_p5)
-
-                    ; #86886: origin
+                    ; #89262: origin
                     (Bc_survivorat_s_p5)
 
-                    ; #18439: <==negation-removal== 80460 (pos)
-                    (not (Bc_not_survivorat_s_p5))
+                    ; #90961: <==closure== 89262 (pos)
+                    (Pc_survivorat_s_p5)
 
-                    ; #37894: <==negation-removal== 86886 (pos)
-                    (not (Pc_not_survivorat_s_p5))))
+                    ; #16445: <==negation-removal== 89262 (pos)
+                    (not (Pc_not_survivorat_s_p5))
+
+                    ; #80157: <==negation-removal== 90961 (pos)
+                    (not (Bc_not_survivorat_s_p5))))
 
     (:action comm_p5_b_a_s
         :precondition (and (at_b_p5)
+                           (Pb_survivorat_s_p5)
                            (leader_a)
-                           (Bb_survivorat_s_p5)
-                           (Pb_survivorat_s_p5))
+                           (Bb_survivorat_s_p5))
         :effect (and
-                    ; #50253: origin
-                    (Ba_survivorat_s_p5)
-
-                    ; #76159: <==closure== 50253 (pos)
+                    ; #52124: <==closure== 81977 (pos)
                     (Pa_survivorat_s_p5)
 
-                    ; #72418: <==negation-removal== 50253 (pos)
-                    (not (Pa_not_survivorat_s_p5))
+                    ; #81977: origin
+                    (Ba_survivorat_s_p5)
 
-                    ; #76635: <==negation-removal== 76159 (pos)
-                    (not (Ba_not_survivorat_s_p5))))
+                    ; #11930: <==negation-removal== 52124 (pos)
+                    (not (Ba_not_survivorat_s_p5))
+
+                    ; #59375: <==negation-removal== 81977 (pos)
+                    (not (Pa_not_survivorat_s_p5))))
 
     (:action comm_p5_b_b_s
         :precondition (and (at_b_p5)
-                           (Bb_survivorat_s_p5)
+                           (leader_b)
                            (Pb_survivorat_s_p5)
-                           (leader_b))
+                           (Bb_survivorat_s_p5))
         :effect (and
-                    ; #26494: origin
-                    (Bb_survivorat_s_p5)
-
-                    ; #86115: <==closure== 26494 (pos)
+                    ; #16507: <==closure== 54600 (pos)
                     (Pb_survivorat_s_p5)
 
-                    ; #35201: <==negation-removal== 86115 (pos)
+                    ; #54600: origin
+                    (Bb_survivorat_s_p5)
+
+                    ; #35014: <==negation-removal== 16507 (pos)
                     (not (Bb_not_survivorat_s_p5))
 
-                    ; #79267: <==negation-removal== 26494 (pos)
+                    ; #67374: <==negation-removal== 54600 (pos)
                     (not (Pb_not_survivorat_s_p5))))
 
     (:action comm_p5_b_c_s
-        :precondition (and (at_b_p5)
-                           (leader_c)
-                           (Bb_survivorat_s_p5)
-                           (Pb_survivorat_s_p5))
+        :precondition (and (leader_c)
+                           (at_b_p5)
+                           (Pb_survivorat_s_p5)
+                           (Bb_survivorat_s_p5))
         :effect (and
-                    ; #80460: <==closure== 86886 (pos)
-                    (Pc_survivorat_s_p5)
-
-                    ; #86886: origin
+                    ; #89262: origin
                     (Bc_survivorat_s_p5)
 
-                    ; #18439: <==negation-removal== 80460 (pos)
-                    (not (Bc_not_survivorat_s_p5))
+                    ; #90961: <==closure== 89262 (pos)
+                    (Pc_survivorat_s_p5)
 
-                    ; #37894: <==negation-removal== 86886 (pos)
-                    (not (Pc_not_survivorat_s_p5))))
+                    ; #16445: <==negation-removal== 89262 (pos)
+                    (not (Pc_not_survivorat_s_p5))
+
+                    ; #80157: <==negation-removal== 90961 (pos)
+                    (not (Bc_not_survivorat_s_p5))))
 
     (:action comm_p5_c_a_s
-        :precondition (and (Pc_survivorat_s_p5)
-                           (at_c_p5)
+        :precondition (and (at_c_p5)
+                           (Bc_survivorat_s_p5)
                            (leader_a)
-                           (Bc_survivorat_s_p5))
+                           (Pc_survivorat_s_p5))
         :effect (and
-                    ; #50253: origin
-                    (Ba_survivorat_s_p5)
-
-                    ; #76159: <==closure== 50253 (pos)
+                    ; #52124: <==closure== 81977 (pos)
                     (Pa_survivorat_s_p5)
 
-                    ; #72418: <==negation-removal== 50253 (pos)
-                    (not (Pa_not_survivorat_s_p5))
+                    ; #81977: origin
+                    (Ba_survivorat_s_p5)
 
-                    ; #76635: <==negation-removal== 76159 (pos)
-                    (not (Ba_not_survivorat_s_p5))))
+                    ; #11930: <==negation-removal== 52124 (pos)
+                    (not (Ba_not_survivorat_s_p5))
+
+                    ; #59375: <==negation-removal== 81977 (pos)
+                    (not (Pa_not_survivorat_s_p5))))
 
     (:action comm_p5_c_b_s
-        :precondition (and (Pc_survivorat_s_p5)
-                           (at_c_p5)
+        :precondition (and (at_c_p5)
+                           (leader_b)
                            (Bc_survivorat_s_p5)
-                           (leader_b))
+                           (Pc_survivorat_s_p5))
         :effect (and
-                    ; #26494: origin
-                    (Bb_survivorat_s_p5)
-
-                    ; #86115: <==closure== 26494 (pos)
+                    ; #16507: <==closure== 54600 (pos)
                     (Pb_survivorat_s_p5)
 
-                    ; #35201: <==negation-removal== 86115 (pos)
+                    ; #54600: origin
+                    (Bb_survivorat_s_p5)
+
+                    ; #35014: <==negation-removal== 16507 (pos)
                     (not (Bb_not_survivorat_s_p5))
 
-                    ; #79267: <==negation-removal== 26494 (pos)
+                    ; #67374: <==negation-removal== 54600 (pos)
                     (not (Pb_not_survivorat_s_p5))))
 
     (:action comm_p5_c_c_s
-        :precondition (and (Pc_survivorat_s_p5)
-                           (at_c_p5)
+        :precondition (and (at_c_p5)
                            (leader_c)
-                           (Bc_survivorat_s_p5))
+                           (Bc_survivorat_s_p5)
+                           (Pc_survivorat_s_p5))
         :effect (and
-                    ; #80460: <==closure== 86886 (pos)
-                    (Pc_survivorat_s_p5)
-
-                    ; #86886: origin
+                    ; #89262: origin
                     (Bc_survivorat_s_p5)
 
-                    ; #18439: <==negation-removal== 80460 (pos)
-                    (not (Bc_not_survivorat_s_p5))
+                    ; #90961: <==closure== 89262 (pos)
+                    (Pc_survivorat_s_p5)
 
-                    ; #37894: <==negation-removal== 86886 (pos)
-                    (not (Pc_not_survivorat_s_p5))))
+                    ; #16445: <==negation-removal== 89262 (pos)
+                    (not (Pc_not_survivorat_s_p5))
+
+                    ; #80157: <==negation-removal== 90961 (pos)
+                    (not (Bc_not_survivorat_s_p5))))
 
     (:action comm_p6_a_a_s
-        :precondition (and (Ba_survivorat_s_p6)
+        :precondition (and (Pa_survivorat_s_p6)
+                           (Ba_survivorat_s_p6)
                            (leader_a)
-                           (Pa_survivorat_s_p6)
                            (at_a_p6))
         :effect (and
-                    ; #17814: <==closure== 87386 (pos)
-                    (Pa_survivorat_s_p6)
-
-                    ; #87386: origin
+                    ; #20111: origin
                     (Ba_survivorat_s_p6)
 
-                    ; #24904: <==negation-removal== 87386 (pos)
-                    (not (Pa_not_survivorat_s_p6))
+                    ; #87439: <==closure== 20111 (pos)
+                    (Pa_survivorat_s_p6)
 
-                    ; #80487: <==negation-removal== 17814 (pos)
-                    (not (Ba_not_survivorat_s_p6))))
+                    ; #62807: <==negation-removal== 87439 (pos)
+                    (not (Ba_not_survivorat_s_p6))
+
+                    ; #77749: <==negation-removal== 20111 (pos)
+                    (not (Pa_not_survivorat_s_p6))))
 
     (:action comm_p6_a_b_s
-        :precondition (and (Ba_survivorat_s_p6)
-                           (Pa_survivorat_s_p6)
+        :precondition (and (Pa_survivorat_s_p6)
                            (leader_b)
+                           (Ba_survivorat_s_p6)
                            (at_a_p6))
         :effect (and
-                    ; #68969: origin
-                    (Bb_survivorat_s_p6)
-
-                    ; #84494: <==closure== 68969 (pos)
+                    ; #22790: <==closure== 72644 (pos)
                     (Pb_survivorat_s_p6)
 
-                    ; #62687: <==negation-removal== 68969 (pos)
+                    ; #72644: origin
+                    (Bb_survivorat_s_p6)
+
+                    ; #32206: <==negation-removal== 72644 (pos)
                     (not (Pb_not_survivorat_s_p6))
 
-                    ; #82230: <==negation-removal== 84494 (pos)
+                    ; #86165: <==negation-removal== 22790 (pos)
                     (not (Bb_not_survivorat_s_p6))))
 
     (:action comm_p6_a_c_s
-        :precondition (and (Ba_survivorat_s_p6)
+        :precondition (and (Pa_survivorat_s_p6)
                            (leader_c)
-                           (Pa_survivorat_s_p6)
+                           (Ba_survivorat_s_p6)
                            (at_a_p6))
         :effect (and
-                    ; #53689: <==closure== 57802 (pos)
-                    (Pc_survivorat_s_p6)
-
-                    ; #57802: origin
+                    ; #46775: origin
                     (Bc_survivorat_s_p6)
 
-                    ; #46023: <==negation-removal== 53689 (pos)
-                    (not (Bc_not_survivorat_s_p6))
+                    ; #72016: <==closure== 46775 (pos)
+                    (Pc_survivorat_s_p6)
 
-                    ; #74188: <==negation-removal== 57802 (pos)
-                    (not (Pc_not_survivorat_s_p6))))
+                    ; #62179: <==negation-removal== 46775 (pos)
+                    (not (Pc_not_survivorat_s_p6))
+
+                    ; #77451: <==negation-removal== 72016 (pos)
+                    (not (Bc_not_survivorat_s_p6))))
 
     (:action comm_p6_b_a_s
-        :precondition (and (at_b_p6)
-                           (leader_a)
-                           (Pb_survivorat_s_p6)
-                           (Bb_survivorat_s_p6))
+        :precondition (and (leader_a)
+                           (Bb_survivorat_s_p6)
+                           (at_b_p6)
+                           (Pb_survivorat_s_p6))
         :effect (and
-                    ; #17814: <==closure== 87386 (pos)
-                    (Pa_survivorat_s_p6)
-
-                    ; #87386: origin
+                    ; #20111: origin
                     (Ba_survivorat_s_p6)
 
-                    ; #24904: <==negation-removal== 87386 (pos)
-                    (not (Pa_not_survivorat_s_p6))
+                    ; #87439: <==closure== 20111 (pos)
+                    (Pa_survivorat_s_p6)
 
-                    ; #80487: <==negation-removal== 17814 (pos)
-                    (not (Ba_not_survivorat_s_p6))))
+                    ; #62807: <==negation-removal== 87439 (pos)
+                    (not (Ba_not_survivorat_s_p6))
+
+                    ; #77749: <==negation-removal== 20111 (pos)
+                    (not (Pa_not_survivorat_s_p6))))
 
     (:action comm_p6_b_b_s
-        :precondition (and (at_b_p6)
-                           (Pb_survivorat_s_p6)
+        :precondition (and (leader_b)
                            (Bb_survivorat_s_p6)
-                           (leader_b))
+                           (at_b_p6)
+                           (Pb_survivorat_s_p6))
         :effect (and
-                    ; #68969: origin
-                    (Bb_survivorat_s_p6)
-
-                    ; #84494: <==closure== 68969 (pos)
+                    ; #22790: <==closure== 72644 (pos)
                     (Pb_survivorat_s_p6)
 
-                    ; #62687: <==negation-removal== 68969 (pos)
+                    ; #72644: origin
+                    (Bb_survivorat_s_p6)
+
+                    ; #32206: <==negation-removal== 72644 (pos)
                     (not (Pb_not_survivorat_s_p6))
 
-                    ; #82230: <==negation-removal== 84494 (pos)
+                    ; #86165: <==negation-removal== 22790 (pos)
                     (not (Bb_not_survivorat_s_p6))))
 
     (:action comm_p6_b_c_s
-        :precondition (and (at_b_p6)
-                           (Pb_survivorat_s_p6)
-                           (leader_c)
-                           (Bb_survivorat_s_p6))
+        :precondition (and (leader_c)
+                           (Bb_survivorat_s_p6)
+                           (at_b_p6)
+                           (Pb_survivorat_s_p6))
         :effect (and
-                    ; #53689: <==closure== 57802 (pos)
-                    (Pc_survivorat_s_p6)
-
-                    ; #57802: origin
+                    ; #46775: origin
                     (Bc_survivorat_s_p6)
 
-                    ; #46023: <==negation-removal== 53689 (pos)
-                    (not (Bc_not_survivorat_s_p6))
+                    ; #72016: <==closure== 46775 (pos)
+                    (Pc_survivorat_s_p6)
 
-                    ; #74188: <==negation-removal== 57802 (pos)
-                    (not (Pc_not_survivorat_s_p6))))
+                    ; #62179: <==negation-removal== 46775 (pos)
+                    (not (Pc_not_survivorat_s_p6))
+
+                    ; #77451: <==negation-removal== 72016 (pos)
+                    (not (Bc_not_survivorat_s_p6))))
 
     (:action comm_p6_c_a_s
-        :precondition (and (Bc_survivorat_s_p6)
-                           (leader_a)
+        :precondition (and (at_c_p6)
                            (Pc_survivorat_s_p6)
-                           (at_c_p6))
+                           (Bc_survivorat_s_p6)
+                           (leader_a))
         :effect (and
-                    ; #17814: <==closure== 87386 (pos)
-                    (Pa_survivorat_s_p6)
-
-                    ; #87386: origin
+                    ; #20111: origin
                     (Ba_survivorat_s_p6)
 
-                    ; #24904: <==negation-removal== 87386 (pos)
-                    (not (Pa_not_survivorat_s_p6))
+                    ; #87439: <==closure== 20111 (pos)
+                    (Pa_survivorat_s_p6)
 
-                    ; #80487: <==negation-removal== 17814 (pos)
-                    (not (Ba_not_survivorat_s_p6))))
+                    ; #62807: <==negation-removal== 87439 (pos)
+                    (not (Ba_not_survivorat_s_p6))
+
+                    ; #77749: <==negation-removal== 20111 (pos)
+                    (not (Pa_not_survivorat_s_p6))))
 
     (:action comm_p6_c_b_s
-        :precondition (and (Bc_survivorat_s_p6)
+        :precondition (and (at_c_p6)
                            (Pc_survivorat_s_p6)
-                           (leader_b)
-                           (at_c_p6))
+                           (Bc_survivorat_s_p6)
+                           (leader_b))
         :effect (and
-                    ; #68969: origin
-                    (Bb_survivorat_s_p6)
-
-                    ; #84494: <==closure== 68969 (pos)
+                    ; #22790: <==closure== 72644 (pos)
                     (Pb_survivorat_s_p6)
 
-                    ; #62687: <==negation-removal== 68969 (pos)
+                    ; #72644: origin
+                    (Bb_survivorat_s_p6)
+
+                    ; #32206: <==negation-removal== 72644 (pos)
                     (not (Pb_not_survivorat_s_p6))
 
-                    ; #82230: <==negation-removal== 84494 (pos)
+                    ; #86165: <==negation-removal== 22790 (pos)
                     (not (Bb_not_survivorat_s_p6))))
 
     (:action comm_p6_c_c_s
-        :precondition (and (Bc_survivorat_s_p6)
+        :precondition (and (at_c_p6)
                            (Pc_survivorat_s_p6)
-                           (leader_c)
-                           (at_c_p6))
+                           (Bc_survivorat_s_p6)
+                           (leader_c))
         :effect (and
-                    ; #53689: <==closure== 57802 (pos)
-                    (Pc_survivorat_s_p6)
-
-                    ; #57802: origin
+                    ; #46775: origin
                     (Bc_survivorat_s_p6)
 
-                    ; #46023: <==negation-removal== 53689 (pos)
-                    (not (Bc_not_survivorat_s_p6))
+                    ; #72016: <==closure== 46775 (pos)
+                    (Pc_survivorat_s_p6)
 
-                    ; #74188: <==negation-removal== 57802 (pos)
-                    (not (Pc_not_survivorat_s_p6))))
+                    ; #62179: <==negation-removal== 46775 (pos)
+                    (not (Pc_not_survivorat_s_p6))
+
+                    ; #77451: <==negation-removal== 72016 (pos)
+                    (not (Bc_not_survivorat_s_p6))))
 
     (:action comm_p7_a_a_s
-        :precondition (and (at_a_p7)
+        :precondition (and (Ba_survivorat_s_p7)
+                           (at_a_p7)
                            (Pa_survivorat_s_p7)
-                           (leader_a)
-                           (Ba_survivorat_s_p7))
+                           (leader_a))
         :effect (and
-                    ; #21229: <==closure== 27586 (pos)
-                    (Pa_survivorat_s_p7)
-
-                    ; #27586: origin
+                    ; #29363: origin
                     (Ba_survivorat_s_p7)
 
-                    ; #16046: <==negation-removal== 21229 (pos)
+                    ; #80595: <==closure== 29363 (pos)
+                    (Pa_survivorat_s_p7)
+
+                    ; #12194: <==negation-removal== 80595 (pos)
                     (not (Ba_not_survivorat_s_p7))
 
-                    ; #89541: <==negation-removal== 27586 (pos)
+                    ; #38796: <==negation-removal== 29363 (pos)
                     (not (Pa_not_survivorat_s_p7))))
 
     (:action comm_p7_a_b_s
-        :precondition (and (at_a_p7)
-                           (Pa_survivorat_s_p7)
+        :precondition (and (leader_b)
                            (Ba_survivorat_s_p7)
-                           (leader_b))
+                           (at_a_p7)
+                           (Pa_survivorat_s_p7))
         :effect (and
-                    ; #37127: origin
-                    (Bb_survivorat_s_p7)
-
-                    ; #77179: <==closure== 37127 (pos)
+                    ; #14280: <==closure== 34866 (pos)
                     (Pb_survivorat_s_p7)
 
-                    ; #24842: <==negation-removal== 37127 (pos)
+                    ; #34866: origin
+                    (Bb_survivorat_s_p7)
+
+                    ; #55402: <==negation-removal== 34866 (pos)
                     (not (Pb_not_survivorat_s_p7))
 
-                    ; #65645: <==negation-removal== 77179 (pos)
+                    ; #66321: <==negation-removal== 14280 (pos)
                     (not (Bb_not_survivorat_s_p7))))
 
     (:action comm_p7_a_c_s
-        :precondition (and (at_a_p7)
-                           (Pa_survivorat_s_p7)
+        :precondition (and (leader_c)
                            (Ba_survivorat_s_p7)
-                           (leader_c))
+                           (at_a_p7)
+                           (Pa_survivorat_s_p7))
         :effect (and
-                    ; #10883: <==closure== 54027 (pos)
-                    (Pc_survivorat_s_p7)
-
-                    ; #54027: origin
+                    ; #63695: origin
                     (Bc_survivorat_s_p7)
 
-                    ; #43682: <==negation-removal== 54027 (pos)
+                    ; #72047: <==closure== 63695 (pos)
+                    (Pc_survivorat_s_p7)
+
+                    ; #34699: <==negation-removal== 63695 (pos)
                     (not (Pc_not_survivorat_s_p7))
 
-                    ; #73606: <==negation-removal== 10883 (pos)
+                    ; #72068: <==negation-removal== 72047 (pos)
                     (not (Bc_not_survivorat_s_p7))))
 
     (:action comm_p7_b_a_s
-        :precondition (and (at_b_p7)
+        :precondition (and (Bb_survivorat_s_p7)
+                           (at_b_p7)
                            (leader_a)
-                           (Bb_survivorat_s_p7)
                            (Pb_survivorat_s_p7))
         :effect (and
-                    ; #21229: <==closure== 27586 (pos)
-                    (Pa_survivorat_s_p7)
-
-                    ; #27586: origin
+                    ; #29363: origin
                     (Ba_survivorat_s_p7)
 
-                    ; #16046: <==negation-removal== 21229 (pos)
+                    ; #80595: <==closure== 29363 (pos)
+                    (Pa_survivorat_s_p7)
+
+                    ; #12194: <==negation-removal== 80595 (pos)
                     (not (Ba_not_survivorat_s_p7))
 
-                    ; #89541: <==negation-removal== 27586 (pos)
+                    ; #38796: <==negation-removal== 29363 (pos)
                     (not (Pa_not_survivorat_s_p7))))
 
     (:action comm_p7_b_b_s
-        :precondition (and (at_b_p7)
-                           (Bb_survivorat_s_p7)
+        :precondition (and (Bb_survivorat_s_p7)
+                           (at_b_p7)
                            (leader_b)
                            (Pb_survivorat_s_p7))
         :effect (and
-                    ; #37127: origin
-                    (Bb_survivorat_s_p7)
-
-                    ; #77179: <==closure== 37127 (pos)
+                    ; #14280: <==closure== 34866 (pos)
                     (Pb_survivorat_s_p7)
 
-                    ; #24842: <==negation-removal== 37127 (pos)
+                    ; #34866: origin
+                    (Bb_survivorat_s_p7)
+
+                    ; #55402: <==negation-removal== 34866 (pos)
                     (not (Pb_not_survivorat_s_p7))
 
-                    ; #65645: <==negation-removal== 77179 (pos)
+                    ; #66321: <==negation-removal== 14280 (pos)
                     (not (Bb_not_survivorat_s_p7))))
 
     (:action comm_p7_b_c_s
-        :precondition (and (at_b_p7)
-                           (leader_c)
+        :precondition (and (leader_c)
                            (Bb_survivorat_s_p7)
+                           (at_b_p7)
                            (Pb_survivorat_s_p7))
         :effect (and
-                    ; #10883: <==closure== 54027 (pos)
-                    (Pc_survivorat_s_p7)
-
-                    ; #54027: origin
+                    ; #63695: origin
                     (Bc_survivorat_s_p7)
 
-                    ; #43682: <==negation-removal== 54027 (pos)
+                    ; #72047: <==closure== 63695 (pos)
+                    (Pc_survivorat_s_p7)
+
+                    ; #34699: <==negation-removal== 63695 (pos)
                     (not (Pc_not_survivorat_s_p7))
 
-                    ; #73606: <==negation-removal== 10883 (pos)
+                    ; #72068: <==negation-removal== 72047 (pos)
                     (not (Bc_not_survivorat_s_p7))))
 
     (:action comm_p7_c_a_s
-        :precondition (and (Bc_survivorat_s_p7)
-                           (leader_a)
+        :precondition (and (leader_a)
                            (at_c_p7)
+                           (Bc_survivorat_s_p7)
                            (Pc_survivorat_s_p7))
         :effect (and
-                    ; #21229: <==closure== 27586 (pos)
-                    (Pa_survivorat_s_p7)
-
-                    ; #27586: origin
+                    ; #29363: origin
                     (Ba_survivorat_s_p7)
 
-                    ; #16046: <==negation-removal== 21229 (pos)
+                    ; #80595: <==closure== 29363 (pos)
+                    (Pa_survivorat_s_p7)
+
+                    ; #12194: <==negation-removal== 80595 (pos)
                     (not (Ba_not_survivorat_s_p7))
 
-                    ; #89541: <==negation-removal== 27586 (pos)
+                    ; #38796: <==negation-removal== 29363 (pos)
                     (not (Pa_not_survivorat_s_p7))))
 
     (:action comm_p7_c_b_s
-        :precondition (and (Bc_survivorat_s_p7)
-                           (at_c_p7)
+        :precondition (and (at_c_p7)
                            (leader_b)
+                           (Bc_survivorat_s_p7)
                            (Pc_survivorat_s_p7))
         :effect (and
-                    ; #37127: origin
-                    (Bb_survivorat_s_p7)
-
-                    ; #77179: <==closure== 37127 (pos)
+                    ; #14280: <==closure== 34866 (pos)
                     (Pb_survivorat_s_p7)
 
-                    ; #24842: <==negation-removal== 37127 (pos)
+                    ; #34866: origin
+                    (Bb_survivorat_s_p7)
+
+                    ; #55402: <==negation-removal== 34866 (pos)
                     (not (Pb_not_survivorat_s_p7))
 
-                    ; #65645: <==negation-removal== 77179 (pos)
+                    ; #66321: <==negation-removal== 14280 (pos)
                     (not (Bb_not_survivorat_s_p7))))
 
     (:action comm_p7_c_c_s
-        :precondition (and (Bc_survivorat_s_p7)
-                           (leader_c)
+        :precondition (and (leader_c)
                            (at_c_p7)
+                           (Bc_survivorat_s_p7)
                            (Pc_survivorat_s_p7))
         :effect (and
-                    ; #10883: <==closure== 54027 (pos)
-                    (Pc_survivorat_s_p7)
-
-                    ; #54027: origin
+                    ; #63695: origin
                     (Bc_survivorat_s_p7)
 
-                    ; #43682: <==negation-removal== 54027 (pos)
+                    ; #72047: <==closure== 63695 (pos)
+                    (Pc_survivorat_s_p7)
+
+                    ; #34699: <==negation-removal== 63695 (pos)
                     (not (Pc_not_survivorat_s_p7))
 
-                    ; #73606: <==negation-removal== 10883 (pos)
+                    ; #72068: <==negation-removal== 72047 (pos)
                     (not (Bc_not_survivorat_s_p7))))
 
     (:action comm_p8_a_a_s
-        :precondition (and (Ba_survivorat_s_p8)
-                           (Pa_survivorat_s_p8)
+        :precondition (and (Pa_survivorat_s_p8)
                            (leader_a)
+                           (Ba_survivorat_s_p8)
                            (at_a_p8))
         :effect (and
-                    ; #42703: origin
-                    (Ba_survivorat_s_p8)
-
-                    ; #91792: <==closure== 42703 (pos)
+                    ; #10892: <==closure== 15981 (pos)
                     (Pa_survivorat_s_p8)
 
-                    ; #26908: <==negation-removal== 91792 (pos)
+                    ; #15981: origin
+                    (Ba_survivorat_s_p8)
+
+                    ; #58374: <==negation-removal== 10892 (pos)
                     (not (Ba_not_survivorat_s_p8))
 
-                    ; #83319: <==negation-removal== 42703 (pos)
+                    ; #64183: <==negation-removal== 15981 (pos)
                     (not (Pa_not_survivorat_s_p8))))
 
     (:action comm_p8_a_b_s
-        :precondition (and (Ba_survivorat_s_p8)
-                           (Pa_survivorat_s_p8)
+        :precondition (and (Pa_survivorat_s_p8)
                            (leader_b)
+                           (Ba_survivorat_s_p8)
                            (at_a_p8))
         :effect (and
-                    ; #33667: origin
+                    ; #32989: origin
                     (Bb_survivorat_s_p8)
 
-                    ; #84698: <==closure== 33667 (pos)
+                    ; #63094: <==closure== 32989 (pos)
                     (Pb_survivorat_s_p8)
 
-                    ; #33734: <==negation-removal== 84698 (pos)
-                    (not (Bb_not_survivorat_s_p8))
+                    ; #18953: <==negation-removal== 32989 (pos)
+                    (not (Pb_not_survivorat_s_p8))
 
-                    ; #75983: <==negation-removal== 33667 (pos)
-                    (not (Pb_not_survivorat_s_p8))))
+                    ; #66720: <==negation-removal== 63094 (pos)
+                    (not (Bb_not_survivorat_s_p8))))
 
     (:action comm_p8_a_c_s
         :precondition (and (leader_c)
-                           (Ba_survivorat_s_p8)
                            (Pa_survivorat_s_p8)
+                           (Ba_survivorat_s_p8)
                            (at_a_p8))
         :effect (and
-                    ; #52362: origin
+                    ; #41002: origin
                     (Bc_survivorat_s_p8)
 
-                    ; #56913: <==closure== 52362 (pos)
+                    ; #58561: <==closure== 41002 (pos)
                     (Pc_survivorat_s_p8)
 
-                    ; #26791: <==negation-removal== 56913 (pos)
-                    (not (Bc_not_survivorat_s_p8))
+                    ; #28850: <==negation-removal== 41002 (pos)
+                    (not (Pc_not_survivorat_s_p8))
 
-                    ; #75380: <==negation-removal== 52362 (pos)
-                    (not (Pc_not_survivorat_s_p8))))
+                    ; #64702: <==negation-removal== 58561 (pos)
+                    (not (Bc_not_survivorat_s_p8))))
 
     (:action comm_p8_b_a_s
-        :precondition (and (leader_a)
-                           (Pb_survivorat_s_p8)
+        :precondition (and (Pb_survivorat_s_p8)
+                           (at_b_p8)
                            (Bb_survivorat_s_p8)
-                           (at_b_p8))
+                           (leader_a))
         :effect (and
-                    ; #42703: origin
-                    (Ba_survivorat_s_p8)
-
-                    ; #91792: <==closure== 42703 (pos)
+                    ; #10892: <==closure== 15981 (pos)
                     (Pa_survivorat_s_p8)
 
-                    ; #26908: <==negation-removal== 91792 (pos)
+                    ; #15981: origin
+                    (Ba_survivorat_s_p8)
+
+                    ; #58374: <==negation-removal== 10892 (pos)
                     (not (Ba_not_survivorat_s_p8))
 
-                    ; #83319: <==negation-removal== 42703 (pos)
+                    ; #64183: <==negation-removal== 15981 (pos)
                     (not (Pa_not_survivorat_s_p8))))
 
     (:action comm_p8_b_b_s
-        :precondition (and (leader_b)
-                           (Pb_survivorat_s_p8)
+        :precondition (and (Pb_survivorat_s_p8)
+                           (at_b_p8)
                            (Bb_survivorat_s_p8)
-                           (at_b_p8))
+                           (leader_b))
         :effect (and
-                    ; #33667: origin
+                    ; #32989: origin
                     (Bb_survivorat_s_p8)
 
-                    ; #84698: <==closure== 33667 (pos)
+                    ; #63094: <==closure== 32989 (pos)
                     (Pb_survivorat_s_p8)
 
-                    ; #33734: <==negation-removal== 84698 (pos)
-                    (not (Bb_not_survivorat_s_p8))
+                    ; #18953: <==negation-removal== 32989 (pos)
+                    (not (Pb_not_survivorat_s_p8))
 
-                    ; #75983: <==negation-removal== 33667 (pos)
-                    (not (Pb_not_survivorat_s_p8))))
+                    ; #66720: <==negation-removal== 63094 (pos)
+                    (not (Bb_not_survivorat_s_p8))))
 
     (:action comm_p8_b_c_s
-        :precondition (and (leader_c)
-                           (Pb_survivorat_s_p8)
+        :precondition (and (Pb_survivorat_s_p8)
+                           (at_b_p8)
                            (Bb_survivorat_s_p8)
-                           (at_b_p8))
+                           (leader_c))
         :effect (and
-                    ; #52362: origin
+                    ; #41002: origin
                     (Bc_survivorat_s_p8)
 
-                    ; #56913: <==closure== 52362 (pos)
+                    ; #58561: <==closure== 41002 (pos)
                     (Pc_survivorat_s_p8)
 
-                    ; #26791: <==negation-removal== 56913 (pos)
-                    (not (Bc_not_survivorat_s_p8))
+                    ; #28850: <==negation-removal== 41002 (pos)
+                    (not (Pc_not_survivorat_s_p8))
 
-                    ; #75380: <==negation-removal== 52362 (pos)
-                    (not (Pc_not_survivorat_s_p8))))
+                    ; #64702: <==negation-removal== 58561 (pos)
+                    (not (Bc_not_survivorat_s_p8))))
 
     (:action comm_p8_c_a_s
-        :precondition (and (Pc_survivorat_s_p8)
-                           (Bc_survivorat_s_p8)
+        :precondition (and (Bc_survivorat_s_p8)
+                           (Pc_survivorat_s_p8)
                            (leader_a)
                            (at_c_p8))
         :effect (and
-                    ; #42703: origin
-                    (Ba_survivorat_s_p8)
-
-                    ; #91792: <==closure== 42703 (pos)
+                    ; #10892: <==closure== 15981 (pos)
                     (Pa_survivorat_s_p8)
 
-                    ; #26908: <==negation-removal== 91792 (pos)
+                    ; #15981: origin
+                    (Ba_survivorat_s_p8)
+
+                    ; #58374: <==negation-removal== 10892 (pos)
                     (not (Ba_not_survivorat_s_p8))
 
-                    ; #83319: <==negation-removal== 42703 (pos)
+                    ; #64183: <==negation-removal== 15981 (pos)
                     (not (Pa_not_survivorat_s_p8))))
 
     (:action comm_p8_c_b_s
-        :precondition (and (Pc_survivorat_s_p8)
+        :precondition (and (leader_b)
                            (Bc_survivorat_s_p8)
-                           (leader_b)
+                           (Pc_survivorat_s_p8)
                            (at_c_p8))
         :effect (and
-                    ; #33667: origin
+                    ; #32989: origin
                     (Bb_survivorat_s_p8)
 
-                    ; #84698: <==closure== 33667 (pos)
+                    ; #63094: <==closure== 32989 (pos)
                     (Pb_survivorat_s_p8)
 
-                    ; #33734: <==negation-removal== 84698 (pos)
-                    (not (Bb_not_survivorat_s_p8))
+                    ; #18953: <==negation-removal== 32989 (pos)
+                    (not (Pb_not_survivorat_s_p8))
 
-                    ; #75983: <==negation-removal== 33667 (pos)
-                    (not (Pb_not_survivorat_s_p8))))
+                    ; #66720: <==negation-removal== 63094 (pos)
+                    (not (Bb_not_survivorat_s_p8))))
 
     (:action comm_p8_c_c_s
-        :precondition (and (Pc_survivorat_s_p8)
-                           (leader_c)
+        :precondition (and (leader_c)
                            (Bc_survivorat_s_p8)
+                           (Pc_survivorat_s_p8)
                            (at_c_p8))
         :effect (and
-                    ; #52362: origin
+                    ; #41002: origin
                     (Bc_survivorat_s_p8)
 
-                    ; #56913: <==closure== 52362 (pos)
+                    ; #58561: <==closure== 41002 (pos)
                     (Pc_survivorat_s_p8)
 
-                    ; #26791: <==negation-removal== 56913 (pos)
-                    (not (Bc_not_survivorat_s_p8))
+                    ; #28850: <==negation-removal== 41002 (pos)
+                    (not (Pc_not_survivorat_s_p8))
 
-                    ; #75380: <==negation-removal== 52362 (pos)
-                    (not (Pc_not_survivorat_s_p8))))
+                    ; #64702: <==negation-removal== 58561 (pos)
+                    (not (Bc_not_survivorat_s_p8))))
 
     (:action comm_p9_a_a_s
         :precondition (and (Pa_survivorat_s_p9)
-                           (leader_a)
                            (Ba_survivorat_s_p9)
+                           (leader_a)
                            (at_a_p9))
         :effect (and
-                    ; #23943: origin
+                    ; #41402: origin
                     (Ba_survivorat_s_p9)
 
-                    ; #89143: <==closure== 23943 (pos)
+                    ; #88191: <==closure== 41402 (pos)
                     (Pa_survivorat_s_p9)
 
-                    ; #33795: <==negation-removal== 89143 (pos)
-                    (not (Ba_not_survivorat_s_p9))
+                    ; #14281: <==negation-removal== 41402 (pos)
+                    (not (Pa_not_survivorat_s_p9))
 
-                    ; #50584: <==negation-removal== 23943 (pos)
-                    (not (Pa_not_survivorat_s_p9))))
+                    ; #80610: <==negation-removal== 88191 (pos)
+                    (not (Ba_not_survivorat_s_p9))))
 
     (:action comm_p9_a_b_s
-        :precondition (and (leader_b)
-                           (Pa_survivorat_s_p9)
+        :precondition (and (Pa_survivorat_s_p9)
                            (Ba_survivorat_s_p9)
+                           (leader_b)
                            (at_a_p9))
         :effect (and
-                    ; #51239: <==closure== 88856 (pos)
-                    (Pb_survivorat_s_p9)
-
-                    ; #88856: origin
+                    ; #70016: origin
                     (Bb_survivorat_s_p9)
 
-                    ; #58538: <==negation-removal== 88856 (pos)
-                    (not (Pb_not_survivorat_s_p9))
+                    ; #83785: <==closure== 70016 (pos)
+                    (Pb_survivorat_s_p9)
 
-                    ; #78895: <==negation-removal== 51239 (pos)
-                    (not (Bb_not_survivorat_s_p9))))
+                    ; #38012: <==negation-removal== 83785 (pos)
+                    (not (Bb_not_survivorat_s_p9))
+
+                    ; #63023: <==negation-removal== 70016 (pos)
+                    (not (Pb_not_survivorat_s_p9))))
 
     (:action comm_p9_a_c_s
-        :precondition (and (leader_c)
-                           (Pa_survivorat_s_p9)
+        :precondition (and (Pa_survivorat_s_p9)
                            (Ba_survivorat_s_p9)
+                           (leader_c)
                            (at_a_p9))
         :effect (and
-                    ; #59653: <==closure== 80511 (pos)
+                    ; #34569: <==closure== 61389 (pos)
                     (Pc_survivorat_s_p9)
 
-                    ; #80511: origin
+                    ; #61389: origin
                     (Bc_survivorat_s_p9)
 
-                    ; #53017: <==negation-removal== 80511 (pos)
-                    (not (Pc_not_survivorat_s_p9))
+                    ; #43141: <==negation-removal== 34569 (pos)
+                    (not (Bc_not_survivorat_s_p9))
 
-                    ; #80730: <==negation-removal== 59653 (pos)
-                    (not (Bc_not_survivorat_s_p9))))
+                    ; #80560: <==negation-removal== 61389 (pos)
+                    (not (Pc_not_survivorat_s_p9))))
 
     (:action comm_p9_b_a_s
         :precondition (and (at_b_p9)
-                           (Pb_survivorat_s_p9)
+                           (leader_a)
                            (Bb_survivorat_s_p9)
-                           (leader_a))
+                           (Pb_survivorat_s_p9))
         :effect (and
-                    ; #23943: origin
+                    ; #41402: origin
                     (Ba_survivorat_s_p9)
 
-                    ; #89143: <==closure== 23943 (pos)
+                    ; #88191: <==closure== 41402 (pos)
                     (Pa_survivorat_s_p9)
 
-                    ; #33795: <==negation-removal== 89143 (pos)
-                    (not (Ba_not_survivorat_s_p9))
+                    ; #14281: <==negation-removal== 41402 (pos)
+                    (not (Pa_not_survivorat_s_p9))
 
-                    ; #50584: <==negation-removal== 23943 (pos)
-                    (not (Pa_not_survivorat_s_p9))))
+                    ; #80610: <==negation-removal== 88191 (pos)
+                    (not (Ba_not_survivorat_s_p9))))
 
     (:action comm_p9_b_b_s
         :precondition (and (at_b_p9)
-                           (Pb_survivorat_s_p9)
+                           (leader_b)
                            (Bb_survivorat_s_p9)
-                           (leader_b))
+                           (Pb_survivorat_s_p9))
         :effect (and
-                    ; #51239: <==closure== 88856 (pos)
-                    (Pb_survivorat_s_p9)
-
-                    ; #88856: origin
+                    ; #70016: origin
                     (Bb_survivorat_s_p9)
 
-                    ; #58538: <==negation-removal== 88856 (pos)
-                    (not (Pb_not_survivorat_s_p9))
+                    ; #83785: <==closure== 70016 (pos)
+                    (Pb_survivorat_s_p9)
 
-                    ; #78895: <==negation-removal== 51239 (pos)
-                    (not (Bb_not_survivorat_s_p9))))
+                    ; #38012: <==negation-removal== 83785 (pos)
+                    (not (Bb_not_survivorat_s_p9))
+
+                    ; #63023: <==negation-removal== 70016 (pos)
+                    (not (Pb_not_survivorat_s_p9))))
 
     (:action comm_p9_b_c_s
-        :precondition (and (at_b_p9)
-                           (leader_c)
-                           (Pb_survivorat_s_p9)
-                           (Bb_survivorat_s_p9))
+        :precondition (and (leader_c)
+                           (at_b_p9)
+                           (Bb_survivorat_s_p9)
+                           (Pb_survivorat_s_p9))
         :effect (and
-                    ; #59653: <==closure== 80511 (pos)
+                    ; #34569: <==closure== 61389 (pos)
                     (Pc_survivorat_s_p9)
 
-                    ; #80511: origin
+                    ; #61389: origin
                     (Bc_survivorat_s_p9)
 
-                    ; #53017: <==negation-removal== 80511 (pos)
-                    (not (Pc_not_survivorat_s_p9))
+                    ; #43141: <==negation-removal== 34569 (pos)
+                    (not (Bc_not_survivorat_s_p9))
 
-                    ; #80730: <==negation-removal== 59653 (pos)
-                    (not (Bc_not_survivorat_s_p9))))
+                    ; #80560: <==negation-removal== 61389 (pos)
+                    (not (Pc_not_survivorat_s_p9))))
 
     (:action comm_p9_c_a_s
-        :precondition (and (Bc_survivorat_s_p9)
-                           (leader_a)
+        :precondition (and (Pc_survivorat_s_p9)
                            (at_c_p9)
-                           (Pc_survivorat_s_p9))
+                           (leader_a)
+                           (Bc_survivorat_s_p9))
         :effect (and
-                    ; #23943: origin
+                    ; #41402: origin
                     (Ba_survivorat_s_p9)
 
-                    ; #89143: <==closure== 23943 (pos)
+                    ; #88191: <==closure== 41402 (pos)
                     (Pa_survivorat_s_p9)
 
-                    ; #33795: <==negation-removal== 89143 (pos)
-                    (not (Ba_not_survivorat_s_p9))
+                    ; #14281: <==negation-removal== 41402 (pos)
+                    (not (Pa_not_survivorat_s_p9))
 
-                    ; #50584: <==negation-removal== 23943 (pos)
-                    (not (Pa_not_survivorat_s_p9))))
+                    ; #80610: <==negation-removal== 88191 (pos)
+                    (not (Ba_not_survivorat_s_p9))))
 
     (:action comm_p9_c_b_s
-        :precondition (and (Bc_survivorat_s_p9)
+        :precondition (and (Pc_survivorat_s_p9)
                            (leader_b)
                            (at_c_p9)
-                           (Pc_survivorat_s_p9))
+                           (Bc_survivorat_s_p9))
         :effect (and
-                    ; #51239: <==closure== 88856 (pos)
-                    (Pb_survivorat_s_p9)
-
-                    ; #88856: origin
+                    ; #70016: origin
                     (Bb_survivorat_s_p9)
 
-                    ; #58538: <==negation-removal== 88856 (pos)
-                    (not (Pb_not_survivorat_s_p9))
+                    ; #83785: <==closure== 70016 (pos)
+                    (Pb_survivorat_s_p9)
 
-                    ; #78895: <==negation-removal== 51239 (pos)
-                    (not (Bb_not_survivorat_s_p9))))
+                    ; #38012: <==negation-removal== 83785 (pos)
+                    (not (Bb_not_survivorat_s_p9))
+
+                    ; #63023: <==negation-removal== 70016 (pos)
+                    (not (Pb_not_survivorat_s_p9))))
 
     (:action comm_p9_c_c_s
-        :precondition (and (Bc_survivorat_s_p9)
-                           (leader_c)
+        :precondition (and (leader_c)
+                           (Pc_survivorat_s_p9)
                            (at_c_p9)
-                           (Pc_survivorat_s_p9))
+                           (Bc_survivorat_s_p9))
         :effect (and
-                    ; #59653: <==closure== 80511 (pos)
+                    ; #34569: <==closure== 61389 (pos)
                     (Pc_survivorat_s_p9)
 
-                    ; #80511: origin
+                    ; #61389: origin
                     (Bc_survivorat_s_p9)
 
-                    ; #53017: <==negation-removal== 80511 (pos)
-                    (not (Pc_not_survivorat_s_p9))
+                    ; #43141: <==negation-removal== 34569 (pos)
+                    (not (Bc_not_survivorat_s_p9))
 
-                    ; #80730: <==negation-removal== 59653 (pos)
-                    (not (Bc_not_survivorat_s_p9))))
+                    ; #80560: <==negation-removal== 61389 (pos)
+                    (not (Pc_not_survivorat_s_p9))))
 
     (:action move_a_p1_p1
         :precondition (and (succ_p1_p1)
                            (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #11945: origin
-                    (not_at_a_p1)
-
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
-                    (not (not_at_a_p1))
+                    ; #66066: origin
+                    (not_at_a_p1)
 
-                    ; #26068: <==negation-removal== 11945 (pos)
-                    (not (at_a_p1))))
+                    ; #18491: <==negation-removal== 66066 (pos)
+                    (not (at_a_p1))
+
+                    ; #66066: <==negation-removal== 18491 (pos)
+                    (not (not_at_a_p1))))
 
     (:action move_a_p1_p2
         :precondition (and (succ_p1_p2)
                            (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #11945: origin
+                    ; #66066: origin
                     (not_at_a_p1)
 
-                    ; #19375: origin
+                    ; #67983: origin
                     (at_a_p2)
 
-                    ; #26068: <==negation-removal== 11945 (pos)
+                    ; #18491: <==negation-removal== 66066 (pos)
                     (not (at_a_p1))
 
-                    ; #76529: <==negation-removal== 19375 (pos)
+                    ; #24991: <==negation-removal== 67983 (pos)
                     (not (not_at_a_p2))))
 
     (:action move_a_p1_p3
@@ -3560,33 +3560,33 @@
                            (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #11945: origin
+                    ; #66066: origin
                     (not_at_a_p1)
 
-                    ; #48341: origin
+                    ; #69778: origin
                     (at_a_p3)
 
-                    ; #26068: <==negation-removal== 11945 (pos)
+                    ; #18491: <==negation-removal== 66066 (pos)
                     (not (at_a_p1))
 
-                    ; #69284: <==negation-removal== 48341 (pos)
+                    ; #83926: <==negation-removal== 69778 (pos)
                     (not (not_at_a_p3))))
 
     (:action move_a_p1_p4
-        :precondition (and (at_a_p1)
-                           (succ_p1_p4)
+        :precondition (and (succ_p1_p4)
+                           (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #11945: origin
+                    ; #66066: origin
                     (not_at_a_p1)
 
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #26068: <==negation-removal== 11945 (pos)
+                    ; #18491: <==negation-removal== 66066 (pos)
                     (not (at_a_p1))
 
-                    ; #26591: <==negation-removal== 82706 (pos)
+                    ; #82845: <==negation-removal== 82541 (pos)
                     (not (not_at_a_p4))))
 
     (:action move_a_p1_p5
@@ -3594,33 +3594,33 @@
                            (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #11945: origin
+                    ; #66066: origin
                     (not_at_a_p1)
 
-                    ; #87621: origin
+                    ; #77910: origin
                     (at_a_p5)
 
-                    ; #26068: <==negation-removal== 11945 (pos)
+                    ; #18491: <==negation-removal== 66066 (pos)
                     (not (at_a_p1))
 
-                    ; #76526: <==negation-removal== 87621 (pos)
+                    ; #72955: <==negation-removal== 77910 (pos)
                     (not (not_at_a_p5))))
 
     (:action move_a_p1_p6
-        :precondition (and (at_a_p1)
-                           (succ_p1_p6)
+        :precondition (and (succ_p1_p6)
+                           (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #11945: origin
-                    (not_at_a_p1)
-
-                    ; #63170: origin
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #26068: <==negation-removal== 11945 (pos)
+                    ; #66066: origin
+                    (not_at_a_p1)
+
+                    ; #18491: <==negation-removal== 66066 (pos)
                     (not (at_a_p1))
 
-                    ; #59951: <==negation-removal== 63170 (pos)
+                    ; #28077: <==negation-removal== 27830 (pos)
                     (not (not_at_a_p6))))
 
     (:action move_a_p1_p7
@@ -3628,220 +3628,220 @@
                            (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #11945: origin
-                    (not_at_a_p1)
-
-                    ; #42679: origin
+                    ; #12695: origin
                     (at_a_p7)
 
-                    ; #11099: <==negation-removal== 42679 (pos)
-                    (not (not_at_a_p7))
-
-                    ; #26068: <==negation-removal== 11945 (pos)
-                    (not (at_a_p1))))
-
-    (:action move_a_p1_p8
-        :precondition (and (at_a_p1)
-                           (succ_p1_p8)
-                           (not (leader_a)))
-        :effect (and
-                    ; #11945: origin
+                    ; #66066: origin
                     (not_at_a_p1)
 
-                    ; #19850: origin
-                    (at_a_p8)
-
-                    ; #26068: <==negation-removal== 11945 (pos)
+                    ; #18491: <==negation-removal== 66066 (pos)
                     (not (at_a_p1))
 
-                    ; #84005: <==negation-removal== 19850 (pos)
+                    ; #73286: <==negation-removal== 12695 (pos)
+                    (not (not_at_a_p7))))
+
+    (:action move_a_p1_p8
+        :precondition (and (succ_p1_p8)
+                           (at_a_p1)
+                           (not (leader_a)))
+        :effect (and
+                    ; #66066: origin
+                    (not_at_a_p1)
+
+                    ; #89813: origin
+                    (at_a_p8)
+
+                    ; #18491: <==negation-removal== 66066 (pos)
+                    (not (at_a_p1))
+
+                    ; #84600: <==negation-removal== 89813 (pos)
                     (not (not_at_a_p8))))
 
     (:action move_a_p1_p9
-        :precondition (and (at_a_p1)
-                           (succ_p1_p9)
+        :precondition (and (succ_p1_p9)
+                           (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #11945: origin
-                    (not_at_a_p1)
-
-                    ; #75848: origin
+                    ; #62696: origin
                     (at_a_p9)
 
-                    ; #26068: <==negation-removal== 11945 (pos)
+                    ; #66066: origin
+                    (not_at_a_p1)
+
+                    ; #18491: <==negation-removal== 66066 (pos)
                     (not (at_a_p1))
 
-                    ; #68163: <==negation-removal== 75848 (pos)
+                    ; #36402: <==negation-removal== 62696 (pos)
                     (not (not_at_a_p9))))
 
     (:action move_a_p2_p1
-        :precondition (and (at_a_p2)
-                           (succ_p2_p1)
+        :precondition (and (succ_p2_p1)
+                           (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #76529: origin
+                    ; #24991: origin
                     (not_at_a_p2)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
+                    ; #66066: <==negation-removal== 18491 (pos)
                     (not (not_at_a_p1))
 
-                    ; #19375: <==negation-removal== 76529 (pos)
+                    ; #67983: <==negation-removal== 24991 (pos)
                     (not (at_a_p2))))
 
     (:action move_a_p2_p2
-        :precondition (and (at_a_p2)
-                           (succ_p2_p2)
+        :precondition (and (succ_p2_p2)
+                           (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #19375: origin
+                    ; #24991: origin
+                    (not_at_a_p2)
+
+                    ; #67983: origin
                     (at_a_p2)
 
-                    ; #76529: origin
-                    (not_at_a_p2)
+                    ; #24991: <==negation-removal== 67983 (pos)
+                    (not (not_at_a_p2))
 
-                    ; #19375: <==negation-removal== 76529 (pos)
-                    (not (at_a_p2))
-
-                    ; #76529: <==negation-removal== 19375 (pos)
-                    (not (not_at_a_p2))))
+                    ; #67983: <==negation-removal== 24991 (pos)
+                    (not (at_a_p2))))
 
     (:action move_a_p2_p3
-        :precondition (and (at_a_p2)
-                           (succ_p2_p3)
+        :precondition (and (succ_p2_p3)
+                           (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #48341: origin
-                    (at_a_p3)
-
-                    ; #76529: origin
+                    ; #24991: origin
                     (not_at_a_p2)
 
-                    ; #19375: <==negation-removal== 76529 (pos)
+                    ; #69778: origin
+                    (at_a_p3)
+
+                    ; #67983: <==negation-removal== 24991 (pos)
                     (not (at_a_p2))
 
-                    ; #69284: <==negation-removal== 48341 (pos)
+                    ; #83926: <==negation-removal== 69778 (pos)
                     (not (not_at_a_p3))))
 
     (:action move_a_p2_p4
-        :precondition (and (at_a_p2)
-                           (succ_p2_p4)
+        :precondition (and (succ_p2_p4)
+                           (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #76529: origin
+                    ; #24991: origin
                     (not_at_a_p2)
 
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #19375: <==negation-removal== 76529 (pos)
+                    ; #67983: <==negation-removal== 24991 (pos)
                     (not (at_a_p2))
 
-                    ; #26591: <==negation-removal== 82706 (pos)
+                    ; #82845: <==negation-removal== 82541 (pos)
                     (not (not_at_a_p4))))
 
     (:action move_a_p2_p5
-        :precondition (and (at_a_p2)
-                           (succ_p2_p5)
+        :precondition (and (succ_p2_p5)
+                           (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #76529: origin
+                    ; #24991: origin
                     (not_at_a_p2)
 
-                    ; #87621: origin
+                    ; #77910: origin
                     (at_a_p5)
 
-                    ; #19375: <==negation-removal== 76529 (pos)
+                    ; #67983: <==negation-removal== 24991 (pos)
                     (not (at_a_p2))
 
-                    ; #76526: <==negation-removal== 87621 (pos)
+                    ; #72955: <==negation-removal== 77910 (pos)
                     (not (not_at_a_p5))))
 
     (:action move_a_p2_p6
-        :precondition (and (at_a_p2)
-                           (succ_p2_p6)
+        :precondition (and (succ_p2_p6)
+                           (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #63170: origin
+                    ; #24991: origin
+                    (not_at_a_p2)
+
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #76529: origin
-                    (not_at_a_p2)
+                    ; #28077: <==negation-removal== 27830 (pos)
+                    (not (not_at_a_p6))
 
-                    ; #19375: <==negation-removal== 76529 (pos)
-                    (not (at_a_p2))
-
-                    ; #59951: <==negation-removal== 63170 (pos)
-                    (not (not_at_a_p6))))
-
-    (:action move_a_p2_p7
-        :precondition (and (at_a_p2)
-                           (succ_p2_p7)
-                           (not (leader_a)))
-        :effect (and
-                    ; #42679: origin
-                    (at_a_p7)
-
-                    ; #76529: origin
-                    (not_at_a_p2)
-
-                    ; #11099: <==negation-removal== 42679 (pos)
-                    (not (not_at_a_p7))
-
-                    ; #19375: <==negation-removal== 76529 (pos)
+                    ; #67983: <==negation-removal== 24991 (pos)
                     (not (at_a_p2))))
 
-    (:action move_a_p2_p8
-        :precondition (and (at_a_p2)
-                           (succ_p2_p8)
+    (:action move_a_p2_p7
+        :precondition (and (succ_p2_p7)
+                           (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #19850: origin
-                    (at_a_p8)
+                    ; #12695: origin
+                    (at_a_p7)
 
-                    ; #76529: origin
+                    ; #24991: origin
                     (not_at_a_p2)
 
-                    ; #19375: <==negation-removal== 76529 (pos)
+                    ; #67983: <==negation-removal== 24991 (pos)
                     (not (at_a_p2))
 
-                    ; #84005: <==negation-removal== 19850 (pos)
+                    ; #73286: <==negation-removal== 12695 (pos)
+                    (not (not_at_a_p7))))
+
+    (:action move_a_p2_p8
+        :precondition (and (succ_p2_p8)
+                           (at_a_p2)
+                           (not (leader_a)))
+        :effect (and
+                    ; #24991: origin
+                    (not_at_a_p2)
+
+                    ; #89813: origin
+                    (at_a_p8)
+
+                    ; #67983: <==negation-removal== 24991 (pos)
+                    (not (at_a_p2))
+
+                    ; #84600: <==negation-removal== 89813 (pos)
                     (not (not_at_a_p8))))
 
     (:action move_a_p2_p9
-        :precondition (and (at_a_p2)
-                           (succ_p2_p9)
+        :precondition (and (succ_p2_p9)
+                           (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #75848: origin
-                    (at_a_p9)
-
-                    ; #76529: origin
+                    ; #24991: origin
                     (not_at_a_p2)
 
-                    ; #19375: <==negation-removal== 76529 (pos)
-                    (not (at_a_p2))
+                    ; #62696: origin
+                    (at_a_p9)
 
-                    ; #68163: <==negation-removal== 75848 (pos)
-                    (not (not_at_a_p9))))
+                    ; #36402: <==negation-removal== 62696 (pos)
+                    (not (not_at_a_p9))
+
+                    ; #67983: <==negation-removal== 24991 (pos)
+                    (not (at_a_p2))))
 
     (:action move_a_p3_p1
-        :precondition (and (at_a_p3)
-                           (succ_p3_p1)
+        :precondition (and (succ_p3_p1)
+                           (at_a_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #69284: origin
+                    ; #83926: origin
                     (not_at_a_p3)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
+                    ; #66066: <==negation-removal== 18491 (pos)
                     (not (not_at_a_p1))
 
-                    ; #48341: <==negation-removal== 69284 (pos)
+                    ; #69778: <==negation-removal== 83926 (pos)
                     (not (at_a_p3))))
 
     (:action move_a_p3_p2
@@ -3849,33 +3849,33 @@
                            (at_a_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #19375: origin
+                    ; #67983: origin
                     (at_a_p2)
 
-                    ; #69284: origin
+                    ; #83926: origin
                     (not_at_a_p3)
 
-                    ; #48341: <==negation-removal== 69284 (pos)
-                    (not (at_a_p3))
+                    ; #24991: <==negation-removal== 67983 (pos)
+                    (not (not_at_a_p2))
 
-                    ; #76529: <==negation-removal== 19375 (pos)
-                    (not (not_at_a_p2))))
+                    ; #69778: <==negation-removal== 83926 (pos)
+                    (not (at_a_p3))))
 
     (:action move_a_p3_p3
         :precondition (and (succ_p3_p3)
                            (at_a_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #48341: origin
+                    ; #69778: origin
                     (at_a_p3)
 
-                    ; #69284: origin
+                    ; #83926: origin
                     (not_at_a_p3)
 
-                    ; #48341: <==negation-removal== 69284 (pos)
+                    ; #69778: <==negation-removal== 83926 (pos)
                     (not (at_a_p3))
 
-                    ; #69284: <==negation-removal== 48341 (pos)
+                    ; #83926: <==negation-removal== 69778 (pos)
                     (not (not_at_a_p3))))
 
     (:action move_a_p3_p4
@@ -3883,33 +3883,33 @@
                            (at_a_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #69284: origin
-                    (not_at_a_p3)
-
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #26591: <==negation-removal== 82706 (pos)
-                    (not (not_at_a_p4))
-
-                    ; #48341: <==negation-removal== 69284 (pos)
-                    (not (at_a_p3))))
-
-    (:action move_a_p3_p5
-        :precondition (and (at_a_p3)
-                           (succ_p3_p5)
-                           (not (leader_a)))
-        :effect (and
-                    ; #69284: origin
+                    ; #83926: origin
                     (not_at_a_p3)
 
-                    ; #87621: origin
-                    (at_a_p5)
-
-                    ; #48341: <==negation-removal== 69284 (pos)
+                    ; #69778: <==negation-removal== 83926 (pos)
                     (not (at_a_p3))
 
-                    ; #76526: <==negation-removal== 87621 (pos)
+                    ; #82845: <==negation-removal== 82541 (pos)
+                    (not (not_at_a_p4))))
+
+    (:action move_a_p3_p5
+        :precondition (and (succ_p3_p5)
+                           (at_a_p3)
+                           (not (leader_a)))
+        :effect (and
+                    ; #77910: origin
+                    (at_a_p5)
+
+                    ; #83926: origin
+                    (not_at_a_p3)
+
+                    ; #69778: <==negation-removal== 83926 (pos)
+                    (not (at_a_p3))
+
+                    ; #72955: <==negation-removal== 77910 (pos)
                     (not (not_at_a_p5))))
 
     (:action move_a_p3_p6
@@ -3917,101 +3917,101 @@
                            (at_a_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #63170: origin
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #69284: origin
+                    ; #83926: origin
                     (not_at_a_p3)
 
-                    ; #48341: <==negation-removal== 69284 (pos)
-                    (not (at_a_p3))
+                    ; #28077: <==negation-removal== 27830 (pos)
+                    (not (not_at_a_p6))
 
-                    ; #59951: <==negation-removal== 63170 (pos)
-                    (not (not_at_a_p6))))
+                    ; #69778: <==negation-removal== 83926 (pos)
+                    (not (at_a_p3))))
 
     (:action move_a_p3_p7
         :precondition (and (succ_p3_p7)
                            (at_a_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #42679: origin
+                    ; #12695: origin
                     (at_a_p7)
 
-                    ; #69284: origin
+                    ; #83926: origin
                     (not_at_a_p3)
 
-                    ; #11099: <==negation-removal== 42679 (pos)
-                    (not (not_at_a_p7))
+                    ; #69778: <==negation-removal== 83926 (pos)
+                    (not (at_a_p3))
 
-                    ; #48341: <==negation-removal== 69284 (pos)
-                    (not (at_a_p3))))
+                    ; #73286: <==negation-removal== 12695 (pos)
+                    (not (not_at_a_p7))))
 
     (:action move_a_p3_p8
         :precondition (and (at_a_p3)
                            (succ_p3_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #19850: origin
-                    (at_a_p8)
-
-                    ; #69284: origin
+                    ; #83926: origin
                     (not_at_a_p3)
 
-                    ; #48341: <==negation-removal== 69284 (pos)
+                    ; #89813: origin
+                    (at_a_p8)
+
+                    ; #69778: <==negation-removal== 83926 (pos)
                     (not (at_a_p3))
 
-                    ; #84005: <==negation-removal== 19850 (pos)
+                    ; #84600: <==negation-removal== 89813 (pos)
                     (not (not_at_a_p8))))
 
     (:action move_a_p3_p9
-        :precondition (and (at_a_p3)
-                           (succ_p3_p9)
+        :precondition (and (succ_p3_p9)
+                           (at_a_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #69284: origin
-                    (not_at_a_p3)
-
-                    ; #75848: origin
+                    ; #62696: origin
                     (at_a_p9)
 
-                    ; #48341: <==negation-removal== 69284 (pos)
-                    (not (at_a_p3))
+                    ; #83926: origin
+                    (not_at_a_p3)
 
-                    ; #68163: <==negation-removal== 75848 (pos)
-                    (not (not_at_a_p9))))
+                    ; #36402: <==negation-removal== 62696 (pos)
+                    (not (not_at_a_p9))
+
+                    ; #69778: <==negation-removal== 83926 (pos)
+                    (not (at_a_p3))))
 
     (:action move_a_p4_p1
         :precondition (and (at_a_p4)
                            (succ_p4_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #26591: origin
+                    ; #82845: origin
                     (not_at_a_p4)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
+                    ; #66066: <==negation-removal== 18491 (pos)
                     (not (not_at_a_p1))
 
-                    ; #82706: <==negation-removal== 26591 (pos)
+                    ; #82541: <==negation-removal== 82845 (pos)
                     (not (at_a_p4))))
 
     (:action move_a_p4_p2
-        :precondition (and (succ_p4_p2)
-                           (at_a_p4)
+        :precondition (and (at_a_p4)
+                           (succ_p4_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #19375: origin
+                    ; #67983: origin
                     (at_a_p2)
 
-                    ; #26591: origin
+                    ; #82845: origin
                     (not_at_a_p4)
 
-                    ; #76529: <==negation-removal== 19375 (pos)
+                    ; #24991: <==negation-removal== 67983 (pos)
                     (not (not_at_a_p2))
 
-                    ; #82706: <==negation-removal== 26591 (pos)
+                    ; #82541: <==negation-removal== 82845 (pos)
                     (not (at_a_p4))))
 
     (:action move_a_p4_p3
@@ -4019,50 +4019,50 @@
                            (succ_p4_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #26591: origin
-                    (not_at_a_p4)
-
-                    ; #48341: origin
+                    ; #69778: origin
                     (at_a_p3)
 
-                    ; #69284: <==negation-removal== 48341 (pos)
-                    (not (not_at_a_p3))
+                    ; #82845: origin
+                    (not_at_a_p4)
 
-                    ; #82706: <==negation-removal== 26591 (pos)
-                    (not (at_a_p4))))
+                    ; #82541: <==negation-removal== 82845 (pos)
+                    (not (at_a_p4))
+
+                    ; #83926: <==negation-removal== 69778 (pos)
+                    (not (not_at_a_p3))))
 
     (:action move_a_p4_p4
         :precondition (and (at_a_p4)
                            (succ_p4_p4)
                            (not (leader_a)))
         :effect (and
-                    ; #26591: origin
-                    (not_at_a_p4)
-
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #26591: <==negation-removal== 82706 (pos)
-                    (not (not_at_a_p4))
+                    ; #82845: origin
+                    (not_at_a_p4)
 
-                    ; #82706: <==negation-removal== 26591 (pos)
-                    (not (at_a_p4))))
+                    ; #82541: <==negation-removal== 82845 (pos)
+                    (not (at_a_p4))
+
+                    ; #82845: <==negation-removal== 82541 (pos)
+                    (not (not_at_a_p4))))
 
     (:action move_a_p4_p5
         :precondition (and (at_a_p4)
                            (succ_p4_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #26591: origin
-                    (not_at_a_p4)
-
-                    ; #87621: origin
+                    ; #77910: origin
                     (at_a_p5)
 
-                    ; #76526: <==negation-removal== 87621 (pos)
+                    ; #82845: origin
+                    (not_at_a_p4)
+
+                    ; #72955: <==negation-removal== 77910 (pos)
                     (not (not_at_a_p5))
 
-                    ; #82706: <==negation-removal== 26591 (pos)
+                    ; #82541: <==negation-removal== 82845 (pos)
                     (not (at_a_p4))))
 
     (:action move_a_p4_p6
@@ -4070,16 +4070,16 @@
                            (succ_p4_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #26591: origin
-                    (not_at_a_p4)
-
-                    ; #63170: origin
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #59951: <==negation-removal== 63170 (pos)
+                    ; #82845: origin
+                    (not_at_a_p4)
+
+                    ; #28077: <==negation-removal== 27830 (pos)
                     (not (not_at_a_p6))
 
-                    ; #82706: <==negation-removal== 26591 (pos)
+                    ; #82541: <==negation-removal== 82845 (pos)
                     (not (at_a_p4))))
 
     (:action move_a_p4_p7
@@ -4087,33 +4087,33 @@
                            (succ_p4_p7)
                            (not (leader_a)))
         :effect (and
-                    ; #26591: origin
-                    (not_at_a_p4)
-
-                    ; #42679: origin
+                    ; #12695: origin
                     (at_a_p7)
 
-                    ; #11099: <==negation-removal== 42679 (pos)
+                    ; #82845: origin
+                    (not_at_a_p4)
+
+                    ; #73286: <==negation-removal== 12695 (pos)
                     (not (not_at_a_p7))
 
-                    ; #82706: <==negation-removal== 26591 (pos)
+                    ; #82541: <==negation-removal== 82845 (pos)
                     (not (at_a_p4))))
 
     (:action move_a_p4_p8
-        :precondition (and (succ_p4_p8)
-                           (at_a_p4)
+        :precondition (and (at_a_p4)
+                           (succ_p4_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #19850: origin
-                    (at_a_p8)
-
-                    ; #26591: origin
+                    ; #82845: origin
                     (not_at_a_p4)
 
-                    ; #82706: <==negation-removal== 26591 (pos)
+                    ; #89813: origin
+                    (at_a_p8)
+
+                    ; #82541: <==negation-removal== 82845 (pos)
                     (not (at_a_p4))
 
-                    ; #84005: <==negation-removal== 19850 (pos)
+                    ; #84600: <==negation-removal== 89813 (pos)
                     (not (not_at_a_p8))))
 
     (:action move_a_p4_p9
@@ -4121,169 +4121,169 @@
                            (succ_p4_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #26591: origin
-                    (not_at_a_p4)
-
-                    ; #75848: origin
+                    ; #62696: origin
                     (at_a_p9)
 
-                    ; #68163: <==negation-removal== 75848 (pos)
+                    ; #82845: origin
+                    (not_at_a_p4)
+
+                    ; #36402: <==negation-removal== 62696 (pos)
                     (not (not_at_a_p9))
 
-                    ; #82706: <==negation-removal== 26591 (pos)
+                    ; #82541: <==negation-removal== 82845 (pos)
                     (not (at_a_p4))))
 
     (:action move_a_p5_p1
-        :precondition (and (at_a_p5)
-                           (succ_p5_p1)
+        :precondition (and (succ_p5_p1)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #76526: origin
+                    ; #72955: origin
                     (not_at_a_p5)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
+                    ; #66066: <==negation-removal== 18491 (pos)
                     (not (not_at_a_p1))
 
-                    ; #87621: <==negation-removal== 76526 (pos)
+                    ; #77910: <==negation-removal== 72955 (pos)
                     (not (at_a_p5))))
 
     (:action move_a_p5_p2
-        :precondition (and (at_a_p5)
-                           (succ_p5_p2)
+        :precondition (and (succ_p5_p2)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #19375: origin
+                    ; #67983: origin
                     (at_a_p2)
 
-                    ; #76526: origin
+                    ; #72955: origin
                     (not_at_a_p5)
 
-                    ; #76529: <==negation-removal== 19375 (pos)
+                    ; #24991: <==negation-removal== 67983 (pos)
                     (not (not_at_a_p2))
 
-                    ; #87621: <==negation-removal== 76526 (pos)
+                    ; #77910: <==negation-removal== 72955 (pos)
                     (not (at_a_p5))))
 
     (:action move_a_p5_p3
-        :precondition (and (at_a_p5)
-                           (succ_p5_p3)
+        :precondition (and (succ_p5_p3)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #48341: origin
+                    ; #69778: origin
                     (at_a_p3)
 
-                    ; #76526: origin
+                    ; #72955: origin
                     (not_at_a_p5)
 
-                    ; #69284: <==negation-removal== 48341 (pos)
-                    (not (not_at_a_p3))
+                    ; #77910: <==negation-removal== 72955 (pos)
+                    (not (at_a_p5))
 
-                    ; #87621: <==negation-removal== 76526 (pos)
-                    (not (at_a_p5))))
+                    ; #83926: <==negation-removal== 69778 (pos)
+                    (not (not_at_a_p3))))
 
     (:action move_a_p5_p4
-        :precondition (and (at_a_p5)
-                           (succ_p5_p4)
+        :precondition (and (succ_p5_p4)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #76526: origin
+                    ; #72955: origin
                     (not_at_a_p5)
 
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #26591: <==negation-removal== 82706 (pos)
-                    (not (not_at_a_p4))
+                    ; #77910: <==negation-removal== 72955 (pos)
+                    (not (at_a_p5))
 
-                    ; #87621: <==negation-removal== 76526 (pos)
-                    (not (at_a_p5))))
+                    ; #82845: <==negation-removal== 82541 (pos)
+                    (not (not_at_a_p4))))
 
     (:action move_a_p5_p5
-        :precondition (and (at_a_p5)
-                           (succ_p5_p5)
+        :precondition (and (succ_p5_p5)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #76526: origin
+                    ; #72955: origin
                     (not_at_a_p5)
 
-                    ; #87621: origin
+                    ; #77910: origin
                     (at_a_p5)
 
-                    ; #76526: <==negation-removal== 87621 (pos)
+                    ; #72955: <==negation-removal== 77910 (pos)
                     (not (not_at_a_p5))
 
-                    ; #87621: <==negation-removal== 76526 (pos)
+                    ; #77910: <==negation-removal== 72955 (pos)
                     (not (at_a_p5))))
 
     (:action move_a_p5_p6
-        :precondition (and (at_a_p5)
-                           (succ_p5_p6)
+        :precondition (and (succ_p5_p6)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #63170: origin
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #76526: origin
+                    ; #72955: origin
                     (not_at_a_p5)
 
-                    ; #59951: <==negation-removal== 63170 (pos)
+                    ; #28077: <==negation-removal== 27830 (pos)
                     (not (not_at_a_p6))
 
-                    ; #87621: <==negation-removal== 76526 (pos)
+                    ; #77910: <==negation-removal== 72955 (pos)
                     (not (at_a_p5))))
 
     (:action move_a_p5_p7
-        :precondition (and (at_a_p5)
-                           (succ_p5_p7)
+        :precondition (and (succ_p5_p7)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #42679: origin
+                    ; #12695: origin
                     (at_a_p7)
 
-                    ; #76526: origin
+                    ; #72955: origin
                     (not_at_a_p5)
 
-                    ; #11099: <==negation-removal== 42679 (pos)
+                    ; #73286: <==negation-removal== 12695 (pos)
                     (not (not_at_a_p7))
 
-                    ; #87621: <==negation-removal== 76526 (pos)
+                    ; #77910: <==negation-removal== 72955 (pos)
                     (not (at_a_p5))))
 
     (:action move_a_p5_p8
-        :precondition (and (at_a_p5)
-                           (succ_p5_p8)
+        :precondition (and (succ_p5_p8)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #19850: origin
+                    ; #72955: origin
+                    (not_at_a_p5)
+
+                    ; #89813: origin
                     (at_a_p8)
 
-                    ; #76526: origin
-                    (not_at_a_p5)
+                    ; #77910: <==negation-removal== 72955 (pos)
+                    (not (at_a_p5))
 
-                    ; #84005: <==negation-removal== 19850 (pos)
-                    (not (not_at_a_p8))
-
-                    ; #87621: <==negation-removal== 76526 (pos)
-                    (not (at_a_p5))))
+                    ; #84600: <==negation-removal== 89813 (pos)
+                    (not (not_at_a_p8))))
 
     (:action move_a_p5_p9
-        :precondition (and (at_a_p5)
-                           (succ_p5_p9)
+        :precondition (and (succ_p5_p9)
+                           (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #75848: origin
+                    ; #62696: origin
                     (at_a_p9)
 
-                    ; #76526: origin
+                    ; #72955: origin
                     (not_at_a_p5)
 
-                    ; #68163: <==negation-removal== 75848 (pos)
+                    ; #36402: <==negation-removal== 62696 (pos)
                     (not (not_at_a_p9))
 
-                    ; #87621: <==negation-removal== 76526 (pos)
+                    ; #77910: <==negation-removal== 72955 (pos)
                     (not (at_a_p5))))
 
     (:action move_a_p6_p1
@@ -4291,50 +4291,50 @@
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #59951: origin
+                    ; #28077: origin
                     (not_at_a_p6)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
-                    (not (not_at_a_p1))
+                    ; #27830: <==negation-removal== 28077 (pos)
+                    (not (at_a_p6))
 
-                    ; #63170: <==negation-removal== 59951 (pos)
-                    (not (at_a_p6))))
+                    ; #66066: <==negation-removal== 18491 (pos)
+                    (not (not_at_a_p1))))
 
     (:action move_a_p6_p2
         :precondition (and (succ_p6_p2)
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #19375: origin
-                    (at_a_p2)
-
-                    ; #59951: origin
+                    ; #28077: origin
                     (not_at_a_p6)
 
-                    ; #63170: <==negation-removal== 59951 (pos)
-                    (not (at_a_p6))
+                    ; #67983: origin
+                    (at_a_p2)
 
-                    ; #76529: <==negation-removal== 19375 (pos)
-                    (not (not_at_a_p2))))
+                    ; #24991: <==negation-removal== 67983 (pos)
+                    (not (not_at_a_p2))
+
+                    ; #27830: <==negation-removal== 28077 (pos)
+                    (not (at_a_p6))))
 
     (:action move_a_p6_p3
         :precondition (and (succ_p6_p3)
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #48341: origin
-                    (at_a_p3)
-
-                    ; #59951: origin
+                    ; #28077: origin
                     (not_at_a_p6)
 
-                    ; #63170: <==negation-removal== 59951 (pos)
+                    ; #69778: origin
+                    (at_a_p3)
+
+                    ; #27830: <==negation-removal== 28077 (pos)
                     (not (at_a_p6))
 
-                    ; #69284: <==negation-removal== 48341 (pos)
+                    ; #83926: <==negation-removal== 69778 (pos)
                     (not (not_at_a_p3))))
 
     (:action move_a_p6_p4
@@ -4342,33 +4342,33 @@
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #59951: origin
+                    ; #28077: origin
                     (not_at_a_p6)
 
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #26591: <==negation-removal== 82706 (pos)
-                    (not (not_at_a_p4))
+                    ; #27830: <==negation-removal== 28077 (pos)
+                    (not (at_a_p6))
 
-                    ; #63170: <==negation-removal== 59951 (pos)
-                    (not (at_a_p6))))
+                    ; #82845: <==negation-removal== 82541 (pos)
+                    (not (not_at_a_p4))))
 
     (:action move_a_p6_p5
         :precondition (and (succ_p6_p5)
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #59951: origin
+                    ; #28077: origin
                     (not_at_a_p6)
 
-                    ; #87621: origin
+                    ; #77910: origin
                     (at_a_p5)
 
-                    ; #63170: <==negation-removal== 59951 (pos)
+                    ; #27830: <==negation-removal== 28077 (pos)
                     (not (at_a_p6))
 
-                    ; #76526: <==negation-removal== 87621 (pos)
+                    ; #72955: <==negation-removal== 77910 (pos)
                     (not (not_at_a_p5))))
 
     (:action move_a_p6_p6
@@ -4376,50 +4376,50 @@
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #59951: origin
-                    (not_at_a_p6)
-
-                    ; #63170: origin
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #59951: <==negation-removal== 63170 (pos)
-                    (not (not_at_a_p6))
+                    ; #28077: origin
+                    (not_at_a_p6)
 
-                    ; #63170: <==negation-removal== 59951 (pos)
-                    (not (at_a_p6))))
+                    ; #27830: <==negation-removal== 28077 (pos)
+                    (not (at_a_p6))
+
+                    ; #28077: <==negation-removal== 27830 (pos)
+                    (not (not_at_a_p6))))
 
     (:action move_a_p6_p7
         :precondition (and (succ_p6_p7)
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #42679: origin
+                    ; #12695: origin
                     (at_a_p7)
 
-                    ; #59951: origin
+                    ; #28077: origin
                     (not_at_a_p6)
 
-                    ; #11099: <==negation-removal== 42679 (pos)
-                    (not (not_at_a_p7))
+                    ; #27830: <==negation-removal== 28077 (pos)
+                    (not (at_a_p6))
 
-                    ; #63170: <==negation-removal== 59951 (pos)
-                    (not (at_a_p6))))
+                    ; #73286: <==negation-removal== 12695 (pos)
+                    (not (not_at_a_p7))))
 
     (:action move_a_p6_p8
         :precondition (and (succ_p6_p8)
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #19850: origin
-                    (at_a_p8)
-
-                    ; #59951: origin
+                    ; #28077: origin
                     (not_at_a_p6)
 
-                    ; #63170: <==negation-removal== 59951 (pos)
+                    ; #89813: origin
+                    (at_a_p8)
+
+                    ; #27830: <==negation-removal== 28077 (pos)
                     (not (at_a_p6))
 
-                    ; #84005: <==negation-removal== 19850 (pos)
+                    ; #84600: <==negation-removal== 89813 (pos)
                     (not (not_at_a_p8))))
 
     (:action move_a_p6_p9
@@ -4427,50 +4427,50 @@
                            (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #59951: origin
+                    ; #28077: origin
                     (not_at_a_p6)
 
-                    ; #75848: origin
+                    ; #62696: origin
                     (at_a_p9)
 
-                    ; #63170: <==negation-removal== 59951 (pos)
+                    ; #27830: <==negation-removal== 28077 (pos)
                     (not (at_a_p6))
 
-                    ; #68163: <==negation-removal== 75848 (pos)
+                    ; #36402: <==negation-removal== 62696 (pos)
                     (not (not_at_a_p9))))
 
     (:action move_a_p7_p1
-        :precondition (and (at_a_p7)
-                           (succ_p7_p1)
+        :precondition (and (succ_p7_p1)
+                           (at_a_p7)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
-                    (not_at_a_p7)
-
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
-                    (not (not_at_a_p1))
+                    ; #73286: origin
+                    (not_at_a_p7)
 
-                    ; #42679: <==negation-removal== 11099 (pos)
-                    (not (at_a_p7))))
+                    ; #12695: <==negation-removal== 73286 (pos)
+                    (not (at_a_p7))
+
+                    ; #66066: <==negation-removal== 18491 (pos)
+                    (not (not_at_a_p1))))
 
     (:action move_a_p7_p2
         :precondition (and (at_a_p7)
                            (succ_p7_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
-                    (not_at_a_p7)
-
-                    ; #19375: origin
+                    ; #67983: origin
                     (at_a_p2)
 
-                    ; #42679: <==negation-removal== 11099 (pos)
+                    ; #73286: origin
+                    (not_at_a_p7)
+
+                    ; #12695: <==negation-removal== 73286 (pos)
                     (not (at_a_p7))
 
-                    ; #76529: <==negation-removal== 19375 (pos)
+                    ; #24991: <==negation-removal== 67983 (pos)
                     (not (not_at_a_p2))))
 
     (:action move_a_p7_p3
@@ -4478,50 +4478,50 @@
                            (succ_p7_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
-                    (not_at_a_p7)
-
-                    ; #48341: origin
+                    ; #69778: origin
                     (at_a_p3)
 
-                    ; #42679: <==negation-removal== 11099 (pos)
+                    ; #73286: origin
+                    (not_at_a_p7)
+
+                    ; #12695: <==negation-removal== 73286 (pos)
                     (not (at_a_p7))
 
-                    ; #69284: <==negation-removal== 48341 (pos)
+                    ; #83926: <==negation-removal== 69778 (pos)
                     (not (not_at_a_p3))))
 
     (:action move_a_p7_p4
-        :precondition (and (at_a_p7)
-                           (succ_p7_p4)
+        :precondition (and (succ_p7_p4)
+                           (at_a_p7)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
+                    ; #73286: origin
                     (not_at_a_p7)
 
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #26591: <==negation-removal== 82706 (pos)
-                    (not (not_at_a_p4))
+                    ; #12695: <==negation-removal== 73286 (pos)
+                    (not (at_a_p7))
 
-                    ; #42679: <==negation-removal== 11099 (pos)
-                    (not (at_a_p7))))
+                    ; #82845: <==negation-removal== 82541 (pos)
+                    (not (not_at_a_p4))))
 
     (:action move_a_p7_p5
         :precondition (and (at_a_p7)
                            (succ_p7_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
+                    ; #73286: origin
                     (not_at_a_p7)
 
-                    ; #87621: origin
+                    ; #77910: origin
                     (at_a_p5)
 
-                    ; #42679: <==negation-removal== 11099 (pos)
+                    ; #12695: <==negation-removal== 73286 (pos)
                     (not (at_a_p7))
 
-                    ; #76526: <==negation-removal== 87621 (pos)
+                    ; #72955: <==negation-removal== 77910 (pos)
                     (not (not_at_a_p5))))
 
     (:action move_a_p7_p6
@@ -4529,16 +4529,16 @@
                            (succ_p7_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
-                    (not_at_a_p7)
-
-                    ; #63170: origin
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #42679: <==negation-removal== 11099 (pos)
+                    ; #73286: origin
+                    (not_at_a_p7)
+
+                    ; #12695: <==negation-removal== 73286 (pos)
                     (not (at_a_p7))
 
-                    ; #59951: <==negation-removal== 63170 (pos)
+                    ; #28077: <==negation-removal== 27830 (pos)
                     (not (not_at_a_p6))))
 
     (:action move_a_p7_p7
@@ -4546,33 +4546,33 @@
                            (succ_p7_p7)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
-                    (not_at_a_p7)
-
-                    ; #42679: origin
+                    ; #12695: origin
                     (at_a_p7)
 
-                    ; #11099: <==negation-removal== 42679 (pos)
-                    (not (not_at_a_p7))
+                    ; #73286: origin
+                    (not_at_a_p7)
 
-                    ; #42679: <==negation-removal== 11099 (pos)
-                    (not (at_a_p7))))
+                    ; #12695: <==negation-removal== 73286 (pos)
+                    (not (at_a_p7))
+
+                    ; #73286: <==negation-removal== 12695 (pos)
+                    (not (not_at_a_p7))))
 
     (:action move_a_p7_p8
         :precondition (and (at_a_p7)
                            (succ_p7_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
+                    ; #73286: origin
                     (not_at_a_p7)
 
-                    ; #19850: origin
+                    ; #89813: origin
                     (at_a_p8)
 
-                    ; #42679: <==negation-removal== 11099 (pos)
+                    ; #12695: <==negation-removal== 73286 (pos)
                     (not (at_a_p7))
 
-                    ; #84005: <==negation-removal== 19850 (pos)
+                    ; #84600: <==negation-removal== 89813 (pos)
                     (not (not_at_a_p8))))
 
     (:action move_a_p7_p9
@@ -4580,16 +4580,16 @@
                            (succ_p7_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #11099: origin
-                    (not_at_a_p7)
-
-                    ; #75848: origin
+                    ; #62696: origin
                     (at_a_p9)
 
-                    ; #42679: <==negation-removal== 11099 (pos)
+                    ; #73286: origin
+                    (not_at_a_p7)
+
+                    ; #12695: <==negation-removal== 73286 (pos)
                     (not (at_a_p7))
 
-                    ; #68163: <==negation-removal== 75848 (pos)
+                    ; #36402: <==negation-removal== 62696 (pos)
                     (not (not_at_a_p9))))
 
     (:action move_a_p8_p1
@@ -4597,118 +4597,118 @@
                            (at_a_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #84005: origin
+                    ; #84600: origin
                     (not_at_a_p8)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
+                    ; #66066: <==negation-removal== 18491 (pos)
                     (not (not_at_a_p1))
 
-                    ; #19850: <==negation-removal== 84005 (pos)
+                    ; #89813: <==negation-removal== 84600 (pos)
                     (not (at_a_p8))))
 
     (:action move_a_p8_p2
-        :precondition (and (succ_p8_p2)
-                           (at_a_p8)
+        :precondition (and (at_a_p8)
+                           (succ_p8_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #19375: origin
+                    ; #67983: origin
                     (at_a_p2)
 
-                    ; #84005: origin
+                    ; #84600: origin
                     (not_at_a_p8)
 
-                    ; #19850: <==negation-removal== 84005 (pos)
-                    (not (at_a_p8))
+                    ; #24991: <==negation-removal== 67983 (pos)
+                    (not (not_at_a_p2))
 
-                    ; #76529: <==negation-removal== 19375 (pos)
-                    (not (not_at_a_p2))))
+                    ; #89813: <==negation-removal== 84600 (pos)
+                    (not (at_a_p8))))
 
     (:action move_a_p8_p3
         :precondition (and (succ_p8_p3)
                            (at_a_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #48341: origin
+                    ; #69778: origin
                     (at_a_p3)
 
-                    ; #84005: origin
+                    ; #84600: origin
                     (not_at_a_p8)
 
-                    ; #19850: <==negation-removal== 84005 (pos)
-                    (not (at_a_p8))
+                    ; #83926: <==negation-removal== 69778 (pos)
+                    (not (not_at_a_p3))
 
-                    ; #69284: <==negation-removal== 48341 (pos)
-                    (not (not_at_a_p3))))
+                    ; #89813: <==negation-removal== 84600 (pos)
+                    (not (at_a_p8))))
 
     (:action move_a_p8_p4
         :precondition (and (succ_p8_p4)
                            (at_a_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #84005: origin
+                    ; #84600: origin
                     (not_at_a_p8)
 
-                    ; #19850: <==negation-removal== 84005 (pos)
-                    (not (at_a_p8))
+                    ; #82845: <==negation-removal== 82541 (pos)
+                    (not (not_at_a_p4))
 
-                    ; #26591: <==negation-removal== 82706 (pos)
-                    (not (not_at_a_p4))))
+                    ; #89813: <==negation-removal== 84600 (pos)
+                    (not (at_a_p8))))
 
     (:action move_a_p8_p5
         :precondition (and (succ_p8_p5)
                            (at_a_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #84005: origin
-                    (not_at_a_p8)
-
-                    ; #87621: origin
+                    ; #77910: origin
                     (at_a_p5)
 
-                    ; #19850: <==negation-removal== 84005 (pos)
-                    (not (at_a_p8))
+                    ; #84600: origin
+                    (not_at_a_p8)
 
-                    ; #76526: <==negation-removal== 87621 (pos)
-                    (not (not_at_a_p5))))
+                    ; #72955: <==negation-removal== 77910 (pos)
+                    (not (not_at_a_p5))
+
+                    ; #89813: <==negation-removal== 84600 (pos)
+                    (not (at_a_p8))))
 
     (:action move_a_p8_p6
         :precondition (and (succ_p8_p6)
                            (at_a_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #63170: origin
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #84005: origin
+                    ; #84600: origin
                     (not_at_a_p8)
 
-                    ; #19850: <==negation-removal== 84005 (pos)
-                    (not (at_a_p8))
+                    ; #28077: <==negation-removal== 27830 (pos)
+                    (not (not_at_a_p6))
 
-                    ; #59951: <==negation-removal== 63170 (pos)
-                    (not (not_at_a_p6))))
+                    ; #89813: <==negation-removal== 84600 (pos)
+                    (not (at_a_p8))))
 
     (:action move_a_p8_p7
         :precondition (and (succ_p8_p7)
                            (at_a_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #42679: origin
+                    ; #12695: origin
                     (at_a_p7)
 
-                    ; #84005: origin
+                    ; #84600: origin
                     (not_at_a_p8)
 
-                    ; #11099: <==negation-removal== 42679 (pos)
+                    ; #73286: <==negation-removal== 12695 (pos)
                     (not (not_at_a_p7))
 
-                    ; #19850: <==negation-removal== 84005 (pos)
+                    ; #89813: <==negation-removal== 84600 (pos)
                     (not (at_a_p8))))
 
     (:action move_a_p8_p8
@@ -4716,118 +4716,118 @@
                            (at_a_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #19850: origin
+                    ; #84600: origin
+                    (not_at_a_p8)
+
+                    ; #89813: origin
                     (at_a_p8)
 
-                    ; #84005: origin
-                    (not_at_a_p8)
+                    ; #84600: <==negation-removal== 89813 (pos)
+                    (not (not_at_a_p8))
 
-                    ; #19850: <==negation-removal== 84005 (pos)
-                    (not (at_a_p8))
-
-                    ; #84005: <==negation-removal== 19850 (pos)
-                    (not (not_at_a_p8))))
+                    ; #89813: <==negation-removal== 84600 (pos)
+                    (not (at_a_p8))))
 
     (:action move_a_p8_p9
-        :precondition (and (succ_p8_p9)
-                           (at_a_p8)
+        :precondition (and (at_a_p8)
+                           (succ_p8_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #75848: origin
+                    ; #62696: origin
                     (at_a_p9)
 
-                    ; #84005: origin
+                    ; #84600: origin
                     (not_at_a_p8)
 
-                    ; #19850: <==negation-removal== 84005 (pos)
-                    (not (at_a_p8))
+                    ; #36402: <==negation-removal== 62696 (pos)
+                    (not (not_at_a_p9))
 
-                    ; #68163: <==negation-removal== 75848 (pos)
-                    (not (not_at_a_p9))))
+                    ; #89813: <==negation-removal== 84600 (pos)
+                    (not (at_a_p8))))
 
     (:action move_a_p9_p1
         :precondition (and (succ_p9_p1)
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #26068: origin
+                    ; #18491: origin
                     (at_a_p1)
 
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #11945: <==negation-removal== 26068 (pos)
-                    (not (not_at_a_p1))
+                    ; #62696: <==negation-removal== 36402 (pos)
+                    (not (at_a_p9))
 
-                    ; #75848: <==negation-removal== 68163 (pos)
-                    (not (at_a_p9))))
+                    ; #66066: <==negation-removal== 18491 (pos)
+                    (not (not_at_a_p1))))
 
     (:action move_a_p9_p2
         :precondition (and (succ_p9_p2)
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #19375: origin
-                    (at_a_p2)
-
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #75848: <==negation-removal== 68163 (pos)
-                    (not (at_a_p9))
+                    ; #67983: origin
+                    (at_a_p2)
 
-                    ; #76529: <==negation-removal== 19375 (pos)
-                    (not (not_at_a_p2))))
+                    ; #24991: <==negation-removal== 67983 (pos)
+                    (not (not_at_a_p2))
+
+                    ; #62696: <==negation-removal== 36402 (pos)
+                    (not (at_a_p9))))
 
     (:action move_a_p9_p3
         :precondition (and (succ_p9_p3)
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #48341: origin
-                    (at_a_p3)
-
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #69284: <==negation-removal== 48341 (pos)
-                    (not (not_at_a_p3))
+                    ; #69778: origin
+                    (at_a_p3)
 
-                    ; #75848: <==negation-removal== 68163 (pos)
-                    (not (at_a_p9))))
+                    ; #62696: <==negation-removal== 36402 (pos)
+                    (not (at_a_p9))
+
+                    ; #83926: <==negation-removal== 69778 (pos)
+                    (not (not_at_a_p3))))
 
     (:action move_a_p9_p4
         :precondition (and (succ_p9_p4)
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #82706: origin
+                    ; #82541: origin
                     (at_a_p4)
 
-                    ; #26591: <==negation-removal== 82706 (pos)
-                    (not (not_at_a_p4))
+                    ; #62696: <==negation-removal== 36402 (pos)
+                    (not (at_a_p9))
 
-                    ; #75848: <==negation-removal== 68163 (pos)
-                    (not (at_a_p9))))
+                    ; #82845: <==negation-removal== 82541 (pos)
+                    (not (not_at_a_p4))))
 
     (:action move_a_p9_p5
         :precondition (and (succ_p9_p5)
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #87621: origin
+                    ; #77910: origin
                     (at_a_p5)
 
-                    ; #75848: <==negation-removal== 68163 (pos)
+                    ; #62696: <==negation-removal== 36402 (pos)
                     (not (at_a_p9))
 
-                    ; #76526: <==negation-removal== 87621 (pos)
+                    ; #72955: <==negation-removal== 77910 (pos)
                     (not (not_at_a_p5))))
 
     (:action move_a_p9_p6
@@ -4835,16 +4835,16 @@
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #63170: origin
+                    ; #27830: origin
                     (at_a_p6)
 
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #59951: <==negation-removal== 63170 (pos)
+                    ; #28077: <==negation-removal== 27830 (pos)
                     (not (not_at_a_p6))
 
-                    ; #75848: <==negation-removal== 68163 (pos)
+                    ; #62696: <==negation-removal== 36402 (pos)
                     (not (at_a_p9))))
 
     (:action move_a_p9_p7
@@ -4852,33 +4852,33 @@
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #42679: origin
+                    ; #12695: origin
                     (at_a_p7)
 
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #11099: <==negation-removal== 42679 (pos)
-                    (not (not_at_a_p7))
+                    ; #62696: <==negation-removal== 36402 (pos)
+                    (not (at_a_p9))
 
-                    ; #75848: <==negation-removal== 68163 (pos)
-                    (not (at_a_p9))))
+                    ; #73286: <==negation-removal== 12695 (pos)
+                    (not (not_at_a_p7))))
 
     (:action move_a_p9_p8
         :precondition (and (succ_p9_p8)
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #19850: origin
-                    (at_a_p8)
-
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #75848: <==negation-removal== 68163 (pos)
+                    ; #89813: origin
+                    (at_a_p8)
+
+                    ; #62696: <==negation-removal== 36402 (pos)
                     (not (at_a_p9))
 
-                    ; #84005: <==negation-removal== 19850 (pos)
+                    ; #84600: <==negation-removal== 89813 (pos)
                     (not (not_at_a_p8))))
 
     (:action move_a_p9_p9
@@ -4886,101 +4886,101 @@
                            (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #68163: origin
+                    ; #36402: origin
                     (not_at_a_p9)
 
-                    ; #75848: origin
+                    ; #62696: origin
                     (at_a_p9)
 
-                    ; #68163: <==negation-removal== 75848 (pos)
+                    ; #36402: <==negation-removal== 62696 (pos)
                     (not (not_at_a_p9))
 
-                    ; #75848: <==negation-removal== 68163 (pos)
+                    ; #62696: <==negation-removal== 36402 (pos)
                     (not (at_a_p9))))
 
     (:action move_b_p1_p1
-        :precondition (and (succ_p1_p1)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (succ_p1_p1)
                            (not (leader_b)))
         :effect (and
-                    ; #47021: origin
+                    ; #27139: origin
                     (not_at_b_p1)
 
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #47021: <==negation-removal== 82311 (pos)
+                    ; #27139: <==negation-removal== 61538 (pos)
                     (not (not_at_b_p1))
 
-                    ; #82311: <==negation-removal== 47021 (pos)
+                    ; #61538: <==negation-removal== 27139 (pos)
                     (not (at_b_p1))))
 
     (:action move_b_p1_p2
-        :precondition (and (succ_p1_p2)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (succ_p1_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #11153: origin
+                    ; #27139: origin
+                    (not_at_b_p1)
+
+                    ; #81397: origin
                     (at_b_p2)
 
-                    ; #47021: origin
-                    (not_at_b_p1)
+                    ; #61538: <==negation-removal== 27139 (pos)
+                    (not (at_b_p1))
 
-                    ; #13256: <==negation-removal== 11153 (pos)
-                    (not (not_at_b_p2))
-
-                    ; #82311: <==negation-removal== 47021 (pos)
-                    (not (at_b_p1))))
+                    ; #68439: <==negation-removal== 81397 (pos)
+                    (not (not_at_b_p2))))
 
     (:action move_b_p1_p3
-        :precondition (and (succ_p1_p3)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (succ_p1_p3)
                            (not (leader_b)))
         :effect (and
-                    ; #27188: origin
+                    ; #19243: origin
                     (at_b_p3)
 
-                    ; #47021: origin
+                    ; #27139: origin
                     (not_at_b_p1)
 
-                    ; #48307: <==negation-removal== 27188 (pos)
+                    ; #27512: <==negation-removal== 19243 (pos)
                     (not (not_at_b_p3))
 
-                    ; #82311: <==negation-removal== 47021 (pos)
+                    ; #61538: <==negation-removal== 27139 (pos)
                     (not (at_b_p1))))
 
     (:action move_b_p1_p4
-        :precondition (and (succ_p1_p4)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (succ_p1_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #47021: origin
+                    ; #27139: origin
                     (not_at_b_p1)
 
-                    ; #80950: origin
+                    ; #78106: origin
                     (at_b_p4)
 
-                    ; #15935: <==negation-removal== 80950 (pos)
+                    ; #28729: <==negation-removal== 78106 (pos)
                     (not (not_at_b_p4))
 
-                    ; #82311: <==negation-removal== 47021 (pos)
+                    ; #61538: <==negation-removal== 27139 (pos)
                     (not (at_b_p1))))
 
     (:action move_b_p1_p5
-        :precondition (and (succ_p1_p5)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (succ_p1_p5)
                            (not (leader_b)))
         :effect (and
-                    ; #13560: origin
-                    (at_b_p5)
-
-                    ; #47021: origin
+                    ; #27139: origin
                     (not_at_b_p1)
 
-                    ; #22313: <==negation-removal== 13560 (pos)
+                    ; #59837: origin
+                    (at_b_p5)
+
+                    ; #38769: <==negation-removal== 59837 (pos)
                     (not (not_at_b_p5))
 
-                    ; #82311: <==negation-removal== 47021 (pos)
+                    ; #61538: <==negation-removal== 27139 (pos)
                     (not (at_b_p1))))
 
     (:action move_b_p1_p6
@@ -4988,237 +4988,237 @@
                            (succ_p1_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #47021: origin
+                    ; #27139: origin
                     (not_at_b_p1)
 
-                    ; #57208: origin
+                    ; #70811: origin
                     (at_b_p6)
 
-                    ; #14370: <==negation-removal== 57208 (pos)
-                    (not (not_at_b_p6))
+                    ; #61538: <==negation-removal== 27139 (pos)
+                    (not (at_b_p1))
 
-                    ; #82311: <==negation-removal== 47021 (pos)
-                    (not (at_b_p1))))
+                    ; #90933: <==negation-removal== 70811 (pos)
+                    (not (not_at_b_p6))))
 
     (:action move_b_p1_p7
-        :precondition (and (succ_p1_p7)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (succ_p1_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #47021: origin
+                    ; #27139: origin
                     (not_at_b_p1)
 
-                    ; #66691: origin
+                    ; #69489: origin
                     (at_b_p7)
 
-                    ; #73615: <==negation-removal== 66691 (pos)
-                    (not (not_at_b_p7))
+                    ; #61538: <==negation-removal== 27139 (pos)
+                    (not (at_b_p1))
 
-                    ; #82311: <==negation-removal== 47021 (pos)
-                    (not (at_b_p1))))
+                    ; #75085: <==negation-removal== 69489 (pos)
+                    (not (not_at_b_p7))))
 
     (:action move_b_p1_p8
         :precondition (and (at_b_p1)
                            (succ_p1_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #28019: origin
+                    ; #27139: origin
+                    (not_at_b_p1)
+
+                    ; #40873: origin
                     (at_b_p8)
 
-                    ; #47021: origin
-                    (not_at_b_p1)
+                    ; #61538: <==negation-removal== 27139 (pos)
+                    (not (at_b_p1))
 
-                    ; #69475: <==negation-removal== 28019 (pos)
-                    (not (not_at_b_p8))
-
-                    ; #82311: <==negation-removal== 47021 (pos)
-                    (not (at_b_p1))))
+                    ; #79967: <==negation-removal== 40873 (pos)
+                    (not (not_at_b_p8))))
 
     (:action move_b_p1_p9
-        :precondition (and (succ_p1_p9)
-                           (at_b_p1)
+        :precondition (and (at_b_p1)
+                           (succ_p1_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #10546: origin
-                    (at_b_p9)
-
-                    ; #47021: origin
+                    ; #27139: origin
                     (not_at_b_p1)
 
-                    ; #77596: <==negation-removal== 10546 (pos)
+                    ; #31909: origin
+                    (at_b_p9)
+
+                    ; #49601: <==negation-removal== 31909 (pos)
                     (not (not_at_b_p9))
 
-                    ; #82311: <==negation-removal== 47021 (pos)
+                    ; #61538: <==negation-removal== 27139 (pos)
                     (not (at_b_p1))))
 
     (:action move_b_p2_p1
-        :precondition (and (succ_p2_p1)
-                           (at_b_p2)
+        :precondition (and (at_b_p2)
+                           (succ_p2_p1)
                            (not (leader_b)))
         :effect (and
-                    ; #13256: origin
-                    (not_at_b_p2)
-
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #11153: <==negation-removal== 13256 (pos)
-                    (not (at_b_p2))
+                    ; #68439: origin
+                    (not_at_b_p2)
 
-                    ; #47021: <==negation-removal== 82311 (pos)
-                    (not (not_at_b_p1))))
+                    ; #27139: <==negation-removal== 61538 (pos)
+                    (not (not_at_b_p1))
+
+                    ; #81397: <==negation-removal== 68439 (pos)
+                    (not (at_b_p2))))
 
     (:action move_b_p2_p2
         :precondition (and (at_b_p2)
                            (succ_p2_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #11153: origin
+                    ; #68439: origin
+                    (not_at_b_p2)
+
+                    ; #81397: origin
                     (at_b_p2)
 
-                    ; #13256: origin
-                    (not_at_b_p2)
+                    ; #68439: <==negation-removal== 81397 (pos)
+                    (not (not_at_b_p2))
 
-                    ; #11153: <==negation-removal== 13256 (pos)
-                    (not (at_b_p2))
-
-                    ; #13256: <==negation-removal== 11153 (pos)
-                    (not (not_at_b_p2))))
+                    ; #81397: <==negation-removal== 68439 (pos)
+                    (not (at_b_p2))))
 
     (:action move_b_p2_p3
-        :precondition (and (succ_p2_p3)
-                           (at_b_p2)
+        :precondition (and (at_b_p2)
+                           (succ_p2_p3)
                            (not (leader_b)))
         :effect (and
-                    ; #13256: origin
-                    (not_at_b_p2)
-
-                    ; #27188: origin
+                    ; #19243: origin
                     (at_b_p3)
 
-                    ; #11153: <==negation-removal== 13256 (pos)
-                    (not (at_b_p2))
+                    ; #68439: origin
+                    (not_at_b_p2)
 
-                    ; #48307: <==negation-removal== 27188 (pos)
-                    (not (not_at_b_p3))))
+                    ; #27512: <==negation-removal== 19243 (pos)
+                    (not (not_at_b_p3))
+
+                    ; #81397: <==negation-removal== 68439 (pos)
+                    (not (at_b_p2))))
 
     (:action move_b_p2_p4
-        :precondition (and (succ_p2_p4)
-                           (at_b_p2)
+        :precondition (and (at_b_p2)
+                           (succ_p2_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #13256: origin
+                    ; #68439: origin
                     (not_at_b_p2)
 
-                    ; #80950: origin
+                    ; #78106: origin
                     (at_b_p4)
 
-                    ; #11153: <==negation-removal== 13256 (pos)
-                    (not (at_b_p2))
+                    ; #28729: <==negation-removal== 78106 (pos)
+                    (not (not_at_b_p4))
 
-                    ; #15935: <==negation-removal== 80950 (pos)
-                    (not (not_at_b_p4))))
+                    ; #81397: <==negation-removal== 68439 (pos)
+                    (not (at_b_p2))))
 
     (:action move_b_p2_p5
-        :precondition (and (succ_p2_p5)
-                           (at_b_p2)
+        :precondition (and (at_b_p2)
+                           (succ_p2_p5)
                            (not (leader_b)))
         :effect (and
-                    ; #13256: origin
-                    (not_at_b_p2)
-
-                    ; #13560: origin
+                    ; #59837: origin
                     (at_b_p5)
 
-                    ; #11153: <==negation-removal== 13256 (pos)
-                    (not (at_b_p2))
-
-                    ; #22313: <==negation-removal== 13560 (pos)
-                    (not (not_at_b_p5))))
-
-    (:action move_b_p2_p6
-        :precondition (and (succ_p2_p6)
-                           (at_b_p2)
-                           (not (leader_b)))
-        :effect (and
-                    ; #13256: origin
+                    ; #68439: origin
                     (not_at_b_p2)
 
-                    ; #57208: origin
+                    ; #38769: <==negation-removal== 59837 (pos)
+                    (not (not_at_b_p5))
+
+                    ; #81397: <==negation-removal== 68439 (pos)
+                    (not (at_b_p2))))
+
+    (:action move_b_p2_p6
+        :precondition (and (at_b_p2)
+                           (succ_p2_p6)
+                           (not (leader_b)))
+        :effect (and
+                    ; #68439: origin
+                    (not_at_b_p2)
+
+                    ; #70811: origin
                     (at_b_p6)
 
-                    ; #11153: <==negation-removal== 13256 (pos)
+                    ; #81397: <==negation-removal== 68439 (pos)
                     (not (at_b_p2))
 
-                    ; #14370: <==negation-removal== 57208 (pos)
+                    ; #90933: <==negation-removal== 70811 (pos)
                     (not (not_at_b_p6))))
 
     (:action move_b_p2_p7
-        :precondition (and (succ_p2_p7)
-                           (at_b_p2)
+        :precondition (and (at_b_p2)
+                           (succ_p2_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #13256: origin
+                    ; #68439: origin
                     (not_at_b_p2)
 
-                    ; #66691: origin
+                    ; #69489: origin
                     (at_b_p7)
 
-                    ; #11153: <==negation-removal== 13256 (pos)
-                    (not (at_b_p2))
+                    ; #75085: <==negation-removal== 69489 (pos)
+                    (not (not_at_b_p7))
 
-                    ; #73615: <==negation-removal== 66691 (pos)
-                    (not (not_at_b_p7))))
+                    ; #81397: <==negation-removal== 68439 (pos)
+                    (not (at_b_p2))))
 
     (:action move_b_p2_p8
-        :precondition (and (succ_p2_p8)
-                           (at_b_p2)
+        :precondition (and (at_b_p2)
+                           (succ_p2_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #13256: origin
-                    (not_at_b_p2)
-
-                    ; #28019: origin
+                    ; #40873: origin
                     (at_b_p8)
 
-                    ; #11153: <==negation-removal== 13256 (pos)
-                    (not (at_b_p2))
-
-                    ; #69475: <==negation-removal== 28019 (pos)
-                    (not (not_at_b_p8))))
-
-    (:action move_b_p2_p9
-        :precondition (and (succ_p2_p9)
-                           (at_b_p2)
-                           (not (leader_b)))
-        :effect (and
-                    ; #10546: origin
-                    (at_b_p9)
-
-                    ; #13256: origin
+                    ; #68439: origin
                     (not_at_b_p2)
 
-                    ; #11153: <==negation-removal== 13256 (pos)
-                    (not (at_b_p2))
+                    ; #79967: <==negation-removal== 40873 (pos)
+                    (not (not_at_b_p8))
 
-                    ; #77596: <==negation-removal== 10546 (pos)
-                    (not (not_at_b_p9))))
+                    ; #81397: <==negation-removal== 68439 (pos)
+                    (not (at_b_p2))))
+
+    (:action move_b_p2_p9
+        :precondition (and (at_b_p2)
+                           (succ_p2_p9)
+                           (not (leader_b)))
+        :effect (and
+                    ; #31909: origin
+                    (at_b_p9)
+
+                    ; #68439: origin
+                    (not_at_b_p2)
+
+                    ; #49601: <==negation-removal== 31909 (pos)
+                    (not (not_at_b_p9))
+
+                    ; #81397: <==negation-removal== 68439 (pos)
+                    (not (at_b_p2))))
 
     (:action move_b_p3_p1
         :precondition (and (at_b_p3)
                            (succ_p3_p1)
                            (not (leader_b)))
         :effect (and
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #27188: <==negation-removal== 48307 (pos)
+                    ; #19243: <==negation-removal== 27512 (pos)
                     (not (at_b_p3))
 
-                    ; #47021: <==negation-removal== 82311 (pos)
+                    ; #27139: <==negation-removal== 61538 (pos)
                     (not (not_at_b_p1))))
 
     (:action move_b_p3_p2
@@ -5226,33 +5226,33 @@
                            (succ_p3_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #11153: origin
-                    (at_b_p2)
-
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #13256: <==negation-removal== 11153 (pos)
-                    (not (not_at_b_p2))
+                    ; #81397: origin
+                    (at_b_p2)
 
-                    ; #27188: <==negation-removal== 48307 (pos)
-                    (not (at_b_p3))))
+                    ; #19243: <==negation-removal== 27512 (pos)
+                    (not (at_b_p3))
+
+                    ; #68439: <==negation-removal== 81397 (pos)
+                    (not (not_at_b_p2))))
 
     (:action move_b_p3_p3
         :precondition (and (at_b_p3)
                            (succ_p3_p3)
                            (not (leader_b)))
         :effect (and
-                    ; #27188: origin
+                    ; #19243: origin
                     (at_b_p3)
 
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #27188: <==negation-removal== 48307 (pos)
+                    ; #19243: <==negation-removal== 27512 (pos)
                     (not (at_b_p3))
 
-                    ; #48307: <==negation-removal== 27188 (pos)
+                    ; #27512: <==negation-removal== 19243 (pos)
                     (not (not_at_b_p3))))
 
     (:action move_b_p3_p4
@@ -5260,67 +5260,67 @@
                            (succ_p3_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #80950: origin
+                    ; #78106: origin
                     (at_b_p4)
 
-                    ; #15935: <==negation-removal== 80950 (pos)
-                    (not (not_at_b_p4))
+                    ; #19243: <==negation-removal== 27512 (pos)
+                    (not (at_b_p3))
 
-                    ; #27188: <==negation-removal== 48307 (pos)
-                    (not (at_b_p3))))
+                    ; #28729: <==negation-removal== 78106 (pos)
+                    (not (not_at_b_p4))))
 
     (:action move_b_p3_p5
         :precondition (and (at_b_p3)
                            (succ_p3_p5)
                            (not (leader_b)))
         :effect (and
-                    ; #13560: origin
-                    (at_b_p5)
-
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #22313: <==negation-removal== 13560 (pos)
-                    (not (not_at_b_p5))
+                    ; #59837: origin
+                    (at_b_p5)
 
-                    ; #27188: <==negation-removal== 48307 (pos)
-                    (not (at_b_p3))))
+                    ; #19243: <==negation-removal== 27512 (pos)
+                    (not (at_b_p3))
+
+                    ; #38769: <==negation-removal== 59837 (pos)
+                    (not (not_at_b_p5))))
 
     (:action move_b_p3_p6
         :precondition (and (at_b_p3)
                            (succ_p3_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #57208: origin
+                    ; #70811: origin
                     (at_b_p6)
 
-                    ; #14370: <==negation-removal== 57208 (pos)
-                    (not (not_at_b_p6))
+                    ; #19243: <==negation-removal== 27512 (pos)
+                    (not (at_b_p3))
 
-                    ; #27188: <==negation-removal== 48307 (pos)
-                    (not (at_b_p3))))
+                    ; #90933: <==negation-removal== 70811 (pos)
+                    (not (not_at_b_p6))))
 
     (:action move_b_p3_p7
         :precondition (and (at_b_p3)
                            (succ_p3_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #66691: origin
+                    ; #69489: origin
                     (at_b_p7)
 
-                    ; #27188: <==negation-removal== 48307 (pos)
+                    ; #19243: <==negation-removal== 27512 (pos)
                     (not (at_b_p3))
 
-                    ; #73615: <==negation-removal== 66691 (pos)
+                    ; #75085: <==negation-removal== 69489 (pos)
                     (not (not_at_b_p7))))
 
     (:action move_b_p3_p8
@@ -5328,16 +5328,16 @@
                            (succ_p3_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #28019: origin
-                    (at_b_p8)
-
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #27188: <==negation-removal== 48307 (pos)
+                    ; #40873: origin
+                    (at_b_p8)
+
+                    ; #19243: <==negation-removal== 27512 (pos)
                     (not (at_b_p3))
 
-                    ; #69475: <==negation-removal== 28019 (pos)
+                    ; #79967: <==negation-removal== 40873 (pos)
                     (not (not_at_b_p8))))
 
     (:action move_b_p3_p9
@@ -5345,16 +5345,16 @@
                            (succ_p3_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #10546: origin
-                    (at_b_p9)
-
-                    ; #48307: origin
+                    ; #27512: origin
                     (not_at_b_p3)
 
-                    ; #27188: <==negation-removal== 48307 (pos)
+                    ; #31909: origin
+                    (at_b_p9)
+
+                    ; #19243: <==negation-removal== 27512 (pos)
                     (not (at_b_p3))
 
-                    ; #77596: <==negation-removal== 10546 (pos)
+                    ; #49601: <==negation-removal== 31909 (pos)
                     (not (not_at_b_p9))))
 
     (:action move_b_p4_p1
@@ -5362,33 +5362,33 @@
                            (succ_p4_p1)
                            (not (leader_b)))
         :effect (and
-                    ; #15935: origin
+                    ; #28729: origin
                     (not_at_b_p4)
 
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #47021: <==negation-removal== 82311 (pos)
+                    ; #27139: <==negation-removal== 61538 (pos)
                     (not (not_at_b_p1))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
+                    ; #78106: <==negation-removal== 28729 (pos)
                     (not (at_b_p4))))
 
     (:action move_b_p4_p2
-        :precondition (and (succ_p4_p2)
-                           (at_b_p4)
+        :precondition (and (at_b_p4)
+                           (succ_p4_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #11153: origin
-                    (at_b_p2)
-
-                    ; #15935: origin
+                    ; #28729: origin
                     (not_at_b_p4)
 
-                    ; #13256: <==negation-removal== 11153 (pos)
+                    ; #81397: origin
+                    (at_b_p2)
+
+                    ; #68439: <==negation-removal== 81397 (pos)
                     (not (not_at_b_p2))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
+                    ; #78106: <==negation-removal== 28729 (pos)
                     (not (at_b_p4))))
 
     (:action move_b_p4_p3
@@ -5396,16 +5396,16 @@
                            (at_b_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #15935: origin
-                    (not_at_b_p4)
-
-                    ; #27188: origin
+                    ; #19243: origin
                     (at_b_p3)
 
-                    ; #48307: <==negation-removal== 27188 (pos)
+                    ; #28729: origin
+                    (not_at_b_p4)
+
+                    ; #27512: <==negation-removal== 19243 (pos)
                     (not (not_at_b_p3))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
+                    ; #78106: <==negation-removal== 28729 (pos)
                     (not (at_b_p4))))
 
     (:action move_b_p4_p4
@@ -5413,67 +5413,67 @@
                            (at_b_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #15935: origin
+                    ; #28729: origin
                     (not_at_b_p4)
 
-                    ; #80950: origin
+                    ; #78106: origin
                     (at_b_p4)
 
-                    ; #15935: <==negation-removal== 80950 (pos)
+                    ; #28729: <==negation-removal== 78106 (pos)
                     (not (not_at_b_p4))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
+                    ; #78106: <==negation-removal== 28729 (pos)
                     (not (at_b_p4))))
 
     (:action move_b_p4_p5
-        :precondition (and (at_b_p4)
-                           (succ_p4_p5)
+        :precondition (and (succ_p4_p5)
+                           (at_b_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #13560: origin
-                    (at_b_p5)
-
-                    ; #15935: origin
+                    ; #28729: origin
                     (not_at_b_p4)
 
-                    ; #22313: <==negation-removal== 13560 (pos)
+                    ; #59837: origin
+                    (at_b_p5)
+
+                    ; #38769: <==negation-removal== 59837 (pos)
                     (not (not_at_b_p5))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
+                    ; #78106: <==negation-removal== 28729 (pos)
                     (not (at_b_p4))))
 
     (:action move_b_p4_p6
-        :precondition (and (at_b_p4)
-                           (succ_p4_p6)
+        :precondition (and (succ_p4_p6)
+                           (at_b_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #15935: origin
+                    ; #28729: origin
                     (not_at_b_p4)
 
-                    ; #57208: origin
+                    ; #70811: origin
                     (at_b_p6)
 
-                    ; #14370: <==negation-removal== 57208 (pos)
-                    (not (not_at_b_p6))
+                    ; #78106: <==negation-removal== 28729 (pos)
+                    (not (at_b_p4))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
-                    (not (at_b_p4))))
+                    ; #90933: <==negation-removal== 70811 (pos)
+                    (not (not_at_b_p6))))
 
     (:action move_b_p4_p7
         :precondition (and (succ_p4_p7)
                            (at_b_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #15935: origin
+                    ; #28729: origin
                     (not_at_b_p4)
 
-                    ; #66691: origin
+                    ; #69489: origin
                     (at_b_p7)
 
-                    ; #73615: <==negation-removal== 66691 (pos)
+                    ; #75085: <==negation-removal== 69489 (pos)
                     (not (not_at_b_p7))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
+                    ; #78106: <==negation-removal== 28729 (pos)
                     (not (at_b_p4))))
 
     (:action move_b_p4_p8
@@ -5481,135 +5481,135 @@
                            (at_b_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #15935: origin
+                    ; #28729: origin
                     (not_at_b_p4)
 
-                    ; #28019: origin
+                    ; #40873: origin
                     (at_b_p8)
 
-                    ; #69475: <==negation-removal== 28019 (pos)
-                    (not (not_at_b_p8))
+                    ; #78106: <==negation-removal== 28729 (pos)
+                    (not (at_b_p4))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
-                    (not (at_b_p4))))
+                    ; #79967: <==negation-removal== 40873 (pos)
+                    (not (not_at_b_p8))))
 
     (:action move_b_p4_p9
         :precondition (and (succ_p4_p9)
                            (at_b_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #10546: origin
-                    (at_b_p9)
-
-                    ; #15935: origin
+                    ; #28729: origin
                     (not_at_b_p4)
 
-                    ; #77596: <==negation-removal== 10546 (pos)
+                    ; #31909: origin
+                    (at_b_p9)
+
+                    ; #49601: <==negation-removal== 31909 (pos)
                     (not (not_at_b_p9))
 
-                    ; #80950: <==negation-removal== 15935 (pos)
+                    ; #78106: <==negation-removal== 28729 (pos)
                     (not (at_b_p4))))
 
     (:action move_b_p5_p1
-        :precondition (and (at_b_p5)
-                           (succ_p5_p1)
+        :precondition (and (succ_p5_p1)
+                           (at_b_p5)
                            (not (leader_b)))
         :effect (and
-                    ; #22313: origin
+                    ; #38769: origin
                     (not_at_b_p5)
 
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
-                    (not (at_b_p5))
+                    ; #27139: <==negation-removal== 61538 (pos)
+                    (not (not_at_b_p1))
 
-                    ; #47021: <==negation-removal== 82311 (pos)
-                    (not (not_at_b_p1))))
+                    ; #59837: <==negation-removal== 38769 (pos)
+                    (not (at_b_p5))))
 
     (:action move_b_p5_p2
         :precondition (and (at_b_p5)
                            (succ_p5_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #11153: origin
-                    (at_b_p2)
-
-                    ; #22313: origin
+                    ; #38769: origin
                     (not_at_b_p5)
 
-                    ; #13256: <==negation-removal== 11153 (pos)
-                    (not (not_at_b_p2))
+                    ; #81397: origin
+                    (at_b_p2)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
-                    (not (at_b_p5))))
+                    ; #59837: <==negation-removal== 38769 (pos)
+                    (not (at_b_p5))
+
+                    ; #68439: <==negation-removal== 81397 (pos)
+                    (not (not_at_b_p2))))
 
     (:action move_b_p5_p3
         :precondition (and (at_b_p5)
                            (succ_p5_p3)
                            (not (leader_b)))
         :effect (and
-                    ; #22313: origin
-                    (not_at_b_p5)
-
-                    ; #27188: origin
+                    ; #19243: origin
                     (at_b_p3)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
-                    (not (at_b_p5))
+                    ; #38769: origin
+                    (not_at_b_p5)
 
-                    ; #48307: <==negation-removal== 27188 (pos)
-                    (not (not_at_b_p3))))
+                    ; #27512: <==negation-removal== 19243 (pos)
+                    (not (not_at_b_p3))
+
+                    ; #59837: <==negation-removal== 38769 (pos)
+                    (not (at_b_p5))))
 
     (:action move_b_p5_p4
         :precondition (and (at_b_p5)
                            (succ_p5_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #22313: origin
+                    ; #38769: origin
                     (not_at_b_p5)
 
-                    ; #80950: origin
+                    ; #78106: origin
                     (at_b_p4)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
-                    (not (at_b_p5))
+                    ; #28729: <==negation-removal== 78106 (pos)
+                    (not (not_at_b_p4))
 
-                    ; #15935: <==negation-removal== 80950 (pos)
-                    (not (not_at_b_p4))))
+                    ; #59837: <==negation-removal== 38769 (pos)
+                    (not (at_b_p5))))
 
     (:action move_b_p5_p5
         :precondition (and (at_b_p5)
                            (succ_p5_p5)
                            (not (leader_b)))
         :effect (and
-                    ; #13560: origin
-                    (at_b_p5)
-
-                    ; #22313: origin
+                    ; #38769: origin
                     (not_at_b_p5)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
-                    (not (at_b_p5))
+                    ; #59837: origin
+                    (at_b_p5)
 
-                    ; #22313: <==negation-removal== 13560 (pos)
-                    (not (not_at_b_p5))))
+                    ; #38769: <==negation-removal== 59837 (pos)
+                    (not (not_at_b_p5))
+
+                    ; #59837: <==negation-removal== 38769 (pos)
+                    (not (at_b_p5))))
 
     (:action move_b_p5_p6
         :precondition (and (at_b_p5)
                            (succ_p5_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #22313: origin
+                    ; #38769: origin
                     (not_at_b_p5)
 
-                    ; #57208: origin
+                    ; #70811: origin
                     (at_b_p6)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
+                    ; #59837: <==negation-removal== 38769 (pos)
                     (not (at_b_p5))
 
-                    ; #14370: <==negation-removal== 57208 (pos)
+                    ; #90933: <==negation-removal== 70811 (pos)
                     (not (not_at_b_p6))))
 
     (:action move_b_p5_p7
@@ -5617,16 +5617,16 @@
                            (succ_p5_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #22313: origin
+                    ; #38769: origin
                     (not_at_b_p5)
 
-                    ; #66691: origin
+                    ; #69489: origin
                     (at_b_p7)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
+                    ; #59837: <==negation-removal== 38769 (pos)
                     (not (at_b_p5))
 
-                    ; #73615: <==negation-removal== 66691 (pos)
+                    ; #75085: <==negation-removal== 69489 (pos)
                     (not (not_at_b_p7))))
 
     (:action move_b_p5_p8
@@ -5634,16 +5634,16 @@
                            (succ_p5_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #22313: origin
+                    ; #38769: origin
                     (not_at_b_p5)
 
-                    ; #28019: origin
+                    ; #40873: origin
                     (at_b_p8)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
+                    ; #59837: <==negation-removal== 38769 (pos)
                     (not (at_b_p5))
 
-                    ; #69475: <==negation-removal== 28019 (pos)
+                    ; #79967: <==negation-removal== 40873 (pos)
                     (not (not_at_b_p8))))
 
     (:action move_b_p5_p9
@@ -5651,186 +5651,186 @@
                            (succ_p5_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #10546: origin
+                    ; #31909: origin
                     (at_b_p9)
 
-                    ; #22313: origin
+                    ; #38769: origin
                     (not_at_b_p5)
 
-                    ; #13560: <==negation-removal== 22313 (pos)
-                    (not (at_b_p5))
+                    ; #49601: <==negation-removal== 31909 (pos)
+                    (not (not_at_b_p9))
 
-                    ; #77596: <==negation-removal== 10546 (pos)
-                    (not (not_at_b_p9))))
+                    ; #59837: <==negation-removal== 38769 (pos)
+                    (not (at_b_p5))))
 
     (:action move_b_p6_p1
-        :precondition (and (at_b_p6)
-                           (succ_p6_p1)
+        :precondition (and (succ_p6_p1)
+                           (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #14370: origin
-                    (not_at_b_p6)
-
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #47021: <==negation-removal== 82311 (pos)
+                    ; #90933: origin
+                    (not_at_b_p6)
+
+                    ; #27139: <==negation-removal== 61538 (pos)
                     (not (not_at_b_p1))
 
-                    ; #57208: <==negation-removal== 14370 (pos)
+                    ; #70811: <==negation-removal== 90933 (pos)
                     (not (at_b_p6))))
 
     (:action move_b_p6_p2
-        :precondition (and (at_b_p6)
-                           (succ_p6_p2)
+        :precondition (and (succ_p6_p2)
+                           (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #11153: origin
+                    ; #81397: origin
                     (at_b_p2)
 
-                    ; #14370: origin
+                    ; #90933: origin
                     (not_at_b_p6)
 
-                    ; #13256: <==negation-removal== 11153 (pos)
+                    ; #68439: <==negation-removal== 81397 (pos)
                     (not (not_at_b_p2))
 
-                    ; #57208: <==negation-removal== 14370 (pos)
+                    ; #70811: <==negation-removal== 90933 (pos)
                     (not (at_b_p6))))
 
     (:action move_b_p6_p3
-        :precondition (and (at_b_p6)
-                           (succ_p6_p3)
+        :precondition (and (succ_p6_p3)
+                           (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #14370: origin
-                    (not_at_b_p6)
-
-                    ; #27188: origin
+                    ; #19243: origin
                     (at_b_p3)
 
-                    ; #48307: <==negation-removal== 27188 (pos)
+                    ; #90933: origin
+                    (not_at_b_p6)
+
+                    ; #27512: <==negation-removal== 19243 (pos)
                     (not (not_at_b_p3))
 
-                    ; #57208: <==negation-removal== 14370 (pos)
+                    ; #70811: <==negation-removal== 90933 (pos)
                     (not (at_b_p6))))
 
     (:action move_b_p6_p4
-        :precondition (and (at_b_p6)
-                           (succ_p6_p4)
+        :precondition (and (succ_p6_p4)
+                           (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #14370: origin
-                    (not_at_b_p6)
-
-                    ; #80950: origin
+                    ; #78106: origin
                     (at_b_p4)
 
-                    ; #15935: <==negation-removal== 80950 (pos)
+                    ; #90933: origin
+                    (not_at_b_p6)
+
+                    ; #28729: <==negation-removal== 78106 (pos)
                     (not (not_at_b_p4))
 
-                    ; #57208: <==negation-removal== 14370 (pos)
+                    ; #70811: <==negation-removal== 90933 (pos)
                     (not (at_b_p6))))
 
     (:action move_b_p6_p5
-        :precondition (and (at_b_p6)
-                           (succ_p6_p5)
+        :precondition (and (succ_p6_p5)
+                           (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #13560: origin
+                    ; #59837: origin
                     (at_b_p5)
 
-                    ; #14370: origin
+                    ; #90933: origin
                     (not_at_b_p6)
 
-                    ; #22313: <==negation-removal== 13560 (pos)
+                    ; #38769: <==negation-removal== 59837 (pos)
                     (not (not_at_b_p5))
 
-                    ; #57208: <==negation-removal== 14370 (pos)
+                    ; #70811: <==negation-removal== 90933 (pos)
                     (not (at_b_p6))))
 
     (:action move_b_p6_p6
-        :precondition (and (at_b_p6)
-                           (succ_p6_p6)
+        :precondition (and (succ_p6_p6)
+                           (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #14370: origin
-                    (not_at_b_p6)
-
-                    ; #57208: origin
+                    ; #70811: origin
                     (at_b_p6)
 
-                    ; #14370: <==negation-removal== 57208 (pos)
-                    (not (not_at_b_p6))
+                    ; #90933: origin
+                    (not_at_b_p6)
 
-                    ; #57208: <==negation-removal== 14370 (pos)
-                    (not (at_b_p6))))
+                    ; #70811: <==negation-removal== 90933 (pos)
+                    (not (at_b_p6))
+
+                    ; #90933: <==negation-removal== 70811 (pos)
+                    (not (not_at_b_p6))))
 
     (:action move_b_p6_p7
         :precondition (and (succ_p6_p7)
                            (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #14370: origin
-                    (not_at_b_p6)
-
-                    ; #66691: origin
+                    ; #69489: origin
                     (at_b_p7)
 
-                    ; #57208: <==negation-removal== 14370 (pos)
+                    ; #90933: origin
+                    (not_at_b_p6)
+
+                    ; #70811: <==negation-removal== 90933 (pos)
                     (not (at_b_p6))
 
-                    ; #73615: <==negation-removal== 66691 (pos)
+                    ; #75085: <==negation-removal== 69489 (pos)
                     (not (not_at_b_p7))))
 
     (:action move_b_p6_p8
-        :precondition (and (at_b_p6)
-                           (succ_p6_p8)
+        :precondition (and (succ_p6_p8)
+                           (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #14370: origin
-                    (not_at_b_p6)
-
-                    ; #28019: origin
+                    ; #40873: origin
                     (at_b_p8)
 
-                    ; #57208: <==negation-removal== 14370 (pos)
+                    ; #90933: origin
+                    (not_at_b_p6)
+
+                    ; #70811: <==negation-removal== 90933 (pos)
                     (not (at_b_p6))
 
-                    ; #69475: <==negation-removal== 28019 (pos)
+                    ; #79967: <==negation-removal== 40873 (pos)
                     (not (not_at_b_p8))))
 
     (:action move_b_p6_p9
-        :precondition (and (at_b_p6)
-                           (succ_p6_p9)
+        :precondition (and (succ_p6_p9)
+                           (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #10546: origin
+                    ; #31909: origin
                     (at_b_p9)
 
-                    ; #14370: origin
+                    ; #90933: origin
                     (not_at_b_p6)
 
-                    ; #57208: <==negation-removal== 14370 (pos)
-                    (not (at_b_p6))
+                    ; #49601: <==negation-removal== 31909 (pos)
+                    (not (not_at_b_p9))
 
-                    ; #77596: <==negation-removal== 10546 (pos)
-                    (not (not_at_b_p9))))
+                    ; #70811: <==negation-removal== 90933 (pos)
+                    (not (at_b_p6))))
 
     (:action move_b_p7_p1
-        :precondition (and (at_b_p7)
-                           (succ_p7_p1)
+        :precondition (and (succ_p7_p1)
+                           (at_b_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #73615: origin
-                    (not_at_b_p7)
-
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #47021: <==negation-removal== 82311 (pos)
+                    ; #75085: origin
+                    (not_at_b_p7)
+
+                    ; #27139: <==negation-removal== 61538 (pos)
                     (not (not_at_b_p1))
 
-                    ; #66691: <==negation-removal== 73615 (pos)
+                    ; #69489: <==negation-removal== 75085 (pos)
                     (not (at_b_p7))))
 
     (:action move_b_p7_p2
@@ -5838,16 +5838,16 @@
                            (succ_p7_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #11153: origin
-                    (at_b_p2)
-
-                    ; #73615: origin
+                    ; #75085: origin
                     (not_at_b_p7)
 
-                    ; #13256: <==negation-removal== 11153 (pos)
+                    ; #81397: origin
+                    (at_b_p2)
+
+                    ; #68439: <==negation-removal== 81397 (pos)
                     (not (not_at_b_p2))
 
-                    ; #66691: <==negation-removal== 73615 (pos)
+                    ; #69489: <==negation-removal== 75085 (pos)
                     (not (at_b_p7))))
 
     (:action move_b_p7_p3
@@ -5855,50 +5855,50 @@
                            (succ_p7_p3)
                            (not (leader_b)))
         :effect (and
-                    ; #27188: origin
+                    ; #19243: origin
                     (at_b_p3)
 
-                    ; #73615: origin
+                    ; #75085: origin
                     (not_at_b_p7)
 
-                    ; #48307: <==negation-removal== 27188 (pos)
+                    ; #27512: <==negation-removal== 19243 (pos)
                     (not (not_at_b_p3))
 
-                    ; #66691: <==negation-removal== 73615 (pos)
+                    ; #69489: <==negation-removal== 75085 (pos)
                     (not (at_b_p7))))
 
     (:action move_b_p7_p4
-        :precondition (and (at_b_p7)
-                           (succ_p7_p4)
-                           (not (leader_b)))
-        :effect (and
-                    ; #73615: origin
-                    (not_at_b_p7)
-
-                    ; #80950: origin
-                    (at_b_p4)
-
-                    ; #15935: <==negation-removal== 80950 (pos)
-                    (not (not_at_b_p4))
-
-                    ; #66691: <==negation-removal== 73615 (pos)
-                    (not (at_b_p7))))
-
-    (:action move_b_p7_p5
-        :precondition (and (succ_p7_p5)
+        :precondition (and (succ_p7_p4)
                            (at_b_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #13560: origin
-                    (at_b_p5)
-
-                    ; #73615: origin
+                    ; #75085: origin
                     (not_at_b_p7)
 
-                    ; #22313: <==negation-removal== 13560 (pos)
+                    ; #78106: origin
+                    (at_b_p4)
+
+                    ; #28729: <==negation-removal== 78106 (pos)
+                    (not (not_at_b_p4))
+
+                    ; #69489: <==negation-removal== 75085 (pos)
+                    (not (at_b_p7))))
+
+    (:action move_b_p7_p5
+        :precondition (and (at_b_p7)
+                           (succ_p7_p5)
+                           (not (leader_b)))
+        :effect (and
+                    ; #59837: origin
+                    (at_b_p5)
+
+                    ; #75085: origin
+                    (not_at_b_p7)
+
+                    ; #38769: <==negation-removal== 59837 (pos)
                     (not (not_at_b_p5))
 
-                    ; #66691: <==negation-removal== 73615 (pos)
+                    ; #69489: <==negation-removal== 75085 (pos)
                     (not (at_b_p7))))
 
     (:action move_b_p7_p6
@@ -5906,33 +5906,33 @@
                            (succ_p7_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #57208: origin
+                    ; #70811: origin
                     (at_b_p6)
 
-                    ; #73615: origin
+                    ; #75085: origin
                     (not_at_b_p7)
 
-                    ; #14370: <==negation-removal== 57208 (pos)
-                    (not (not_at_b_p6))
+                    ; #69489: <==negation-removal== 75085 (pos)
+                    (not (at_b_p7))
 
-                    ; #66691: <==negation-removal== 73615 (pos)
-                    (not (at_b_p7))))
+                    ; #90933: <==negation-removal== 70811 (pos)
+                    (not (not_at_b_p6))))
 
     (:action move_b_p7_p7
         :precondition (and (at_b_p7)
                            (succ_p7_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #66691: origin
+                    ; #69489: origin
                     (at_b_p7)
 
-                    ; #73615: origin
+                    ; #75085: origin
                     (not_at_b_p7)
 
-                    ; #66691: <==negation-removal== 73615 (pos)
+                    ; #69489: <==negation-removal== 75085 (pos)
                     (not (at_b_p7))
 
-                    ; #73615: <==negation-removal== 66691 (pos)
+                    ; #75085: <==negation-removal== 69489 (pos)
                     (not (not_at_b_p7))))
 
     (:action move_b_p7_p8
@@ -5940,101 +5940,101 @@
                            (succ_p7_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #28019: origin
+                    ; #40873: origin
                     (at_b_p8)
 
-                    ; #73615: origin
+                    ; #75085: origin
                     (not_at_b_p7)
 
-                    ; #66691: <==negation-removal== 73615 (pos)
+                    ; #69489: <==negation-removal== 75085 (pos)
                     (not (at_b_p7))
 
-                    ; #69475: <==negation-removal== 28019 (pos)
+                    ; #79967: <==negation-removal== 40873 (pos)
                     (not (not_at_b_p8))))
 
     (:action move_b_p7_p9
-        :precondition (and (succ_p7_p9)
-                           (at_b_p7)
+        :precondition (and (at_b_p7)
+                           (succ_p7_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #10546: origin
+                    ; #31909: origin
                     (at_b_p9)
 
-                    ; #73615: origin
+                    ; #75085: origin
                     (not_at_b_p7)
 
-                    ; #66691: <==negation-removal== 73615 (pos)
-                    (not (at_b_p7))
+                    ; #49601: <==negation-removal== 31909 (pos)
+                    (not (not_at_b_p9))
 
-                    ; #77596: <==negation-removal== 10546 (pos)
-                    (not (not_at_b_p9))))
+                    ; #69489: <==negation-removal== 75085 (pos)
+                    (not (at_b_p7))))
 
     (:action move_b_p8_p1
         :precondition (and (succ_p8_p1)
                            (at_b_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #69475: origin
-                    (not_at_b_p8)
-
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #28019: <==negation-removal== 69475 (pos)
-                    (not (at_b_p8))
-
-                    ; #47021: <==negation-removal== 82311 (pos)
-                    (not (not_at_b_p1))))
-
-    (:action move_b_p8_p2
-        :precondition (and (succ_p8_p2)
-                           (at_b_p8)
-                           (not (leader_b)))
-        :effect (and
-                    ; #11153: origin
-                    (at_b_p2)
-
-                    ; #69475: origin
+                    ; #79967: origin
                     (not_at_b_p8)
 
-                    ; #13256: <==negation-removal== 11153 (pos)
-                    (not (not_at_b_p2))
+                    ; #27139: <==negation-removal== 61538 (pos)
+                    (not (not_at_b_p1))
 
-                    ; #28019: <==negation-removal== 69475 (pos)
+                    ; #40873: <==negation-removal== 79967 (pos)
                     (not (at_b_p8))))
 
-    (:action move_b_p8_p3
-        :precondition (and (succ_p8_p3)
-                           (at_b_p8)
+    (:action move_b_p8_p2
+        :precondition (and (at_b_p8)
+                           (succ_p8_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #27188: origin
-                    (at_b_p3)
-
-                    ; #69475: origin
+                    ; #79967: origin
                     (not_at_b_p8)
 
-                    ; #28019: <==negation-removal== 69475 (pos)
+                    ; #81397: origin
+                    (at_b_p2)
+
+                    ; #40873: <==negation-removal== 79967 (pos)
                     (not (at_b_p8))
 
-                    ; #48307: <==negation-removal== 27188 (pos)
-                    (not (not_at_b_p3))))
+                    ; #68439: <==negation-removal== 81397 (pos)
+                    (not (not_at_b_p2))))
 
-    (:action move_b_p8_p4
-        :precondition (and (succ_p8_p4)
-                           (at_b_p8)
+    (:action move_b_p8_p3
+        :precondition (and (at_b_p8)
+                           (succ_p8_p3)
                            (not (leader_b)))
         :effect (and
-                    ; #69475: origin
+                    ; #19243: origin
+                    (at_b_p3)
+
+                    ; #79967: origin
                     (not_at_b_p8)
 
-                    ; #80950: origin
+                    ; #27512: <==negation-removal== 19243 (pos)
+                    (not (not_at_b_p3))
+
+                    ; #40873: <==negation-removal== 79967 (pos)
+                    (not (at_b_p8))))
+
+    (:action move_b_p8_p4
+        :precondition (and (at_b_p8)
+                           (succ_p8_p4)
+                           (not (leader_b)))
+        :effect (and
+                    ; #78106: origin
                     (at_b_p4)
 
-                    ; #15935: <==negation-removal== 80950 (pos)
+                    ; #79967: origin
+                    (not_at_b_p8)
+
+                    ; #28729: <==negation-removal== 78106 (pos)
                     (not (not_at_b_p4))
 
-                    ; #28019: <==negation-removal== 69475 (pos)
+                    ; #40873: <==negation-removal== 79967 (pos)
                     (not (at_b_p8))))
 
     (:action move_b_p8_p5
@@ -6042,50 +6042,50 @@
                            (at_b_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #13560: origin
+                    ; #59837: origin
                     (at_b_p5)
 
-                    ; #69475: origin
+                    ; #79967: origin
                     (not_at_b_p8)
 
-                    ; #22313: <==negation-removal== 13560 (pos)
+                    ; #38769: <==negation-removal== 59837 (pos)
                     (not (not_at_b_p5))
 
-                    ; #28019: <==negation-removal== 69475 (pos)
+                    ; #40873: <==negation-removal== 79967 (pos)
                     (not (at_b_p8))))
 
     (:action move_b_p8_p6
-        :precondition (and (succ_p8_p6)
-                           (at_b_p8)
+        :precondition (and (at_b_p8)
+                           (succ_p8_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #57208: origin
+                    ; #70811: origin
                     (at_b_p6)
 
-                    ; #69475: origin
+                    ; #79967: origin
                     (not_at_b_p8)
 
-                    ; #14370: <==negation-removal== 57208 (pos)
-                    (not (not_at_b_p6))
+                    ; #40873: <==negation-removal== 79967 (pos)
+                    (not (at_b_p8))
 
-                    ; #28019: <==negation-removal== 69475 (pos)
-                    (not (at_b_p8))))
+                    ; #90933: <==negation-removal== 70811 (pos)
+                    (not (not_at_b_p6))))
 
     (:action move_b_p8_p7
         :precondition (and (succ_p8_p7)
                            (at_b_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #66691: origin
+                    ; #69489: origin
                     (at_b_p7)
 
-                    ; #69475: origin
+                    ; #79967: origin
                     (not_at_b_p8)
 
-                    ; #28019: <==negation-removal== 69475 (pos)
+                    ; #40873: <==negation-removal== 79967 (pos)
                     (not (at_b_p8))
 
-                    ; #73615: <==negation-removal== 66691 (pos)
+                    ; #75085: <==negation-removal== 69489 (pos)
                     (not (not_at_b_p7))))
 
     (:action move_b_p8_p8
@@ -6093,33 +6093,33 @@
                            (at_b_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #28019: origin
+                    ; #40873: origin
                     (at_b_p8)
 
-                    ; #69475: origin
+                    ; #79967: origin
                     (not_at_b_p8)
 
-                    ; #28019: <==negation-removal== 69475 (pos)
+                    ; #40873: <==negation-removal== 79967 (pos)
                     (not (at_b_p8))
 
-                    ; #69475: <==negation-removal== 28019 (pos)
+                    ; #79967: <==negation-removal== 40873 (pos)
                     (not (not_at_b_p8))))
 
     (:action move_b_p8_p9
-        :precondition (and (succ_p8_p9)
-                           (at_b_p8)
+        :precondition (and (at_b_p8)
+                           (succ_p8_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #10546: origin
+                    ; #31909: origin
                     (at_b_p9)
 
-                    ; #69475: origin
+                    ; #79967: origin
                     (not_at_b_p8)
 
-                    ; #28019: <==negation-removal== 69475 (pos)
+                    ; #40873: <==negation-removal== 79967 (pos)
                     (not (at_b_p8))
 
-                    ; #77596: <==negation-removal== 10546 (pos)
+                    ; #49601: <==negation-removal== 31909 (pos)
                     (not (not_at_b_p9))))
 
     (:action move_b_p9_p1
@@ -6127,33 +6127,33 @@
                            (succ_p9_p1)
                            (not (leader_b)))
         :effect (and
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #82311: origin
+                    ; #61538: origin
                     (at_b_p1)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
-                    (not (at_b_p9))
+                    ; #27139: <==negation-removal== 61538 (pos)
+                    (not (not_at_b_p1))
 
-                    ; #47021: <==negation-removal== 82311 (pos)
-                    (not (not_at_b_p1))))
+                    ; #31909: <==negation-removal== 49601 (pos)
+                    (not (at_b_p9))))
 
     (:action move_b_p9_p2
         :precondition (and (at_b_p9)
                            (succ_p9_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #11153: origin
-                    (at_b_p2)
-
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
+                    ; #81397: origin
+                    (at_b_p2)
+
+                    ; #31909: <==negation-removal== 49601 (pos)
                     (not (at_b_p9))
 
-                    ; #13256: <==negation-removal== 11153 (pos)
+                    ; #68439: <==negation-removal== 81397 (pos)
                     (not (not_at_b_p2))))
 
     (:action move_b_p9_p3
@@ -6161,67 +6161,67 @@
                            (succ_p9_p3)
                            (not (leader_b)))
         :effect (and
-                    ; #27188: origin
+                    ; #19243: origin
                     (at_b_p3)
 
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
-                    (not (at_b_p9))
+                    ; #27512: <==negation-removal== 19243 (pos)
+                    (not (not_at_b_p3))
 
-                    ; #48307: <==negation-removal== 27188 (pos)
-                    (not (not_at_b_p3))))
+                    ; #31909: <==negation-removal== 49601 (pos)
+                    (not (at_b_p9))))
 
     (:action move_b_p9_p4
         :precondition (and (at_b_p9)
                            (succ_p9_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #80950: origin
+                    ; #78106: origin
                     (at_b_p4)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
-                    (not (at_b_p9))
+                    ; #28729: <==negation-removal== 78106 (pos)
+                    (not (not_at_b_p4))
 
-                    ; #15935: <==negation-removal== 80950 (pos)
-                    (not (not_at_b_p4))))
+                    ; #31909: <==negation-removal== 49601 (pos)
+                    (not (at_b_p9))))
 
     (:action move_b_p9_p5
-        :precondition (and (at_b_p9)
-                           (succ_p9_p5)
+        :precondition (and (succ_p9_p5)
+                           (at_b_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #13560: origin
-                    (at_b_p5)
-
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
+                    ; #59837: origin
+                    (at_b_p5)
+
+                    ; #31909: <==negation-removal== 49601 (pos)
                     (not (at_b_p9))
 
-                    ; #22313: <==negation-removal== 13560 (pos)
+                    ; #38769: <==negation-removal== 59837 (pos)
                     (not (not_at_b_p5))))
 
     (:action move_b_p9_p6
-        :precondition (and (at_b_p9)
-                           (succ_p9_p6)
+        :precondition (and (succ_p9_p6)
+                           (at_b_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #57208: origin
-                    (at_b_p6)
-
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
+                    ; #70811: origin
+                    (at_b_p6)
+
+                    ; #31909: <==negation-removal== 49601 (pos)
                     (not (at_b_p9))
 
-                    ; #14370: <==negation-removal== 57208 (pos)
+                    ; #90933: <==negation-removal== 70811 (pos)
                     (not (not_at_b_p6))))
 
     (:action move_b_p9_p7
@@ -6229,16 +6229,16 @@
                            (succ_p9_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #66691: origin
-                    (at_b_p7)
-
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
+                    ; #69489: origin
+                    (at_b_p7)
+
+                    ; #31909: <==negation-removal== 49601 (pos)
                     (not (at_b_p9))
 
-                    ; #73615: <==negation-removal== 66691 (pos)
+                    ; #75085: <==negation-removal== 69489 (pos)
                     (not (not_at_b_p7))))
 
     (:action move_b_p9_p8
@@ -6246,84 +6246,84 @@
                            (succ_p9_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #28019: origin
+                    ; #40873: origin
                     (at_b_p8)
 
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
+                    ; #31909: <==negation-removal== 49601 (pos)
                     (not (at_b_p9))
 
-                    ; #69475: <==negation-removal== 28019 (pos)
+                    ; #79967: <==negation-removal== 40873 (pos)
                     (not (not_at_b_p8))))
 
     (:action move_b_p9_p9
-        :precondition (and (at_b_p9)
-                           (succ_p9_p9)
+        :precondition (and (succ_p9_p9)
+                           (at_b_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #10546: origin
+                    ; #31909: origin
                     (at_b_p9)
 
-                    ; #77596: origin
+                    ; #49601: origin
                     (not_at_b_p9)
 
-                    ; #10546: <==negation-removal== 77596 (pos)
+                    ; #31909: <==negation-removal== 49601 (pos)
                     (not (at_b_p9))
 
-                    ; #77596: <==negation-removal== 10546 (pos)
+                    ; #49601: <==negation-removal== 31909 (pos)
                     (not (not_at_b_p9))))
 
     (:action move_c_p1_p1
-        :precondition (and (succ_p1_p1)
-                           (at_c_p1)
+        :precondition (and (at_c_p1)
+                           (succ_p1_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #14885: origin
-                    (not_at_c_p1)
-
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
-                    (not (not_at_c_p1))
-
-                    ; #90323: <==negation-removal== 14885 (pos)
-                    (not (at_c_p1))))
-
-    (:action move_c_p1_p2
-        :precondition (and (succ_p1_p2)
-                           (at_c_p1)
-                           (not (leader_c)))
-        :effect (and
-                    ; #14885: origin
+                    ; #62145: origin
                     (not_at_c_p1)
 
-                    ; #67579: origin
+                    ; #37903: <==negation-removal== 62145 (pos)
+                    (not (at_c_p1))
+
+                    ; #62145: <==negation-removal== 37903 (pos)
+                    (not (not_at_c_p1))))
+
+    (:action move_c_p1_p2
+        :precondition (and (at_c_p1)
+                           (succ_p1_p2)
+                           (not (leader_c)))
+        :effect (and
+                    ; #62145: origin
+                    (not_at_c_p1)
+
+                    ; #65043: origin
                     (at_c_p2)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
+                    ; #37903: <==negation-removal== 62145 (pos)
+                    (not (at_c_p1))
 
-                    ; #90323: <==negation-removal== 14885 (pos)
-                    (not (at_c_p1))))
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
 
     (:action move_c_p1_p3
         :precondition (and (succ_p1_p3)
                            (at_c_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #14885: origin
-                    (not_at_c_p1)
-
-                    ; #41495: origin
+                    ; #23794: origin
                     (at_c_p3)
 
-                    ; #86370: <==negation-removal== 41495 (pos)
+                    ; #62145: origin
+                    (not_at_c_p1)
+
+                    ; #23517: <==negation-removal== 23794 (pos)
                     (not (not_at_c_p3))
 
-                    ; #90323: <==negation-removal== 14885 (pos)
+                    ; #37903: <==negation-removal== 62145 (pos)
                     (not (at_c_p1))))
 
     (:action move_c_p1_p4
@@ -6331,254 +6331,254 @@
                            (at_c_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #14885: origin
-                    (not_at_c_p1)
-
-                    ; #52596: origin
+                    ; #39385: origin
                     (at_c_p4)
 
-                    ; #83459: <==negation-removal== 52596 (pos)
+                    ; #62145: origin
+                    (not_at_c_p1)
+
+                    ; #32306: <==negation-removal== 39385 (pos)
                     (not (not_at_c_p4))
 
-                    ; #90323: <==negation-removal== 14885 (pos)
+                    ; #37903: <==negation-removal== 62145 (pos)
                     (not (at_c_p1))))
 
     (:action move_c_p1_p5
-        :precondition (and (succ_p1_p5)
-                           (at_c_p1)
+        :precondition (and (at_c_p1)
+                           (succ_p1_p5)
                            (not (leader_c)))
         :effect (and
-                    ; #14885: origin
-                    (not_at_c_p1)
-
-                    ; #72915: origin
+                    ; #48589: origin
                     (at_c_p5)
 
-                    ; #52759: <==negation-removal== 72915 (pos)
-                    (not (not_at_c_p5))
+                    ; #62145: origin
+                    (not_at_c_p1)
 
-                    ; #90323: <==negation-removal== 14885 (pos)
-                    (not (at_c_p1))))
+                    ; #37903: <==negation-removal== 62145 (pos)
+                    (not (at_c_p1))
+
+                    ; #83361: <==negation-removal== 48589 (pos)
+                    (not (not_at_c_p5))))
 
     (:action move_c_p1_p6
         :precondition (and (succ_p1_p6)
                            (at_c_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #14885: origin
+                    ; #62145: origin
                     (not_at_c_p1)
 
-                    ; #54132: origin
+                    ; #68459: origin
                     (at_c_p6)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
+                    ; #21766: <==negation-removal== 68459 (pos)
                     (not (not_at_c_p6))
 
-                    ; #90323: <==negation-removal== 14885 (pos)
+                    ; #37903: <==negation-removal== 62145 (pos)
                     (not (at_c_p1))))
 
     (:action move_c_p1_p7
-        :precondition (and (succ_p1_p7)
-                           (at_c_p1)
+        :precondition (and (at_c_p1)
+                           (succ_p1_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #14885: origin
-                    (not_at_c_p1)
-
-                    ; #76607: origin
+                    ; #35970: origin
                     (at_c_p7)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
-                    (not (not_at_c_p7))
-
-                    ; #90323: <==negation-removal== 14885 (pos)
-                    (not (at_c_p1))))
-
-    (:action move_c_p1_p8
-        :precondition (and (succ_p1_p8)
-                           (at_c_p1)
-                           (not (leader_c)))
-        :effect (and
-                    ; #14885: origin
+                    ; #62145: origin
                     (not_at_c_p1)
 
-                    ; #60666: origin
+                    ; #37903: <==negation-removal== 62145 (pos)
+                    (not (at_c_p1))
+
+                    ; #59310: <==negation-removal== 35970 (pos)
+                    (not (not_at_c_p7))))
+
+    (:action move_c_p1_p8
+        :precondition (and (at_c_p1)
+                           (succ_p1_p8)
+                           (not (leader_c)))
+        :effect (and
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #48536: <==negation-removal== 60666 (pos)
+                    ; #62145: origin
+                    (not_at_c_p1)
+
+                    ; #27124: <==negation-removal== 11363 (pos)
                     (not (not_at_c_p8))
 
-                    ; #90323: <==negation-removal== 14885 (pos)
+                    ; #37903: <==negation-removal== 62145 (pos)
                     (not (at_c_p1))))
 
     (:action move_c_p1_p9
-        :precondition (and (succ_p1_p9)
-                           (at_c_p1)
+        :precondition (and (at_c_p1)
+                           (succ_p1_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #14885: origin
+                    ; #62145: origin
                     (not_at_c_p1)
 
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
+                    ; #13832: <==negation-removal== 67134 (pos)
                     (not (not_at_c_p9))
 
-                    ; #90323: <==negation-removal== 14885 (pos)
+                    ; #37903: <==negation-removal== 62145 (pos)
                     (not (at_c_p1))))
 
     (:action move_c_p2_p1
-        :precondition (and (succ_p2_p1)
-                           (at_c_p2)
+        :precondition (and (at_c_p2)
+                           (succ_p2_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #25494: origin
-                    (not_at_c_p2)
-
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
+                    ; #68848: origin
+                    (not_at_c_p2)
+
+                    ; #62145: <==negation-removal== 37903 (pos)
                     (not (not_at_c_p1))
 
-                    ; #67579: <==negation-removal== 25494 (pos)
+                    ; #65043: <==negation-removal== 68848 (pos)
                     (not (at_c_p2))))
 
     (:action move_c_p2_p2
-        :precondition (and (succ_p2_p2)
-                           (at_c_p2)
+        :precondition (and (at_c_p2)
+                           (succ_p2_p2)
                            (not (leader_c)))
         :effect (and
-                    ; #25494: origin
-                    (not_at_c_p2)
-
-                    ; #67579: origin
+                    ; #65043: origin
                     (at_c_p2)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
-
-                    ; #67579: <==negation-removal== 25494 (pos)
-                    (not (at_c_p2))))
-
-    (:action move_c_p2_p3
-        :precondition (and (succ_p2_p3)
-                           (at_c_p2)
-                           (not (leader_c)))
-        :effect (and
-                    ; #25494: origin
+                    ; #68848: origin
                     (not_at_c_p2)
 
-                    ; #41495: origin
-                    (at_c_p3)
-
-                    ; #67579: <==negation-removal== 25494 (pos)
+                    ; #65043: <==negation-removal== 68848 (pos)
                     (not (at_c_p2))
 
-                    ; #86370: <==negation-removal== 41495 (pos)
-                    (not (not_at_c_p3))))
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
+
+    (:action move_c_p2_p3
+        :precondition (and (at_c_p2)
+                           (succ_p2_p3)
+                           (not (leader_c)))
+        :effect (and
+                    ; #23794: origin
+                    (at_c_p3)
+
+                    ; #68848: origin
+                    (not_at_c_p2)
+
+                    ; #23517: <==negation-removal== 23794 (pos)
+                    (not (not_at_c_p3))
+
+                    ; #65043: <==negation-removal== 68848 (pos)
+                    (not (at_c_p2))))
 
     (:action move_c_p2_p4
         :precondition (and (succ_p2_p4)
                            (at_c_p2)
                            (not (leader_c)))
         :effect (and
-                    ; #25494: origin
-                    (not_at_c_p2)
-
-                    ; #52596: origin
+                    ; #39385: origin
                     (at_c_p4)
 
-                    ; #67579: <==negation-removal== 25494 (pos)
-                    (not (at_c_p2))
-
-                    ; #83459: <==negation-removal== 52596 (pos)
-                    (not (not_at_c_p4))))
-
-    (:action move_c_p2_p5
-        :precondition (and (succ_p2_p5)
-                           (at_c_p2)
-                           (not (leader_c)))
-        :effect (and
-                    ; #25494: origin
+                    ; #68848: origin
                     (not_at_c_p2)
 
-                    ; #72915: origin
-                    (at_c_p5)
+                    ; #32306: <==negation-removal== 39385 (pos)
+                    (not (not_at_c_p4))
 
-                    ; #52759: <==negation-removal== 72915 (pos)
-                    (not (not_at_c_p5))
-
-                    ; #67579: <==negation-removal== 25494 (pos)
+                    ; #65043: <==negation-removal== 68848 (pos)
                     (not (at_c_p2))))
 
-    (:action move_c_p2_p6
-        :precondition (and (succ_p2_p6)
-                           (at_c_p2)
+    (:action move_c_p2_p5
+        :precondition (and (at_c_p2)
+                           (succ_p2_p5)
                            (not (leader_c)))
         :effect (and
-                    ; #25494: origin
+                    ; #48589: origin
+                    (at_c_p5)
+
+                    ; #68848: origin
                     (not_at_c_p2)
 
-                    ; #54132: origin
+                    ; #65043: <==negation-removal== 68848 (pos)
+                    (not (at_c_p2))
+
+                    ; #83361: <==negation-removal== 48589 (pos)
+                    (not (not_at_c_p5))))
+
+    (:action move_c_p2_p6
+        :precondition (and (at_c_p2)
+                           (succ_p2_p6)
+                           (not (leader_c)))
+        :effect (and
+                    ; #68459: origin
                     (at_c_p6)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
+                    ; #68848: origin
+                    (not_at_c_p2)
+
+                    ; #21766: <==negation-removal== 68459 (pos)
                     (not (not_at_c_p6))
 
-                    ; #67579: <==negation-removal== 25494 (pos)
+                    ; #65043: <==negation-removal== 68848 (pos)
                     (not (at_c_p2))))
 
     (:action move_c_p2_p7
-        :precondition (and (succ_p2_p7)
-                           (at_c_p2)
+        :precondition (and (at_c_p2)
+                           (succ_p2_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #25494: origin
-                    (not_at_c_p2)
-
-                    ; #76607: origin
+                    ; #35970: origin
                     (at_c_p7)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
+                    ; #68848: origin
+                    (not_at_c_p2)
+
+                    ; #59310: <==negation-removal== 35970 (pos)
                     (not (not_at_c_p7))
 
-                    ; #67579: <==negation-removal== 25494 (pos)
+                    ; #65043: <==negation-removal== 68848 (pos)
                     (not (at_c_p2))))
 
     (:action move_c_p2_p8
-        :precondition (and (succ_p2_p8)
-                           (at_c_p2)
+        :precondition (and (at_c_p2)
+                           (succ_p2_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #25494: origin
-                    (not_at_c_p2)
-
-                    ; #60666: origin
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #48536: <==negation-removal== 60666 (pos)
+                    ; #68848: origin
+                    (not_at_c_p2)
+
+                    ; #27124: <==negation-removal== 11363 (pos)
                     (not (not_at_c_p8))
 
-                    ; #67579: <==negation-removal== 25494 (pos)
+                    ; #65043: <==negation-removal== 68848 (pos)
                     (not (at_c_p2))))
 
     (:action move_c_p2_p9
-        :precondition (and (succ_p2_p9)
-                           (at_c_p2)
+        :precondition (and (at_c_p2)
+                           (succ_p2_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #25494: origin
-                    (not_at_c_p2)
-
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
+                    ; #68848: origin
+                    (not_at_c_p2)
+
+                    ; #13832: <==negation-removal== 67134 (pos)
                     (not (not_at_c_p9))
 
-                    ; #67579: <==negation-removal== 25494 (pos)
+                    ; #65043: <==negation-removal== 68848 (pos)
                     (not (at_c_p2))))
 
     (:action move_c_p3_p1
@@ -6586,67 +6586,67 @@
                            (succ_p3_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
-                    (not (not_at_c_p1))
+                    ; #23794: <==negation-removal== 23517 (pos)
+                    (not (at_c_p3))
 
-                    ; #41495: <==negation-removal== 86370 (pos)
-                    (not (at_c_p3))))
+                    ; #62145: <==negation-removal== 37903 (pos)
+                    (not (not_at_c_p1))))
 
     (:action move_c_p3_p2
         :precondition (and (at_c_p3)
                            (succ_p3_p2)
                            (not (leader_c)))
         :effect (and
-                    ; #67579: origin
-                    (at_c_p2)
-
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
+                    ; #65043: origin
+                    (at_c_p2)
 
-                    ; #41495: <==negation-removal== 86370 (pos)
-                    (not (at_c_p3))))
+                    ; #23794: <==negation-removal== 23517 (pos)
+                    (not (at_c_p3))
+
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
 
     (:action move_c_p3_p3
         :precondition (and (at_c_p3)
                            (succ_p3_p3)
                            (not (leader_c)))
         :effect (and
-                    ; #41495: origin
-                    (at_c_p3)
-
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #41495: <==negation-removal== 86370 (pos)
-                    (not (at_c_p3))
+                    ; #23794: origin
+                    (at_c_p3)
 
-                    ; #86370: <==negation-removal== 41495 (pos)
-                    (not (not_at_c_p3))))
+                    ; #23517: <==negation-removal== 23794 (pos)
+                    (not (not_at_c_p3))
+
+                    ; #23794: <==negation-removal== 23517 (pos)
+                    (not (at_c_p3))))
 
     (:action move_c_p3_p4
         :precondition (and (at_c_p3)
                            (succ_p3_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #52596: origin
-                    (at_c_p4)
-
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #41495: <==negation-removal== 86370 (pos)
+                    ; #39385: origin
+                    (at_c_p4)
+
+                    ; #23794: <==negation-removal== 23517 (pos)
                     (not (at_c_p3))
 
-                    ; #83459: <==negation-removal== 52596 (pos)
+                    ; #32306: <==negation-removal== 39385 (pos)
                     (not (not_at_c_p4))))
 
     (:action move_c_p3_p5
@@ -6654,16 +6654,16 @@
                            (succ_p3_p5)
                            (not (leader_c)))
         :effect (and
-                    ; #72915: origin
-                    (at_c_p5)
-
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #41495: <==negation-removal== 86370 (pos)
+                    ; #48589: origin
+                    (at_c_p5)
+
+                    ; #23794: <==negation-removal== 23517 (pos)
                     (not (at_c_p3))
 
-                    ; #52759: <==negation-removal== 72915 (pos)
+                    ; #83361: <==negation-removal== 48589 (pos)
                     (not (not_at_c_p5))))
 
     (:action move_c_p3_p6
@@ -6671,16 +6671,16 @@
                            (succ_p3_p6)
                            (not (leader_c)))
         :effect (and
-                    ; #54132: origin
-                    (at_c_p6)
-
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
+                    ; #68459: origin
+                    (at_c_p6)
+
+                    ; #21766: <==negation-removal== 68459 (pos)
                     (not (not_at_c_p6))
 
-                    ; #41495: <==negation-removal== 86370 (pos)
+                    ; #23794: <==negation-removal== 23517 (pos)
                     (not (at_c_p3))))
 
     (:action move_c_p3_p7
@@ -6688,33 +6688,33 @@
                            (succ_p3_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #76607: origin
-                    (at_c_p7)
-
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
-                    (not (not_at_c_p7))
+                    ; #35970: origin
+                    (at_c_p7)
 
-                    ; #41495: <==negation-removal== 86370 (pos)
-                    (not (at_c_p3))))
+                    ; #23794: <==negation-removal== 23517 (pos)
+                    (not (at_c_p3))
+
+                    ; #59310: <==negation-removal== 35970 (pos)
+                    (not (not_at_c_p7))))
 
     (:action move_c_p3_p8
         :precondition (and (at_c_p3)
                            (succ_p3_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #60666: origin
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #41495: <==negation-removal== 86370 (pos)
+                    ; #23794: <==negation-removal== 23517 (pos)
                     (not (at_c_p3))
 
-                    ; #48536: <==negation-removal== 60666 (pos)
+                    ; #27124: <==negation-removal== 11363 (pos)
                     (not (not_at_c_p8))))
 
     (:action move_c_p3_p9
@@ -6722,152 +6722,152 @@
                            (succ_p3_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #86370: origin
+                    ; #23517: origin
                     (not_at_c_p3)
 
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
+                    ; #13832: <==negation-removal== 67134 (pos)
                     (not (not_at_c_p9))
 
-                    ; #41495: <==negation-removal== 86370 (pos)
+                    ; #23794: <==negation-removal== 23517 (pos)
                     (not (at_c_p3))))
 
     (:action move_c_p4_p1
-        :precondition (and (at_c_p4)
-                           (succ_p4_p1)
+        :precondition (and (succ_p4_p1)
+                           (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #83459: origin
+                    ; #32306: origin
                     (not_at_c_p4)
 
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
-                    (not (not_at_c_p1))
+                    ; #39385: <==negation-removal== 32306 (pos)
+                    (not (at_c_p4))
 
-                    ; #52596: <==negation-removal== 83459 (pos)
-                    (not (at_c_p4))))
+                    ; #62145: <==negation-removal== 37903 (pos)
+                    (not (not_at_c_p1))))
 
     (:action move_c_p4_p2
         :precondition (and (succ_p4_p2)
                            (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #67579: origin
-                    (at_c_p2)
-
-                    ; #83459: origin
+                    ; #32306: origin
                     (not_at_c_p4)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
+                    ; #65043: origin
+                    (at_c_p2)
 
-                    ; #52596: <==negation-removal== 83459 (pos)
-                    (not (at_c_p4))))
+                    ; #39385: <==negation-removal== 32306 (pos)
+                    (not (at_c_p4))
+
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
 
     (:action move_c_p4_p3
         :precondition (and (succ_p4_p3)
                            (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #41495: origin
+                    ; #23794: origin
                     (at_c_p3)
 
-                    ; #83459: origin
+                    ; #32306: origin
                     (not_at_c_p4)
 
-                    ; #52596: <==negation-removal== 83459 (pos)
-                    (not (at_c_p4))
+                    ; #23517: <==negation-removal== 23794 (pos)
+                    (not (not_at_c_p3))
 
-                    ; #86370: <==negation-removal== 41495 (pos)
-                    (not (not_at_c_p3))))
+                    ; #39385: <==negation-removal== 32306 (pos)
+                    (not (at_c_p4))))
 
     (:action move_c_p4_p4
         :precondition (and (succ_p4_p4)
                            (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #52596: origin
+                    ; #32306: origin
+                    (not_at_c_p4)
+
+                    ; #39385: origin
                     (at_c_p4)
 
-                    ; #83459: origin
-                    (not_at_c_p4)
+                    ; #32306: <==negation-removal== 39385 (pos)
+                    (not (not_at_c_p4))
 
-                    ; #52596: <==negation-removal== 83459 (pos)
-                    (not (at_c_p4))
-
-                    ; #83459: <==negation-removal== 52596 (pos)
-                    (not (not_at_c_p4))))
+                    ; #39385: <==negation-removal== 32306 (pos)
+                    (not (at_c_p4))))
 
     (:action move_c_p4_p5
-        :precondition (and (at_c_p4)
-                           (succ_p4_p5)
+        :precondition (and (succ_p4_p5)
+                           (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #72915: origin
-                    (at_c_p5)
-
-                    ; #83459: origin
+                    ; #32306: origin
                     (not_at_c_p4)
 
-                    ; #52596: <==negation-removal== 83459 (pos)
+                    ; #48589: origin
+                    (at_c_p5)
+
+                    ; #39385: <==negation-removal== 32306 (pos)
                     (not (at_c_p4))
 
-                    ; #52759: <==negation-removal== 72915 (pos)
+                    ; #83361: <==negation-removal== 48589 (pos)
                     (not (not_at_c_p5))))
 
     (:action move_c_p4_p6
-        :precondition (and (at_c_p4)
-                           (succ_p4_p6)
+        :precondition (and (succ_p4_p6)
+                           (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #54132: origin
-                    (at_c_p6)
-
-                    ; #83459: origin
+                    ; #32306: origin
                     (not_at_c_p4)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
+                    ; #68459: origin
+                    (at_c_p6)
+
+                    ; #21766: <==negation-removal== 68459 (pos)
                     (not (not_at_c_p6))
 
-                    ; #52596: <==negation-removal== 83459 (pos)
+                    ; #39385: <==negation-removal== 32306 (pos)
                     (not (at_c_p4))))
 
     (:action move_c_p4_p7
-        :precondition (and (at_c_p4)
-                           (succ_p4_p7)
+        :precondition (and (succ_p4_p7)
+                           (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #76607: origin
-                    (at_c_p7)
-
-                    ; #83459: origin
+                    ; #32306: origin
                     (not_at_c_p4)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
-                    (not (not_at_c_p7))
+                    ; #35970: origin
+                    (at_c_p7)
 
-                    ; #52596: <==negation-removal== 83459 (pos)
-                    (not (at_c_p4))))
+                    ; #39385: <==negation-removal== 32306 (pos)
+                    (not (at_c_p4))
+
+                    ; #59310: <==negation-removal== 35970 (pos)
+                    (not (not_at_c_p7))))
 
     (:action move_c_p4_p8
         :precondition (and (succ_p4_p8)
                            (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #60666: origin
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #83459: origin
+                    ; #32306: origin
                     (not_at_c_p4)
 
-                    ; #48536: <==negation-removal== 60666 (pos)
+                    ; #27124: <==negation-removal== 11363 (pos)
                     (not (not_at_c_p8))
 
-                    ; #52596: <==negation-removal== 83459 (pos)
+                    ; #39385: <==negation-removal== 32306 (pos)
                     (not (at_c_p4))))
 
     (:action move_c_p4_p9
@@ -6875,16 +6875,16 @@
                            (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #83459: origin
+                    ; #32306: origin
                     (not_at_c_p4)
 
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
+                    ; #13832: <==negation-removal== 67134 (pos)
                     (not (not_at_c_p9))
 
-                    ; #52596: <==negation-removal== 83459 (pos)
+                    ; #39385: <==negation-removal== 32306 (pos)
                     (not (at_c_p4))))
 
     (:action move_c_p5_p1
@@ -6892,101 +6892,101 @@
                            (succ_p5_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #52759: origin
-                    (not_at_c_p5)
-
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
-                    (not (not_at_c_p1))
+                    ; #83361: origin
+                    (not_at_c_p5)
 
-                    ; #72915: <==negation-removal== 52759 (pos)
-                    (not (at_c_p5))))
+                    ; #48589: <==negation-removal== 83361 (pos)
+                    (not (at_c_p5))
+
+                    ; #62145: <==negation-removal== 37903 (pos)
+                    (not (not_at_c_p1))))
 
     (:action move_c_p5_p2
         :precondition (and (at_c_p5)
                            (succ_p5_p2)
                            (not (leader_c)))
         :effect (and
-                    ; #52759: origin
-                    (not_at_c_p5)
-
-                    ; #67579: origin
+                    ; #65043: origin
                     (at_c_p2)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
-
-                    ; #72915: <==negation-removal== 52759 (pos)
-                    (not (at_c_p5))))
-
-    (:action move_c_p5_p3
-        :precondition (and (succ_p5_p3)
-                           (at_c_p5)
-                           (not (leader_c)))
-        :effect (and
-                    ; #41495: origin
-                    (at_c_p3)
-
-                    ; #52759: origin
+                    ; #83361: origin
                     (not_at_c_p5)
 
-                    ; #72915: <==negation-removal== 52759 (pos)
+                    ; #48589: <==negation-removal== 83361 (pos)
                     (not (at_c_p5))
 
-                    ; #86370: <==negation-removal== 41495 (pos)
-                    (not (not_at_c_p3))))
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
+
+    (:action move_c_p5_p3
+        :precondition (and (at_c_p5)
+                           (succ_p5_p3)
+                           (not (leader_c)))
+        :effect (and
+                    ; #23794: origin
+                    (at_c_p3)
+
+                    ; #83361: origin
+                    (not_at_c_p5)
+
+                    ; #23517: <==negation-removal== 23794 (pos)
+                    (not (not_at_c_p3))
+
+                    ; #48589: <==negation-removal== 83361 (pos)
+                    (not (at_c_p5))))
 
     (:action move_c_p5_p4
         :precondition (and (at_c_p5)
                            (succ_p5_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #52596: origin
+                    ; #39385: origin
                     (at_c_p4)
 
-                    ; #52759: origin
+                    ; #83361: origin
                     (not_at_c_p5)
 
-                    ; #72915: <==negation-removal== 52759 (pos)
-                    (not (at_c_p5))
+                    ; #32306: <==negation-removal== 39385 (pos)
+                    (not (not_at_c_p4))
 
-                    ; #83459: <==negation-removal== 52596 (pos)
-                    (not (not_at_c_p4))))
+                    ; #48589: <==negation-removal== 83361 (pos)
+                    (not (at_c_p5))))
 
     (:action move_c_p5_p5
         :precondition (and (at_c_p5)
                            (succ_p5_p5)
                            (not (leader_c)))
         :effect (and
-                    ; #52759: origin
-                    (not_at_c_p5)
-
-                    ; #72915: origin
+                    ; #48589: origin
                     (at_c_p5)
 
-                    ; #52759: <==negation-removal== 72915 (pos)
-                    (not (not_at_c_p5))
-
-                    ; #72915: <==negation-removal== 52759 (pos)
-                    (not (at_c_p5))))
-
-    (:action move_c_p5_p6
-        :precondition (and (succ_p5_p6)
-                           (at_c_p5)
-                           (not (leader_c)))
-        :effect (and
-                    ; #52759: origin
+                    ; #83361: origin
                     (not_at_c_p5)
 
-                    ; #54132: origin
+                    ; #48589: <==negation-removal== 83361 (pos)
+                    (not (at_c_p5))
+
+                    ; #83361: <==negation-removal== 48589 (pos)
+                    (not (not_at_c_p5))))
+
+    (:action move_c_p5_p6
+        :precondition (and (at_c_p5)
+                           (succ_p5_p6)
+                           (not (leader_c)))
+        :effect (and
+                    ; #68459: origin
                     (at_c_p6)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
+                    ; #83361: origin
+                    (not_at_c_p5)
+
+                    ; #21766: <==negation-removal== 68459 (pos)
                     (not (not_at_c_p6))
 
-                    ; #72915: <==negation-removal== 52759 (pos)
+                    ; #48589: <==negation-removal== 83361 (pos)
                     (not (at_c_p5))))
 
     (:action move_c_p5_p7
@@ -6994,203 +6994,203 @@
                            (succ_p5_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #52759: origin
-                    (not_at_c_p5)
-
-                    ; #76607: origin
+                    ; #35970: origin
                     (at_c_p7)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
-                    (not (not_at_c_p7))
+                    ; #83361: origin
+                    (not_at_c_p5)
 
-                    ; #72915: <==negation-removal== 52759 (pos)
-                    (not (at_c_p5))))
+                    ; #48589: <==negation-removal== 83361 (pos)
+                    (not (at_c_p5))
+
+                    ; #59310: <==negation-removal== 35970 (pos)
+                    (not (not_at_c_p7))))
 
     (:action move_c_p5_p8
         :precondition (and (at_c_p5)
                            (succ_p5_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #52759: origin
-                    (not_at_c_p5)
-
-                    ; #60666: origin
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #48536: <==negation-removal== 60666 (pos)
+                    ; #83361: origin
+                    (not_at_c_p5)
+
+                    ; #27124: <==negation-removal== 11363 (pos)
                     (not (not_at_c_p8))
 
-                    ; #72915: <==negation-removal== 52759 (pos)
+                    ; #48589: <==negation-removal== 83361 (pos)
                     (not (at_c_p5))))
 
     (:action move_c_p5_p9
-        :precondition (and (succ_p5_p9)
-                           (at_c_p5)
+        :precondition (and (at_c_p5)
+                           (succ_p5_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #52759: origin
-                    (not_at_c_p5)
-
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
+                    ; #83361: origin
+                    (not_at_c_p5)
+
+                    ; #13832: <==negation-removal== 67134 (pos)
                     (not (not_at_c_p9))
 
-                    ; #72915: <==negation-removal== 52759 (pos)
+                    ; #48589: <==negation-removal== 83361 (pos)
                     (not (at_c_p5))))
 
     (:action move_c_p6_p1
-        :precondition (and (succ_p6_p1)
-                           (at_c_p6)
+        :precondition (and (at_c_p6)
+                           (succ_p6_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #13353: origin
+                    ; #21766: origin
                     (not_at_c_p6)
 
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
+                    ; #62145: <==negation-removal== 37903 (pos)
                     (not (not_at_c_p1))
 
-                    ; #54132: <==negation-removal== 13353 (pos)
+                    ; #68459: <==negation-removal== 21766 (pos)
                     (not (at_c_p6))))
 
     (:action move_c_p6_p2
-        :precondition (and (succ_p6_p2)
-                           (at_c_p6)
+        :precondition (and (at_c_p6)
+                           (succ_p6_p2)
                            (not (leader_c)))
         :effect (and
-                    ; #13353: origin
+                    ; #21766: origin
                     (not_at_c_p6)
 
-                    ; #67579: origin
+                    ; #65043: origin
                     (at_c_p2)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
+                    ; #68459: <==negation-removal== 21766 (pos)
+                    (not (at_c_p6))
 
-                    ; #54132: <==negation-removal== 13353 (pos)
-                    (not (at_c_p6))))
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
 
     (:action move_c_p6_p3
-        :precondition (and (succ_p6_p3)
-                           (at_c_p6)
+        :precondition (and (at_c_p6)
+                           (succ_p6_p3)
                            (not (leader_c)))
         :effect (and
-                    ; #13353: origin
+                    ; #21766: origin
                     (not_at_c_p6)
 
-                    ; #41495: origin
+                    ; #23794: origin
                     (at_c_p3)
 
-                    ; #54132: <==negation-removal== 13353 (pos)
-                    (not (at_c_p6))
+                    ; #23517: <==negation-removal== 23794 (pos)
+                    (not (not_at_c_p3))
 
-                    ; #86370: <==negation-removal== 41495 (pos)
-                    (not (not_at_c_p3))))
-
-    (:action move_c_p6_p4
-        :precondition (and (succ_p6_p4)
-                           (at_c_p6)
-                           (not (leader_c)))
-        :effect (and
-                    ; #13353: origin
-                    (not_at_c_p6)
-
-                    ; #52596: origin
-                    (at_c_p4)
-
-                    ; #54132: <==negation-removal== 13353 (pos)
-                    (not (at_c_p6))
-
-                    ; #83459: <==negation-removal== 52596 (pos)
-                    (not (not_at_c_p4))))
-
-    (:action move_c_p6_p5
-        :precondition (and (succ_p6_p5)
-                           (at_c_p6)
-                           (not (leader_c)))
-        :effect (and
-                    ; #13353: origin
-                    (not_at_c_p6)
-
-                    ; #72915: origin
-                    (at_c_p5)
-
-                    ; #52759: <==negation-removal== 72915 (pos)
-                    (not (not_at_c_p5))
-
-                    ; #54132: <==negation-removal== 13353 (pos)
+                    ; #68459: <==negation-removal== 21766 (pos)
                     (not (at_c_p6))))
 
-    (:action move_c_p6_p6
-        :precondition (and (succ_p6_p6)
-                           (at_c_p6)
+    (:action move_c_p6_p4
+        :precondition (and (at_c_p6)
+                           (succ_p6_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #13353: origin
+                    ; #21766: origin
                     (not_at_c_p6)
 
-                    ; #54132: origin
+                    ; #39385: origin
+                    (at_c_p4)
+
+                    ; #32306: <==negation-removal== 39385 (pos)
+                    (not (not_at_c_p4))
+
+                    ; #68459: <==negation-removal== 21766 (pos)
+                    (not (at_c_p6))))
+
+    (:action move_c_p6_p5
+        :precondition (and (at_c_p6)
+                           (succ_p6_p5)
+                           (not (leader_c)))
+        :effect (and
+                    ; #21766: origin
+                    (not_at_c_p6)
+
+                    ; #48589: origin
+                    (at_c_p5)
+
+                    ; #68459: <==negation-removal== 21766 (pos)
+                    (not (at_c_p6))
+
+                    ; #83361: <==negation-removal== 48589 (pos)
+                    (not (not_at_c_p5))))
+
+    (:action move_c_p6_p6
+        :precondition (and (at_c_p6)
+                           (succ_p6_p6)
+                           (not (leader_c)))
+        :effect (and
+                    ; #21766: origin
+                    (not_at_c_p6)
+
+                    ; #68459: origin
                     (at_c_p6)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
+                    ; #21766: <==negation-removal== 68459 (pos)
                     (not (not_at_c_p6))
 
-                    ; #54132: <==negation-removal== 13353 (pos)
+                    ; #68459: <==negation-removal== 21766 (pos)
                     (not (at_c_p6))))
 
     (:action move_c_p6_p7
-        :precondition (and (succ_p6_p7)
-                           (at_c_p6)
+        :precondition (and (at_c_p6)
+                           (succ_p6_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #13353: origin
+                    ; #21766: origin
                     (not_at_c_p6)
 
-                    ; #76607: origin
+                    ; #35970: origin
                     (at_c_p7)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
+                    ; #59310: <==negation-removal== 35970 (pos)
                     (not (not_at_c_p7))
 
-                    ; #54132: <==negation-removal== 13353 (pos)
+                    ; #68459: <==negation-removal== 21766 (pos)
                     (not (at_c_p6))))
 
     (:action move_c_p6_p8
-        :precondition (and (succ_p6_p8)
-                           (at_c_p6)
+        :precondition (and (at_c_p6)
+                           (succ_p6_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #13353: origin
-                    (not_at_c_p6)
-
-                    ; #60666: origin
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #48536: <==negation-removal== 60666 (pos)
+                    ; #21766: origin
+                    (not_at_c_p6)
+
+                    ; #27124: <==negation-removal== 11363 (pos)
                     (not (not_at_c_p8))
 
-                    ; #54132: <==negation-removal== 13353 (pos)
+                    ; #68459: <==negation-removal== 21766 (pos)
                     (not (at_c_p6))))
 
     (:action move_c_p6_p9
-        :precondition (and (succ_p6_p9)
-                           (at_c_p6)
+        :precondition (and (at_c_p6)
+                           (succ_p6_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #13353: origin
+                    ; #21766: origin
                     (not_at_c_p6)
 
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
+                    ; #13832: <==negation-removal== 67134 (pos)
                     (not (not_at_c_p9))
 
-                    ; #54132: <==negation-removal== 13353 (pos)
+                    ; #68459: <==negation-removal== 21766 (pos)
                     (not (at_c_p6))))
 
     (:action move_c_p7_p1
@@ -7198,152 +7198,152 @@
                            (at_c_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #11375: origin
-                    (not_at_c_p7)
-
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
-                    (not (not_at_c_p1))
+                    ; #59310: origin
+                    (not_at_c_p7)
 
-                    ; #76607: <==negation-removal== 11375 (pos)
-                    (not (at_c_p7))))
+                    ; #35970: <==negation-removal== 59310 (pos)
+                    (not (at_c_p7))
+
+                    ; #62145: <==negation-removal== 37903 (pos)
+                    (not (not_at_c_p1))))
 
     (:action move_c_p7_p2
         :precondition (and (at_c_p7)
                            (succ_p7_p2)
                            (not (leader_c)))
         :effect (and
-                    ; #11375: origin
+                    ; #59310: origin
                     (not_at_c_p7)
 
-                    ; #67579: origin
+                    ; #65043: origin
                     (at_c_p2)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
+                    ; #35970: <==negation-removal== 59310 (pos)
+                    (not (at_c_p7))
 
-                    ; #76607: <==negation-removal== 11375 (pos)
-                    (not (at_c_p7))))
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
 
     (:action move_c_p7_p3
         :precondition (and (at_c_p7)
                            (succ_p7_p3)
                            (not (leader_c)))
         :effect (and
-                    ; #11375: origin
-                    (not_at_c_p7)
-
-                    ; #41495: origin
+                    ; #23794: origin
                     (at_c_p3)
 
-                    ; #76607: <==negation-removal== 11375 (pos)
-                    (not (at_c_p7))
+                    ; #59310: origin
+                    (not_at_c_p7)
 
-                    ; #86370: <==negation-removal== 41495 (pos)
-                    (not (not_at_c_p3))))
+                    ; #23517: <==negation-removal== 23794 (pos)
+                    (not (not_at_c_p3))
+
+                    ; #35970: <==negation-removal== 59310 (pos)
+                    (not (at_c_p7))))
 
     (:action move_c_p7_p4
         :precondition (and (succ_p7_p4)
                            (at_c_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #11375: origin
-                    (not_at_c_p7)
-
-                    ; #52596: origin
+                    ; #39385: origin
                     (at_c_p4)
 
-                    ; #76607: <==negation-removal== 11375 (pos)
-                    (not (at_c_p7))
-
-                    ; #83459: <==negation-removal== 52596 (pos)
-                    (not (not_at_c_p4))))
-
-    (:action move_c_p7_p5
-        :precondition (and (succ_p7_p5)
-                           (at_c_p7)
-                           (not (leader_c)))
-        :effect (and
-                    ; #11375: origin
+                    ; #59310: origin
                     (not_at_c_p7)
 
-                    ; #72915: origin
-                    (at_c_p5)
+                    ; #32306: <==negation-removal== 39385 (pos)
+                    (not (not_at_c_p4))
 
-                    ; #52759: <==negation-removal== 72915 (pos)
-                    (not (not_at_c_p5))
-
-                    ; #76607: <==negation-removal== 11375 (pos)
+                    ; #35970: <==negation-removal== 59310 (pos)
                     (not (at_c_p7))))
 
-    (:action move_c_p7_p6
-        :precondition (and (succ_p7_p6)
-                           (at_c_p7)
+    (:action move_c_p7_p5
+        :precondition (and (at_c_p7)
+                           (succ_p7_p5)
                            (not (leader_c)))
         :effect (and
-                    ; #11375: origin
+                    ; #48589: origin
+                    (at_c_p5)
+
+                    ; #59310: origin
                     (not_at_c_p7)
 
-                    ; #54132: origin
+                    ; #35970: <==negation-removal== 59310 (pos)
+                    (not (at_c_p7))
+
+                    ; #83361: <==negation-removal== 48589 (pos)
+                    (not (not_at_c_p5))))
+
+    (:action move_c_p7_p6
+        :precondition (and (at_c_p7)
+                           (succ_p7_p6)
+                           (not (leader_c)))
+        :effect (and
+                    ; #59310: origin
+                    (not_at_c_p7)
+
+                    ; #68459: origin
                     (at_c_p6)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
+                    ; #21766: <==negation-removal== 68459 (pos)
                     (not (not_at_c_p6))
 
-                    ; #76607: <==negation-removal== 11375 (pos)
+                    ; #35970: <==negation-removal== 59310 (pos)
                     (not (at_c_p7))))
 
     (:action move_c_p7_p7
-        :precondition (and (succ_p7_p7)
-                           (at_c_p7)
+        :precondition (and (at_c_p7)
+                           (succ_p7_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #11375: origin
-                    (not_at_c_p7)
-
-                    ; #76607: origin
+                    ; #35970: origin
                     (at_c_p7)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
-                    (not (not_at_c_p7))
-
-                    ; #76607: <==negation-removal== 11375 (pos)
-                    (not (at_c_p7))))
-
-    (:action move_c_p7_p8
-        :precondition (and (succ_p7_p8)
-                           (at_c_p7)
-                           (not (leader_c)))
-        :effect (and
-                    ; #11375: origin
+                    ; #59310: origin
                     (not_at_c_p7)
 
-                    ; #60666: origin
+                    ; #35970: <==negation-removal== 59310 (pos)
+                    (not (at_c_p7))
+
+                    ; #59310: <==negation-removal== 35970 (pos)
+                    (not (not_at_c_p7))))
+
+    (:action move_c_p7_p8
+        :precondition (and (at_c_p7)
+                           (succ_p7_p8)
+                           (not (leader_c)))
+        :effect (and
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #48536: <==negation-removal== 60666 (pos)
+                    ; #59310: origin
+                    (not_at_c_p7)
+
+                    ; #27124: <==negation-removal== 11363 (pos)
                     (not (not_at_c_p8))
 
-                    ; #76607: <==negation-removal== 11375 (pos)
+                    ; #35970: <==negation-removal== 59310 (pos)
                     (not (at_c_p7))))
 
     (:action move_c_p7_p9
-        :precondition (and (succ_p7_p9)
-                           (at_c_p7)
+        :precondition (and (at_c_p7)
+                           (succ_p7_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #11375: origin
+                    ; #59310: origin
                     (not_at_c_p7)
 
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
+                    ; #13832: <==negation-removal== 67134 (pos)
                     (not (not_at_c_p9))
 
-                    ; #76607: <==negation-removal== 11375 (pos)
+                    ; #35970: <==negation-removal== 59310 (pos)
                     (not (at_c_p7))))
 
     (:action move_c_p8_p1
@@ -7351,50 +7351,50 @@
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #48536: origin
+                    ; #27124: origin
                     (not_at_c_p8)
 
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
-                    (not (not_at_c_p1))
+                    ; #11363: <==negation-removal== 27124 (pos)
+                    (not (at_c_p8))
 
-                    ; #60666: <==negation-removal== 48536 (pos)
-                    (not (at_c_p8))))
+                    ; #62145: <==negation-removal== 37903 (pos)
+                    (not (not_at_c_p1))))
 
     (:action move_c_p8_p2
         :precondition (and (succ_p8_p2)
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #48536: origin
+                    ; #27124: origin
                     (not_at_c_p8)
 
-                    ; #67579: origin
+                    ; #65043: origin
                     (at_c_p2)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
+                    ; #11363: <==negation-removal== 27124 (pos)
+                    (not (at_c_p8))
 
-                    ; #60666: <==negation-removal== 48536 (pos)
-                    (not (at_c_p8))))
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
 
     (:action move_c_p8_p3
         :precondition (and (succ_p8_p3)
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #41495: origin
+                    ; #23794: origin
                     (at_c_p3)
 
-                    ; #48536: origin
+                    ; #27124: origin
                     (not_at_c_p8)
 
-                    ; #60666: <==negation-removal== 48536 (pos)
+                    ; #11363: <==negation-removal== 27124 (pos)
                     (not (at_c_p8))
 
-                    ; #86370: <==negation-removal== 41495 (pos)
+                    ; #23517: <==negation-removal== 23794 (pos)
                     (not (not_at_c_p3))))
 
     (:action move_c_p8_p4
@@ -7402,16 +7402,16 @@
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #48536: origin
+                    ; #27124: origin
                     (not_at_c_p8)
 
-                    ; #52596: origin
+                    ; #39385: origin
                     (at_c_p4)
 
-                    ; #60666: <==negation-removal== 48536 (pos)
+                    ; #11363: <==negation-removal== 27124 (pos)
                     (not (at_c_p8))
 
-                    ; #83459: <==negation-removal== 52596 (pos)
+                    ; #32306: <==negation-removal== 39385 (pos)
                     (not (not_at_c_p4))))
 
     (:action move_c_p8_p5
@@ -7419,101 +7419,101 @@
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #48536: origin
+                    ; #27124: origin
                     (not_at_c_p8)
 
-                    ; #72915: origin
+                    ; #48589: origin
                     (at_c_p5)
 
-                    ; #52759: <==negation-removal== 72915 (pos)
-                    (not (not_at_c_p5))
+                    ; #11363: <==negation-removal== 27124 (pos)
+                    (not (at_c_p8))
 
-                    ; #60666: <==negation-removal== 48536 (pos)
-                    (not (at_c_p8))))
+                    ; #83361: <==negation-removal== 48589 (pos)
+                    (not (not_at_c_p5))))
 
     (:action move_c_p8_p6
         :precondition (and (succ_p8_p6)
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #48536: origin
+                    ; #27124: origin
                     (not_at_c_p8)
 
-                    ; #54132: origin
+                    ; #68459: origin
                     (at_c_p6)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
-                    (not (not_at_c_p6))
+                    ; #11363: <==negation-removal== 27124 (pos)
+                    (not (at_c_p8))
 
-                    ; #60666: <==negation-removal== 48536 (pos)
-                    (not (at_c_p8))))
+                    ; #21766: <==negation-removal== 68459 (pos)
+                    (not (not_at_c_p6))))
 
     (:action move_c_p8_p7
         :precondition (and (succ_p8_p7)
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #48536: origin
+                    ; #27124: origin
                     (not_at_c_p8)
 
-                    ; #76607: origin
+                    ; #35970: origin
                     (at_c_p7)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
-                    (not (not_at_c_p7))
+                    ; #11363: <==negation-removal== 27124 (pos)
+                    (not (at_c_p8))
 
-                    ; #60666: <==negation-removal== 48536 (pos)
-                    (not (at_c_p8))))
+                    ; #59310: <==negation-removal== 35970 (pos)
+                    (not (not_at_c_p7))))
 
     (:action move_c_p8_p8
         :precondition (and (succ_p8_p8)
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #48536: origin
-                    (not_at_c_p8)
-
-                    ; #60666: origin
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #48536: <==negation-removal== 60666 (pos)
-                    (not (not_at_c_p8))
+                    ; #27124: origin
+                    (not_at_c_p8)
 
-                    ; #60666: <==negation-removal== 48536 (pos)
-                    (not (at_c_p8))))
+                    ; #11363: <==negation-removal== 27124 (pos)
+                    (not (at_c_p8))
+
+                    ; #27124: <==negation-removal== 11363 (pos)
+                    (not (not_at_c_p8))))
 
     (:action move_c_p8_p9
         :precondition (and (succ_p8_p9)
                            (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #48536: origin
+                    ; #27124: origin
                     (not_at_c_p8)
 
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
-                    (not (not_at_c_p9))
+                    ; #11363: <==negation-removal== 27124 (pos)
+                    (not (at_c_p8))
 
-                    ; #60666: <==negation-removal== 48536 (pos)
-                    (not (at_c_p8))))
+                    ; #13832: <==negation-removal== 67134 (pos)
+                    (not (not_at_c_p9))))
 
     (:action move_c_p9_p1
-        :precondition (and (succ_p9_p1)
-                           (at_c_p9)
+        :precondition (and (at_c_p9)
+                           (succ_p9_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
+                    ; #13832: origin
                     (not_at_c_p9)
 
-                    ; #90323: origin
+                    ; #37903: origin
                     (at_c_p1)
 
-                    ; #14885: <==negation-removal== 90323 (pos)
+                    ; #62145: <==negation-removal== 37903 (pos)
                     (not (not_at_c_p1))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
+                    ; #67134: <==negation-removal== 13832 (pos)
                     (not (at_c_p9))))
 
     (:action move_c_p9_p2
@@ -7521,50 +7521,50 @@
                            (at_c_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
+                    ; #13832: origin
                     (not_at_c_p9)
 
-                    ; #67579: origin
+                    ; #65043: origin
                     (at_c_p2)
 
-                    ; #25494: <==negation-removal== 67579 (pos)
-                    (not (not_at_c_p2))
+                    ; #67134: <==negation-removal== 13832 (pos)
+                    (not (at_c_p9))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
-                    (not (at_c_p9))))
+                    ; #68848: <==negation-removal== 65043 (pos)
+                    (not (not_at_c_p2))))
 
     (:action move_c_p9_p3
-        :precondition (and (succ_p9_p3)
-                           (at_c_p9)
+        :precondition (and (at_c_p9)
+                           (succ_p9_p3)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
+                    ; #13832: origin
                     (not_at_c_p9)
 
-                    ; #41495: origin
+                    ; #23794: origin
                     (at_c_p3)
 
-                    ; #86370: <==negation-removal== 41495 (pos)
+                    ; #23517: <==negation-removal== 23794 (pos)
                     (not (not_at_c_p3))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
+                    ; #67134: <==negation-removal== 13832 (pos)
                     (not (at_c_p9))))
 
     (:action move_c_p9_p4
-        :precondition (and (succ_p9_p4)
-                           (at_c_p9)
+        :precondition (and (at_c_p9)
+                           (succ_p9_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
+                    ; #13832: origin
                     (not_at_c_p9)
 
-                    ; #52596: origin
+                    ; #39385: origin
                     (at_c_p4)
 
-                    ; #83459: <==negation-removal== 52596 (pos)
+                    ; #32306: <==negation-removal== 39385 (pos)
                     (not (not_at_c_p4))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
+                    ; #67134: <==negation-removal== 13832 (pos)
                     (not (at_c_p9))))
 
     (:action move_c_p9_p5
@@ -7572,33 +7572,33 @@
                            (at_c_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
+                    ; #13832: origin
                     (not_at_c_p9)
 
-                    ; #72915: origin
+                    ; #48589: origin
                     (at_c_p5)
 
-                    ; #52759: <==negation-removal== 72915 (pos)
-                    (not (not_at_c_p5))
+                    ; #67134: <==negation-removal== 13832 (pos)
+                    (not (at_c_p9))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
-                    (not (at_c_p9))))
+                    ; #83361: <==negation-removal== 48589 (pos)
+                    (not (not_at_c_p5))))
 
     (:action move_c_p9_p6
         :precondition (and (succ_p9_p6)
                            (at_c_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
+                    ; #13832: origin
                     (not_at_c_p9)
 
-                    ; #54132: origin
+                    ; #68459: origin
                     (at_c_p6)
 
-                    ; #13353: <==negation-removal== 54132 (pos)
+                    ; #21766: <==negation-removal== 68459 (pos)
                     (not (not_at_c_p6))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
+                    ; #67134: <==negation-removal== 13832 (pos)
                     (not (at_c_p9))))
 
     (:action move_c_p9_p7
@@ -7606,16 +7606,16 @@
                            (at_c_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
+                    ; #13832: origin
                     (not_at_c_p9)
 
-                    ; #76607: origin
+                    ; #35970: origin
                     (at_c_p7)
 
-                    ; #11375: <==negation-removal== 76607 (pos)
+                    ; #59310: <==negation-removal== 35970 (pos)
                     (not (not_at_c_p7))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
+                    ; #67134: <==negation-removal== 13832 (pos)
                     (not (at_c_p9))))
 
     (:action move_c_p9_p8
@@ -7623,16 +7623,16 @@
                            (at_c_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
-                    (not_at_c_p9)
-
-                    ; #60666: origin
+                    ; #11363: origin
                     (at_c_p8)
 
-                    ; #48536: <==negation-removal== 60666 (pos)
+                    ; #13832: origin
+                    (not_at_c_p9)
+
+                    ; #27124: <==negation-removal== 11363 (pos)
                     (not (not_at_c_p8))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
+                    ; #67134: <==negation-removal== 13832 (pos)
                     (not (at_c_p9))))
 
     (:action move_c_p9_p9
@@ -7640,1425 +7640,1425 @@
                            (at_c_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #33790: origin
+                    ; #13832: origin
                     (not_at_c_p9)
 
-                    ; #92967: origin
+                    ; #67134: origin
                     (at_c_p9)
 
-                    ; #33790: <==negation-removal== 92967 (pos)
+                    ; #13832: <==negation-removal== 67134 (pos)
                     (not (not_at_c_p9))
 
-                    ; #92967: <==negation-removal== 33790 (pos)
+                    ; #67134: <==negation-removal== 13832 (pos)
                     (not (at_c_p9))))
 
     (:action observe_a_p1_s
         :precondition (and (at_a_p1)
                            (not (leader_a)))
         :effect (and
-                    ; #26628: origin
-                    (when (and (not_hiddensurvivorat_s_p1))
-                          (Ba_not_survivorat_s_p1))
-
-                    ; #33268: <==commonly_known== 57734 (neg)
-                    (Pc_checked_p1)
-
-                    ; #33844: origin
-                    (checked_p1)
-
-                    ; #40349: <==commonly_known== 57734 (neg)
+                    ; #17531: <==commonly_known== 79793 (neg)
                     (Pb_checked_p1)
 
-                    ; #48467: <==commonly_known== 33844 (pos)
-                    (Bc_checked_p1)
-
-                    ; #50564: <==commonly_known== 33844 (pos)
-                    (Ba_checked_p1)
-
-                    ; #50829: origin
-                    (when (and (hiddensurvivorat_s_p1))
-                          (Ba_survivorat_s_p1))
-
-                    ; #56841: <==closure== 26628 (pos)
-                    (when (and (not_hiddensurvivorat_s_p1))
-                          (Pa_not_survivorat_s_p1))
-
-                    ; #62151: <==closure== 50829 (pos)
+                    ; #25477: <==closure== 77675 (pos)
                     (when (and (hiddensurvivorat_s_p1))
                           (Pa_survivorat_s_p1))
 
-                    ; #69525: <==commonly_known== 33844 (pos)
+                    ; #29701: <==commonly_known== 59522 (pos)
+                    (Ba_checked_p1)
+
+                    ; #36739: <==commonly_known== 79793 (neg)
+                    (Pc_checked_p1)
+
+                    ; #44439: <==closure== 55491 (pos)
+                    (when (and (not_hiddensurvivorat_s_p1))
+                          (Pa_not_survivorat_s_p1))
+
+                    ; #55491: origin
+                    (when (and (not_hiddensurvivorat_s_p1))
+                          (Ba_not_survivorat_s_p1))
+
+                    ; #59522: origin
+                    (checked_p1)
+
+                    ; #66435: <==commonly_known== 59522 (pos)
                     (Bb_checked_p1)
 
-                    ; #82389: <==commonly_known== 57734 (neg)
+                    ; #67994: <==commonly_known== 59522 (pos)
+                    (Bc_checked_p1)
+
+                    ; #77675: origin
+                    (when (and (hiddensurvivorat_s_p1))
+                          (Ba_survivorat_s_p1))
+
+                    ; #91909: <==commonly_known== 79793 (neg)
                     (Pa_checked_p1)
 
-                    ; #10251: <==uncertain_firing== 26628 (pos)
-                    (when (and (not (hiddensurvivorat_s_p1)))
-                          (not (Pa_survivorat_s_p1)))
-
-                    ; #16703: <==negation-removal== 82389 (pos)
-                    (not (Ba_not_checked_p1))
-
-                    ; #39547: <==negation-removal== 50564 (pos)
+                    ; #10180: <==negation-removal== 29701 (pos)
                     (not (Pa_not_checked_p1))
 
-                    ; #50249: <==negation-removal== 33268 (pos)
-                    (not (Bc_not_checked_p1))
+                    ; #12112: <==negation-removal== 25477 (pos)
+                    (when (and (hiddensurvivorat_s_p1))
+                          (not (Ba_not_survivorat_s_p1)))
 
-                    ; #51499: <==negation-removal== 26628 (pos)
+                    ; #17722: <==negation-removal== 66435 (pos)
+                    (not (Pb_not_checked_p1))
+
+                    ; #17874: <==negation-removal== 67994 (pos)
+                    (not (Pc_not_checked_p1))
+
+                    ; #21129: <==negation-removal== 55491 (pos)
                     (when (and (not_hiddensurvivorat_s_p1))
                           (not (Pa_survivorat_s_p1)))
 
-                    ; #57734: <==negation-removal== 33844 (pos)
-                    (not (not_checked_p1))
-
-                    ; #59559: <==uncertain_firing== 62151 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p1)))
-                          (not (Ba_not_survivorat_s_p1)))
-
-                    ; #59560: <==uncertain_firing== 56841 (pos)
+                    ; #25349: <==uncertain_firing== 44439 (pos)
                     (when (and (not (hiddensurvivorat_s_p1)))
                           (not (Ba_survivorat_s_p1)))
 
-                    ; #60266: <==negation-removal== 50829 (pos)
+                    ; #39661: <==negation-removal== 77675 (pos)
                     (when (and (hiddensurvivorat_s_p1))
                           (not (Pa_not_survivorat_s_p1)))
 
-                    ; #62240: <==negation-removal== 56841 (pos)
+                    ; #49155: <==negation-removal== 44439 (pos)
                     (when (and (not_hiddensurvivorat_s_p1))
                           (not (Ba_survivorat_s_p1)))
 
-                    ; #63685: <==uncertain_firing== 50829 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p1)))
-                          (not (Pa_not_survivorat_s_p1)))
+                    ; #49908: <==negation-removal== 91909 (pos)
+                    (not (Ba_not_checked_p1))
 
-                    ; #70446: <==negation-removal== 62151 (pos)
-                    (when (and (hiddensurvivorat_s_p1))
-                          (not (Ba_not_survivorat_s_p1)))
+                    ; #52030: <==negation-removal== 36739 (pos)
+                    (not (Bc_not_checked_p1))
 
-                    ; #88711: <==negation-removal== 40349 (pos)
+                    ; #72641: <==uncertain_firing== 55491 (pos)
+                    (when (and (not (hiddensurvivorat_s_p1)))
+                          (not (Pa_survivorat_s_p1)))
+
+                    ; #79793: <==negation-removal== 59522 (pos)
+                    (not (not_checked_p1))
+
+                    ; #86115: <==negation-removal== 17531 (pos)
                     (not (Bb_not_checked_p1))
 
-                    ; #94750: <==negation-removal== 69525 (pos)
-                    (not (Pb_not_checked_p1))
+                    ; #86157: <==uncertain_firing== 25477 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p1)))
+                          (not (Ba_not_survivorat_s_p1)))
 
-                    ; #99111: <==negation-removal== 48467 (pos)
-                    (not (Pc_not_checked_p1))))
+                    ; #91840: <==uncertain_firing== 77675 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p1)))
+                          (not (Pa_not_survivorat_s_p1)))))
 
     (:action observe_a_p2_s
         :precondition (and (at_a_p2)
                            (not (leader_a)))
         :effect (and
-                    ; #11899: <==closure== 85313 (pos)
+                    ; #12288: <==commonly_known== 22924 (neg)
+                    (Pb_checked_p2)
+
+                    ; #14938: <==closure== 54892 (pos)
                     (when (and (not_hiddensurvivorat_s_p2))
                           (Pa_not_survivorat_s_p2))
 
-                    ; #22252: <==commonly_known== 42857 (pos)
-                    (Ba_checked_p2)
-
-                    ; #37603: <==commonly_known== 89282 (neg)
-                    (Pa_checked_p2)
-
-                    ; #38146: <==commonly_known== 89282 (neg)
-                    (Pb_checked_p2)
-
-                    ; #42857: origin
+                    ; #30783: origin
                     (checked_p2)
 
-                    ; #56290: origin
-                    (when (and (hiddensurvivorat_s_p2))
-                          (Ba_survivorat_s_p2))
-
-                    ; #61167: <==commonly_known== 42857 (pos)
+                    ; #37022: <==commonly_known== 30783 (pos)
                     (Bc_checked_p2)
 
-                    ; #71475: <==commonly_known== 89282 (neg)
+                    ; #41658: <==commonly_known== 22924 (neg)
                     (Pc_checked_p2)
 
-                    ; #74181: <==closure== 56290 (pos)
+                    ; #43050: <==closure== 49334 (pos)
                     (when (and (hiddensurvivorat_s_p2))
                           (Pa_survivorat_s_p2))
 
-                    ; #85313: origin
+                    ; #47856: <==commonly_known== 30783 (pos)
+                    (Bb_checked_p2)
+
+                    ; #49334: origin
+                    (when (and (hiddensurvivorat_s_p2))
+                          (Ba_survivorat_s_p2))
+
+                    ; #54892: origin
                     (when (and (not_hiddensurvivorat_s_p2))
                           (Ba_not_survivorat_s_p2))
 
-                    ; #99348: <==commonly_known== 42857 (pos)
-                    (Bb_checked_p2)
+                    ; #69785: <==commonly_known== 30783 (pos)
+                    (Ba_checked_p2)
 
-                    ; #14949: <==negation-removal== 74181 (pos)
-                    (when (and (hiddensurvivorat_s_p2))
-                          (not (Ba_not_survivorat_s_p2)))
+                    ; #77312: <==commonly_known== 22924 (neg)
+                    (Pa_checked_p2)
 
-                    ; #18776: <==negation-removal== 85313 (pos)
-                    (when (and (not_hiddensurvivorat_s_p2))
-                          (not (Pa_survivorat_s_p2)))
-
-                    ; #21037: <==negation-removal== 99348 (pos)
+                    ; #15498: <==negation-removal== 47856 (pos)
                     (not (Pb_not_checked_p2))
 
-                    ; #26244: <==negation-removal== 71475 (pos)
+                    ; #16042: <==negation-removal== 41658 (pos)
                     (not (Bc_not_checked_p2))
 
-                    ; #33740: <==negation-removal== 56290 (pos)
+                    ; #22924: <==negation-removal== 30783 (pos)
+                    (not (not_checked_p2))
+
+                    ; #37792: <==negation-removal== 43050 (pos)
                     (when (and (hiddensurvivorat_s_p2))
-                          (not (Pa_not_survivorat_s_p2)))
-
-                    ; #35827: <==uncertain_firing== 56290 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p2)))
-                          (not (Pa_not_survivorat_s_p2)))
-
-                    ; #40869: <==negation-removal== 38146 (pos)
-                    (not (Bb_not_checked_p2))
-
-                    ; #65651: <==negation-removal== 22252 (pos)
-                    (not (Pa_not_checked_p2))
-
-                    ; #68051: <==negation-removal== 37603 (pos)
-                    (not (Ba_not_checked_p2))
-
-                    ; #76765: <==uncertain_firing== 74181 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p2)))
                           (not (Ba_not_survivorat_s_p2)))
 
-                    ; #78491: <==negation-removal== 11899 (pos)
+                    ; #40528: <==negation-removal== 14938 (pos)
                     (when (and (not_hiddensurvivorat_s_p2))
                           (not (Ba_survivorat_s_p2)))
 
-                    ; #83225: <==uncertain_firing== 85313 (pos)
-                    (when (and (not (hiddensurvivorat_s_p2)))
-                          (not (Pa_survivorat_s_p2)))
+                    ; #42333: <==negation-removal== 77312 (pos)
+                    (not (Ba_not_checked_p2))
 
-                    ; #83923: <==uncertain_firing== 11899 (pos)
+                    ; #45279: <==negation-removal== 49334 (pos)
+                    (when (and (hiddensurvivorat_s_p2))
+                          (not (Pa_not_survivorat_s_p2)))
+
+                    ; #50453: <==uncertain_firing== 14938 (pos)
                     (when (and (not (hiddensurvivorat_s_p2)))
                           (not (Ba_survivorat_s_p2)))
 
-                    ; #85269: <==negation-removal== 61167 (pos)
+                    ; #50524: <==uncertain_firing== 54892 (pos)
+                    (when (and (not (hiddensurvivorat_s_p2)))
+                          (not (Pa_survivorat_s_p2)))
+
+                    ; #58629: <==negation-removal== 54892 (pos)
+                    (when (and (not_hiddensurvivorat_s_p2))
+                          (not (Pa_survivorat_s_p2)))
+
+                    ; #58743: <==uncertain_firing== 43050 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p2)))
+                          (not (Ba_not_survivorat_s_p2)))
+
+                    ; #58839: <==negation-removal== 12288 (pos)
+                    (not (Bb_not_checked_p2))
+
+                    ; #81089: <==negation-removal== 69785 (pos)
+                    (not (Pa_not_checked_p2))
+
+                    ; #90488: <==negation-removal== 37022 (pos)
                     (not (Pc_not_checked_p2))
 
-                    ; #89282: <==negation-removal== 42857 (pos)
-                    (not (not_checked_p2))))
+                    ; #97046: <==uncertain_firing== 49334 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p2)))
+                          (not (Pa_not_survivorat_s_p2)))))
 
     (:action observe_a_p3_s
         :precondition (and (at_a_p3)
                            (not (leader_a)))
         :effect (and
-                    ; #15494: <==commonly_known== 91489 (pos)
-                    (Bb_checked_p3)
+                    ; #18763: <==commonly_known== 68122 (neg)
+                    (Pa_checked_p3)
 
-                    ; #19937: <==commonly_known== 78365 (neg)
-                    (Pc_checked_p3)
+                    ; #40858: <==commonly_known== 68122 (neg)
+                    (Pb_checked_p3)
 
-                    ; #28904: origin
-                    (when (and (hiddensurvivorat_s_p3))
-                          (Ba_survivorat_s_p3))
+                    ; #47167: <==commonly_known== 86560 (pos)
+                    (Ba_checked_p3)
 
-                    ; #41458: <==closure== 44551 (pos)
-                    (when (and (not_hiddensurvivorat_s_p3))
-                          (Pa_not_survivorat_s_p3))
-
-                    ; #42816: <==commonly_known== 91489 (pos)
-                    (Bc_checked_p3)
-
-                    ; #44551: origin
+                    ; #52673: origin
                     (when (and (not_hiddensurvivorat_s_p3))
                           (Ba_not_survivorat_s_p3))
 
-                    ; #48660: <==commonly_known== 78365 (neg)
-                    (Pb_checked_p3)
+                    ; #55668: <==commonly_known== 86560 (pos)
+                    (Bc_checked_p3)
 
-                    ; #67346: <==closure== 28904 (pos)
+                    ; #75384: <==commonly_known== 86560 (pos)
+                    (Bb_checked_p3)
+
+                    ; #81417: origin
+                    (when (and (hiddensurvivorat_s_p3))
+                          (Ba_survivorat_s_p3))
+
+                    ; #83668: <==closure== 52673 (pos)
+                    (when (and (not_hiddensurvivorat_s_p3))
+                          (Pa_not_survivorat_s_p3))
+
+                    ; #86560: origin
+                    (checked_p3)
+
+                    ; #87528: <==commonly_known== 68122 (neg)
+                    (Pc_checked_p3)
+
+                    ; #87671: <==closure== 81417 (pos)
                     (when (and (hiddensurvivorat_s_p3))
                           (Pa_survivorat_s_p3))
 
-                    ; #71373: <==commonly_known== 91489 (pos)
-                    (Ba_checked_p3)
-
-                    ; #84484: <==commonly_known== 78365 (neg)
-                    (Pa_checked_p3)
-
-                    ; #91489: origin
-                    (checked_p3)
-
-                    ; #24319: <==uncertain_firing== 41458 (pos)
-                    (when (and (not (hiddensurvivorat_s_p3)))
-                          (not (Ba_survivorat_s_p3)))
-
-                    ; #24939: <==negation-removal== 15494 (pos)
-                    (not (Pb_not_checked_p3))
-
-                    ; #25406: <==negation-removal== 84484 (pos)
+                    ; #26445: <==negation-removal== 18763 (pos)
                     (not (Ba_not_checked_p3))
 
-                    ; #26024: <==negation-removal== 41458 (pos)
+                    ; #30654: <==negation-removal== 47167 (pos)
+                    (not (Pa_not_checked_p3))
+
+                    ; #32762: <==negation-removal== 75384 (pos)
+                    (not (Pb_not_checked_p3))
+
+                    ; #35759: <==negation-removal== 55668 (pos)
+                    (not (Pc_not_checked_p3))
+
+                    ; #44994: <==uncertain_firing== 81417 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p3)))
+                          (not (Pa_not_survivorat_s_p3)))
+
+                    ; #48060: <==uncertain_firing== 83668 (pos)
+                    (when (and (not (hiddensurvivorat_s_p3)))
+                          (not (Ba_survivorat_s_p3)))
+
+                    ; #55577: <==negation-removal== 52673 (pos)
+                    (when (and (not_hiddensurvivorat_s_p3))
+                          (not (Pa_survivorat_s_p3)))
+
+                    ; #68122: <==negation-removal== 86560 (pos)
+                    (not (not_checked_p3))
+
+                    ; #68812: <==negation-removal== 83668 (pos)
                     (when (and (not_hiddensurvivorat_s_p3))
                           (not (Ba_survivorat_s_p3)))
 
-                    ; #27606: <==negation-removal== 48660 (pos)
-                    (not (Bb_not_checked_p3))
-
-                    ; #37312: <==uncertain_firing== 44551 (pos)
+                    ; #73658: <==uncertain_firing== 52673 (pos)
                     (when (and (not (hiddensurvivorat_s_p3)))
                           (not (Pa_survivorat_s_p3)))
 
-                    ; #52497: <==negation-removal== 44551 (pos)
-                    (when (and (not_hiddensurvivorat_s_p3))
-                          (not (Pa_survivorat_s_p3)))
+                    ; #75816: <==negation-removal== 40858 (pos)
+                    (not (Bb_not_checked_p3))
 
-                    ; #56137: <==negation-removal== 19937 (pos)
+                    ; #85298: <==negation-removal== 87671 (pos)
+                    (when (and (hiddensurvivorat_s_p3))
+                          (not (Ba_not_survivorat_s_p3)))
+
+                    ; #86606: <==uncertain_firing== 87671 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p3)))
+                          (not (Ba_not_survivorat_s_p3)))
+
+                    ; #86979: <==negation-removal== 87528 (pos)
                     (not (Bc_not_checked_p3))
 
-                    ; #60035: <==uncertain_firing== 28904 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p3)))
-                          (not (Pa_not_survivorat_s_p3)))
-
-                    ; #61483: <==negation-removal== 42816 (pos)
-                    (not (Pc_not_checked_p3))
-
-                    ; #65586: <==negation-removal== 28904 (pos)
+                    ; #99378: <==negation-removal== 81417 (pos)
                     (when (and (hiddensurvivorat_s_p3))
-                          (not (Pa_not_survivorat_s_p3)))
-
-                    ; #76921: <==negation-removal== 67346 (pos)
-                    (when (and (hiddensurvivorat_s_p3))
-                          (not (Ba_not_survivorat_s_p3)))
-
-                    ; #78365: <==negation-removal== 91489 (pos)
-                    (not (not_checked_p3))
-
-                    ; #80502: <==uncertain_firing== 67346 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p3)))
-                          (not (Ba_not_survivorat_s_p3)))
-
-                    ; #83362: <==negation-removal== 71373 (pos)
-                    (not (Pa_not_checked_p3))))
+                          (not (Pa_not_survivorat_s_p3)))))
 
     (:action observe_a_p4_s
         :precondition (and (at_a_p4)
                            (not (leader_a)))
         :effect (and
-                    ; #24776: origin
-                    (when (and (hiddensurvivorat_s_p4))
-                          (Ba_survivorat_s_p4))
+                    ; #12420: <==commonly_known== 39181 (pos)
+                    (Bc_checked_p4)
 
-                    ; #38587: <==commonly_known== 86262 (pos)
-                    (Bb_checked_p4)
-
-                    ; #42970: <==commonly_known== 92172 (neg)
-                    (Pa_checked_p4)
-
-                    ; #46831: <==closure== 84393 (pos)
-                    (when (and (not_hiddensurvivorat_s_p4))
-                          (Pa_not_survivorat_s_p4))
-
-                    ; #50635: <==commonly_known== 92172 (neg)
-                    (Pc_checked_p4)
-
-                    ; #75440: <==commonly_known== 92172 (neg)
-                    (Pb_checked_p4)
-
-                    ; #80607: <==closure== 24776 (pos)
-                    (when (and (hiddensurvivorat_s_p4))
-                          (Pa_survivorat_s_p4))
-
-                    ; #84393: origin
+                    ; #19494: origin
                     (when (and (not_hiddensurvivorat_s_p4))
                           (Ba_not_survivorat_s_p4))
 
-                    ; #85558: <==commonly_known== 86262 (pos)
-                    (Ba_checked_p4)
-
-                    ; #86262: origin
+                    ; #39181: origin
                     (checked_p4)
 
-                    ; #87937: <==commonly_known== 86262 (pos)
-                    (Bc_checked_p4)
+                    ; #47140: <==commonly_known== 39181 (pos)
+                    (Bb_checked_p4)
 
-                    ; #10408: <==uncertain_firing== 80607 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p4)))
-                          (not (Ba_not_survivorat_s_p4)))
-
-                    ; #24190: <==negation-removal== 85558 (pos)
-                    (not (Pa_not_checked_p4))
-
-                    ; #28776: <==uncertain_firing== 46831 (pos)
-                    (when (and (not (hiddensurvivorat_s_p4)))
-                          (not (Ba_survivorat_s_p4)))
-
-                    ; #39346: <==negation-removal== 80607 (pos)
+                    ; #47890: origin
                     (when (and (hiddensurvivorat_s_p4))
-                          (not (Ba_not_survivorat_s_p4)))
+                          (Ba_survivorat_s_p4))
 
-                    ; #40718: <==negation-removal== 42970 (pos)
-                    (not (Ba_not_checked_p4))
+                    ; #55412: <==commonly_known== 34361 (neg)
+                    (Pb_checked_p4)
 
-                    ; #54728: <==negation-removal== 24776 (pos)
+                    ; #56531: <==closure== 47890 (pos)
                     (when (and (hiddensurvivorat_s_p4))
-                          (not (Pa_not_survivorat_s_p4)))
+                          (Pa_survivorat_s_p4))
 
-                    ; #56267: <==negation-removal== 84393 (pos)
+                    ; #66083: <==closure== 19494 (pos)
                     (when (and (not_hiddensurvivorat_s_p4))
-                          (not (Pa_survivorat_s_p4)))
+                          (Pa_not_survivorat_s_p4))
 
-                    ; #56311: <==uncertain_firing== 24776 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p4)))
-                          (not (Pa_not_survivorat_s_p4)))
+                    ; #69769: <==commonly_known== 34361 (neg)
+                    (Pa_checked_p4)
 
-                    ; #56544: <==negation-removal== 38587 (pos)
-                    (not (Pb_not_checked_p4))
+                    ; #84716: <==commonly_known== 39181 (pos)
+                    (Ba_checked_p4)
 
-                    ; #70483: <==negation-removal== 46831 (pos)
-                    (when (and (not_hiddensurvivorat_s_p4))
-                          (not (Ba_survivorat_s_p4)))
+                    ; #90338: <==commonly_known== 34361 (neg)
+                    (Pc_checked_p4)
 
-                    ; #74459: <==negation-removal== 50635 (pos)
-                    (not (Bc_not_checked_p4))
-
-                    ; #80215: <==uncertain_firing== 84393 (pos)
-                    (when (and (not (hiddensurvivorat_s_p4)))
-                          (not (Pa_survivorat_s_p4)))
-
-                    ; #84176: <==negation-removal== 87937 (pos)
-                    (not (Pc_not_checked_p4))
-
-                    ; #85841: <==negation-removal== 75440 (pos)
+                    ; #19883: <==negation-removal== 55412 (pos)
                     (not (Bb_not_checked_p4))
 
-                    ; #92172: <==negation-removal== 86262 (pos)
-                    (not (not_checked_p4))))
+                    ; #24793: <==negation-removal== 56531 (pos)
+                    (when (and (hiddensurvivorat_s_p4))
+                          (not (Ba_not_survivorat_s_p4)))
+
+                    ; #25826: <==negation-removal== 47890 (pos)
+                    (when (and (hiddensurvivorat_s_p4))
+                          (not (Pa_not_survivorat_s_p4)))
+
+                    ; #26338: <==negation-removal== 47140 (pos)
+                    (not (Pb_not_checked_p4))
+
+                    ; #29274: <==uncertain_firing== 56531 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p4)))
+                          (not (Ba_not_survivorat_s_p4)))
+
+                    ; #30122: <==uncertain_firing== 47890 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p4)))
+                          (not (Pa_not_survivorat_s_p4)))
+
+                    ; #34361: <==negation-removal== 39181 (pos)
+                    (not (not_checked_p4))
+
+                    ; #48274: <==negation-removal== 84716 (pos)
+                    (not (Pa_not_checked_p4))
+
+                    ; #55659: <==negation-removal== 66083 (pos)
+                    (when (and (not_hiddensurvivorat_s_p4))
+                          (not (Ba_survivorat_s_p4)))
+
+                    ; #56682: <==negation-removal== 19494 (pos)
+                    (when (and (not_hiddensurvivorat_s_p4))
+                          (not (Pa_survivorat_s_p4)))
+
+                    ; #59764: <==negation-removal== 69769 (pos)
+                    (not (Ba_not_checked_p4))
+
+                    ; #66994: <==negation-removal== 90338 (pos)
+                    (not (Bc_not_checked_p4))
+
+                    ; #67403: <==negation-removal== 12420 (pos)
+                    (not (Pc_not_checked_p4))
+
+                    ; #81417: <==uncertain_firing== 19494 (pos)
+                    (when (and (not (hiddensurvivorat_s_p4)))
+                          (not (Pa_survivorat_s_p4)))
+
+                    ; #90772: <==uncertain_firing== 66083 (pos)
+                    (when (and (not (hiddensurvivorat_s_p4)))
+                          (not (Ba_survivorat_s_p4)))))
 
     (:action observe_a_p5_s
         :precondition (and (at_a_p5)
                            (not (leader_a)))
         :effect (and
-                    ; #21046: origin
-                    (when (and (hiddensurvivorat_s_p5))
-                          (Ba_survivorat_s_p5))
-
-                    ; #23811: <==commonly_known== 51268 (pos)
-                    (Bc_checked_p5)
-
-                    ; #37482: origin
+                    ; #12390: origin
                     (when (and (not_hiddensurvivorat_s_p5))
                           (Ba_not_survivorat_s_p5))
 
-                    ; #47590: <==closure== 37482 (pos)
+                    ; #17798: <==commonly_known== 87884 (neg)
+                    (Pb_checked_p5)
+
+                    ; #21101: <==commonly_known== 40051 (pos)
+                    (Bc_checked_p5)
+
+                    ; #36654: <==commonly_known== 87884 (neg)
+                    (Pa_checked_p5)
+
+                    ; #40051: origin
+                    (checked_p5)
+
+                    ; #41456: <==commonly_known== 87884 (neg)
+                    (Pc_checked_p5)
+
+                    ; #50710: <==closure== 12390 (pos)
                     (when (and (not_hiddensurvivorat_s_p5))
                           (Pa_not_survivorat_s_p5))
 
-                    ; #51268: origin
-                    (checked_p5)
+                    ; #57106: origin
+                    (when (and (hiddensurvivorat_s_p5))
+                          (Ba_survivorat_s_p5))
 
-                    ; #54120: <==commonly_known== 51268 (pos)
+                    ; #64560: <==commonly_known== 40051 (pos)
+                    (Ba_checked_p5)
+
+                    ; #79130: <==commonly_known== 40051 (pos)
                     (Bb_checked_p5)
 
-                    ; #69174: <==closure== 21046 (pos)
+                    ; #84025: <==closure== 57106 (pos)
                     (when (and (hiddensurvivorat_s_p5))
                           (Pa_survivorat_s_p5))
 
-                    ; #72941: <==commonly_known== 58760 (neg)
-                    (Pc_checked_p5)
-
-                    ; #83611: <==commonly_known== 58760 (neg)
-                    (Pa_checked_p5)
-
-                    ; #89778: <==commonly_known== 51268 (pos)
-                    (Ba_checked_p5)
-
-                    ; #91718: <==commonly_known== 58760 (neg)
-                    (Pb_checked_p5)
-
-                    ; #16661: <==negation-removal== 83611 (pos)
-                    (not (Ba_not_checked_p5))
-
-                    ; #19084: <==negation-removal== 54120 (pos)
+                    ; #24155: <==negation-removal== 79130 (pos)
                     (not (Pb_not_checked_p5))
 
-                    ; #25510: <==uncertain_firing== 47590 (pos)
-                    (when (and (not (hiddensurvivorat_s_p5)))
-                          (not (Ba_survivorat_s_p5)))
+                    ; #38000: <==negation-removal== 84025 (pos)
+                    (when (and (hiddensurvivorat_s_p5))
+                          (not (Ba_not_survivorat_s_p5)))
 
-                    ; #26596: <==negation-removal== 23811 (pos)
+                    ; #38814: <==negation-removal== 21101 (pos)
                     (not (Pc_not_checked_p5))
 
-                    ; #26838: <==uncertain_firing== 21046 (pos)
+                    ; #46524: <==uncertain_firing== 57106 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p5)))
                           (not (Pa_not_survivorat_s_p5)))
 
-                    ; #36330: <==negation-removal== 91718 (pos)
-                    (not (Bb_not_checked_p5))
-
-                    ; #41085: <==negation-removal== 89778 (pos)
-                    (not (Pa_not_checked_p5))
-
-                    ; #47412: <==negation-removal== 47590 (pos)
-                    (when (and (not_hiddensurvivorat_s_p5))
-                          (not (Ba_survivorat_s_p5)))
-
-                    ; #52047: <==negation-removal== 69174 (pos)
-                    (when (and (hiddensurvivorat_s_p5))
-                          (not (Ba_not_survivorat_s_p5)))
-
-                    ; #56999: <==uncertain_firing== 37482 (pos)
+                    ; #46530: <==uncertain_firing== 12390 (pos)
                     (when (and (not (hiddensurvivorat_s_p5)))
                           (not (Pa_survivorat_s_p5)))
 
-                    ; #58760: <==negation-removal== 51268 (pos)
-                    (not (not_checked_p5))
-
-                    ; #61244: <==negation-removal== 72941 (pos)
-                    (not (Bc_not_checked_p5))
-
-                    ; #63220: <==negation-removal== 37482 (pos)
-                    (when (and (not_hiddensurvivorat_s_p5))
-                          (not (Pa_survivorat_s_p5)))
-
-                    ; #72440: <==uncertain_firing== 69174 (pos)
+                    ; #60595: <==uncertain_firing== 84025 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p5)))
                           (not (Ba_not_survivorat_s_p5)))
 
-                    ; #77745: <==negation-removal== 21046 (pos)
+                    ; #61181: <==negation-removal== 17798 (pos)
+                    (not (Bb_not_checked_p5))
+
+                    ; #64347: <==negation-removal== 64560 (pos)
+                    (not (Pa_not_checked_p5))
+
+                    ; #67322: <==negation-removal== 57106 (pos)
                     (when (and (hiddensurvivorat_s_p5))
-                          (not (Pa_not_survivorat_s_p5)))))
+                          (not (Pa_not_survivorat_s_p5)))
+
+                    ; #78071: <==uncertain_firing== 50710 (pos)
+                    (when (and (not (hiddensurvivorat_s_p5)))
+                          (not (Ba_survivorat_s_p5)))
+
+                    ; #86799: <==negation-removal== 41456 (pos)
+                    (not (Bc_not_checked_p5))
+
+                    ; #87443: <==negation-removal== 36654 (pos)
+                    (not (Ba_not_checked_p5))
+
+                    ; #87884: <==negation-removal== 40051 (pos)
+                    (not (not_checked_p5))
+
+                    ; #88194: <==negation-removal== 50710 (pos)
+                    (when (and (not_hiddensurvivorat_s_p5))
+                          (not (Ba_survivorat_s_p5)))
+
+                    ; #90832: <==negation-removal== 12390 (pos)
+                    (when (and (not_hiddensurvivorat_s_p5))
+                          (not (Pa_survivorat_s_p5)))))
 
     (:action observe_a_p6_s
         :precondition (and (at_a_p6)
                            (not (leader_a)))
         :effect (and
-                    ; #12873: <==commonly_known== 14777 (neg)
-                    (Pa_checked_p6)
+                    ; #17478: <==commonly_known== 80573 (pos)
+                    (Bb_checked_p6)
 
-                    ; #20275: <==commonly_known== 14777 (neg)
+                    ; #21351: <==commonly_known== 18363 (neg)
                     (Pc_checked_p6)
 
-                    ; #32553: origin
+                    ; #24788: origin
                     (when (and (not_hiddensurvivorat_s_p6))
                           (Ba_not_survivorat_s_p6))
 
-                    ; #35313: origin
-                    (checked_p6)
+                    ; #38764: <==commonly_known== 80573 (pos)
+                    (Bc_checked_p6)
 
-                    ; #49727: <==closure== 55909 (pos)
+                    ; #42675: <==closure== 66808 (pos)
                     (when (and (hiddensurvivorat_s_p6))
                           (Pa_survivorat_s_p6))
 
-                    ; #51540: <==closure== 32553 (pos)
-                    (when (and (not_hiddensurvivorat_s_p6))
-                          (Pa_not_survivorat_s_p6))
+                    ; #63462: <==commonly_known== 80573 (pos)
+                    (Ba_checked_p6)
 
-                    ; #54160: <==commonly_known== 35313 (pos)
-                    (Bb_checked_p6)
-
-                    ; #55909: origin
+                    ; #66808: origin
                     (when (and (hiddensurvivorat_s_p6))
                           (Ba_survivorat_s_p6))
 
-                    ; #63630: <==commonly_known== 35313 (pos)
-                    (Bc_checked_p6)
+                    ; #69096: <==commonly_known== 18363 (neg)
+                    (Pa_checked_p6)
 
-                    ; #68939: <==commonly_known== 35313 (pos)
-                    (Ba_checked_p6)
-
-                    ; #74329: <==commonly_known== 14777 (neg)
+                    ; #70128: <==commonly_known== 18363 (neg)
                     (Pb_checked_p6)
 
-                    ; #12565: <==negation-removal== 68939 (pos)
-                    (not (Pa_not_checked_p6))
+                    ; #80573: origin
+                    (checked_p6)
 
-                    ; #14777: <==negation-removal== 35313 (pos)
+                    ; #92297: <==closure== 24788 (pos)
+                    (when (and (not_hiddensurvivorat_s_p6))
+                          (Pa_not_survivorat_s_p6))
+
+                    ; #12176: <==uncertain_firing== 92297 (pos)
+                    (when (and (not (hiddensurvivorat_s_p6)))
+                          (not (Ba_survivorat_s_p6)))
+
+                    ; #18363: <==negation-removal== 80573 (pos)
                     (not (not_checked_p6))
 
-                    ; #16144: <==negation-removal== 20275 (pos)
+                    ; #20395: <==uncertain_firing== 24788 (pos)
+                    (when (and (not (hiddensurvivorat_s_p6)))
+                          (not (Pa_survivorat_s_p6)))
+
+                    ; #32556: <==negation-removal== 69096 (pos)
+                    (not (Ba_not_checked_p6))
+
+                    ; #58701: <==negation-removal== 70128 (pos)
+                    (not (Bb_not_checked_p6))
+
+                    ; #60141: <==negation-removal== 38764 (pos)
+                    (not (Pc_not_checked_p6))
+
+                    ; #66878: <==negation-removal== 63462 (pos)
+                    (not (Pa_not_checked_p6))
+
+                    ; #67940: <==negation-removal== 21351 (pos)
                     (not (Bc_not_checked_p6))
 
-                    ; #18198: <==uncertain_firing== 49727 (pos)
+                    ; #70539: <==negation-removal== 17478 (pos)
+                    (not (Pb_not_checked_p6))
+
+                    ; #78540: <==uncertain_firing== 66808 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p6)))
+                          (not (Pa_not_survivorat_s_p6)))
+
+                    ; #84533: <==uncertain_firing== 42675 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p6)))
                           (not (Ba_not_survivorat_s_p6)))
 
-                    ; #23238: <==negation-removal== 55909 (pos)
+                    ; #85478: <==negation-removal== 42675 (pos)
+                    (when (and (hiddensurvivorat_s_p6))
+                          (not (Ba_not_survivorat_s_p6)))
+
+                    ; #88594: <==negation-removal== 24788 (pos)
+                    (when (and (not_hiddensurvivorat_s_p6))
+                          (not (Pa_survivorat_s_p6)))
+
+                    ; #89751: <==negation-removal== 66808 (pos)
                     (when (and (hiddensurvivorat_s_p6))
                           (not (Pa_not_survivorat_s_p6)))
 
-                    ; #31319: <==negation-removal== 74329 (pos)
-                    (not (Bb_not_checked_p6))
-
-                    ; #32911: <==negation-removal== 63630 (pos)
-                    (not (Pc_not_checked_p6))
-
-                    ; #36133: <==negation-removal== 32553 (pos)
+                    ; #92892: <==negation-removal== 92297 (pos)
                     (when (and (not_hiddensurvivorat_s_p6))
-                          (not (Pa_survivorat_s_p6)))
-
-                    ; #43469: <==negation-removal== 54160 (pos)
-                    (not (Pb_not_checked_p6))
-
-                    ; #45895: <==uncertain_firing== 51540 (pos)
-                    (when (and (not (hiddensurvivorat_s_p6)))
-                          (not (Ba_survivorat_s_p6)))
-
-                    ; #48609: <==negation-removal== 12873 (pos)
-                    (not (Ba_not_checked_p6))
-
-                    ; #60104: <==uncertain_firing== 32553 (pos)
-                    (when (and (not (hiddensurvivorat_s_p6)))
-                          (not (Pa_survivorat_s_p6)))
-
-                    ; #72973: <==negation-removal== 49727 (pos)
-                    (when (and (hiddensurvivorat_s_p6))
-                          (not (Ba_not_survivorat_s_p6)))
-
-                    ; #79685: <==negation-removal== 51540 (pos)
-                    (when (and (not_hiddensurvivorat_s_p6))
-                          (not (Ba_survivorat_s_p6)))
-
-                    ; #91546: <==uncertain_firing== 55909 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p6)))
-                          (not (Pa_not_survivorat_s_p6)))))
+                          (not (Ba_survivorat_s_p6)))))
 
     (:action observe_a_p7_s
         :precondition (and (at_a_p7)
                            (not (leader_a)))
         :effect (and
-                    ; #11009: <==closure== 87023 (pos)
-                    (when (and (not_hiddensurvivorat_s_p7))
-                          (Pa_not_survivorat_s_p7))
+                    ; #15978: <==commonly_known== 11766 (neg)
+                    (Pb_checked_p7)
 
-                    ; #14101: <==commonly_known== 64632 (neg)
-                    (Pc_checked_p7)
-
-                    ; #16493: <==commonly_known== 41099 (pos)
-                    (Ba_checked_p7)
-
-                    ; #39687: <==closure== 44809 (pos)
-                    (when (and (hiddensurvivorat_s_p7))
-                          (Pa_survivorat_s_p7))
-
-                    ; #41099: origin
-                    (checked_p7)
-
-                    ; #41155: <==commonly_known== 41099 (pos)
-                    (Bb_checked_p7)
-
-                    ; #41226: <==commonly_known== 41099 (pos)
+                    ; #32402: <==commonly_known== 47852 (pos)
                     (Bc_checked_p7)
 
-                    ; #44809: origin
+                    ; #33926: <==commonly_known== 47852 (pos)
+                    (Ba_checked_p7)
+
+                    ; #34841: origin
                     (when (and (hiddensurvivorat_s_p7))
                           (Ba_survivorat_s_p7))
 
-                    ; #50897: <==commonly_known== 64632 (neg)
-                    (Pb_checked_p7)
+                    ; #35673: <==commonly_known== 47852 (pos)
+                    (Bb_checked_p7)
 
-                    ; #75497: <==commonly_known== 64632 (neg)
-                    (Pa_checked_p7)
-
-                    ; #87023: origin
+                    ; #43521: origin
                     (when (and (not_hiddensurvivorat_s_p7))
                           (Ba_not_survivorat_s_p7))
 
-                    ; #18745: <==negation-removal== 14101 (pos)
-                    (not (Bc_not_checked_p7))
+                    ; #47852: origin
+                    (checked_p7)
 
-                    ; #19150: <==negation-removal== 44809 (pos)
+                    ; #52690: <==closure== 43521 (pos)
+                    (when (and (not_hiddensurvivorat_s_p7))
+                          (Pa_not_survivorat_s_p7))
+
+                    ; #58096: <==commonly_known== 11766 (neg)
+                    (Pa_checked_p7)
+
+                    ; #60453: <==closure== 34841 (pos)
                     (when (and (hiddensurvivorat_s_p7))
-                          (not (Pa_not_survivorat_s_p7)))
+                          (Pa_survivorat_s_p7))
 
-                    ; #23902: <==negation-removal== 87023 (pos)
+                    ; #64415: <==commonly_known== 11766 (neg)
+                    (Pc_checked_p7)
+
+                    ; #11766: <==negation-removal== 47852 (pos)
+                    (not (not_checked_p7))
+
+                    ; #15886: <==uncertain_firing== 60453 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p7)))
+                          (not (Ba_not_survivorat_s_p7)))
+
+                    ; #16533: <==uncertain_firing== 52690 (pos)
+                    (when (and (not (hiddensurvivorat_s_p7)))
+                          (not (Ba_survivorat_s_p7)))
+
+                    ; #20779: <==uncertain_firing== 43521 (pos)
+                    (when (and (not (hiddensurvivorat_s_p7)))
+                          (not (Pa_survivorat_s_p7)))
+
+                    ; #23429: <==negation-removal== 43521 (pos)
                     (when (and (not_hiddensurvivorat_s_p7))
                           (not (Pa_survivorat_s_p7)))
 
-                    ; #24491: <==uncertain_firing== 39687 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p7)))
-                          (not (Ba_not_survivorat_s_p7)))
+                    ; #25681: <==negation-removal== 34841 (pos)
+                    (when (and (hiddensurvivorat_s_p7))
+                          (not (Pa_not_survivorat_s_p7)))
 
-                    ; #27812: <==uncertain_firing== 11009 (pos)
-                    (when (and (not (hiddensurvivorat_s_p7)))
-                          (not (Ba_survivorat_s_p7)))
-
-                    ; #33507: <==negation-removal== 50897 (pos)
-                    (not (Bb_not_checked_p7))
-
-                    ; #49092: <==negation-removal== 41155 (pos)
-                    (not (Pb_not_checked_p7))
-
-                    ; #52770: <==negation-removal== 39687 (pos)
+                    ; #25882: <==negation-removal== 60453 (pos)
                     (when (and (hiddensurvivorat_s_p7))
                           (not (Ba_not_survivorat_s_p7)))
 
-                    ; #58215: <==uncertain_firing== 44809 (pos)
+                    ; #31373: <==uncertain_firing== 34841 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p7)))
                           (not (Pa_not_survivorat_s_p7)))
 
-                    ; #64632: <==negation-removal== 41099 (pos)
-                    (not (not_checked_p7))
-
-                    ; #68553: <==negation-removal== 16493 (pos)
-                    (not (Pa_not_checked_p7))
-
-                    ; #76120: <==negation-removal== 75497 (pos)
-                    (not (Ba_not_checked_p7))
-
-                    ; #80789: <==negation-removal== 11009 (pos)
+                    ; #35686: <==negation-removal== 52690 (pos)
                     (when (and (not_hiddensurvivorat_s_p7))
                           (not (Ba_survivorat_s_p7)))
 
-                    ; #86020: <==negation-removal== 41226 (pos)
-                    (not (Pc_not_checked_p7))
+                    ; #44420: <==negation-removal== 33926 (pos)
+                    (not (Pa_not_checked_p7))
 
-                    ; #88268: <==uncertain_firing== 87023 (pos)
-                    (when (and (not (hiddensurvivorat_s_p7)))
-                          (not (Pa_survivorat_s_p7)))))
+                    ; #48523: <==negation-removal== 15978 (pos)
+                    (not (Bb_not_checked_p7))
+
+                    ; #50067: <==negation-removal== 35673 (pos)
+                    (not (Pb_not_checked_p7))
+
+                    ; #55524: <==negation-removal== 58096 (pos)
+                    (not (Ba_not_checked_p7))
+
+                    ; #57141: <==negation-removal== 64415 (pos)
+                    (not (Bc_not_checked_p7))
+
+                    ; #66288: <==negation-removal== 32402 (pos)
+                    (not (Pc_not_checked_p7))))
 
     (:action observe_a_p8_s
         :precondition (and (at_a_p8)
                            (not (leader_a)))
         :effect (and
-                    ; #13339: <==commonly_known== 56038 (pos)
-                    (Bc_checked_p8)
+                    ; #28248: origin
+                    (checked_p8)
 
-                    ; #14291: <==commonly_known== 56038 (pos)
-                    (Bb_checked_p8)
-
-                    ; #14757: <==closure== 69862 (pos)
+                    ; #30661: <==closure== 85998 (pos)
                     (when (and (not_hiddensurvivorat_s_p8))
                           (Pa_not_survivorat_s_p8))
 
-                    ; #21707: origin
+                    ; #35013: <==commonly_known== 31629 (neg)
+                    (Pa_checked_p8)
+
+                    ; #36308: <==commonly_known== 31629 (neg)
+                    (Pb_checked_p8)
+
+                    ; #36589: <==commonly_known== 28248 (pos)
+                    (Bc_checked_p8)
+
+                    ; #38776: <==commonly_known== 28248 (pos)
+                    (Bb_checked_p8)
+
+                    ; #42575: <==commonly_known== 31629 (neg)
+                    (Pc_checked_p8)
+
+                    ; #42721: origin
                     (when (and (hiddensurvivorat_s_p8))
                           (Ba_survivorat_s_p8))
 
-                    ; #35506: <==closure== 21707 (pos)
+                    ; #69610: <==closure== 42721 (pos)
                     (when (and (hiddensurvivorat_s_p8))
                           (Pa_survivorat_s_p8))
 
-                    ; #44024: <==commonly_known== 10384 (neg)
-                    (Pa_checked_p8)
-
-                    ; #50316: <==commonly_known== 10384 (neg)
-                    (Pc_checked_p8)
-
-                    ; #56038: origin
-                    (checked_p8)
-
-                    ; #61501: <==commonly_known== 56038 (pos)
-                    (Ba_checked_p8)
-
-                    ; #69862: origin
+                    ; #85998: origin
                     (when (and (not_hiddensurvivorat_s_p8))
                           (Ba_not_survivorat_s_p8))
 
-                    ; #75239: <==commonly_known== 10384 (neg)
-                    (Pb_checked_p8)
+                    ; #89640: <==commonly_known== 28248 (pos)
+                    (Ba_checked_p8)
 
-                    ; #10384: <==negation-removal== 56038 (pos)
-                    (not (not_checked_p8))
-
-                    ; #16172: <==negation-removal== 50316 (pos)
-                    (not (Bc_not_checked_p8))
-
-                    ; #18962: <==negation-removal== 75239 (pos)
-                    (not (Bb_not_checked_p8))
-
-                    ; #21776: <==uncertain_firing== 69862 (pos)
+                    ; #12614: <==uncertain_firing== 85998 (pos)
                     (when (and (not (hiddensurvivorat_s_p8)))
                           (not (Pa_survivorat_s_p8)))
 
-                    ; #25051: <==negation-removal== 14757 (pos)
+                    ; #14039: <==negation-removal== 42575 (pos)
+                    (not (Bc_not_checked_p8))
+
+                    ; #14816: <==negation-removal== 89640 (pos)
+                    (not (Pa_not_checked_p8))
+
+                    ; #17846: <==negation-removal== 35013 (pos)
+                    (not (Ba_not_checked_p8))
+
+                    ; #20308: <==negation-removal== 85998 (pos)
+                    (when (and (not_hiddensurvivorat_s_p8))
+                          (not (Pa_survivorat_s_p8)))
+
+                    ; #30535: <==negation-removal== 36308 (pos)
+                    (not (Bb_not_checked_p8))
+
+                    ; #31629: <==negation-removal== 28248 (pos)
+                    (not (not_checked_p8))
+
+                    ; #34732: <==negation-removal== 38776 (pos)
+                    (not (Pb_not_checked_p8))
+
+                    ; #41721: <==negation-removal== 69610 (pos)
+                    (when (and (hiddensurvivorat_s_p8))
+                          (not (Ba_not_survivorat_s_p8)))
+
+                    ; #41886: <==negation-removal== 42721 (pos)
+                    (when (and (hiddensurvivorat_s_p8))
+                          (not (Pa_not_survivorat_s_p8)))
+
+                    ; #43676: <==negation-removal== 30661 (pos)
                     (when (and (not_hiddensurvivorat_s_p8))
                           (not (Ba_survivorat_s_p8)))
 
-                    ; #31297: <==negation-removal== 13339 (pos)
+                    ; #46409: <==uncertain_firing== 30661 (pos)
+                    (when (and (not (hiddensurvivorat_s_p8)))
+                          (not (Ba_survivorat_s_p8)))
+
+                    ; #46521: <==negation-removal== 36589 (pos)
                     (not (Pc_not_checked_p8))
 
-                    ; #46057: <==uncertain_firing== 21707 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p8)))
-                          (not (Pa_not_survivorat_s_p8)))
-
-                    ; #50055: <==negation-removal== 69862 (pos)
-                    (when (and (not_hiddensurvivorat_s_p8))
-                          (not (Pa_survivorat_s_p8)))
-
-                    ; #53264: <==negation-removal== 14291 (pos)
-                    (not (Pb_not_checked_p8))
-
-                    ; #56348: <==negation-removal== 61501 (pos)
-                    (not (Pa_not_checked_p8))
-
-                    ; #65750: <==negation-removal== 35506 (pos)
-                    (when (and (hiddensurvivorat_s_p8))
-                          (not (Ba_not_survivorat_s_p8)))
-
-                    ; #66706: <==negation-removal== 44024 (pos)
-                    (not (Ba_not_checked_p8))
-
-                    ; #77626: <==uncertain_firing== 35506 (pos)
+                    ; #64719: <==uncertain_firing== 69610 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p8)))
                           (not (Ba_not_survivorat_s_p8)))
 
-                    ; #84326: <==negation-removal== 21707 (pos)
-                    (when (and (hiddensurvivorat_s_p8))
-                          (not (Pa_not_survivorat_s_p8)))
-
-                    ; #85677: <==uncertain_firing== 14757 (pos)
-                    (when (and (not (hiddensurvivorat_s_p8)))
-                          (not (Ba_survivorat_s_p8)))))
+                    ; #81311: <==uncertain_firing== 42721 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p8)))
+                          (not (Pa_not_survivorat_s_p8)))))
 
     (:action observe_a_p9_s
         :precondition (and (at_a_p9)
                            (not (leader_a)))
         :effect (and
-                    ; #21620: <==commonly_known== 83294 (neg)
+                    ; #30746: origin
+                    (checked_p9)
+
+                    ; #44246: <==commonly_known== 71649 (neg)
                     (Pb_checked_p9)
 
-                    ; #35136: <==commonly_known== 86629 (pos)
-                    (Bb_checked_p9)
+                    ; #49082: <==commonly_known== 30746 (pos)
+                    (Bc_checked_p9)
 
-                    ; #35806: <==commonly_known== 86629 (pos)
+                    ; #53753: <==commonly_known== 30746 (pos)
                     (Ba_checked_p9)
 
-                    ; #45169: <==closure== 47796 (pos)
+                    ; #63289: <==closure== 86042 (pos)
                     (when (and (not_hiddensurvivorat_s_p9))
                           (Pa_not_survivorat_s_p9))
 
-                    ; #46426: <==commonly_known== 83294 (neg)
+                    ; #63916: <==commonly_known== 71649 (neg)
                     (Pa_checked_p9)
 
-                    ; #47796: origin
-                    (when (and (not_hiddensurvivorat_s_p9))
-                          (Ba_not_survivorat_s_p9))
-
-                    ; #52742: <==commonly_known== 83294 (neg)
-                    (Pc_checked_p9)
-
-                    ; #73005: <==closure== 91479 (pos)
+                    ; #66617: <==closure== 68188 (pos)
                     (when (and (hiddensurvivorat_s_p9))
                           (Pa_survivorat_s_p9))
 
-                    ; #85519: <==commonly_known== 86629 (pos)
-                    (Bc_checked_p9)
-
-                    ; #86629: origin
-                    (checked_p9)
-
-                    ; #91479: origin
+                    ; #68188: origin
                     (when (and (hiddensurvivorat_s_p9))
                           (Ba_survivorat_s_p9))
 
-                    ; #29411: <==negation-removal== 47796 (pos)
+                    ; #69721: <==commonly_known== 71649 (neg)
+                    (Pc_checked_p9)
+
+                    ; #86042: origin
                     (when (and (not_hiddensurvivorat_s_p9))
-                          (not (Pa_survivorat_s_p9)))
+                          (Ba_not_survivorat_s_p9))
 
-                    ; #29756: <==negation-removal== 85519 (pos)
-                    (not (Pc_not_checked_p9))
+                    ; #86892: <==commonly_known== 30746 (pos)
+                    (Bb_checked_p9)
 
-                    ; #33459: <==negation-removal== 91479 (pos)
-                    (when (and (hiddensurvivorat_s_p9))
-                          (not (Pa_not_survivorat_s_p9)))
-
-                    ; #35188: <==uncertain_firing== 73005 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p9)))
-                          (not (Ba_not_survivorat_s_p9)))
-
-                    ; #37953: <==negation-removal== 35136 (pos)
-                    (not (Pb_not_checked_p9))
-
-                    ; #40751: <==negation-removal== 73005 (pos)
-                    (when (and (hiddensurvivorat_s_p9))
-                          (not (Ba_not_survivorat_s_p9)))
-
-                    ; #48189: <==negation-removal== 46426 (pos)
+                    ; #14189: <==negation-removal== 63916 (pos)
                     (not (Ba_not_checked_p9))
 
-                    ; #61100: <==negation-removal== 45169 (pos)
+                    ; #15002: <==negation-removal== 86042 (pos)
                     (when (and (not_hiddensurvivorat_s_p9))
-                          (not (Ba_survivorat_s_p9)))
+                          (not (Pa_survivorat_s_p9)))
 
-                    ; #62227: <==uncertain_firing== 91479 (pos)
+                    ; #20043: <==uncertain_firing== 68188 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p9)))
                           (not (Pa_not_survivorat_s_p9)))
 
-                    ; #65889: <==negation-removal== 35806 (pos)
-                    (not (Pa_not_checked_p9))
+                    ; #23971: <==negation-removal== 86892 (pos)
+                    (not (Pb_not_checked_p9))
 
-                    ; #75235: <==uncertain_firing== 47796 (pos)
-                    (when (and (not (hiddensurvivorat_s_p9)))
-                          (not (Pa_survivorat_s_p9)))
+                    ; #27440: <==negation-removal== 49082 (pos)
+                    (not (Pc_not_checked_p9))
 
-                    ; #80023: <==negation-removal== 52742 (pos)
+                    ; #42751: <==negation-removal== 66617 (pos)
+                    (when (and (hiddensurvivorat_s_p9))
+                          (not (Ba_not_survivorat_s_p9)))
+
+                    ; #57484: <==negation-removal== 69721 (pos)
                     (not (Bc_not_checked_p9))
 
-                    ; #82767: <==uncertain_firing== 45169 (pos)
+                    ; #60201: <==uncertain_firing== 66617 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p9)))
+                          (not (Ba_not_survivorat_s_p9)))
+
+                    ; #60690: <==negation-removal== 63289 (pos)
+                    (when (and (not_hiddensurvivorat_s_p9))
+                          (not (Ba_survivorat_s_p9)))
+
+                    ; #61290: <==negation-removal== 68188 (pos)
+                    (when (and (hiddensurvivorat_s_p9))
+                          (not (Pa_not_survivorat_s_p9)))
+
+                    ; #65888: <==uncertain_firing== 63289 (pos)
                     (when (and (not (hiddensurvivorat_s_p9)))
                           (not (Ba_survivorat_s_p9)))
 
-                    ; #83294: <==negation-removal== 86629 (pos)
+                    ; #71649: <==negation-removal== 30746 (pos)
                     (not (not_checked_p9))
 
-                    ; #85015: <==negation-removal== 21620 (pos)
-                    (not (Bb_not_checked_p9))))
+                    ; #71803: <==negation-removal== 44246 (pos)
+                    (not (Bb_not_checked_p9))
+
+                    ; #83100: <==uncertain_firing== 86042 (pos)
+                    (when (and (not (hiddensurvivorat_s_p9)))
+                          (not (Pa_survivorat_s_p9)))
+
+                    ; #84237: <==negation-removal== 53753 (pos)
+                    (not (Pa_not_checked_p9))))
 
     (:action observe_b_p1_s
         :precondition (and (at_b_p1)
                            (not (leader_b)))
         :effect (and
-                    ; #33268: <==commonly_known== 57734 (neg)
-                    (Pc_checked_p1)
-
-                    ; #33844: origin
-                    (checked_p1)
-
-                    ; #34192: origin
-                    (when (and (not_hiddensurvivorat_s_p1))
-                          (Bb_not_survivorat_s_p1))
-
-                    ; #35177: origin
-                    (when (and (hiddensurvivorat_s_p1))
-                          (Bb_survivorat_s_p1))
-
-                    ; #40349: <==commonly_known== 57734 (neg)
-                    (Pb_checked_p1)
-
-                    ; #48467: <==commonly_known== 33844 (pos)
-                    (Bc_checked_p1)
-
-                    ; #50564: <==commonly_known== 33844 (pos)
-                    (Ba_checked_p1)
-
-                    ; #53859: <==closure== 35177 (pos)
+                    ; #15986: <==closure== 69721 (pos)
                     (when (and (hiddensurvivorat_s_p1))
                           (Pb_survivorat_s_p1))
 
-                    ; #69525: <==commonly_known== 33844 (pos)
-                    (Bb_checked_p1)
+                    ; #17531: <==commonly_known== 79793 (neg)
+                    (Pb_checked_p1)
 
-                    ; #82389: <==commonly_known== 57734 (neg)
-                    (Pa_checked_p1)
-
-                    ; #82812: <==closure== 34192 (pos)
+                    ; #28603: <==closure== 53544 (pos)
                     (when (and (not_hiddensurvivorat_s_p1))
                           (Pb_not_survivorat_s_p1))
 
-                    ; #16703: <==negation-removal== 82389 (pos)
-                    (not (Ba_not_checked_p1))
+                    ; #29701: <==commonly_known== 59522 (pos)
+                    (Ba_checked_p1)
 
-                    ; #21800: <==negation-removal== 82812 (pos)
+                    ; #36739: <==commonly_known== 79793 (neg)
+                    (Pc_checked_p1)
+
+                    ; #53544: origin
                     (when (and (not_hiddensurvivorat_s_p1))
-                          (not (Bb_survivorat_s_p1)))
+                          (Bb_not_survivorat_s_p1))
 
-                    ; #32542: <==uncertain_firing== 35177 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p1)))
-                          (not (Pb_not_survivorat_s_p1)))
+                    ; #59522: origin
+                    (checked_p1)
 
-                    ; #39547: <==negation-removal== 50564 (pos)
+                    ; #66435: <==commonly_known== 59522 (pos)
+                    (Bb_checked_p1)
+
+                    ; #67994: <==commonly_known== 59522 (pos)
+                    (Bc_checked_p1)
+
+                    ; #69721: origin
+                    (when (and (hiddensurvivorat_s_p1))
+                          (Bb_survivorat_s_p1))
+
+                    ; #91909: <==commonly_known== 79793 (neg)
+                    (Pa_checked_p1)
+
+                    ; #10180: <==negation-removal== 29701 (pos)
                     (not (Pa_not_checked_p1))
 
-                    ; #44303: <==uncertain_firing== 34192 (pos)
-                    (when (and (not (hiddensurvivorat_s_p1)))
-                          (not (Pb_survivorat_s_p1)))
-
-                    ; #47857: <==negation-removal== 35177 (pos)
-                    (when (and (hiddensurvivorat_s_p1))
-                          (not (Pb_not_survivorat_s_p1)))
-
-                    ; #49083: <==uncertain_firing== 82812 (pos)
+                    ; #13674: <==uncertain_firing== 28603 (pos)
                     (when (and (not (hiddensurvivorat_s_p1)))
                           (not (Bb_survivorat_s_p1)))
 
-                    ; #50249: <==negation-removal== 33268 (pos)
-                    (not (Bc_not_checked_p1))
-
-                    ; #57734: <==negation-removal== 33844 (pos)
-                    (not (not_checked_p1))
-
-                    ; #69553: <==uncertain_firing== 53859 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p1)))
-                          (not (Bb_not_survivorat_s_p1)))
-
-                    ; #83398: <==negation-removal== 34192 (pos)
+                    ; #14452: <==negation-removal== 53544 (pos)
                     (when (and (not_hiddensurvivorat_s_p1))
                           (not (Pb_survivorat_s_p1)))
 
-                    ; #88711: <==negation-removal== 40349 (pos)
-                    (not (Bb_not_checked_p1))
+                    ; #15551: <==negation-removal== 69721 (pos)
+                    (when (and (hiddensurvivorat_s_p1))
+                          (not (Pb_not_survivorat_s_p1)))
 
-                    ; #91582: <==negation-removal== 53859 (pos)
+                    ; #17722: <==negation-removal== 66435 (pos)
+                    (not (Pb_not_checked_p1))
+
+                    ; #17874: <==negation-removal== 67994 (pos)
+                    (not (Pc_not_checked_p1))
+
+                    ; #20192: <==uncertain_firing== 15986 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p1)))
+                          (not (Bb_not_survivorat_s_p1)))
+
+                    ; #24907: <==negation-removal== 28603 (pos)
+                    (when (and (not_hiddensurvivorat_s_p1))
+                          (not (Bb_survivorat_s_p1)))
+
+                    ; #35294: <==uncertain_firing== 69721 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p1)))
+                          (not (Pb_not_survivorat_s_p1)))
+
+                    ; #35813: <==uncertain_firing== 53544 (pos)
+                    (when (and (not (hiddensurvivorat_s_p1)))
+                          (not (Pb_survivorat_s_p1)))
+
+                    ; #42203: <==negation-removal== 15986 (pos)
                     (when (and (hiddensurvivorat_s_p1))
                           (not (Bb_not_survivorat_s_p1)))
 
-                    ; #94750: <==negation-removal== 69525 (pos)
-                    (not (Pb_not_checked_p1))
+                    ; #49908: <==negation-removal== 91909 (pos)
+                    (not (Ba_not_checked_p1))
 
-                    ; #99111: <==negation-removal== 48467 (pos)
-                    (not (Pc_not_checked_p1))))
+                    ; #52030: <==negation-removal== 36739 (pos)
+                    (not (Bc_not_checked_p1))
+
+                    ; #79793: <==negation-removal== 59522 (pos)
+                    (not (not_checked_p1))
+
+                    ; #86115: <==negation-removal== 17531 (pos)
+                    (not (Bb_not_checked_p1))))
 
     (:action observe_b_p2_s
         :precondition (and (at_b_p2)
                            (not (leader_b)))
         :effect (and
-                    ; #19251: <==closure== 66361 (pos)
-                    (when (and (not_hiddensurvivorat_s_p2))
-                          (Pb_not_survivorat_s_p2))
+                    ; #12288: <==commonly_known== 22924 (neg)
+                    (Pb_checked_p2)
 
-                    ; #22252: <==commonly_known== 42857 (pos)
-                    (Ba_checked_p2)
-
-                    ; #35724: origin
-                    (when (and (hiddensurvivorat_s_p2))
-                          (Bb_survivorat_s_p2))
-
-                    ; #37238: <==closure== 35724 (pos)
+                    ; #15871: <==closure== 83286 (pos)
                     (when (and (hiddensurvivorat_s_p2))
                           (Pb_survivorat_s_p2))
 
-                    ; #37603: <==commonly_known== 89282 (neg)
-                    (Pa_checked_p2)
-
-                    ; #38146: <==commonly_known== 89282 (neg)
-                    (Pb_checked_p2)
-
-                    ; #42857: origin
-                    (checked_p2)
-
-                    ; #61167: <==commonly_known== 42857 (pos)
-                    (Bc_checked_p2)
-
-                    ; #66361: origin
+                    ; #25767: origin
                     (when (and (not_hiddensurvivorat_s_p2))
                           (Bb_not_survivorat_s_p2))
 
-                    ; #71475: <==commonly_known== 89282 (neg)
+                    ; #30783: origin
+                    (checked_p2)
+
+                    ; #37022: <==commonly_known== 30783 (pos)
+                    (Bc_checked_p2)
+
+                    ; #41658: <==commonly_known== 22924 (neg)
                     (Pc_checked_p2)
 
-                    ; #99348: <==commonly_known== 42857 (pos)
+                    ; #47856: <==commonly_known== 30783 (pos)
                     (Bb_checked_p2)
 
-                    ; #18043: <==uncertain_firing== 35724 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p2)))
-                          (not (Pb_not_survivorat_s_p2)))
+                    ; #69785: <==commonly_known== 30783 (pos)
+                    (Ba_checked_p2)
 
-                    ; #21037: <==negation-removal== 99348 (pos)
+                    ; #77312: <==commonly_known== 22924 (neg)
+                    (Pa_checked_p2)
+
+                    ; #83286: origin
+                    (when (and (hiddensurvivorat_s_p2))
+                          (Bb_survivorat_s_p2))
+
+                    ; #89602: <==closure== 25767 (pos)
+                    (when (and (not_hiddensurvivorat_s_p2))
+                          (Pb_not_survivorat_s_p2))
+
+                    ; #10595: <==uncertain_firing== 89602 (pos)
+                    (when (and (not (hiddensurvivorat_s_p2)))
+                          (not (Bb_survivorat_s_p2)))
+
+                    ; #15498: <==negation-removal== 47856 (pos)
                     (not (Pb_not_checked_p2))
 
-                    ; #26244: <==negation-removal== 71475 (pos)
+                    ; #16042: <==negation-removal== 41658 (pos)
                     (not (Bc_not_checked_p2))
 
-                    ; #31193: <==uncertain_firing== 66361 (pos)
-                    (when (and (not (hiddensurvivorat_s_p2)))
-                          (not (Pb_survivorat_s_p2)))
-
-                    ; #34986: <==uncertain_firing== 37238 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p2)))
-                          (not (Bb_not_survivorat_s_p2)))
-
-                    ; #40869: <==negation-removal== 38146 (pos)
-                    (not (Bb_not_checked_p2))
-
-                    ; #46902: <==negation-removal== 19251 (pos)
-                    (when (and (not_hiddensurvivorat_s_p2))
-                          (not (Bb_survivorat_s_p2)))
-
-                    ; #56777: <==uncertain_firing== 19251 (pos)
-                    (when (and (not (hiddensurvivorat_s_p2)))
-                          (not (Bb_survivorat_s_p2)))
-
-                    ; #62494: <==negation-removal== 37238 (pos)
+                    ; #16311: <==negation-removal== 15871 (pos)
                     (when (and (hiddensurvivorat_s_p2))
                           (not (Bb_not_survivorat_s_p2)))
 
-                    ; #65651: <==negation-removal== 22252 (pos)
-                    (not (Pa_not_checked_p2))
-
-                    ; #68051: <==negation-removal== 37603 (pos)
-                    (not (Ba_not_checked_p2))
-
-                    ; #73598: <==negation-removal== 35724 (pos)
+                    ; #16352: <==negation-removal== 83286 (pos)
                     (when (and (hiddensurvivorat_s_p2))
                           (not (Pb_not_survivorat_s_p2)))
 
-                    ; #85269: <==negation-removal== 61167 (pos)
-                    (not (Pc_not_checked_p2))
+                    ; #18675: <==uncertain_firing== 25767 (pos)
+                    (when (and (not (hiddensurvivorat_s_p2)))
+                          (not (Pb_survivorat_s_p2)))
 
-                    ; #87091: <==negation-removal== 66361 (pos)
+                    ; #19684: <==negation-removal== 89602 (pos)
+                    (when (and (not_hiddensurvivorat_s_p2))
+                          (not (Bb_survivorat_s_p2)))
+
+                    ; #22924: <==negation-removal== 30783 (pos)
+                    (not (not_checked_p2))
+
+                    ; #32989: <==uncertain_firing== 83286 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p2)))
+                          (not (Pb_not_survivorat_s_p2)))
+
+                    ; #41114: <==negation-removal== 25767 (pos)
                     (when (and (not_hiddensurvivorat_s_p2))
                           (not (Pb_survivorat_s_p2)))
 
-                    ; #89282: <==negation-removal== 42857 (pos)
-                    (not (not_checked_p2))))
+                    ; #42333: <==negation-removal== 77312 (pos)
+                    (not (Ba_not_checked_p2))
+
+                    ; #58839: <==negation-removal== 12288 (pos)
+                    (not (Bb_not_checked_p2))
+
+                    ; #81089: <==negation-removal== 69785 (pos)
+                    (not (Pa_not_checked_p2))
+
+                    ; #90488: <==negation-removal== 37022 (pos)
+                    (not (Pc_not_checked_p2))
+
+                    ; #92053: <==uncertain_firing== 15871 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p2)))
+                          (not (Bb_not_survivorat_s_p2)))))
 
     (:action observe_b_p3_s
         :precondition (and (at_b_p3)
                            (not (leader_b)))
         :effect (and
-                    ; #15494: <==commonly_known== 91489 (pos)
-                    (Bb_checked_p3)
+                    ; #18763: <==commonly_known== 68122 (neg)
+                    (Pa_checked_p3)
 
-                    ; #18518: origin
-                    (when (and (hiddensurvivorat_s_p3))
-                          (Bb_survivorat_s_p3))
-
-                    ; #19937: <==commonly_known== 78365 (neg)
-                    (Pc_checked_p3)
-
-                    ; #35184: <==closure== 18518 (pos)
-                    (when (and (hiddensurvivorat_s_p3))
-                          (Pb_survivorat_s_p3))
-
-                    ; #42816: <==commonly_known== 91489 (pos)
-                    (Bc_checked_p3)
-
-                    ; #48660: <==commonly_known== 78365 (neg)
-                    (Pb_checked_p3)
-
-                    ; #55942: origin
-                    (when (and (not_hiddensurvivorat_s_p3))
-                          (Bb_not_survivorat_s_p3))
-
-                    ; #58449: <==closure== 55942 (pos)
+                    ; #40447: <==closure== 66931 (pos)
                     (when (and (not_hiddensurvivorat_s_p3))
                           (Pb_not_survivorat_s_p3))
 
-                    ; #71373: <==commonly_known== 91489 (pos)
+                    ; #40858: <==commonly_known== 68122 (neg)
+                    (Pb_checked_p3)
+
+                    ; #43624: origin
+                    (when (and (hiddensurvivorat_s_p3))
+                          (Bb_survivorat_s_p3))
+
+                    ; #47167: <==commonly_known== 86560 (pos)
                     (Ba_checked_p3)
 
-                    ; #84484: <==commonly_known== 78365 (neg)
-                    (Pa_checked_p3)
+                    ; #52789: <==closure== 43624 (pos)
+                    (when (and (hiddensurvivorat_s_p3))
+                          (Pb_survivorat_s_p3))
 
-                    ; #91489: origin
+                    ; #55668: <==commonly_known== 86560 (pos)
+                    (Bc_checked_p3)
+
+                    ; #66931: origin
+                    (when (and (not_hiddensurvivorat_s_p3))
+                          (Bb_not_survivorat_s_p3))
+
+                    ; #75384: <==commonly_known== 86560 (pos)
+                    (Bb_checked_p3)
+
+                    ; #86560: origin
                     (checked_p3)
 
-                    ; #18772: <==uncertain_firing== 55942 (pos)
-                    (when (and (not (hiddensurvivorat_s_p3)))
-                          (not (Pb_survivorat_s_p3)))
+                    ; #87528: <==commonly_known== 68122 (neg)
+                    (Pc_checked_p3)
 
-                    ; #20248: <==uncertain_firing== 18518 (pos)
+                    ; #19134: <==negation-removal== 43624 (pos)
+                    (when (and (hiddensurvivorat_s_p3))
+                          (not (Pb_not_survivorat_s_p3)))
+
+                    ; #19692: <==uncertain_firing== 43624 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p3)))
                           (not (Pb_not_survivorat_s_p3)))
 
-                    ; #24939: <==negation-removal== 15494 (pos)
-                    (not (Pb_not_checked_p3))
-
-                    ; #25406: <==negation-removal== 84484 (pos)
+                    ; #26445: <==negation-removal== 18763 (pos)
                     (not (Ba_not_checked_p3))
 
-                    ; #27606: <==negation-removal== 48660 (pos)
-                    (not (Bb_not_checked_p3))
-
-                    ; #28758: <==negation-removal== 58449 (pos)
-                    (when (and (not_hiddensurvivorat_s_p3))
-                          (not (Bb_survivorat_s_p3)))
-
-                    ; #34788: <==negation-removal== 18518 (pos)
-                    (when (and (hiddensurvivorat_s_p3))
-                          (not (Pb_not_survivorat_s_p3)))
-
-                    ; #35767: <==uncertain_firing== 58449 (pos)
-                    (when (and (not (hiddensurvivorat_s_p3)))
-                          (not (Bb_survivorat_s_p3)))
-
-                    ; #56137: <==negation-removal== 19937 (pos)
-                    (not (Bc_not_checked_p3))
-
-                    ; #57582: <==uncertain_firing== 35184 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p3)))
-                          (not (Bb_not_survivorat_s_p3)))
-
-                    ; #61483: <==negation-removal== 42816 (pos)
-                    (not (Pc_not_checked_p3))
-
-                    ; #73159: <==negation-removal== 55942 (pos)
+                    ; #29740: <==negation-removal== 66931 (pos)
                     (when (and (not_hiddensurvivorat_s_p3))
                           (not (Pb_survivorat_s_p3)))
 
-                    ; #77674: <==negation-removal== 35184 (pos)
+                    ; #30654: <==negation-removal== 47167 (pos)
+                    (not (Pa_not_checked_p3))
+
+                    ; #32762: <==negation-removal== 75384 (pos)
+                    (not (Pb_not_checked_p3))
+
+                    ; #35759: <==negation-removal== 55668 (pos)
+                    (not (Pc_not_checked_p3))
+
+                    ; #35761: <==uncertain_firing== 52789 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p3)))
+                          (not (Bb_not_survivorat_s_p3)))
+
+                    ; #41442: <==negation-removal== 40447 (pos)
+                    (when (and (not_hiddensurvivorat_s_p3))
+                          (not (Bb_survivorat_s_p3)))
+
+                    ; #45057: <==uncertain_firing== 40447 (pos)
+                    (when (and (not (hiddensurvivorat_s_p3)))
+                          (not (Bb_survivorat_s_p3)))
+
+                    ; #65685: <==uncertain_firing== 66931 (pos)
+                    (when (and (not (hiddensurvivorat_s_p3)))
+                          (not (Pb_survivorat_s_p3)))
+
+                    ; #68122: <==negation-removal== 86560 (pos)
+                    (not (not_checked_p3))
+
+                    ; #70591: <==negation-removal== 52789 (pos)
                     (when (and (hiddensurvivorat_s_p3))
                           (not (Bb_not_survivorat_s_p3)))
 
-                    ; #78365: <==negation-removal== 91489 (pos)
-                    (not (not_checked_p3))
+                    ; #75816: <==negation-removal== 40858 (pos)
+                    (not (Bb_not_checked_p3))
 
-                    ; #83362: <==negation-removal== 71373 (pos)
-                    (not (Pa_not_checked_p3))))
+                    ; #86979: <==negation-removal== 87528 (pos)
+                    (not (Bc_not_checked_p3))))
 
     (:action observe_b_p4_s
         :precondition (and (at_b_p4)
                            (not (leader_b)))
         :effect (and
-                    ; #17814: <==closure== 32524 (pos)
-                    (when (and (not_hiddensurvivorat_s_p4))
-                          (Pb_not_survivorat_s_p4))
+                    ; #12420: <==commonly_known== 39181 (pos)
+                    (Bc_checked_p4)
 
-                    ; #32524: origin
+                    ; #28786: origin
                     (when (and (not_hiddensurvivorat_s_p4))
                           (Bb_not_survivorat_s_p4))
 
-                    ; #38587: <==commonly_known== 86262 (pos)
-                    (Bb_checked_p4)
-
-                    ; #42970: <==commonly_known== 92172 (neg)
-                    (Pa_checked_p4)
-
-                    ; #50635: <==commonly_known== 92172 (neg)
-                    (Pc_checked_p4)
-
-                    ; #56231: <==closure== 83115 (pos)
-                    (when (and (hiddensurvivorat_s_p4))
-                          (Pb_survivorat_s_p4))
-
-                    ; #75440: <==commonly_known== 92172 (neg)
-                    (Pb_checked_p4)
-
-                    ; #83115: origin
+                    ; #31613: origin
                     (when (and (hiddensurvivorat_s_p4))
                           (Bb_survivorat_s_p4))
 
-                    ; #85558: <==commonly_known== 86262 (pos)
-                    (Ba_checked_p4)
-
-                    ; #86262: origin
+                    ; #39181: origin
                     (checked_p4)
 
-                    ; #87937: <==commonly_known== 86262 (pos)
-                    (Bc_checked_p4)
+                    ; #41298: <==closure== 28786 (pos)
+                    (when (and (not_hiddensurvivorat_s_p4))
+                          (Pb_not_survivorat_s_p4))
 
-                    ; #24190: <==negation-removal== 85558 (pos)
-                    (not (Pa_not_checked_p4))
+                    ; #47140: <==commonly_known== 39181 (pos)
+                    (Bb_checked_p4)
 
-                    ; #31510: <==uncertain_firing== 56231 (pos)
+                    ; #55412: <==commonly_known== 34361 (neg)
+                    (Pb_checked_p4)
+
+                    ; #69769: <==commonly_known== 34361 (neg)
+                    (Pa_checked_p4)
+
+                    ; #71860: <==closure== 31613 (pos)
+                    (when (and (hiddensurvivorat_s_p4))
+                          (Pb_survivorat_s_p4))
+
+                    ; #84716: <==commonly_known== 39181 (pos)
+                    (Ba_checked_p4)
+
+                    ; #90338: <==commonly_known== 34361 (neg)
+                    (Pc_checked_p4)
+
+                    ; #11098: <==negation-removal== 71860 (pos)
+                    (when (and (hiddensurvivorat_s_p4))
+                          (not (Bb_not_survivorat_s_p4)))
+
+                    ; #13287: <==uncertain_firing== 71860 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p4)))
                           (not (Bb_not_survivorat_s_p4)))
 
-                    ; #33548: <==negation-removal== 32524 (pos)
-                    (when (and (not_hiddensurvivorat_s_p4))
-                          (not (Pb_survivorat_s_p4)))
-
-                    ; #40718: <==negation-removal== 42970 (pos)
-                    (not (Ba_not_checked_p4))
-
-                    ; #50551: <==negation-removal== 17814 (pos)
-                    (when (and (not_hiddensurvivorat_s_p4))
-                          (not (Bb_survivorat_s_p4)))
-
-                    ; #56544: <==negation-removal== 38587 (pos)
-                    (not (Pb_not_checked_p4))
-
-                    ; #56947: <==negation-removal== 83115 (pos)
-                    (when (and (hiddensurvivorat_s_p4))
-                          (not (Pb_not_survivorat_s_p4)))
-
-                    ; #60700: <==negation-removal== 56231 (pos)
-                    (when (and (hiddensurvivorat_s_p4))
-                          (not (Bb_not_survivorat_s_p4)))
-
-                    ; #62643: <==uncertain_firing== 17814 (pos)
-                    (when (and (not (hiddensurvivorat_s_p4)))
-                          (not (Bb_survivorat_s_p4)))
-
-                    ; #74459: <==negation-removal== 50635 (pos)
-                    (not (Bc_not_checked_p4))
-
-                    ; #84176: <==negation-removal== 87937 (pos)
-                    (not (Pc_not_checked_p4))
-
-                    ; #85841: <==negation-removal== 75440 (pos)
+                    ; #19883: <==negation-removal== 55412 (pos)
                     (not (Bb_not_checked_p4))
 
-                    ; #87398: <==uncertain_firing== 83115 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p4)))
+                    ; #26338: <==negation-removal== 47140 (pos)
+                    (not (Pb_not_checked_p4))
+
+                    ; #34361: <==negation-removal== 39181 (pos)
+                    (not (not_checked_p4))
+
+                    ; #48274: <==negation-removal== 84716 (pos)
+                    (not (Pa_not_checked_p4))
+
+                    ; #48332: <==negation-removal== 41298 (pos)
+                    (when (and (not_hiddensurvivorat_s_p4))
+                          (not (Bb_survivorat_s_p4)))
+
+                    ; #58034: <==negation-removal== 28786 (pos)
+                    (when (and (not_hiddensurvivorat_s_p4))
+                          (not (Pb_survivorat_s_p4)))
+
+                    ; #58123: <==negation-removal== 31613 (pos)
+                    (when (and (hiddensurvivorat_s_p4))
                           (not (Pb_not_survivorat_s_p4)))
 
-                    ; #89480: <==uncertain_firing== 32524 (pos)
+                    ; #59764: <==negation-removal== 69769 (pos)
+                    (not (Ba_not_checked_p4))
+
+                    ; #62654: <==uncertain_firing== 28786 (pos)
                     (when (and (not (hiddensurvivorat_s_p4)))
                           (not (Pb_survivorat_s_p4)))
 
-                    ; #92172: <==negation-removal== 86262 (pos)
-                    (not (not_checked_p4))))
+                    ; #66994: <==negation-removal== 90338 (pos)
+                    (not (Bc_not_checked_p4))
+
+                    ; #67403: <==negation-removal== 12420 (pos)
+                    (not (Pc_not_checked_p4))
+
+                    ; #88108: <==uncertain_firing== 31613 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p4)))
+                          (not (Pb_not_survivorat_s_p4)))
+
+                    ; #90771: <==uncertain_firing== 41298 (pos)
+                    (when (and (not (hiddensurvivorat_s_p4)))
+                          (not (Bb_survivorat_s_p4)))))
 
     (:action observe_b_p5_s
         :precondition (and (at_b_p5)
                            (not (leader_b)))
         :effect (and
-                    ; #23811: <==commonly_known== 51268 (pos)
+                    ; #17798: <==commonly_known== 87884 (neg)
+                    (Pb_checked_p5)
+
+                    ; #21101: <==commonly_known== 40051 (pos)
                     (Bc_checked_p5)
 
-                    ; #36780: origin
+                    ; #36654: <==commonly_known== 87884 (neg)
+                    (Pa_checked_p5)
+
+                    ; #40051: origin
+                    (checked_p5)
+
+                    ; #41456: <==commonly_known== 87884 (neg)
+                    (Pc_checked_p5)
+
+                    ; #63987: origin
                     (when (and (not_hiddensurvivorat_s_p5))
                           (Bb_not_survivorat_s_p5))
 
-                    ; #47022: <==closure== 83644 (pos)
+                    ; #64560: <==commonly_known== 40051 (pos)
+                    (Ba_checked_p5)
+
+                    ; #65502: <==closure== 67970 (pos)
                     (when (and (hiddensurvivorat_s_p5))
                           (Pb_survivorat_s_p5))
 
-                    ; #51268: origin
-                    (checked_p5)
-
-                    ; #54120: <==commonly_known== 51268 (pos)
-                    (Bb_checked_p5)
-
-                    ; #60511: <==closure== 36780 (pos)
-                    (when (and (not_hiddensurvivorat_s_p5))
-                          (Pb_not_survivorat_s_p5))
-
-                    ; #72941: <==commonly_known== 58760 (neg)
-                    (Pc_checked_p5)
-
-                    ; #83611: <==commonly_known== 58760 (neg)
-                    (Pa_checked_p5)
-
-                    ; #83644: origin
+                    ; #67970: origin
                     (when (and (hiddensurvivorat_s_p5))
                           (Bb_survivorat_s_p5))
 
-                    ; #89778: <==commonly_known== 51268 (pos)
-                    (Ba_checked_p5)
+                    ; #79130: <==commonly_known== 40051 (pos)
+                    (Bb_checked_p5)
 
-                    ; #91718: <==commonly_known== 58760 (neg)
-                    (Pb_checked_p5)
+                    ; #97769: <==closure== 63987 (pos)
+                    (when (and (not_hiddensurvivorat_s_p5))
+                          (Pb_not_survivorat_s_p5))
 
-                    ; #16661: <==negation-removal== 83611 (pos)
-                    (not (Ba_not_checked_p5))
+                    ; #23957: <==negation-removal== 65502 (pos)
+                    (when (and (hiddensurvivorat_s_p5))
+                          (not (Bb_not_survivorat_s_p5)))
 
-                    ; #19084: <==negation-removal== 54120 (pos)
+                    ; #24155: <==negation-removal== 79130 (pos)
                     (not (Pb_not_checked_p5))
 
-                    ; #21758: <==negation-removal== 60511 (pos)
-                    (when (and (not_hiddensurvivorat_s_p5))
-                          (not (Bb_survivorat_s_p5)))
-
-                    ; #22546: <==negation-removal== 36780 (pos)
-                    (when (and (not_hiddensurvivorat_s_p5))
-                          (not (Pb_survivorat_s_p5)))
-
-                    ; #26596: <==negation-removal== 23811 (pos)
-                    (not (Pc_not_checked_p5))
-
-                    ; #26876: <==uncertain_firing== 47022 (pos)
+                    ; #36077: <==uncertain_firing== 65502 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p5)))
                           (not (Bb_not_survivorat_s_p5)))
 
-                    ; #27260: <==uncertain_firing== 83644 (pos)
+                    ; #38814: <==negation-removal== 21101 (pos)
+                    (not (Pc_not_checked_p5))
+
+                    ; #40953: <==uncertain_firing== 67970 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p5)))
                           (not (Pb_not_survivorat_s_p5)))
 
-                    ; #32351: <==uncertain_firing== 36780 (pos)
-                    (when (and (not (hiddensurvivorat_s_p5)))
+                    ; #55972: <==negation-removal== 63987 (pos)
+                    (when (and (not_hiddensurvivorat_s_p5))
                           (not (Pb_survivorat_s_p5)))
 
-                    ; #36330: <==negation-removal== 91718 (pos)
-                    (not (Bb_not_checked_p5))
-
-                    ; #41085: <==negation-removal== 89778 (pos)
-                    (not (Pa_not_checked_p5))
-
-                    ; #55257: <==negation-removal== 83644 (pos)
-                    (when (and (hiddensurvivorat_s_p5))
-                          (not (Pb_not_survivorat_s_p5)))
-
-                    ; #58760: <==negation-removal== 51268 (pos)
-                    (not (not_checked_p5))
-
-                    ; #61244: <==negation-removal== 72941 (pos)
-                    (not (Bc_not_checked_p5))
-
-                    ; #65567: <==uncertain_firing== 60511 (pos)
+                    ; #56647: <==uncertain_firing== 97769 (pos)
                     (when (and (not (hiddensurvivorat_s_p5)))
                           (not (Bb_survivorat_s_p5)))
 
-                    ; #83395: <==negation-removal== 47022 (pos)
+                    ; #57578: <==negation-removal== 97769 (pos)
+                    (when (and (not_hiddensurvivorat_s_p5))
+                          (not (Bb_survivorat_s_p5)))
+
+                    ; #61181: <==negation-removal== 17798 (pos)
+                    (not (Bb_not_checked_p5))
+
+                    ; #61718: <==negation-removal== 67970 (pos)
                     (when (and (hiddensurvivorat_s_p5))
-                          (not (Bb_not_survivorat_s_p5)))))
+                          (not (Pb_not_survivorat_s_p5)))
+
+                    ; #64347: <==negation-removal== 64560 (pos)
+                    (not (Pa_not_checked_p5))
+
+                    ; #70323: <==uncertain_firing== 63987 (pos)
+                    (when (and (not (hiddensurvivorat_s_p5)))
+                          (not (Pb_survivorat_s_p5)))
+
+                    ; #86799: <==negation-removal== 41456 (pos)
+                    (not (Bc_not_checked_p5))
+
+                    ; #87443: <==negation-removal== 36654 (pos)
+                    (not (Ba_not_checked_p5))
+
+                    ; #87884: <==negation-removal== 40051 (pos)
+                    (not (not_checked_p5))))
 
     (:action observe_b_p6_s
         :precondition (and (at_b_p6)
                            (not (leader_b)))
         :effect (and
-                    ; #12873: <==commonly_known== 14777 (neg)
-                    (Pa_checked_p6)
+                    ; #17478: <==commonly_known== 80573 (pos)
+                    (Bb_checked_p6)
 
-                    ; #14086: origin
-                    (when (and (hiddensurvivorat_s_p6))
-                          (Bb_survivorat_s_p6))
-
-                    ; #20275: <==commonly_known== 14777 (neg)
+                    ; #21351: <==commonly_known== 18363 (neg)
                     (Pc_checked_p6)
 
-                    ; #35313: origin
-                    (checked_p6)
+                    ; #38764: <==commonly_known== 80573 (pos)
+                    (Bc_checked_p6)
 
-                    ; #40208: <==closure== 79100 (pos)
+                    ; #39948: <==closure== 84581 (pos)
                     (when (and (not_hiddensurvivorat_s_p6))
                           (Pb_not_survivorat_s_p6))
 
-                    ; #54160: <==commonly_known== 35313 (pos)
-                    (Bb_checked_p6)
+                    ; #61459: origin
+                    (when (and (hiddensurvivorat_s_p6))
+                          (Bb_survivorat_s_p6))
 
-                    ; #63630: <==commonly_known== 35313 (pos)
-                    (Bc_checked_p6)
-
-                    ; #68939: <==commonly_known== 35313 (pos)
+                    ; #63462: <==commonly_known== 80573 (pos)
                     (Ba_checked_p6)
 
-                    ; #70520: <==closure== 14086 (pos)
-                    (when (and (hiddensurvivorat_s_p6))
-                          (Pb_survivorat_s_p6))
+                    ; #69096: <==commonly_known== 18363 (neg)
+                    (Pa_checked_p6)
 
-                    ; #74329: <==commonly_known== 14777 (neg)
+                    ; #70128: <==commonly_known== 18363 (neg)
                     (Pb_checked_p6)
 
-                    ; #79100: origin
+                    ; #80573: origin
+                    (checked_p6)
+
+                    ; #84581: origin
                     (when (and (not_hiddensurvivorat_s_p6))
                           (Bb_not_survivorat_s_p6))
 
-                    ; #12565: <==negation-removal== 68939 (pos)
-                    (not (Pa_not_checked_p6))
-
-                    ; #14777: <==negation-removal== 35313 (pos)
-                    (not (not_checked_p6))
-
-                    ; #16144: <==negation-removal== 20275 (pos)
-                    (not (Bc_not_checked_p6))
-
-                    ; #17317: <==negation-removal== 70520 (pos)
+                    ; #90100: <==closure== 61459 (pos)
                     (when (and (hiddensurvivorat_s_p6))
-                          (not (Bb_not_survivorat_s_p6)))
+                          (Pb_survivorat_s_p6))
 
-                    ; #31319: <==negation-removal== 74329 (pos)
-                    (not (Bb_not_checked_p6))
-
-                    ; #32911: <==negation-removal== 63630 (pos)
-                    (not (Pc_not_checked_p6))
-
-                    ; #36847: <==negation-removal== 14086 (pos)
-                    (when (and (hiddensurvivorat_s_p6))
-                          (not (Pb_not_survivorat_s_p6)))
-
-                    ; #39171: <==uncertain_firing== 14086 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p6)))
-                          (not (Pb_not_survivorat_s_p6)))
-
-                    ; #43469: <==negation-removal== 54160 (pos)
-                    (not (Pb_not_checked_p6))
-
-                    ; #48609: <==negation-removal== 12873 (pos)
-                    (not (Ba_not_checked_p6))
-
-                    ; #52017: <==uncertain_firing== 70520 (pos)
+                    ; #11355: <==uncertain_firing== 90100 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p6)))
                           (not (Bb_not_survivorat_s_p6)))
 
-                    ; #64998: <==uncertain_firing== 40208 (pos)
+                    ; #15184: <==uncertain_firing== 39948 (pos)
                     (when (and (not (hiddensurvivorat_s_p6)))
                           (not (Bb_survivorat_s_p6)))
 
-                    ; #67566: <==negation-removal== 79100 (pos)
-                    (when (and (not_hiddensurvivorat_s_p6))
-                          (not (Pb_survivorat_s_p6)))
+                    ; #18363: <==negation-removal== 80573 (pos)
+                    (not (not_checked_p6))
 
-                    ; #69575: <==negation-removal== 40208 (pos)
+                    ; #32556: <==negation-removal== 69096 (pos)
+                    (not (Ba_not_checked_p6))
+
+                    ; #34146: <==negation-removal== 61459 (pos)
+                    (when (and (hiddensurvivorat_s_p6))
+                          (not (Pb_not_survivorat_s_p6)))
+
+                    ; #46847: <==uncertain_firing== 61459 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p6)))
+                          (not (Pb_not_survivorat_s_p6)))
+
+                    ; #51646: <==negation-removal== 39948 (pos)
                     (when (and (not_hiddensurvivorat_s_p6))
                           (not (Bb_survivorat_s_p6)))
 
-                    ; #79609: <==uncertain_firing== 79100 (pos)
+                    ; #58701: <==negation-removal== 70128 (pos)
+                    (not (Bb_not_checked_p6))
+
+                    ; #60141: <==negation-removal== 38764 (pos)
+                    (not (Pc_not_checked_p6))
+
+                    ; #61646: <==negation-removal== 90100 (pos)
+                    (when (and (hiddensurvivorat_s_p6))
+                          (not (Bb_not_survivorat_s_p6)))
+
+                    ; #66878: <==negation-removal== 63462 (pos)
+                    (not (Pa_not_checked_p6))
+
+                    ; #67940: <==negation-removal== 21351 (pos)
+                    (not (Bc_not_checked_p6))
+
+                    ; #70539: <==negation-removal== 17478 (pos)
+                    (not (Pb_not_checked_p6))
+
+                    ; #80362: <==negation-removal== 84581 (pos)
+                    (when (and (not_hiddensurvivorat_s_p6))
+                          (not (Pb_survivorat_s_p6)))
+
+                    ; #84838: <==uncertain_firing== 84581 (pos)
                     (when (and (not (hiddensurvivorat_s_p6)))
                           (not (Pb_survivorat_s_p6)))))
 
@@ -9066,187 +9066,187 @@
         :precondition (and (at_b_p7)
                            (not (leader_b)))
         :effect (and
-                    ; #14101: <==commonly_known== 64632 (neg)
-                    (Pc_checked_p7)
-
-                    ; #16493: <==commonly_known== 41099 (pos)
-                    (Ba_checked_p7)
-
-                    ; #41099: origin
-                    (checked_p7)
-
-                    ; #41155: <==commonly_known== 41099 (pos)
-                    (Bb_checked_p7)
-
-                    ; #41226: <==commonly_known== 41099 (pos)
-                    (Bc_checked_p7)
-
-                    ; #42937: origin
-                    (when (and (hiddensurvivorat_s_p7))
-                          (Bb_survivorat_s_p7))
-
-                    ; #50897: <==commonly_known== 64632 (neg)
+                    ; #15978: <==commonly_known== 11766 (neg)
                     (Pb_checked_p7)
 
-                    ; #55972: <==closure== 42937 (pos)
+                    ; #32402: <==commonly_known== 47852 (pos)
+                    (Bc_checked_p7)
+
+                    ; #33926: <==commonly_known== 47852 (pos)
+                    (Ba_checked_p7)
+
+                    ; #35673: <==commonly_known== 47852 (pos)
+                    (Bb_checked_p7)
+
+                    ; #38916: <==closure== 62747 (pos)
                     (when (and (hiddensurvivorat_s_p7))
                           (Pb_survivorat_s_p7))
 
-                    ; #74079: <==closure== 75722 (pos)
+                    ; #47852: origin
+                    (checked_p7)
+
+                    ; #58034: <==closure== 73611 (pos)
                     (when (and (not_hiddensurvivorat_s_p7))
                           (Pb_not_survivorat_s_p7))
 
-                    ; #75497: <==commonly_known== 64632 (neg)
+                    ; #58096: <==commonly_known== 11766 (neg)
                     (Pa_checked_p7)
 
-                    ; #75722: origin
+                    ; #62747: origin
+                    (when (and (hiddensurvivorat_s_p7))
+                          (Bb_survivorat_s_p7))
+
+                    ; #64415: <==commonly_known== 11766 (neg)
+                    (Pc_checked_p7)
+
+                    ; #73611: origin
                     (when (and (not_hiddensurvivorat_s_p7))
                           (Bb_not_survivorat_s_p7))
 
-                    ; #17105: <==uncertain_firing== 42937 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p7)))
-                          (not (Pb_not_survivorat_s_p7)))
-
-                    ; #18745: <==negation-removal== 14101 (pos)
-                    (not (Bc_not_checked_p7))
-
-                    ; #33507: <==negation-removal== 50897 (pos)
-                    (not (Bb_not_checked_p7))
-
-                    ; #34723: <==negation-removal== 75722 (pos)
-                    (when (and (not_hiddensurvivorat_s_p7))
-                          (not (Pb_survivorat_s_p7)))
-
-                    ; #43133: <==negation-removal== 42937 (pos)
-                    (when (and (hiddensurvivorat_s_p7))
-                          (not (Pb_not_survivorat_s_p7)))
-
-                    ; #45484: <==negation-removal== 74079 (pos)
-                    (when (and (not_hiddensurvivorat_s_p7))
-                          (not (Bb_survivorat_s_p7)))
-
-                    ; #48004: <==negation-removal== 55972 (pos)
-                    (when (and (hiddensurvivorat_s_p7))
-                          (not (Bb_not_survivorat_s_p7)))
-
-                    ; #48880: <==uncertain_firing== 74079 (pos)
-                    (when (and (not (hiddensurvivorat_s_p7)))
-                          (not (Bb_survivorat_s_p7)))
-
-                    ; #49092: <==negation-removal== 41155 (pos)
-                    (not (Pb_not_checked_p7))
-
-                    ; #64632: <==negation-removal== 41099 (pos)
+                    ; #11766: <==negation-removal== 47852 (pos)
                     (not (not_checked_p7))
 
-                    ; #68553: <==negation-removal== 16493 (pos)
+                    ; #21287: <==negation-removal== 58034 (pos)
+                    (when (and (not_hiddensurvivorat_s_p7))
+                          (not (Bb_survivorat_s_p7)))
+
+                    ; #23630: <==negation-removal== 73611 (pos)
+                    (when (and (not_hiddensurvivorat_s_p7))
+                          (not (Pb_survivorat_s_p7)))
+
+                    ; #25011: <==negation-removal== 62747 (pos)
+                    (when (and (hiddensurvivorat_s_p7))
+                          (not (Pb_not_survivorat_s_p7)))
+
+                    ; #44420: <==negation-removal== 33926 (pos)
                     (not (Pa_not_checked_p7))
 
-                    ; #72714: <==uncertain_firing== 55972 (pos)
+                    ; #48523: <==negation-removal== 15978 (pos)
+                    (not (Bb_not_checked_p7))
+
+                    ; #50067: <==negation-removal== 35673 (pos)
+                    (not (Pb_not_checked_p7))
+
+                    ; #55524: <==negation-removal== 58096 (pos)
+                    (not (Ba_not_checked_p7))
+
+                    ; #57141: <==negation-removal== 64415 (pos)
+                    (not (Bc_not_checked_p7))
+
+                    ; #66288: <==negation-removal== 32402 (pos)
+                    (not (Pc_not_checked_p7))
+
+                    ; #74436: <==uncertain_firing== 38916 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p7)))
                           (not (Bb_not_survivorat_s_p7)))
 
-                    ; #76120: <==negation-removal== 75497 (pos)
-                    (not (Ba_not_checked_p7))
+                    ; #79194: <==negation-removal== 38916 (pos)
+                    (when (and (hiddensurvivorat_s_p7))
+                          (not (Bb_not_survivorat_s_p7)))
 
-                    ; #79040: <==uncertain_firing== 75722 (pos)
+                    ; #79368: <==uncertain_firing== 62747 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p7)))
+                          (not (Pb_not_survivorat_s_p7)))
+
+                    ; #79566: <==uncertain_firing== 73611 (pos)
                     (when (and (not (hiddensurvivorat_s_p7)))
                           (not (Pb_survivorat_s_p7)))
 
-                    ; #86020: <==negation-removal== 41226 (pos)
-                    (not (Pc_not_checked_p7))))
+                    ; #83051: <==uncertain_firing== 58034 (pos)
+                    (when (and (not (hiddensurvivorat_s_p7)))
+                          (not (Bb_survivorat_s_p7)))))
 
     (:action observe_b_p8_s
         :precondition (and (at_b_p8)
                            (not (leader_b)))
         :effect (and
-                    ; #13339: <==commonly_known== 56038 (pos)
-                    (Bc_checked_p8)
-
-                    ; #14291: <==commonly_known== 56038 (pos)
-                    (Bb_checked_p8)
-
-                    ; #28734: <==closure== 53551 (pos)
-                    (when (and (not_hiddensurvivorat_s_p8))
-                          (Pb_not_survivorat_s_p8))
-
-                    ; #29760: <==closure== 78072 (pos)
-                    (when (and (hiddensurvivorat_s_p8))
-                          (Pb_survivorat_s_p8))
-
-                    ; #44024: <==commonly_known== 10384 (neg)
-                    (Pa_checked_p8)
-
-                    ; #50316: <==commonly_known== 10384 (neg)
-                    (Pc_checked_p8)
-
-                    ; #53551: origin
-                    (when (and (not_hiddensurvivorat_s_p8))
-                          (Bb_not_survivorat_s_p8))
-
-                    ; #56038: origin
-                    (checked_p8)
-
-                    ; #61501: <==commonly_known== 56038 (pos)
-                    (Ba_checked_p8)
-
-                    ; #75239: <==commonly_known== 10384 (neg)
-                    (Pb_checked_p8)
-
-                    ; #78072: origin
+                    ; #19743: origin
                     (when (and (hiddensurvivorat_s_p8))
                           (Bb_survivorat_s_p8))
 
-                    ; #10384: <==negation-removal== 56038 (pos)
-                    (not (not_checked_p8))
+                    ; #28248: origin
+                    (checked_p8)
 
-                    ; #16172: <==negation-removal== 50316 (pos)
+                    ; #33894: <==closure== 52581 (pos)
+                    (when (and (not_hiddensurvivorat_s_p8))
+                          (Pb_not_survivorat_s_p8))
+
+                    ; #35013: <==commonly_known== 31629 (neg)
+                    (Pa_checked_p8)
+
+                    ; #36308: <==commonly_known== 31629 (neg)
+                    (Pb_checked_p8)
+
+                    ; #36589: <==commonly_known== 28248 (pos)
+                    (Bc_checked_p8)
+
+                    ; #38776: <==commonly_known== 28248 (pos)
+                    (Bb_checked_p8)
+
+                    ; #42575: <==commonly_known== 31629 (neg)
+                    (Pc_checked_p8)
+
+                    ; #48562: <==closure== 19743 (pos)
+                    (when (and (hiddensurvivorat_s_p8))
+                          (Pb_survivorat_s_p8))
+
+                    ; #52581: origin
+                    (when (and (not_hiddensurvivorat_s_p8))
+                          (Bb_not_survivorat_s_p8))
+
+                    ; #89640: <==commonly_known== 28248 (pos)
+                    (Ba_checked_p8)
+
+                    ; #14039: <==negation-removal== 42575 (pos)
                     (not (Bc_not_checked_p8))
 
-                    ; #18071: <==uncertain_firing== 53551 (pos)
+                    ; #14411: <==uncertain_firing== 52581 (pos)
                     (when (and (not (hiddensurvivorat_s_p8)))
                           (not (Pb_survivorat_s_p8)))
 
-                    ; #18962: <==negation-removal== 75239 (pos)
-                    (not (Bb_not_checked_p8))
-
-                    ; #31297: <==negation-removal== 13339 (pos)
-                    (not (Pc_not_checked_p8))
-
-                    ; #31928: <==negation-removal== 29760 (pos)
-                    (when (and (hiddensurvivorat_s_p8))
-                          (not (Bb_not_survivorat_s_p8)))
-
-                    ; #45613: <==uncertain_firing== 29760 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p8)))
-                          (not (Bb_not_survivorat_s_p8)))
-
-                    ; #47795: <==uncertain_firing== 28734 (pos)
-                    (when (and (not (hiddensurvivorat_s_p8)))
-                          (not (Bb_survivorat_s_p8)))
-
-                    ; #53264: <==negation-removal== 14291 (pos)
-                    (not (Pb_not_checked_p8))
-
-                    ; #56348: <==negation-removal== 61501 (pos)
+                    ; #14816: <==negation-removal== 89640 (pos)
                     (not (Pa_not_checked_p8))
 
-                    ; #57828: <==negation-removal== 53551 (pos)
+                    ; #17846: <==negation-removal== 35013 (pos)
+                    (not (Ba_not_checked_p8))
+
+                    ; #26951: <==negation-removal== 52581 (pos)
                     (when (and (not_hiddensurvivorat_s_p8))
                           (not (Pb_survivorat_s_p8)))
 
-                    ; #66706: <==negation-removal== 44024 (pos)
-                    (not (Ba_not_checked_p8))
+                    ; #30535: <==negation-removal== 36308 (pos)
+                    (not (Bb_not_checked_p8))
 
-                    ; #73518: <==negation-removal== 78072 (pos)
+                    ; #30848: <==negation-removal== 19743 (pos)
                     (when (and (hiddensurvivorat_s_p8))
                           (not (Pb_not_survivorat_s_p8)))
 
-                    ; #74078: <==uncertain_firing== 78072 (pos)
+                    ; #31629: <==negation-removal== 28248 (pos)
+                    (not (not_checked_p8))
+
+                    ; #34732: <==negation-removal== 38776 (pos)
+                    (not (Pb_not_checked_p8))
+
+                    ; #44165: <==uncertain_firing== 19743 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p8)))
                           (not (Pb_not_survivorat_s_p8)))
 
-                    ; #77927: <==negation-removal== 28734 (pos)
+                    ; #46521: <==negation-removal== 36589 (pos)
+                    (not (Pc_not_checked_p8))
+
+                    ; #52513: <==uncertain_firing== 48562 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p8)))
+                          (not (Bb_not_survivorat_s_p8)))
+
+                    ; #71587: <==negation-removal== 48562 (pos)
+                    (when (and (hiddensurvivorat_s_p8))
+                          (not (Bb_not_survivorat_s_p8)))
+
+                    ; #83488: <==uncertain_firing== 33894 (pos)
+                    (when (and (not (hiddensurvivorat_s_p8)))
+                          (not (Bb_survivorat_s_p8)))
+
+                    ; #99588: <==negation-removal== 33894 (pos)
                     (when (and (not_hiddensurvivorat_s_p8))
                           (not (Bb_survivorat_s_p8)))))
 
@@ -9254,940 +9254,940 @@
         :precondition (and (at_b_p9)
                            (not (leader_b)))
         :effect (and
-                    ; #15312: origin
-                    (when (and (hiddensurvivorat_s_p9))
-                          (Bb_survivorat_s_p9))
-
-                    ; #15727: <==closure== 15312 (pos)
-                    (when (and (hiddensurvivorat_s_p9))
-                          (Pb_survivorat_s_p9))
-
-                    ; #20314: <==closure== 37008 (pos)
-                    (when (and (not_hiddensurvivorat_s_p9))
-                          (Pb_not_survivorat_s_p9))
-
-                    ; #21620: <==commonly_known== 83294 (neg)
-                    (Pb_checked_p9)
-
-                    ; #35136: <==commonly_known== 86629 (pos)
-                    (Bb_checked_p9)
-
-                    ; #35806: <==commonly_known== 86629 (pos)
-                    (Ba_checked_p9)
-
-                    ; #37008: origin
+                    ; #19700: origin
                     (when (and (not_hiddensurvivorat_s_p9))
                           (Bb_not_survivorat_s_p9))
 
-                    ; #46426: <==commonly_known== 83294 (neg)
-                    (Pa_checked_p9)
-
-                    ; #52742: <==commonly_known== 83294 (neg)
-                    (Pc_checked_p9)
-
-                    ; #85519: <==commonly_known== 86629 (pos)
-                    (Bc_checked_p9)
-
-                    ; #86629: origin
+                    ; #30746: origin
                     (checked_p9)
 
-                    ; #15529: <==negation-removal== 20314 (pos)
-                    (when (and (not_hiddensurvivorat_s_p9))
-                          (not (Bb_survivorat_s_p9)))
+                    ; #44246: <==commonly_known== 71649 (neg)
+                    (Pb_checked_p9)
 
-                    ; #17518: <==uncertain_firing== 15312 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p9)))
-                          (not (Pb_not_survivorat_s_p9)))
+                    ; #49082: <==commonly_known== 30746 (pos)
+                    (Bc_checked_p9)
 
-                    ; #29756: <==negation-removal== 85519 (pos)
-                    (not (Pc_not_checked_p9))
+                    ; #53753: <==commonly_known== 30746 (pos)
+                    (Ba_checked_p9)
 
-                    ; #35556: <==negation-removal== 37008 (pos)
-                    (when (and (not_hiddensurvivorat_s_p9))
-                          (not (Pb_survivorat_s_p9)))
+                    ; #63916: <==commonly_known== 71649 (neg)
+                    (Pa_checked_p9)
 
-                    ; #37953: <==negation-removal== 35136 (pos)
-                    (not (Pb_not_checked_p9))
-
-                    ; #38902: <==negation-removal== 15312 (pos)
+                    ; #68110: origin
                     (when (and (hiddensurvivorat_s_p9))
-                          (not (Pb_not_survivorat_s_p9)))
+                          (Bb_survivorat_s_p9))
 
-                    ; #39680: <==uncertain_firing== 20314 (pos)
-                    (when (and (not (hiddensurvivorat_s_p9)))
-                          (not (Bb_survivorat_s_p9)))
+                    ; #69721: <==commonly_known== 71649 (neg)
+                    (Pc_checked_p9)
 
-                    ; #48189: <==negation-removal== 46426 (pos)
+                    ; #70048: <==closure== 68110 (pos)
+                    (when (and (hiddensurvivorat_s_p9))
+                          (Pb_survivorat_s_p9))
+
+                    ; #82691: <==closure== 19700 (pos)
+                    (when (and (not_hiddensurvivorat_s_p9))
+                          (Pb_not_survivorat_s_p9))
+
+                    ; #86892: <==commonly_known== 30746 (pos)
+                    (Bb_checked_p9)
+
+                    ; #14189: <==negation-removal== 63916 (pos)
                     (not (Ba_not_checked_p9))
 
-                    ; #50530: <==negation-removal== 15727 (pos)
-                    (when (and (hiddensurvivorat_s_p9))
-                          (not (Bb_not_survivorat_s_p9)))
+                    ; #23971: <==negation-removal== 86892 (pos)
+                    (not (Pb_not_checked_p9))
 
-                    ; #62416: <==uncertain_firing== 15727 (pos)
+                    ; #27440: <==negation-removal== 49082 (pos)
+                    (not (Pc_not_checked_p9))
+
+                    ; #27592: <==negation-removal== 19700 (pos)
+                    (when (and (not_hiddensurvivorat_s_p9))
+                          (not (Pb_survivorat_s_p9)))
+
+                    ; #30973: <==uncertain_firing== 82691 (pos)
+                    (when (and (not (hiddensurvivorat_s_p9)))
+                          (not (Bb_survivorat_s_p9)))
+
+                    ; #48387: <==uncertain_firing== 70048 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p9)))
                           (not (Bb_not_survivorat_s_p9)))
 
-                    ; #64888: <==uncertain_firing== 37008 (pos)
+                    ; #55049: <==negation-removal== 82691 (pos)
+                    (when (and (not_hiddensurvivorat_s_p9))
+                          (not (Bb_survivorat_s_p9)))
+
+                    ; #57175: <==negation-removal== 70048 (pos)
+                    (when (and (hiddensurvivorat_s_p9))
+                          (not (Bb_not_survivorat_s_p9)))
+
+                    ; #57484: <==negation-removal== 69721 (pos)
+                    (not (Bc_not_checked_p9))
+
+                    ; #64143: <==uncertain_firing== 19700 (pos)
                     (when (and (not (hiddensurvivorat_s_p9)))
                           (not (Pb_survivorat_s_p9)))
 
-                    ; #65889: <==negation-removal== 35806 (pos)
-                    (not (Pa_not_checked_p9))
-
-                    ; #80023: <==negation-removal== 52742 (pos)
-                    (not (Bc_not_checked_p9))
-
-                    ; #83294: <==negation-removal== 86629 (pos)
+                    ; #71649: <==negation-removal== 30746 (pos)
                     (not (not_checked_p9))
 
-                    ; #85015: <==negation-removal== 21620 (pos)
-                    (not (Bb_not_checked_p9))))
+                    ; #71803: <==negation-removal== 44246 (pos)
+                    (not (Bb_not_checked_p9))
+
+                    ; #74832: <==uncertain_firing== 68110 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p9)))
+                          (not (Pb_not_survivorat_s_p9)))
+
+                    ; #79807: <==negation-removal== 68110 (pos)
+                    (when (and (hiddensurvivorat_s_p9))
+                          (not (Pb_not_survivorat_s_p9)))
+
+                    ; #84237: <==negation-removal== 53753 (pos)
+                    (not (Pa_not_checked_p9))))
 
     (:action observe_c_p1_s
         :precondition (and (at_c_p1)
                            (not (leader_c)))
         :effect (and
-                    ; #32597: origin
-                    (when (and (hiddensurvivorat_s_p1))
-                          (Bc_survivorat_s_p1))
-
-                    ; #33268: <==commonly_known== 57734 (neg)
-                    (Pc_checked_p1)
-
-                    ; #33844: origin
-                    (checked_p1)
-
-                    ; #40349: <==commonly_known== 57734 (neg)
+                    ; #17531: <==commonly_known== 79793 (neg)
                     (Pb_checked_p1)
 
-                    ; #48467: <==commonly_known== 33844 (pos)
-                    (Bc_checked_p1)
-
-                    ; #48738: <==closure== 32597 (pos)
+                    ; #27657: <==closure== 30100 (pos)
                     (when (and (hiddensurvivorat_s_p1))
                           (Pc_survivorat_s_p1))
 
-                    ; #50564: <==commonly_known== 33844 (pos)
+                    ; #29701: <==commonly_known== 59522 (pos)
                     (Ba_checked_p1)
 
-                    ; #69148: <==closure== 89847 (pos)
-                    (when (and (not_hiddensurvivorat_s_p1))
-                          (Pc_not_survivorat_s_p1))
+                    ; #30100: origin
+                    (when (and (hiddensurvivorat_s_p1))
+                          (Bc_survivorat_s_p1))
 
-                    ; #69525: <==commonly_known== 33844 (pos)
-                    (Bb_checked_p1)
+                    ; #36739: <==commonly_known== 79793 (neg)
+                    (Pc_checked_p1)
 
-                    ; #82389: <==commonly_known== 57734 (neg)
-                    (Pa_checked_p1)
-
-                    ; #89847: origin
+                    ; #53993: origin
                     (when (and (not_hiddensurvivorat_s_p1))
                           (Bc_not_survivorat_s_p1))
 
-                    ; #16703: <==negation-removal== 82389 (pos)
-                    (not (Ba_not_checked_p1))
+                    ; #59522: origin
+                    (checked_p1)
 
-                    ; #37623: <==negation-removal== 48738 (pos)
-                    (when (and (hiddensurvivorat_s_p1))
-                          (not (Bc_not_survivorat_s_p1)))
+                    ; #66435: <==commonly_known== 59522 (pos)
+                    (Bb_checked_p1)
 
-                    ; #39547: <==negation-removal== 50564 (pos)
+                    ; #67994: <==commonly_known== 59522 (pos)
+                    (Bc_checked_p1)
+
+                    ; #91909: <==commonly_known== 79793 (neg)
+                    (Pa_checked_p1)
+
+                    ; #94174: <==closure== 53993 (pos)
+                    (when (and (not_hiddensurvivorat_s_p1))
+                          (Pc_not_survivorat_s_p1))
+
+                    ; #10180: <==negation-removal== 29701 (pos)
                     (not (Pa_not_checked_p1))
 
-                    ; #50249: <==negation-removal== 33268 (pos)
-                    (not (Bc_not_checked_p1))
-
-                    ; #50510: <==uncertain_firing== 48738 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p1)))
+                    ; #12679: <==negation-removal== 27657 (pos)
+                    (when (and (hiddensurvivorat_s_p1))
                           (not (Bc_not_survivorat_s_p1)))
 
-                    ; #55604: <==uncertain_firing== 69148 (pos)
+                    ; #17722: <==negation-removal== 66435 (pos)
+                    (not (Pb_not_checked_p1))
+
+                    ; #17874: <==negation-removal== 67994 (pos)
+                    (not (Pc_not_checked_p1))
+
+                    ; #49908: <==negation-removal== 91909 (pos)
+                    (not (Ba_not_checked_p1))
+
+                    ; #52030: <==negation-removal== 36739 (pos)
+                    (not (Bc_not_checked_p1))
+
+                    ; #63653: <==uncertain_firing== 94174 (pos)
                     (when (and (not (hiddensurvivorat_s_p1)))
                           (not (Bc_survivorat_s_p1)))
 
-                    ; #56887: <==uncertain_firing== 89847 (pos)
-                    (when (and (not (hiddensurvivorat_s_p1)))
-                          (not (Pc_survivorat_s_p1)))
+                    ; #66891: <==negation-removal== 94174 (pos)
+                    (when (and (not_hiddensurvivorat_s_p1))
+                          (not (Bc_survivorat_s_p1)))
 
-                    ; #57734: <==negation-removal== 33844 (pos)
-                    (not (not_checked_p1))
-
-                    ; #64435: <==uncertain_firing== 32597 (pos)
+                    ; #67645: <==uncertain_firing== 30100 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p1)))
                           (not (Pc_not_survivorat_s_p1)))
 
-                    ; #69785: <==negation-removal== 69148 (pos)
-                    (when (and (not_hiddensurvivorat_s_p1))
-                          (not (Bc_survivorat_s_p1)))
-
-                    ; #80115: <==negation-removal== 89847 (pos)
+                    ; #73087: <==negation-removal== 53993 (pos)
                     (when (and (not_hiddensurvivorat_s_p1))
                           (not (Pc_survivorat_s_p1)))
 
-                    ; #88711: <==negation-removal== 40349 (pos)
-                    (not (Bb_not_checked_p1))
-
-                    ; #88883: <==negation-removal== 32597 (pos)
+                    ; #79288: <==negation-removal== 30100 (pos)
                     (when (and (hiddensurvivorat_s_p1))
                           (not (Pc_not_survivorat_s_p1)))
 
-                    ; #94750: <==negation-removal== 69525 (pos)
-                    (not (Pb_not_checked_p1))
+                    ; #79793: <==negation-removal== 59522 (pos)
+                    (not (not_checked_p1))
 
-                    ; #99111: <==negation-removal== 48467 (pos)
-                    (not (Pc_not_checked_p1))))
+                    ; #85311: <==uncertain_firing== 53993 (pos)
+                    (when (and (not (hiddensurvivorat_s_p1)))
+                          (not (Pc_survivorat_s_p1)))
+
+                    ; #85498: <==uncertain_firing== 27657 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p1)))
+                          (not (Bc_not_survivorat_s_p1)))
+
+                    ; #86115: <==negation-removal== 17531 (pos)
+                    (not (Bb_not_checked_p1))))
 
     (:action observe_c_p2_s
         :precondition (and (at_c_p2)
                            (not (leader_c)))
         :effect (and
-                    ; #11711: origin
-                    (when (and (hiddensurvivorat_s_p2))
-                          (Bc_survivorat_s_p2))
-
-                    ; #18508: <==closure== 11711 (pos)
-                    (when (and (hiddensurvivorat_s_p2))
-                          (Pc_survivorat_s_p2))
-
-                    ; #22252: <==commonly_known== 42857 (pos)
-                    (Ba_checked_p2)
-
-                    ; #37603: <==commonly_known== 89282 (neg)
-                    (Pa_checked_p2)
-
-                    ; #38146: <==commonly_known== 89282 (neg)
+                    ; #12288: <==commonly_known== 22924 (neg)
                     (Pb_checked_p2)
 
-                    ; #42857: origin
-                    (checked_p2)
-
-                    ; #61167: <==commonly_known== 42857 (pos)
-                    (Bc_checked_p2)
-
-                    ; #67339: origin
+                    ; #18475: origin
                     (when (and (not_hiddensurvivorat_s_p2))
                           (Bc_not_survivorat_s_p2))
 
-                    ; #68134: <==closure== 67339 (pos)
+                    ; #30783: origin
+                    (checked_p2)
+
+                    ; #37022: <==commonly_known== 30783 (pos)
+                    (Bc_checked_p2)
+
+                    ; #41658: <==commonly_known== 22924 (neg)
+                    (Pc_checked_p2)
+
+                    ; #47856: <==commonly_known== 30783 (pos)
+                    (Bb_checked_p2)
+
+                    ; #68344: origin
+                    (when (and (hiddensurvivorat_s_p2))
+                          (Bc_survivorat_s_p2))
+
+                    ; #69785: <==commonly_known== 30783 (pos)
+                    (Ba_checked_p2)
+
+                    ; #77312: <==commonly_known== 22924 (neg)
+                    (Pa_checked_p2)
+
+                    ; #78256: <==closure== 68344 (pos)
+                    (when (and (hiddensurvivorat_s_p2))
+                          (Pc_survivorat_s_p2))
+
+                    ; #81974: <==closure== 18475 (pos)
                     (when (and (not_hiddensurvivorat_s_p2))
                           (Pc_not_survivorat_s_p2))
 
-                    ; #71475: <==commonly_known== 89282 (neg)
-                    (Pc_checked_p2)
-
-                    ; #99348: <==commonly_known== 42857 (pos)
-                    (Bb_checked_p2)
-
-                    ; #16473: <==negation-removal== 67339 (pos)
-                    (when (and (not_hiddensurvivorat_s_p2))
-                          (not (Pc_survivorat_s_p2)))
-
-                    ; #18110: <==uncertain_firing== 68134 (pos)
-                    (when (and (not (hiddensurvivorat_s_p2)))
-                          (not (Bc_survivorat_s_p2)))
-
-                    ; #21037: <==negation-removal== 99348 (pos)
+                    ; #15498: <==negation-removal== 47856 (pos)
                     (not (Pb_not_checked_p2))
 
-                    ; #26244: <==negation-removal== 71475 (pos)
+                    ; #16042: <==negation-removal== 41658 (pos)
                     (not (Bc_not_checked_p2))
 
-                    ; #40869: <==negation-removal== 38146 (pos)
-                    (not (Bb_not_checked_p2))
+                    ; #22924: <==negation-removal== 30783 (pos)
+                    (not (not_checked_p2))
 
-                    ; #44949: <==uncertain_firing== 18508 (pos)
+                    ; #28421: <==uncertain_firing== 68344 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p2)))
+                          (not (Pc_not_survivorat_s_p2)))
+
+                    ; #42333: <==negation-removal== 77312 (pos)
+                    (not (Ba_not_checked_p2))
+
+                    ; #43481: <==uncertain_firing== 78256 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p2)))
                           (not (Bc_not_survivorat_s_p2)))
 
-                    ; #51809: <==negation-removal== 11711 (pos)
+                    ; #44003: <==negation-removal== 78256 (pos)
+                    (when (and (hiddensurvivorat_s_p2))
+                          (not (Bc_not_survivorat_s_p2)))
+
+                    ; #52688: <==negation-removal== 18475 (pos)
+                    (when (and (not_hiddensurvivorat_s_p2))
+                          (not (Pc_survivorat_s_p2)))
+
+                    ; #55035: <==negation-removal== 81974 (pos)
+                    (when (and (not_hiddensurvivorat_s_p2))
+                          (not (Bc_survivorat_s_p2)))
+
+                    ; #58839: <==negation-removal== 12288 (pos)
+                    (not (Bb_not_checked_p2))
+
+                    ; #61880: <==negation-removal== 68344 (pos)
                     (when (and (hiddensurvivorat_s_p2))
                           (not (Pc_not_survivorat_s_p2)))
 
-                    ; #65651: <==negation-removal== 22252 (pos)
-                    (not (Pa_not_checked_p2))
-
-                    ; #66691: <==negation-removal== 18508 (pos)
-                    (when (and (hiddensurvivorat_s_p2))
-                          (not (Bc_not_survivorat_s_p2)))
-
-                    ; #68051: <==negation-removal== 37603 (pos)
-                    (not (Ba_not_checked_p2))
-
-                    ; #70897: <==uncertain_firing== 67339 (pos)
+                    ; #74334: <==uncertain_firing== 18475 (pos)
                     (when (and (not (hiddensurvivorat_s_p2)))
                           (not (Pc_survivorat_s_p2)))
 
-                    ; #78914: <==negation-removal== 68134 (pos)
-                    (when (and (not_hiddensurvivorat_s_p2))
+                    ; #81089: <==negation-removal== 69785 (pos)
+                    (not (Pa_not_checked_p2))
+
+                    ; #86691: <==uncertain_firing== 81974 (pos)
+                    (when (and (not (hiddensurvivorat_s_p2)))
                           (not (Bc_survivorat_s_p2)))
 
-                    ; #85269: <==negation-removal== 61167 (pos)
-                    (not (Pc_not_checked_p2))
-
-                    ; #89282: <==negation-removal== 42857 (pos)
-                    (not (not_checked_p2))
-
-                    ; #90708: <==uncertain_firing== 11711 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p2)))
-                          (not (Pc_not_survivorat_s_p2)))))
+                    ; #90488: <==negation-removal== 37022 (pos)
+                    (not (Pc_not_checked_p2))))
 
     (:action observe_c_p3_s
         :precondition (and (at_c_p3)
                            (not (leader_c)))
         :effect (and
-                    ; #13831: origin
-                    (when (and (hiddensurvivorat_s_p3))
-                          (Bc_survivorat_s_p3))
-
-                    ; #15494: <==commonly_known== 91489 (pos)
-                    (Bb_checked_p3)
-
-                    ; #19937: <==commonly_known== 78365 (neg)
-                    (Pc_checked_p3)
-
-                    ; #27031: origin
-                    (when (and (not_hiddensurvivorat_s_p3))
-                          (Bc_not_survivorat_s_p3))
-
-                    ; #42816: <==commonly_known== 91489 (pos)
-                    (Bc_checked_p3)
-
-                    ; #45578: <==closure== 13831 (pos)
+                    ; #13134: <==closure== 34174 (pos)
                     (when (and (hiddensurvivorat_s_p3))
                           (Pc_survivorat_s_p3))
 
-                    ; #48660: <==commonly_known== 78365 (neg)
-                    (Pb_checked_p3)
-
-                    ; #71373: <==commonly_known== 91489 (pos)
-                    (Ba_checked_p3)
-
-                    ; #76961: <==closure== 27031 (pos)
+                    ; #15533: <==closure== 33017 (pos)
                     (when (and (not_hiddensurvivorat_s_p3))
                           (Pc_not_survivorat_s_p3))
 
-                    ; #84484: <==commonly_known== 78365 (neg)
+                    ; #18763: <==commonly_known== 68122 (neg)
                     (Pa_checked_p3)
 
-                    ; #91489: origin
+                    ; #33017: origin
+                    (when (and (not_hiddensurvivorat_s_p3))
+                          (Bc_not_survivorat_s_p3))
+
+                    ; #34174: origin
+                    (when (and (hiddensurvivorat_s_p3))
+                          (Bc_survivorat_s_p3))
+
+                    ; #40858: <==commonly_known== 68122 (neg)
+                    (Pb_checked_p3)
+
+                    ; #47167: <==commonly_known== 86560 (pos)
+                    (Ba_checked_p3)
+
+                    ; #55668: <==commonly_known== 86560 (pos)
+                    (Bc_checked_p3)
+
+                    ; #75384: <==commonly_known== 86560 (pos)
+                    (Bb_checked_p3)
+
+                    ; #86560: origin
                     (checked_p3)
 
-                    ; #20871: <==uncertain_firing== 76961 (pos)
-                    (when (and (not (hiddensurvivorat_s_p3)))
+                    ; #87528: <==commonly_known== 68122 (neg)
+                    (Pc_checked_p3)
+
+                    ; #12500: <==negation-removal== 15533 (pos)
+                    (when (and (not_hiddensurvivorat_s_p3))
                           (not (Bc_survivorat_s_p3)))
 
-                    ; #24939: <==negation-removal== 15494 (pos)
-                    (not (Pb_not_checked_p3))
+                    ; #14005: <==negation-removal== 34174 (pos)
+                    (when (and (hiddensurvivorat_s_p3))
+                          (not (Pc_not_survivorat_s_p3)))
 
-                    ; #25406: <==negation-removal== 84484 (pos)
-                    (not (Ba_not_checked_p3))
-
-                    ; #25997: <==negation-removal== 45578 (pos)
+                    ; #17088: <==negation-removal== 13134 (pos)
                     (when (and (hiddensurvivorat_s_p3))
                           (not (Bc_not_survivorat_s_p3)))
 
-                    ; #27606: <==negation-removal== 48660 (pos)
-                    (not (Bb_not_checked_p3))
+                    ; #26445: <==negation-removal== 18763 (pos)
+                    (not (Ba_not_checked_p3))
 
-                    ; #32875: <==uncertain_firing== 27031 (pos)
+                    ; #30654: <==negation-removal== 47167 (pos)
+                    (not (Pa_not_checked_p3))
+
+                    ; #32762: <==negation-removal== 75384 (pos)
+                    (not (Pb_not_checked_p3))
+
+                    ; #35759: <==negation-removal== 55668 (pos)
+                    (not (Pc_not_checked_p3))
+
+                    ; #43020: <==uncertain_firing== 13134 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p3)))
+                          (not (Bc_not_survivorat_s_p3)))
+
+                    ; #44593: <==uncertain_firing== 34174 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p3)))
+                          (not (Pc_not_survivorat_s_p3)))
+
+                    ; #49807: <==negation-removal== 33017 (pos)
+                    (when (and (not_hiddensurvivorat_s_p3))
+                          (not (Pc_survivorat_s_p3)))
+
+                    ; #62073: <==uncertain_firing== 15533 (pos)
+                    (when (and (not (hiddensurvivorat_s_p3)))
+                          (not (Bc_survivorat_s_p3)))
+
+                    ; #68122: <==negation-removal== 86560 (pos)
+                    (not (not_checked_p3))
+
+                    ; #74430: <==uncertain_firing== 33017 (pos)
                     (when (and (not (hiddensurvivorat_s_p3)))
                           (not (Pc_survivorat_s_p3)))
 
-                    ; #34564: <==uncertain_firing== 45578 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p3)))
-                          (not (Bc_not_survivorat_s_p3)))
+                    ; #75816: <==negation-removal== 40858 (pos)
+                    (not (Bb_not_checked_p3))
 
-                    ; #42745: <==negation-removal== 13831 (pos)
-                    (when (and (hiddensurvivorat_s_p3))
-                          (not (Pc_not_survivorat_s_p3)))
-
-                    ; #56137: <==negation-removal== 19937 (pos)
-                    (not (Bc_not_checked_p3))
-
-                    ; #58349: <==uncertain_firing== 13831 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p3)))
-                          (not (Pc_not_survivorat_s_p3)))
-
-                    ; #61483: <==negation-removal== 42816 (pos)
-                    (not (Pc_not_checked_p3))
-
-                    ; #68709: <==negation-removal== 76961 (pos)
-                    (when (and (not_hiddensurvivorat_s_p3))
-                          (not (Bc_survivorat_s_p3)))
-
-                    ; #78365: <==negation-removal== 91489 (pos)
-                    (not (not_checked_p3))
-
-                    ; #83362: <==negation-removal== 71373 (pos)
-                    (not (Pa_not_checked_p3))
-
-                    ; #86479: <==negation-removal== 27031 (pos)
-                    (when (and (not_hiddensurvivorat_s_p3))
-                          (not (Pc_survivorat_s_p3)))))
+                    ; #86979: <==negation-removal== 87528 (pos)
+                    (not (Bc_not_checked_p3))))
 
     (:action observe_c_p4_s
         :precondition (and (at_c_p4)
                            (not (leader_c)))
         :effect (and
-                    ; #32278: <==closure== 49399 (pos)
-                    (when (and (hiddensurvivorat_s_p4))
-                          (Pc_survivorat_s_p4))
+                    ; #12420: <==commonly_known== 39181 (pos)
+                    (Bc_checked_p4)
 
-                    ; #38587: <==commonly_known== 86262 (pos)
-                    (Bb_checked_p4)
-
-                    ; #42970: <==commonly_known== 92172 (neg)
-                    (Pa_checked_p4)
-
-                    ; #43136: origin
+                    ; #31094: origin
                     (when (and (not_hiddensurvivorat_s_p4))
                           (Bc_not_survivorat_s_p4))
 
-                    ; #49399: origin
+                    ; #35543: <==closure== 64842 (pos)
+                    (when (and (hiddensurvivorat_s_p4))
+                          (Pc_survivorat_s_p4))
+
+                    ; #39181: origin
+                    (checked_p4)
+
+                    ; #47140: <==commonly_known== 39181 (pos)
+                    (Bb_checked_p4)
+
+                    ; #55412: <==commonly_known== 34361 (neg)
+                    (Pb_checked_p4)
+
+                    ; #64842: origin
                     (when (and (hiddensurvivorat_s_p4))
                           (Bc_survivorat_s_p4))
 
-                    ; #50635: <==commonly_known== 92172 (neg)
-                    (Pc_checked_p4)
+                    ; #69769: <==commonly_known== 34361 (neg)
+                    (Pa_checked_p4)
 
-                    ; #60574: <==closure== 43136 (pos)
+                    ; #71175: <==closure== 31094 (pos)
                     (when (and (not_hiddensurvivorat_s_p4))
                           (Pc_not_survivorat_s_p4))
 
-                    ; #75440: <==commonly_known== 92172 (neg)
-                    (Pb_checked_p4)
-
-                    ; #85558: <==commonly_known== 86262 (pos)
+                    ; #84716: <==commonly_known== 39181 (pos)
                     (Ba_checked_p4)
 
-                    ; #86262: origin
-                    (checked_p4)
+                    ; #90338: <==commonly_known== 34361 (neg)
+                    (Pc_checked_p4)
 
-                    ; #87937: <==commonly_known== 86262 (pos)
-                    (Bc_checked_p4)
-
-                    ; #12653: <==uncertain_firing== 43136 (pos)
-                    (when (and (not (hiddensurvivorat_s_p4)))
-                          (not (Pc_survivorat_s_p4)))
-
-                    ; #24190: <==negation-removal== 85558 (pos)
-                    (not (Pa_not_checked_p4))
-
-                    ; #29558: <==negation-removal== 43136 (pos)
-                    (when (and (not_hiddensurvivorat_s_p4))
-                          (not (Pc_survivorat_s_p4)))
-
-                    ; #31387: <==negation-removal== 32278 (pos)
-                    (when (and (hiddensurvivorat_s_p4))
-                          (not (Bc_not_survivorat_s_p4)))
-
-                    ; #40718: <==negation-removal== 42970 (pos)
-                    (not (Ba_not_checked_p4))
-
-                    ; #45390: <==negation-removal== 49399 (pos)
+                    ; #15784: <==negation-removal== 64842 (pos)
                     (when (and (hiddensurvivorat_s_p4))
                           (not (Pc_not_survivorat_s_p4)))
 
-                    ; #53992: <==uncertain_firing== 60574 (pos)
-                    (when (and (not (hiddensurvivorat_s_p4)))
-                          (not (Bc_survivorat_s_p4)))
-
-                    ; #56544: <==negation-removal== 38587 (pos)
-                    (not (Pb_not_checked_p4))
-
-                    ; #58997: <==negation-removal== 60574 (pos)
+                    ; #17393: <==negation-removal== 71175 (pos)
                     (when (and (not_hiddensurvivorat_s_p4))
                           (not (Bc_survivorat_s_p4)))
 
-                    ; #74459: <==negation-removal== 50635 (pos)
-                    (not (Bc_not_checked_p4))
-
-                    ; #77747: <==uncertain_firing== 49399 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p4)))
-                          (not (Pc_not_survivorat_s_p4)))
-
-                    ; #84176: <==negation-removal== 87937 (pos)
-                    (not (Pc_not_checked_p4))
-
-                    ; #85841: <==negation-removal== 75440 (pos)
+                    ; #19883: <==negation-removal== 55412 (pos)
                     (not (Bb_not_checked_p4))
 
-                    ; #87957: <==uncertain_firing== 32278 (pos)
+                    ; #26338: <==negation-removal== 47140 (pos)
+                    (not (Pb_not_checked_p4))
+
+                    ; #34361: <==negation-removal== 39181 (pos)
+                    (not (not_checked_p4))
+
+                    ; #37220: <==uncertain_firing== 64842 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p4)))
+                          (not (Pc_not_survivorat_s_p4)))
+
+                    ; #39901: <==negation-removal== 31094 (pos)
+                    (when (and (not_hiddensurvivorat_s_p4))
+                          (not (Pc_survivorat_s_p4)))
+
+                    ; #48274: <==negation-removal== 84716 (pos)
+                    (not (Pa_not_checked_p4))
+
+                    ; #53190: <==negation-removal== 35543 (pos)
+                    (when (and (hiddensurvivorat_s_p4))
+                          (not (Bc_not_survivorat_s_p4)))
+
+                    ; #59409: <==uncertain_firing== 71175 (pos)
+                    (when (and (not (hiddensurvivorat_s_p4)))
+                          (not (Bc_survivorat_s_p4)))
+
+                    ; #59764: <==negation-removal== 69769 (pos)
+                    (not (Ba_not_checked_p4))
+
+                    ; #66994: <==negation-removal== 90338 (pos)
+                    (not (Bc_not_checked_p4))
+
+                    ; #67403: <==negation-removal== 12420 (pos)
+                    (not (Pc_not_checked_p4))
+
+                    ; #83626: <==uncertain_firing== 35543 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p4)))
                           (not (Bc_not_survivorat_s_p4)))
 
-                    ; #92172: <==negation-removal== 86262 (pos)
-                    (not (not_checked_p4))))
+                    ; #86963: <==uncertain_firing== 31094 (pos)
+                    (when (and (not (hiddensurvivorat_s_p4)))
+                          (not (Pc_survivorat_s_p4)))))
 
     (:action observe_c_p5_s
         :precondition (and (at_c_p5)
                            (not (leader_c)))
         :effect (and
-                    ; #23811: <==commonly_known== 51268 (pos)
-                    (Bc_checked_p5)
-
-                    ; #45624: origin
+                    ; #10280: origin
                     (when (and (hiddensurvivorat_s_p5))
                           (Bc_survivorat_s_p5))
 
-                    ; #45665: origin
-                    (when (and (not_hiddensurvivorat_s_p5))
-                          (Bc_not_survivorat_s_p5))
+                    ; #17798: <==commonly_known== 87884 (neg)
+                    (Pb_checked_p5)
 
-                    ; #51268: origin
-                    (checked_p5)
+                    ; #21101: <==commonly_known== 40051 (pos)
+                    (Bc_checked_p5)
 
-                    ; #54120: <==commonly_known== 51268 (pos)
-                    (Bb_checked_p5)
-
-                    ; #72941: <==commonly_known== 58760 (neg)
-                    (Pc_checked_p5)
-
-                    ; #76645: <==closure== 45624 (pos)
+                    ; #22114: <==closure== 10280 (pos)
                     (when (and (hiddensurvivorat_s_p5))
                           (Pc_survivorat_s_p5))
 
-                    ; #83611: <==commonly_known== 58760 (neg)
+                    ; #36654: <==commonly_known== 87884 (neg)
                     (Pa_checked_p5)
 
-                    ; #89778: <==commonly_known== 51268 (pos)
-                    (Ba_checked_p5)
+                    ; #40051: origin
+                    (checked_p5)
 
-                    ; #90861: <==closure== 45665 (pos)
+                    ; #41456: <==commonly_known== 87884 (neg)
+                    (Pc_checked_p5)
+
+                    ; #42060: <==closure== 87939 (pos)
                     (when (and (not_hiddensurvivorat_s_p5))
                           (Pc_not_survivorat_s_p5))
 
-                    ; #91718: <==commonly_known== 58760 (neg)
-                    (Pb_checked_p5)
+                    ; #64560: <==commonly_known== 40051 (pos)
+                    (Ba_checked_p5)
 
-                    ; #10711: <==negation-removal== 90861 (pos)
+                    ; #79130: <==commonly_known== 40051 (pos)
+                    (Bb_checked_p5)
+
+                    ; #87939: origin
+                    (when (and (not_hiddensurvivorat_s_p5))
+                          (Bc_not_survivorat_s_p5))
+
+                    ; #10052: <==negation-removal== 42060 (pos)
                     (when (and (not_hiddensurvivorat_s_p5))
                           (not (Bc_survivorat_s_p5)))
 
-                    ; #16661: <==negation-removal== 83611 (pos)
-                    (not (Ba_not_checked_p5))
+                    ; #18365: <==uncertain_firing== 87939 (pos)
+                    (when (and (not (hiddensurvivorat_s_p5)))
+                          (not (Pc_survivorat_s_p5)))
 
-                    ; #17581: <==uncertain_firing== 45624 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p5)))
-                          (not (Pc_not_survivorat_s_p5)))
-
-                    ; #19084: <==negation-removal== 54120 (pos)
+                    ; #24155: <==negation-removal== 79130 (pos)
                     (not (Pb_not_checked_p5))
 
-                    ; #26596: <==negation-removal== 23811 (pos)
+                    ; #38814: <==negation-removal== 21101 (pos)
                     (not (Pc_not_checked_p5))
 
-                    ; #36330: <==negation-removal== 91718 (pos)
+                    ; #43459: <==negation-removal== 10280 (pos)
+                    (when (and (hiddensurvivorat_s_p5))
+                          (not (Pc_not_survivorat_s_p5)))
+
+                    ; #49127: <==uncertain_firing== 42060 (pos)
+                    (when (and (not (hiddensurvivorat_s_p5)))
+                          (not (Bc_survivorat_s_p5)))
+
+                    ; #61181: <==negation-removal== 17798 (pos)
                     (not (Bb_not_checked_p5))
 
-                    ; #37532: <==negation-removal== 45665 (pos)
+                    ; #64347: <==negation-removal== 64560 (pos)
+                    (not (Pa_not_checked_p5))
+
+                    ; #65808: <==negation-removal== 87939 (pos)
                     (when (and (not_hiddensurvivorat_s_p5))
                           (not (Pc_survivorat_s_p5)))
 
-                    ; #41085: <==negation-removal== 89778 (pos)
-                    (not (Pa_not_checked_p5))
+                    ; #67995: <==uncertain_firing== 10280 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p5)))
+                          (not (Pc_not_survivorat_s_p5)))
 
-                    ; #41355: <==uncertain_firing== 76645 (pos)
+                    ; #69921: <==uncertain_firing== 22114 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p5)))
                           (not (Bc_not_survivorat_s_p5)))
 
-                    ; #54723: <==negation-removal== 45624 (pos)
+                    ; #71164: <==negation-removal== 22114 (pos)
                     (when (and (hiddensurvivorat_s_p5))
-                          (not (Pc_not_survivorat_s_p5)))
+                          (not (Bc_not_survivorat_s_p5)))
 
-                    ; #58760: <==negation-removal== 51268 (pos)
-                    (not (not_checked_p5))
-
-                    ; #61081: <==uncertain_firing== 45665 (pos)
-                    (when (and (not (hiddensurvivorat_s_p5)))
-                          (not (Pc_survivorat_s_p5)))
-
-                    ; #61244: <==negation-removal== 72941 (pos)
+                    ; #86799: <==negation-removal== 41456 (pos)
                     (not (Bc_not_checked_p5))
 
-                    ; #71109: <==uncertain_firing== 90861 (pos)
-                    (when (and (not (hiddensurvivorat_s_p5)))
-                          (not (Bc_survivorat_s_p5)))
+                    ; #87443: <==negation-removal== 36654 (pos)
+                    (not (Ba_not_checked_p5))
 
-                    ; #77671: <==negation-removal== 76645 (pos)
-                    (when (and (hiddensurvivorat_s_p5))
-                          (not (Bc_not_survivorat_s_p5)))))
+                    ; #87884: <==negation-removal== 40051 (pos)
+                    (not (not_checked_p5))))
 
     (:action observe_c_p6_s
         :precondition (and (at_c_p6)
                            (not (leader_c)))
         :effect (and
-                    ; #12873: <==commonly_known== 14777 (neg)
-                    (Pa_checked_p6)
-
-                    ; #20275: <==commonly_known== 14777 (neg)
-                    (Pc_checked_p6)
-
-                    ; #35313: origin
-                    (checked_p6)
-
-                    ; #49045: origin
-                    (when (and (hiddensurvivorat_s_p6))
-                          (Bc_survivorat_s_p6))
-
-                    ; #53471: <==closure== 49045 (pos)
-                    (when (and (hiddensurvivorat_s_p6))
-                          (Pc_survivorat_s_p6))
-
-                    ; #54160: <==commonly_known== 35313 (pos)
-                    (Bb_checked_p6)
-
-                    ; #58538: <==closure== 79968 (pos)
+                    ; #13421: <==closure== 14191 (pos)
                     (when (and (not_hiddensurvivorat_s_p6))
                           (Pc_not_survivorat_s_p6))
 
-                    ; #63630: <==commonly_known== 35313 (pos)
-                    (Bc_checked_p6)
-
-                    ; #68939: <==commonly_known== 35313 (pos)
-                    (Ba_checked_p6)
-
-                    ; #74329: <==commonly_known== 14777 (neg)
-                    (Pb_checked_p6)
-
-                    ; #79968: origin
+                    ; #14191: origin
                     (when (and (not_hiddensurvivorat_s_p6))
                           (Bc_not_survivorat_s_p6))
 
-                    ; #10952: <==negation-removal== 53471 (pos)
+                    ; #17478: <==commonly_known== 80573 (pos)
+                    (Bb_checked_p6)
+
+                    ; #21351: <==commonly_known== 18363 (neg)
+                    (Pc_checked_p6)
+
+                    ; #38764: <==commonly_known== 80573 (pos)
+                    (Bc_checked_p6)
+
+                    ; #63462: <==commonly_known== 80573 (pos)
+                    (Ba_checked_p6)
+
+                    ; #69096: <==commonly_known== 18363 (neg)
+                    (Pa_checked_p6)
+
+                    ; #70128: <==commonly_known== 18363 (neg)
+                    (Pb_checked_p6)
+
+                    ; #80573: origin
+                    (checked_p6)
+
+                    ; #81476: origin
+                    (when (and (hiddensurvivorat_s_p6))
+                          (Bc_survivorat_s_p6))
+
+                    ; #85614: <==closure== 81476 (pos)
+                    (when (and (hiddensurvivorat_s_p6))
+                          (Pc_survivorat_s_p6))
+
+                    ; #10307: <==negation-removal== 85614 (pos)
                     (when (and (hiddensurvivorat_s_p6))
                           (not (Bc_not_survivorat_s_p6)))
 
-                    ; #12565: <==negation-removal== 68939 (pos)
-                    (not (Pa_not_checked_p6))
-
-                    ; #14777: <==negation-removal== 35313 (pos)
+                    ; #18363: <==negation-removal== 80573 (pos)
                     (not (not_checked_p6))
 
-                    ; #16144: <==negation-removal== 20275 (pos)
-                    (not (Bc_not_checked_p6))
+                    ; #18688: <==uncertain_firing== 13421 (pos)
+                    (when (and (not (hiddensurvivorat_s_p6)))
+                          (not (Bc_survivorat_s_p6)))
 
-                    ; #16215: <==uncertain_firing== 53471 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p6)))
-                          (not (Bc_not_survivorat_s_p6)))
+                    ; #32556: <==negation-removal== 69096 (pos)
+                    (not (Ba_not_checked_p6))
 
-                    ; #27792: <==negation-removal== 79968 (pos)
-                    (when (and (not_hiddensurvivorat_s_p6))
+                    ; #34358: <==uncertain_firing== 14191 (pos)
+                    (when (and (not (hiddensurvivorat_s_p6)))
                           (not (Pc_survivorat_s_p6)))
 
-                    ; #31319: <==negation-removal== 74329 (pos)
+                    ; #40440: <==negation-removal== 13421 (pos)
+                    (when (and (not_hiddensurvivorat_s_p6))
+                          (not (Bc_survivorat_s_p6)))
+
+                    ; #58701: <==negation-removal== 70128 (pos)
                     (not (Bb_not_checked_p6))
 
-                    ; #32127: <==negation-removal== 49045 (pos)
+                    ; #60141: <==negation-removal== 38764 (pos)
+                    (not (Pc_not_checked_p6))
+
+                    ; #66878: <==negation-removal== 63462 (pos)
+                    (not (Pa_not_checked_p6))
+
+                    ; #67940: <==negation-removal== 21351 (pos)
+                    (not (Bc_not_checked_p6))
+
+                    ; #69485: <==negation-removal== 81476 (pos)
                     (when (and (hiddensurvivorat_s_p6))
                           (not (Pc_not_survivorat_s_p6)))
 
-                    ; #32911: <==negation-removal== 63630 (pos)
-                    (not (Pc_not_checked_p6))
-
-                    ; #43469: <==negation-removal== 54160 (pos)
+                    ; #70539: <==negation-removal== 17478 (pos)
                     (not (Pb_not_checked_p6))
 
-                    ; #47331: <==uncertain_firing== 79968 (pos)
-                    (when (and (not (hiddensurvivorat_s_p6)))
-                          (not (Pc_survivorat_s_p6)))
-
-                    ; #48609: <==negation-removal== 12873 (pos)
-                    (not (Ba_not_checked_p6))
-
-                    ; #70372: <==negation-removal== 58538 (pos)
-                    (when (and (not_hiddensurvivorat_s_p6))
-                          (not (Bc_survivorat_s_p6)))
-
-                    ; #77894: <==uncertain_firing== 58538 (pos)
-                    (when (and (not (hiddensurvivorat_s_p6)))
-                          (not (Bc_survivorat_s_p6)))
-
-                    ; #87286: <==uncertain_firing== 49045 (pos)
+                    ; #75539: <==uncertain_firing== 85614 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p6)))
-                          (not (Pc_not_survivorat_s_p6)))))
+                          (not (Bc_not_survivorat_s_p6)))
+
+                    ; #78487: <==uncertain_firing== 81476 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p6)))
+                          (not (Pc_not_survivorat_s_p6)))
+
+                    ; #79976: <==negation-removal== 14191 (pos)
+                    (when (and (not_hiddensurvivorat_s_p6))
+                          (not (Pc_survivorat_s_p6)))))
 
     (:action observe_c_p7_s
         :precondition (and (at_c_p7)
                            (not (leader_c)))
         :effect (and
-                    ; #12384: origin
-                    (when (and (not_hiddensurvivorat_s_p7))
-                          (Bc_not_survivorat_s_p7))
-
-                    ; #14101: <==commonly_known== 64632 (neg)
-                    (Pc_checked_p7)
-
-                    ; #16493: <==commonly_known== 41099 (pos)
-                    (Ba_checked_p7)
-
-                    ; #41099: origin
-                    (checked_p7)
-
-                    ; #41155: <==commonly_known== 41099 (pos)
-                    (Bb_checked_p7)
-
-                    ; #41226: <==commonly_known== 41099 (pos)
-                    (Bc_checked_p7)
-
-                    ; #50897: <==commonly_known== 64632 (neg)
+                    ; #15978: <==commonly_known== 11766 (neg)
                     (Pb_checked_p7)
 
-                    ; #59606: <==closure== 12384 (pos)
+                    ; #32402: <==commonly_known== 47852 (pos)
+                    (Bc_checked_p7)
+
+                    ; #32986: <==closure== 55199 (pos)
                     (when (and (not_hiddensurvivorat_s_p7))
                           (Pc_not_survivorat_s_p7))
 
-                    ; #61689: origin
+                    ; #33926: <==commonly_known== 47852 (pos)
+                    (Ba_checked_p7)
+
+                    ; #34278: origin
                     (when (and (hiddensurvivorat_s_p7))
                           (Bc_survivorat_s_p7))
 
-                    ; #69875: <==closure== 61689 (pos)
+                    ; #35673: <==commonly_known== 47852 (pos)
+                    (Bb_checked_p7)
+
+                    ; #47852: origin
+                    (checked_p7)
+
+                    ; #55199: origin
+                    (when (and (not_hiddensurvivorat_s_p7))
+                          (Bc_not_survivorat_s_p7))
+
+                    ; #58096: <==commonly_known== 11766 (neg)
+                    (Pa_checked_p7)
+
+                    ; #64415: <==commonly_known== 11766 (neg)
+                    (Pc_checked_p7)
+
+                    ; #73464: <==closure== 34278 (pos)
                     (when (and (hiddensurvivorat_s_p7))
                           (Pc_survivorat_s_p7))
 
-                    ; #75497: <==commonly_known== 64632 (neg)
-                    (Pa_checked_p7)
-
-                    ; #11073: <==negation-removal== 59606 (pos)
-                    (when (and (not_hiddensurvivorat_s_p7))
-                          (not (Bc_survivorat_s_p7)))
-
-                    ; #18745: <==negation-removal== 14101 (pos)
-                    (not (Bc_not_checked_p7))
-
-                    ; #26013: <==negation-removal== 12384 (pos)
+                    ; #10449: <==negation-removal== 55199 (pos)
                     (when (and (not_hiddensurvivorat_s_p7))
                           (not (Pc_survivorat_s_p7)))
 
-                    ; #33507: <==negation-removal== 50897 (pos)
-                    (not (Bb_not_checked_p7))
-
-                    ; #49092: <==negation-removal== 41155 (pos)
-                    (not (Pb_not_checked_p7))
-
-                    ; #54914: <==uncertain_firing== 59606 (pos)
-                    (when (and (not (hiddensurvivorat_s_p7)))
-                          (not (Bc_survivorat_s_p7)))
-
-                    ; #58513: <==negation-removal== 69875 (pos)
-                    (when (and (hiddensurvivorat_s_p7))
-                          (not (Bc_not_survivorat_s_p7)))
-
-                    ; #58891: <==negation-removal== 61689 (pos)
-                    (when (and (hiddensurvivorat_s_p7))
-                          (not (Pc_not_survivorat_s_p7)))
-
-                    ; #63287: <==uncertain_firing== 12384 (pos)
-                    (when (and (not (hiddensurvivorat_s_p7)))
-                          (not (Pc_survivorat_s_p7)))
-
-                    ; #64632: <==negation-removal== 41099 (pos)
+                    ; #11766: <==negation-removal== 47852 (pos)
                     (not (not_checked_p7))
 
-                    ; #68164: <==uncertain_firing== 69875 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p7)))
-                          (not (Bc_not_survivorat_s_p7)))
+                    ; #12829: <==uncertain_firing== 55199 (pos)
+                    (when (and (not (hiddensurvivorat_s_p7)))
+                          (not (Pc_survivorat_s_p7)))
 
-                    ; #68553: <==negation-removal== 16493 (pos)
-                    (not (Pa_not_checked_p7))
-
-                    ; #76120: <==negation-removal== 75497 (pos)
-                    (not (Ba_not_checked_p7))
-
-                    ; #82028: <==uncertain_firing== 61689 (pos)
+                    ; #30388: <==uncertain_firing== 34278 (pos)
                     (when (and (not (not_hiddensurvivorat_s_p7)))
                           (not (Pc_not_survivorat_s_p7)))
 
-                    ; #86020: <==negation-removal== 41226 (pos)
+                    ; #36063: <==negation-removal== 32986 (pos)
+                    (when (and (not_hiddensurvivorat_s_p7))
+                          (not (Bc_survivorat_s_p7)))
+
+                    ; #44420: <==negation-removal== 33926 (pos)
+                    (not (Pa_not_checked_p7))
+
+                    ; #48523: <==negation-removal== 15978 (pos)
+                    (not (Bb_not_checked_p7))
+
+                    ; #50067: <==negation-removal== 35673 (pos)
+                    (not (Pb_not_checked_p7))
+
+                    ; #51563: <==negation-removal== 73464 (pos)
+                    (when (and (hiddensurvivorat_s_p7))
+                          (not (Bc_not_survivorat_s_p7)))
+
+                    ; #53075: <==uncertain_firing== 32986 (pos)
+                    (when (and (not (hiddensurvivorat_s_p7)))
+                          (not (Bc_survivorat_s_p7)))
+
+                    ; #54954: <==uncertain_firing== 73464 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p7)))
+                          (not (Bc_not_survivorat_s_p7)))
+
+                    ; #55524: <==negation-removal== 58096 (pos)
+                    (not (Ba_not_checked_p7))
+
+                    ; #57141: <==negation-removal== 64415 (pos)
+                    (not (Bc_not_checked_p7))
+
+                    ; #65233: <==negation-removal== 34278 (pos)
+                    (when (and (hiddensurvivorat_s_p7))
+                          (not (Pc_not_survivorat_s_p7)))
+
+                    ; #66288: <==negation-removal== 32402 (pos)
                     (not (Pc_not_checked_p7))))
 
     (:action observe_c_p8_s
         :precondition (and (at_c_p8)
                            (not (leader_c)))
         :effect (and
-                    ; #13339: <==commonly_known== 56038 (pos)
-                    (Bc_checked_p8)
-
-                    ; #14291: <==commonly_known== 56038 (pos)
-                    (Bb_checked_p8)
-
-                    ; #20383: <==closure== 68700 (pos)
+                    ; #25613: <==closure== 34666 (pos)
                     (when (and (not_hiddensurvivorat_s_p8))
                           (Pc_not_survivorat_s_p8))
 
-                    ; #25968: origin
-                    (when (and (hiddensurvivorat_s_p8))
-                          (Bc_survivorat_s_p8))
-
-                    ; #27958: <==closure== 25968 (pos)
-                    (when (and (hiddensurvivorat_s_p8))
-                          (Pc_survivorat_s_p8))
-
-                    ; #44024: <==commonly_known== 10384 (neg)
-                    (Pa_checked_p8)
-
-                    ; #50316: <==commonly_known== 10384 (neg)
-                    (Pc_checked_p8)
-
-                    ; #56038: origin
+                    ; #28248: origin
                     (checked_p8)
 
-                    ; #61501: <==commonly_known== 56038 (pos)
-                    (Ba_checked_p8)
-
-                    ; #68700: origin
+                    ; #34666: origin
                     (when (and (not_hiddensurvivorat_s_p8))
                           (Bc_not_survivorat_s_p8))
 
-                    ; #75239: <==commonly_known== 10384 (neg)
+                    ; #35013: <==commonly_known== 31629 (neg)
+                    (Pa_checked_p8)
+
+                    ; #36308: <==commonly_known== 31629 (neg)
                     (Pb_checked_p8)
 
-                    ; #10384: <==negation-removal== 56038 (pos)
-                    (not (not_checked_p8))
+                    ; #36589: <==commonly_known== 28248 (pos)
+                    (Bc_checked_p8)
 
-                    ; #12221: <==uncertain_firing== 20383 (pos)
-                    (when (and (not (hiddensurvivorat_s_p8)))
-                          (not (Bc_survivorat_s_p8)))
+                    ; #38776: <==commonly_known== 28248 (pos)
+                    (Bb_checked_p8)
 
-                    ; #16172: <==negation-removal== 50316 (pos)
+                    ; #42575: <==commonly_known== 31629 (neg)
+                    (Pc_checked_p8)
+
+                    ; #61591: <==closure== 77261 (pos)
+                    (when (and (hiddensurvivorat_s_p8))
+                          (Pc_survivorat_s_p8))
+
+                    ; #77261: origin
+                    (when (and (hiddensurvivorat_s_p8))
+                          (Bc_survivorat_s_p8))
+
+                    ; #89640: <==commonly_known== 28248 (pos)
+                    (Ba_checked_p8)
+
+                    ; #14039: <==negation-removal== 42575 (pos)
                     (not (Bc_not_checked_p8))
 
-                    ; #18962: <==negation-removal== 75239 (pos)
-                    (not (Bb_not_checked_p8))
-
-                    ; #30000: <==uncertain_firing== 25968 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p8)))
-                          (not (Pc_not_survivorat_s_p8)))
-
-                    ; #31297: <==negation-removal== 13339 (pos)
-                    (not (Pc_not_checked_p8))
-
-                    ; #49105: <==uncertain_firing== 27958 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p8)))
-                          (not (Bc_not_survivorat_s_p8)))
-
-                    ; #49461: <==negation-removal== 25968 (pos)
-                    (when (and (hiddensurvivorat_s_p8))
-                          (not (Pc_not_survivorat_s_p8)))
-
-                    ; #53264: <==negation-removal== 14291 (pos)
-                    (not (Pb_not_checked_p8))
-
-                    ; #56348: <==negation-removal== 61501 (pos)
+                    ; #14816: <==negation-removal== 89640 (pos)
                     (not (Pa_not_checked_p8))
 
-                    ; #63547: <==negation-removal== 68700 (pos)
+                    ; #17846: <==negation-removal== 35013 (pos)
+                    (not (Ba_not_checked_p8))
+
+                    ; #23799: <==negation-removal== 25613 (pos)
+                    (when (and (not_hiddensurvivorat_s_p8))
+                          (not (Bc_survivorat_s_p8)))
+
+                    ; #30535: <==negation-removal== 36308 (pos)
+                    (not (Bb_not_checked_p8))
+
+                    ; #31629: <==negation-removal== 28248 (pos)
+                    (not (not_checked_p8))
+
+                    ; #34732: <==negation-removal== 38776 (pos)
+                    (not (Pb_not_checked_p8))
+
+                    ; #35932: <==negation-removal== 61591 (pos)
+                    (when (and (hiddensurvivorat_s_p8))
+                          (not (Bc_not_survivorat_s_p8)))
+
+                    ; #43376: <==negation-removal== 34666 (pos)
                     (when (and (not_hiddensurvivorat_s_p8))
                           (not (Pc_survivorat_s_p8)))
 
-                    ; #66197: <==negation-removal== 27958 (pos)
+                    ; #45213: <==uncertain_firing== 34666 (pos)
+                    (when (and (not (hiddensurvivorat_s_p8)))
+                          (not (Pc_survivorat_s_p8)))
+
+                    ; #46521: <==negation-removal== 36589 (pos)
+                    (not (Pc_not_checked_p8))
+
+                    ; #59362: <==negation-removal== 77261 (pos)
                     (when (and (hiddensurvivorat_s_p8))
+                          (not (Pc_not_survivorat_s_p8)))
+
+                    ; #61136: <==uncertain_firing== 61591 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p8)))
                           (not (Bc_not_survivorat_s_p8)))
 
-                    ; #66706: <==negation-removal== 44024 (pos)
-                    (not (Ba_not_checked_p8))
+                    ; #61824: <==uncertain_firing== 77261 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p8)))
+                          (not (Pc_not_survivorat_s_p8)))
 
-                    ; #73083: <==negation-removal== 20383 (pos)
-                    (when (and (not_hiddensurvivorat_s_p8))
-                          (not (Bc_survivorat_s_p8)))
-
-                    ; #87357: <==uncertain_firing== 68700 (pos)
+                    ; #86312: <==uncertain_firing== 25613 (pos)
                     (when (and (not (hiddensurvivorat_s_p8)))
-                          (not (Pc_survivorat_s_p8)))))
+                          (not (Bc_survivorat_s_p8)))))
 
     (:action observe_c_p9_s
         :precondition (and (at_c_p9)
                            (not (leader_c)))
         :effect (and
-                    ; #19991: origin
-                    (when (and (hiddensurvivorat_s_p9))
-                          (Bc_survivorat_s_p9))
-
-                    ; #21620: <==commonly_known== 83294 (neg)
-                    (Pb_checked_p9)
-
-                    ; #35136: <==commonly_known== 86629 (pos)
-                    (Bb_checked_p9)
-
-                    ; #35806: <==commonly_known== 86629 (pos)
-                    (Ba_checked_p9)
-
-                    ; #42458: <==closure== 56258 (pos)
-                    (when (and (not_hiddensurvivorat_s_p9))
-                          (Pc_not_survivorat_s_p9))
-
-                    ; #46426: <==commonly_known== 83294 (neg)
-                    (Pa_checked_p9)
-
-                    ; #52742: <==commonly_known== 83294 (neg)
-                    (Pc_checked_p9)
-
-                    ; #56258: origin
+                    ; #11917: origin
                     (when (and (not_hiddensurvivorat_s_p9))
                           (Bc_not_survivorat_s_p9))
 
-                    ; #58274: <==closure== 19991 (pos)
+                    ; #30746: origin
+                    (checked_p9)
+
+                    ; #44246: <==commonly_known== 71649 (neg)
+                    (Pb_checked_p9)
+
+                    ; #49082: <==commonly_known== 30746 (pos)
+                    (Bc_checked_p9)
+
+                    ; #53753: <==commonly_known== 30746 (pos)
+                    (Ba_checked_p9)
+
+                    ; #59568: origin
+                    (when (and (hiddensurvivorat_s_p9))
+                          (Bc_survivorat_s_p9))
+
+                    ; #63916: <==commonly_known== 71649 (neg)
+                    (Pa_checked_p9)
+
+                    ; #67463: <==closure== 59568 (pos)
                     (when (and (hiddensurvivorat_s_p9))
                           (Pc_survivorat_s_p9))
 
-                    ; #85519: <==commonly_known== 86629 (pos)
-                    (Bc_checked_p9)
+                    ; #69721: <==commonly_known== 71649 (neg)
+                    (Pc_checked_p9)
 
-                    ; #86629: origin
-                    (checked_p9)
-
-                    ; #23741: <==uncertain_firing== 56258 (pos)
-                    (when (and (not (hiddensurvivorat_s_p9)))
-                          (not (Pc_survivorat_s_p9)))
-
-                    ; #23926: <==uncertain_firing== 19991 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p9)))
-                          (not (Pc_not_survivorat_s_p9)))
-
-                    ; #29756: <==negation-removal== 85519 (pos)
-                    (not (Pc_not_checked_p9))
-
-                    ; #37953: <==negation-removal== 35136 (pos)
-                    (not (Pb_not_checked_p9))
-
-                    ; #38504: <==negation-removal== 42458 (pos)
+                    ; #83667: <==closure== 11917 (pos)
                     (when (and (not_hiddensurvivorat_s_p9))
-                          (not (Bc_survivorat_s_p9)))
+                          (Pc_not_survivorat_s_p9))
 
-                    ; #39426: <==negation-removal== 58274 (pos)
-                    (when (and (hiddensurvivorat_s_p9))
-                          (not (Bc_not_survivorat_s_p9)))
+                    ; #86892: <==commonly_known== 30746 (pos)
+                    (Bb_checked_p9)
 
-                    ; #47902: <==uncertain_firing== 42458 (pos)
-                    (when (and (not (hiddensurvivorat_s_p9)))
-                          (not (Bc_survivorat_s_p9)))
-
-                    ; #48189: <==negation-removal== 46426 (pos)
+                    ; #14189: <==negation-removal== 63916 (pos)
                     (not (Ba_not_checked_p9))
 
-                    ; #56308: <==uncertain_firing== 58274 (pos)
-                    (when (and (not (not_hiddensurvivorat_s_p9)))
-                          (not (Bc_not_survivorat_s_p9)))
-
-                    ; #65889: <==negation-removal== 35806 (pos)
-                    (not (Pa_not_checked_p9))
-
-                    ; #73214: <==negation-removal== 56258 (pos)
-                    (when (and (not_hiddensurvivorat_s_p9))
-                          (not (Pc_survivorat_s_p9)))
-
-                    ; #80023: <==negation-removal== 52742 (pos)
-                    (not (Bc_not_checked_p9))
-
-                    ; #82083: <==negation-removal== 19991 (pos)
+                    ; #22250: <==negation-removal== 59568 (pos)
                     (when (and (hiddensurvivorat_s_p9))
                           (not (Pc_not_survivorat_s_p9)))
 
-                    ; #83294: <==negation-removal== 86629 (pos)
+                    ; #22986: <==negation-removal== 83667 (pos)
+                    (when (and (not_hiddensurvivorat_s_p9))
+                          (not (Bc_survivorat_s_p9)))
+
+                    ; #23971: <==negation-removal== 86892 (pos)
+                    (not (Pb_not_checked_p9))
+
+                    ; #26221: <==negation-removal== 67463 (pos)
+                    (when (and (hiddensurvivorat_s_p9))
+                          (not (Bc_not_survivorat_s_p9)))
+
+                    ; #27440: <==negation-removal== 49082 (pos)
+                    (not (Pc_not_checked_p9))
+
+                    ; #27988: <==uncertain_firing== 11917 (pos)
+                    (when (and (not (hiddensurvivorat_s_p9)))
+                          (not (Pc_survivorat_s_p9)))
+
+                    ; #44064: <==negation-removal== 11917 (pos)
+                    (when (and (not_hiddensurvivorat_s_p9))
+                          (not (Pc_survivorat_s_p9)))
+
+                    ; #54873: <==uncertain_firing== 83667 (pos)
+                    (when (and (not (hiddensurvivorat_s_p9)))
+                          (not (Bc_survivorat_s_p9)))
+
+                    ; #56420: <==uncertain_firing== 59568 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p9)))
+                          (not (Pc_not_survivorat_s_p9)))
+
+                    ; #57484: <==negation-removal== 69721 (pos)
+                    (not (Bc_not_checked_p9))
+
+                    ; #71649: <==negation-removal== 30746 (pos)
                     (not (not_checked_p9))
 
-                    ; #85015: <==negation-removal== 21620 (pos)
-                    (not (Bb_not_checked_p9))))
+                    ; #71803: <==negation-removal== 44246 (pos)
+                    (not (Bb_not_checked_p9))
+
+                    ; #78919: <==uncertain_firing== 67463 (pos)
+                    (when (and (not (not_hiddensurvivorat_s_p9)))
+                          (not (Bc_not_survivorat_s_p9)))
+
+                    ; #84237: <==negation-removal== 53753 (pos)
+                    (not (Pa_not_checked_p9))))
 
 )

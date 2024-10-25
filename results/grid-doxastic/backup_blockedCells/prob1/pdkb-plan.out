@@ -119,11 +119,11 @@ Starting search with 1-BFWS...
 --[1 / 22]--
 --[0 / 0]--
 --[0 / 9]--
-Total time: 0.005284
+Total time: 0.012815
 Nodes generated during search: 690
 Nodes expanded during search: 170
 Plan found with cost: 51
-Fast-BFS search completed in 0.005284 secs
+Fast-BFS search completed in 0.012815 secs
 Solving...
 /usr/local/lib/python3.6/dist-packages/PDKB_Planning_Library-0.1-py3.6.egg/pdkb/planners/bfws --domain pdkb-domain.pddl  --problem pdkb-problem.pddl --output pdkb-plan.txt --1-BFWS 1
 Done!

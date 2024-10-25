@@ -24,6 +24,6 @@ Plan found with cost: 25
 23. (OBSERVE_C_P1_S )
 24. (MOVE_B_P11_P12 )
 25. (OBSERVE_B_P12_S )
-Time: 0.000659
+Time: 0.001552
 Generated: 242
 Expanded: 38

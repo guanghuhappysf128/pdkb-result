@@ -478,10 +478,10 @@
     )
 
     (:goal (and
-        (Ba_survivorat_s_p4)
-        (Bb_not_survivorat_s_p4)
-        (Pa_survivorat_s_p4)
-        (Pb_not_survivorat_s_p4)
+        (Ba_not_survivorat_s_p4)
+        (Bb_survivorat_s_p4)
+        (Pa_not_survivorat_s_p4)
+        (Pb_survivorat_s_p4)
         (at_a_p3)
         (at_b_p3)
         (checked_p0011)

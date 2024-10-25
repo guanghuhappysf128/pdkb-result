@@ -11,8 +11,8 @@ Plan found with cost: 30
 10. (OBSERVE_C_P7_S )
 11. (MOVE_C_P7_P4 )
 12. (OBSERVE_C_P4_S )
-13. (COMM_P9_P4_C_A_S )
-14. (BADCOMM_P9_P4_C_B_S )
+13. (COMM_P9_P4_C_B_S )
+14. (COMM_P9_P4_C_A_S )
 15. (MOVE_C_P4_P5 )
 16. (OBSERVE_C_P5_S )
 17. (COMM_P9_P5_C_A_S )
@@ -29,6 +29,6 @@ Plan found with cost: 30
 28. (OBSERVE_C_P11_S )
 29. (MOVE_C_P11_P10 )
 30. (OBSERVE_C_P10_S )
-Time: 0.010281
+Time: 0.0218879
 Generated: 501
 Expanded: 70

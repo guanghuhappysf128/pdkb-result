@@ -1,1 +1,1 @@
-{"precompilation_time": 3.556674003601074, "agents": 3, "props": 1416, "acts": 1404, "effs": 20664, "depth": 1, "plan_length": 48, "total_time": 3.909393072128296, "generated": 629, "expanded": 115}
+{"precompilation_time": 6.043752193450928, "agents": 3, "props": 1416, "acts": 1404, "effs": 20664, "depth": 1, "plan_length": 59, "total_time": 6.541141033172607, "generated": 1039, "expanded": 279}

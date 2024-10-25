@@ -45,6 +45,6 @@ Plan found with cost: 46
 44. (MOVE_B_P4_P1 )
 45. (MOVE_B_P1_P2 )
 46. (MOVE_B_P2_P3 )
-Time: 0.006199
+Time: 0.010417
 Generated: 795
 Expanded: 230

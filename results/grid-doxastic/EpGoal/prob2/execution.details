@@ -52,6 +52,6 @@ Plan found with cost: 53
 51. (MOVE_A_P8_P5 )
 52. (COMM_P5_C_S )
 53. (BADCOMM_P5_C_S )
-Time: 0.048703
+Time: 0.073303
 Generated: 4802
 Expanded: 2503

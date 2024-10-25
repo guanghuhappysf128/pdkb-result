@@ -24,6 +24,6 @@ Plan found with cost: 25
 23. (MOVE_D_P3_P2 )
 24. (MOVE_D_P2_P1 )
 25. (OBSERVE_D_P1_S )
-Time: 0.001006
+Time: 0.00167
 Generated: 373
 Expanded: 54

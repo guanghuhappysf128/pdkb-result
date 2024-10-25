@@ -41,6 +41,6 @@ Plan found with cost: 42
 40. (MOVE_B_P5_P4 )
 41. (COMM_P4_B_S )
 42. (BADCOMM_P4_B_S )
-Time: 0.022575
+Time: 0.031642
 Generated: 2684
 Expanded: 1425
